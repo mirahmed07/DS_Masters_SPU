@@ -1,0 +1,396 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
+  word_document: default
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+```{r}
+library(plotrix)
+```
+
+# Problem 1.169
+
+# A) Solution:
+
+
+```{r}
+
+# EAR
+mean = 60
+# percent of RDA (p-value)
+pz = .9772
+# RDA
+A = 75
+
+# find z-value from p-value
+z= round(qnorm(pz, lower.tail = TRUE),2)
+print(paste("z score for RDA is", z))
+
+sd = (A-mean)/z
+print(paste("Standard deviation of the requirement distribution is",sd))
+
+
+```
+
+# B) Solution:
+
+```{r}
+ul = 2000
+xmin = mean-sd*3
+xmax = mean+sd*3
+# Create a sequence of numbers between xmin and 2000 incrementing by 0.1
+x <- seq(xmin, ul, by = .1)
+xgap <- ifelse(x>xmax,2000, x)
+# Choose the mean as 60 and standard deviation as 7.5.
+y <- dnorm(x, mean, sd)
+par(bty="n") # deleting the box
+gap.plot(xgap,y, gap=c(120,1970), gap.axis="x", pch=16,
+         col="blue", ylim=range(y),
+         xtics=c(seq(30, 120, by = 10),seq(1970, 2010, by = 10)), 
+         xticlab=c(seq(30, 120, by = 10),seq(1970, 2010, by = 10)), xlab = 'mg/d', 
+         ylab ='', main="Distribution of Vitamin C Consumption for Female")
+abline(v=mean, col="red")    #add EAR line
+abline(v=A, col="purple")    # add RDA line
+abline(v=seq(120,1970,100), col="white")  # hiding vertical lines
+axis.break(1,120,style="slash")               # plotting slashes for breakpoints
+legend(90, .04, legend=c("EAR", "RDA"),
+       col=c("red", "purple"), lty=1:1, cex=0.8)
+
+```
+
+-----------------------------------------------------------------------------------------
+
+# Problem 1.170
+
+# A) Solution:
+
+```{r}
+#EAR
+mean = 75
+# percent of RDA (p-value)
+pz = .9772
+# RDA
+A = 90
+
+#find z-value from p-value
+z= round(qnorm(pz, lower.tail = TRUE),2)
+print(paste("z score for RDA is", z))
+
+sd = (A-mean)/z
+print(paste("Standard deviation of the requirement distribution is",sd))
+
+
+```
+
+# B) Solution:
+
+```{r}
+ul = 2000
+xmin = mean-sd*3
+xmax = mean+sd*3
+# Create a sequence of numbers between xmin and 2000 incrementing by 0.1
+x <- seq(xmin, ul, by = .1)
+xgap <- ifelse(x>xmax,2000, x)
+# Choose the mean as 60 and standard deviation as 7.5.
+y <- dnorm(x, mean, sd)
+par(bty="n") # deleting the box
+gap.plot(xgap,y, gap=c(120,1970), gap.axis="x", pch=16,
+         col="blue", ylim=range(y),
+         xtics=c(seq(30, 120, by = 10),seq(1970, 2010, by = 10)), 
+         xticlab=c(seq(30, 120, by = 10),seq(1970, 2010, by = 10)), xlab = 'mg/d', 
+         ylab ='', main="Distribution of Vitamin C Consumption for Male")
+abline(v=mean, col="red")    #add EAR line
+abline(v=A, col="purple")    # add RDA line
+abline(v=seq(120,1970,100), col="white")  # hiding vertical lines
+axis.break(1,120,style="slash")               # plotting slashes for breakpoints
+legend(100, .04, legend=c("EAR", "RDA"),
+       col=c("red", "purple"), lty=1:1, cex=0.8)
+```
+
+-----------------------------------------------------------------------------------------
+
+# Problem 1.171
+
+# A) Solution:
+
+```{r}
+# percent of RDA (p-value)
+pz5 = 0.05
+
+
+# find z-value from p-value
+z5= round(qnorm(pz5),2)
+print(paste("z score for 5th percentile is", z5))
+
+# percent of RDA (p-value)
+pz50 = 0.50
+# RDA
+A50 = 79
+# find z-value from p-value
+z50= round(qnorm(pz50, lower.tail = TRUE),2)
+print(paste("z score for 50th percentile is", z50))
+
+# percent of RDA (p-value)
+pz95 = 0.95
+
+# find z-value from p-value
+z95= round(qnorm(pz95, lower.tail = TRUE),2)
+print(paste("z score for 95th percentile is", z95))
+```
+
+We know z = (x-mean)/sd
+
+So, mean = x-(sd*z)
+
+But, for 50th percentile, z is 0 as p(z<=0.00) = .50
+
+So, mean = A50-(sd*0)
+
+Finally, mean = A50
+
+```{r}
+mean = A50
+print(paste("The value of mean is",mean))
+
+A95 = 142
+sd = (A95-mean)/z95
+print(paste("The value of standard deviation is",sd))
+
+```
+
+# B) Solution:
+
+```{r}
+ul = 2000
+xmin = mean-sd*3
+xmax = mean+sd*3
+# Create a sequence of numbers between xmin and 2000 incrementing by 0.1
+x <- seq(xmin, ul, by = .1)
+xgap <- ifelse(x>xmax,2000, x)
+# Choose the mean as 60 and standard deviation as 7.5.
+y <- dnorm(x, mean, sd)
+par(bty="n") # deleting the box
+gap.plot(xgap,y, gap=c(200,1970), gap.axis="x", pch=16,
+         col="blue", ylim=range(y),
+         xtics=c(seq(-40, 200, by = 10),seq(1970, 2010, by = 10)), 
+         xticlab=c(seq(-40, 200, by = 10),seq(1970, 2010, by = 10)), xlab = 'mg/d', 
+         ylab ='', main="Distribution of Vitamin C Consumption for Female")
+abline(v=mean, col="red")    #add new mean line
+abline(v=60, col="purple")    # add old mean line
+abline(v=75, col="violet")    # add RDA line
+abline(v=seq(200,1970,100), col="white")  # hiding vertical lines
+axis.break(1,200,style="slash")               # plotting slashes for breakpoints
+legend(140, .01, legend=c("New mean", "Old mean", "RDA"),
+       col=c("red", "purple", "violet"), lty=1:1, cex=0.8)
+
+```
+
+# C) Solution:
+
+*As per the new graph, we can see that the new mean (79) is more than the previously estimated mean (60) and the new mean (79) which is at 50th percentile is also more than the RDA (75). So we can confidently say that majority of the female population consumes more vitamin C than the RDA on a daily basis.*
+
+-----------------------------------------------------------------------------------------
+
+# Problem 1.172
+
+# A) Solution:
+
+```{r}
+# percent of RDA (p-value)
+pz5 = 0.05
+
+
+# find z-value from p-value
+z5= round(qnorm(pz5),2)
+print(paste("z score for 5th percentile is", z5))
+
+# percent of RDA (p-value)
+pz50 = 0.50
+# RDA
+A50 = 114
+# find z-value from p-value
+z50= round(qnorm(pz50, lower.tail = TRUE),2)
+print(paste("z score for 50th percentile is", z50))
+
+# percent of RDA (p-value)
+pz95 = 0.95
+
+# find z-value from p-value
+z95= round(qnorm(pz95, lower.tail = TRUE),2)
+print(paste("z score for 95th percentile is", z95))
+```
+
+We know z = (x-mean)/sd
+
+So, mean = x - (sd*z)
+
+But, for 50th percentile, z is 0 as p(z<=0.00) = .50 
+
+So, mean  = A50-(sd*0) 
+
+Finally, mean = A50
+
+```{r}
+mean = A50 
+print(paste("The value of mean is",mean))
+
+A95 = 217
+sd = (A95-mean)/z95
+print(paste("The value of standard deviation is",sd))
+```
+
+# B) Solution:
+
+```{r}
+ul = 2000
+xmin = mean-sd*3
+xmax = mean+sd*3
+# Create a sequence of numbers between xmin and 2000 incrementing by 0.1
+x <- seq(xmin, ul, by = .1)
+xgap <- ifelse(x>xmax,2000, x)
+# Choose the mean as 60 and standard deviation as 7.5.
+y <- dnorm(x, mean, sd)
+par(bty="n") # deleting the box
+gap.plot(xgap,y, gap=c(330,1970), gap.axis="x", pch=16,
+         col="blue", ylim=range(y),
+         xtics=c(seq(-80, 330, by = 10),seq(1970, 2010, by = 10)), 
+         xticlab=c(seq(-80, 330, by = 10),seq(1970, 2010, by = 10)), xlab = 'mg/d', 
+         ylab ='', main="Distribution of Vitamin C Consumption for Male")
+abline(v=mean, col="red")    #add new mean line
+abline(v=75, col="purple")    # add old mean line
+abline(v=90, col="violet")    # add RDA line
+abline(v=seq(330,1970,100), col="white")  # hiding vertical lines
+axis.break(1,330,style="slash")               # plotting slashes for breakpoints
+legend(240, .005, legend=c("New mean", "Old mean", "RDA"),
+       col=c("red", "purple", "violet"), lty=1:1, cex=0.8)
+```
+
+# C) Solution:
+
+*As per the new graph, we can see that the new mean (114) is more than the previously estimated mean (75) and the new mean (114) which is at 50th percentile is also more than the RDA (90). So we can confidently say that majority of the male population consumes more vitamin C than the RDA on a daily basis.*
+
+-----------------------------------------------------------------------------------------
+
+# Problem 1.176
+
+# A) Solution:
+
+For third graders' current scores:
+
+μ=70
+
+σ=10
+
+  z = (x-μ)/σ
+
+=>z = (x-70)/10 .....(1)
+
+For desired score
+
+μ=100
+
+σ=20
+
+so X-new =z*σ +μ
+
+         =[(x-70)/10]*20 +100 ......(from 1)
+
+         =2x-140+100
+
+         =2x-40
+
+So, a=-40 and b=2
+
+# B) Solution:
+
+For six graders' current scores:
+
+μ=80
+
+σ=11
+
+  z = (x-μ)/σ
+
+=>z = (x-80)/11 .....(1)
+
+For desired score
+
+μ=100
+
+σ=20
+
+so X-new =z*σ +μ
+
+         =[(x-80)/11]*20 +100 ......(from 1)
+
+         =(20x-1600+1100)/11
+         
+         =(20x-500)/11
+
+         =1.82x-45.45
+
+So, a=-45.45 and b=1.82
+
+# C) Solution:
+
+David’s transformed score =-40+2*72=104
+
+Nancy's transformed score = -45.45+1.82*78=96.51
+
+David Scores higher as his standardized transformed score is higher.
+
+# D) Solution:
+
+For both third and six graders standardized scoring less than 75 as they have the same distribution:
+
+```{r}
+mean = 100
+sd = 20
+x = 75
+z = (x-mean)/sd
+z
+pz = pnorm(z, lower.tail = TRUE)
+print(paste("Percent value is", round(pz*100,2),"%"))
+
+```
+
+For non-standardized scoring:
+
+```{r}
+# for third graders
+mean = 70
+sd = 10
+x = 75
+z = (x-mean)/sd
+z
+pz = pnorm(z, lower.tail = TRUE)
+print(paste("Percent value of third graders is", round(pz*100,2),"%"))
+
+```
+
+```{r}
+# for sixth graders
+mean = 80
+sd = 11
+x = 75
+z = (x-mean)/sd
+z
+pz = pnorm(z, lower.tail = TRUE)
+print(paste("Percent value of sixth graders is", round(pz*100,2),"%"))
+```
+
+-----------------------------------------------------------------------------------------

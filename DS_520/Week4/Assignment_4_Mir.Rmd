@@ -1,0 +1,295 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+
+# Problem 5.76
+## Solution
+
+```{r}
+mu = 68
+s = 22
+n = 500
+x = 70
+
+z = (x-mu)/(s/sqrt(n))
+
+# Probability of the average amount exceeding $70 is P(z>70) = 1-P(Z<70)
+
+p = 1 - pnorm(z)
+print(paste("Probability of the average amount exceeding $70 is", round(p,5)))
+
+```
+
+# Problem 5.82
+
+## A) Solution:
+### In a binomial setting with n trials and success probability p, the probability of exactly x successes is
+
+### 𝑃(𝑋=𝑥)= (𝑛!/(𝑥!(𝑛−𝑥)!)) 𝑝^𝑥 * (1−𝑝)^(𝑛−𝑥)
+
+```{r}
+# Here
+n = 12
+x = 6
+p = 3/4
+
+ans = (factorial(n)/(factorial(x)*factorial(n-x)))*(p^x)*(1-p)^(n-x)
+print(paste("The probability that exactly 6 out of 12 of these plants have red blossoms is",round(ans,4)))
+```
+
+## B) Solution:
+### The mean number of red-blossomed plants when 120 plants of this type are grown from seeds red-blossomed plants is obtained below:
+### The expected value of X can be obtained as follows:
+### mu = n*p
+```{r}
+#Here
+n = 120
+p = 3/4
+mu = n*p
+
+print(paste("The mean number of red-blossomed plants when 120 plants of this type are grown from seeds red-blossomed plants is",mu))
+```
+
+## C) Solution:
+### Standard deviation of sample 𝜎_𝑥=√(𝑛*𝑝(1−𝑝) )
+```{r}
+sx = sqrt(n*p*(1-p))
+sx
+```
+
+### we know that Z = (X-mu)/sx
+```{r}
+# Here
+X = 80
+z = (X-mu)/sx
+z
+```
+
+```{r}
+# The probability of obtaining at least 80 red-blossomed plants when 120 plants are grown from seeds
+
+print(paste("The probability of obtaining at least 80 red-blossomed plants when 120 plants are grown from seeds is",round(1- pnorm(z),5)))
+```
+
+# Problem 5.83
+
+## Solution:
+```{r}
+# Here
+mu = 66
+s0 = 6
+n = 12
+# We know standard error s = mu/√n
+s = s0/sqrt(n)
+s
+```
+
+### Calculate the probability that the weight of a carton falls between 755 and 830.
+*p(755<x<830)*
+*=p(755/12<x<830/12)*
+
+```{r}
+# Here lower bound & upper bound
+lb = 755
+ub = 830
+# Fit into normal distribution
+lbn = lb/12
+ubn = ub/12
+
+z_lbn = (lbn-mu)/s
+z_ubn = (ubn-mu)/s
+print(paste("lower Z value",z_lbn))
+print(paste("upper Z value",z_ubn))
+```
+### so the probability would be 
+*P(-1.78016333000135 < Z < 1.82827585243382)*
+*= P(Z< 1.82827585243382) - P(Z < -1.78016333000135) *
+
+```{r}
+pnorm(z_lbn)
+```
+
+```{r}
+pnorm(z_ubn)
+```
+
+```{r}
+print(paste("The probability that the weight of a carton falls between 755 and 830 is", round(pnorm(z_ubn) - pnorm(z_lbn),5)))
+```
+## Alternate solution:
+```{r}
+# Here
+mu = 66
+s0 = 6
+n = 12
+
+#lower bound & upper bound
+lb = 755
+ub = 830
+# variance of the sum of 12 such random variable
+v = n * (s0^2)
+# standard deviation of the sum of 12 such random variables
+s = sqrt(v)
+# mean of the sum of 12 such random variables
+n_mu = n*mu
+
+z_lb = (lb-n_mu)/s
+z_ub = (ub-n_mu)/s
+print(paste("lower Z value",z_lb))
+print(paste("upper Z value",z_ub))
+```
+
+```{r}
+print(paste("The probability that the weight of a carton falls between 755 and 830 is", round(pnorm(z_ub) - pnorm(z_lb),5)))
+```
+
+# Problem 5.86
+
+## A) Solution:
+```{r}
+# From given data N(32,6) for early-speaking group
+mu_x = 32 # Mean of population as well as sample
+s_x = 6 # Standard deviation of the population
+n =25 # Sample size
+# Standard deviation of the sample
+s_x_n = s_x/sqrt(n)
+s_x_n
+```
+
+```{r}
+# From given data N(29,5) for delayed-speaking group
+mu_y = 29 # Mean of population as well as sample
+s_y = 5 # Standard deviation of the population
+n =25 # Sample size
+# Standard deviation of the sample
+s_y_n = s_y/sqrt(n)
+s_y_n
+```
+
+## B) Solution:
+
+```{r}
+# Difference of y and x between mean scores in the two groups from repeated experiments
+mu_y_x = mu_y - mu_x
+mu_y_x
+```
+```{r}
+# Variance for early-speaking group
+v_x_n = s_x_n ^2
+# Variance for delayed-speaking group
+v_y_n = s_y_n ^2
+
+s_y_x =sqrt(v_x_n+v_y_n)
+s_y_x
+```
+
+```{r}
+print(paste0("So sampling distribution of the difference y¯−x¯ between the mean scores in the two groups from repeated expetiments is N(",mu_y_x,", ",round(s_y_x,5), ")"))
+```
+
+## C) Solution:
+
+#### Now the probabilty of the mean score for delayed speaking is at least as large as that for early speaking
+#### P(mu_y >= mu_x)
+#### = P(mu_y_x >= 0)
+#### = 1 - P(mu_y_x < 0)
+
+```{r}
+# Let new mean difference yx and probability of the misleading experiment is P
+
+yx = 0
+
+# As Z = (X-mean)/Std. deviation
+Z= round(((yx- mu_y_x)/s_y_x),5)
+Z
+```
+
+```{r}
+P = round((1 - pnorm(Z)),5)
+print(paste("the probabilty of the mean score for delayed speaking is at least as large as that for early speaking is",P))
+```
+
+# Problem 5.87
+
+## A) Solution:
+
+```{r}
+# For female
+# sample size for female
+n_f = 400
+# sample proportion for female (p^F)
+p_f = .82
+# Standard deviation for female
+std_f = sqrt(p_f*(1-p_f)/n_f)
+print(paste0("The approximate distribution of the proportion p^F of women who worked last summer is N(",p_f,", ",std_f, ")" ))
+```
+
+```{r}
+# For male
+# sample size for male
+n_m = 400
+# sample proportion for male (p^M)
+p_m = .88
+# Standard deviation for male
+std_m = sqrt(p_m*(1-p_m)/n_m)
+print(paste0("The approximate distribution of the proportion p^M of men who worked last summer is N(",p_m,", ",std_m, ")" ))
+```
+
+## B) Solution:
+
+```{r}
+# sample proportion for male and women comparison (p^M−p^F, mean)
+p_m_f = round(p_m - p_f,2)
+# Standard deviation for male and women comparison (√(variance of Male + variance of Female))
+std_m_f = round(sqrt(std_m^2 + std_f^2),6)
+print(paste0("The difference in the proportions who worked, p^M−p^F is N(",p_m_f,", ",std_m_f, ")" ))
+```
+
+## C) Solution:
+
+### The probability that in the sample a higher proportion of women than men worked last summer would be
+### P(p^F > p^M)
+### = P(p^M−p^F < 0)
+### = P(Z < (0-p_m_f)/std_m_f) as Z = (X-mean)/sd
+
+```{r}
+# So
+Z = round((0-p_m_f)/std_m_f,4)
+print(paste("The probability that in the sample a higher proportion of women than men worked last summer would be",round(pnorm(Z),6)))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

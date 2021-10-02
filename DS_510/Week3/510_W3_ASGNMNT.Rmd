@@ -1,0 +1,99 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+
+```{r}
+data = c(572, 572, 573, 568, 569, 575, 565, 570)
+
+```
+
+```{r}
+mean(data)
+```
+
+```{r}
+40/160
+```
+
+
+```{r}
+arr = c(121,   173,   157,   165,   170,   161,   142,   171,   184,   100,   145,   196)
+```
+
+```{r}
+sort(arr, decreasing = FALSE)
+```
+
+
+```{r}
+median(arr)
+```
+
+
+```{r}
+length(arr)
+```
+
+```{r}
+summary(arr)
+```
+
+```{r}
+boxplot(arr,
+  ylab = "weight"
+)
+```
+
+```{r}
+boxplot.stats(arr)$out
+```
+```{r}
+length(boxplot.stats(arr)$out)
+```
+
+```{r}
+ (142+145)/2 
+```
+
+```{r}
+(171+173)/2 
+```
+
+```{r}
+172-143.5
+```
+
+```{r}
+143.5-1.5*28.5
+```
+
+```{r}
+172 + 1.5*28.5 
+```
+```{r}
+(150-185)/39
+```
+```{r}
+pnorm((150-185)/39)
+```
+
+```{r}
+pnorm(-.8974359 )
+```
+

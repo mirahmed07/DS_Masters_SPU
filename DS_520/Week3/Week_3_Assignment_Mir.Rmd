@@ -1,0 +1,214 @@
+---
+title: "R Notebook"
+output:
+  word_document: default
+  html_notebook: default
+  html_document: default
+  df_print: paged
+  always_allow_html: true
+  pdf_document: default
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+### Dependency
+```{r}
+#load necessary libraries
+
+library(dplyr)
+library(tidyverse)
+library(readxl)
+library(ggplot2)
+library(ggpubr)
+library(data.table)
+library(data.tree)
+
+```
+
+
+# Problem 4.107
+
+## A) Solution:
+*Let A = 5 to 10 years old, B = 11 to 13 years old, C = adequate calcium intake, I = inadequate calcium intake.*
+
+## B) Solution:
+```{r}
+# Probability of A = P(A)
+A = .52
+# Probability of B = P(B)
+B =  .48
+# Probability of A with inadequate calcium intake = P(I|A)
+A_I = .18
+# Probability of B with inadequate calcium intake = P(I|B)
+B_I= .57
+# Probability of A with adequate calcium intake = P(C|A)
+A_C = 1-A_I
+# Probability of B with adequate calcium intake = P(C|B)
+B_C= 1-B_I
+
+df = data.frame("pathString" = c("A", "B", "A/I", 'B/I', 'A/C', 'B/C'), "prob" = c(A,B,A_I,B_I,A_C,B_C))
+df
+
+```
+
+## C) Solution:
+
+
+### Script for generating tree diagram (Reference: https://datakwery.com/project/tree/):
+```{r}
+prob_data <- df %>%  mutate(tree_level = str_count(string = pathString, pattern = "/") + 1,
+         tree_group = str_replace(string = pathString, pattern = "/.*", replacement = ""),
+         node_type = "decision_node"
+  )
+
+max_tree_level <- max(prob_data$tree_level, na.rm = T) 
+```
+
+
+```{r}
+parent_lookup <- prob_data %>% distinct(pathString, prob) # get distinct probabilities to facilitate finding parent node probability
+
+for (i in 1:(max_tree_level -  1)) { # loop through all tree layers to get all immidiate parent probabilities (to calculate cumulative prob)
+  
+  names(parent_lookup)[1] <-paste0("parent",i)
+  names(parent_lookup)[2] <-paste0("parent_prob",i)
+  
+  for (j in 1:i) {
+    
+    if (j == 1)  prob_data[[paste0("parent",i)]] <- sub("/[^/]+$", "", prob_data$pathString)
+    else if (j  > 1) prob_data[[paste0("parent",i)]] <- sub("/[^/]+$", "", prob_data[[paste0("parent",i)]])
+  }
+  
+  prob_data <- prob_data %>% left_join(parent_lookup, by = paste0("parent",i))
+  
+}
+
+
+prob_data$overall_prob <- apply(prob_data %>% select(contains("prob"))  , 1, prod, na.rm = T)  # calculate cumulative probability    
+```
+
+
+```{r}
+terminal_data <- prob_data %>%  filter(tree_level == max_tree_level) %>% # create new rows that will display terminal/final step calulcations on the tree
+  mutate(node_type = 'terminal',
+         pathString = paste0(pathString, "/overall"),
+         prob = NA,
+         tree_level = max_tree_level + 1)
+
+start_node <- "Sample" # name the root node
+
+prob_data = bind_rows(prob_data, terminal_data) %>%  # bind everything together 
+  mutate(pathString = paste0(start_node,"/",pathString),
+         overall_prob = ifelse(node_type == 'terminal', overall_prob, NA),
+         prob_rank = rank(-overall_prob, ties.method = "min", na.last = "keep"))
+
+prob_data = bind_rows(prob_data, data.frame(pathString = start_node, node_type = 'start', tree_level = 0)) %>% # add one new row to serve as the start node label
+  select(-contains("parent"))
+```
+
+```{r}
+make_my_tree <- function(mydf, display_level = NULL, show_rank = FALSE, direction = "LR") {
+  
+  if (!is.null(display_level) ) {
+    mydf <- mydf %>% filter(tree_level <= display_level)
+    
+  }
+  
+  mytree <- as.Node(mydf) 
+  
+  GetEdgeLabel <- function(node) switch(node$node_type, node$prob)
+  
+  GetNodeShape <- function(node) switch(node$node_type, start = "box", node_decision = "circle", terminal = "none")
+  
+  
+  GetNodeLabel <- function(node) switch(node$node_type, 
+                                        terminal = ifelse(show_rank  == TRUE, paste0("Prob: ", node$overall_prob,"\nRank: ", node$prob_rank),
+                                                          paste0("Prob: ", node$overall_prob)),
+                                        node$node_name)
+  
+  SetEdgeStyle(mytree, fontname = 'helvetica', label = GetEdgeLabel)
+  
+  SetNodeStyle(mytree, fontname = 'helvetica', label = GetNodeLabel, shape = GetNodeShape)
+  
+  SetGraphStyle(mytree, rankdir = direction) 
+  
+  plot(mytree)
+  
+}
+```
+
+```{r}
+prob_data
+```
+### Execute the function to generate the tree diagram
+```{r}
+make_my_tree(prob_data, show_rank = TRUE)
+```
+*Here A = 5 to 10 years old, B = 11 to 13 years old, C = adequate calcium intake, I = inadequate calcium intake.*
+
+# Problem 4.108
+
+### Probability that a child has inadequate calcium intake = P(I) =P(A)*P(I|A)+P(B)*P(I|B)
+
+```{r}
+I = (A*A_I) + (B*B_I)
+print(paste("P(I) =",I))
+```
+
+### Hence from bayes theorum, probability that a child from this population who has inadequate intake is 11 to 13 years old = P(B|I) 
+###                                                                                                                         = P(B and I)/P(I) 
+###                                                                                                                         = P(B)*P(I|B)/P(I) 
+
+
+```{r}
+BI = B * B_I/I
+print(paste("P(B|I) =",BI))
+```
+
+# Problem 4.113
+## Solution
+### Let L = a student who admits of lying to a teach at least once
+### M = A male student
+### F = A female student
+
+```{r}
+# probability of L = P(L)
+p_l = .48
+# probability of M = P(M)
+p_m = .5
+# probability of F = P(F)
+p_f = 1- p_m
+# probability of P(L∩M)
+p_lm = .25
+# probability of P(L∩F)
+p_lf = p_l-p_lm 
+```
+
+### The probability that a randomly selected student who is either male or would admit to lying to a teacher, during the past year would be 
+### P(L or M) = P(L) + P(M) - P(L and M)
+
+```{r}
+print(paste("The probability that a randomly selected student who is either male or would admit to lying to a teacher, during the past year would be", p_l+p_m-p_lm))
+```
+
+# Problem 4.114
+## Solution
+
+### So, the probability that a selected student from the subpopulation of those who would admit to lying to a teacher and be female, during the past year would be 
+### P(F|L) = P(L∩F)/P(L)
+```{r}
+print(paste("The probability that a selected student from the lying subpopulation is female, during the past year would be", round(p_lf/p_l,4)))
+```
+

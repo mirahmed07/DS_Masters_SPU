@@ -1,0 +1,583 @@
+---
+title: "R Notebook"
+output:
+  word_document: default
+  html_notebook: default
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+### Dependency
+```{r}
+##library(tidyverse)
+library(readxl)
+```
+
+```{r}
+#load necessary libraries
+library(ggplot2)
+library(ggpubr)
+```
+
+
+# Problem 2.152
+## A) Solution:
+### Read xls file
+```{r}
+file_name = "ex02-152meis.xls"
+data = read_xls(file_name)
+```
+### Preview tibble
+```{r}
+data
+```
+
+```{r}
+summary(data)
+```
+
+```{r}
+fit<- lm(data$Sales~ data$DwellPermit)
+summary(fit)
+```
+
+```{r}
+b = unname(fit$coefficients[1])
+a = unname(fit$coefficients[2])
+```
+
+
+```{r}
+# Scatterplot of DwellPermit & Sales
+plot(data$DwellPermit, data$Sales, main="Scatterplot of DwellPermit & Sales",
+   xlab="DwellPermit", ylab="Sales", pch=19)
+```
+*There seems be a week positive association and one outlier near x=145 (Luxembourg)*
+
+
+
+## B) Solution:
+
+```{r}
+# Scatterplot of DwellPermit & Sales
+
+plot(data$DwellPermit, data$Sales, main="Scatterplot of DwellPermit & Sales with least-squared regression line",
+   xlab="DwellPermit", ylab="Sales", pch=19)
+# Add fit lines
+abline(lm(Sales~DwellPermit, data = data), col="red") # regression line (y~x)
+```
+
+### Using ggplot2 
+
+
+```{r}
+#create plot with regression line, regression equation, and R-squared
+ggplot(data=data, aes(x=DwellPermit, y=Sales)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=30, label.y=170) +
+        stat_cor(aes(label=..rr.label..), label.x=30, label.y=160)
+```
+
+
+## C) Solution:
+
+```{r}
+x = 160
+sales = a*x + b
+print(paste("Predicted value of sales for a country that has an index of 160 for dwelling permits is", sales))
+```
+
+## D) Solution:
+
+```{r}
+id = which(data$Country == "Netherlands" & data$DwellPermit==160)
+```
+
+
+
+```{r}
+#List of residual for Netherlands (15th on the list)
+print(paste("Residual for Netherlands is",resid(fit)[id]))
+```
+
+## E) Solution:
+
+```{r}
+data$xbar_diff = data$DwellPermit- mean(data$DwellPermit)
+data$ybar_diff = data$Sales- mean(data$Sales)
+data$xbar_diffs = (data$DwellPermit- mean(data$DwellPermit))^2
+data$ybar_diffs = (data$Sales- mean(data$Sales))^2
+data$xy = data$xbar_diff * data$ybar_diff
+data
+```
+
+```{r}
+r = (sum(data$xy))/sqrt(sum(data$ybar_diffs) * sum(data$xbar_diffs))
+r^2
+```
+
+```{r}
+cor(data$DwellPermit, data$Sales) 
+```
+
+### Alternate solution:
+```{r}
+rsq <-  cor(data$DwellPermit, data$Sales) ^ 2
+rsq
+```
+
+*So 10.27% of the variance of sales can be explained by dwelling permits*
+
+
+
+# Problem 2.153
+## A) Solution:
+### Read xls file
+```{r}
+file_name = "ex02-152meis.xls"
+data = read_xls(file_name)
+```
+### Preview tibble
+```{r}
+data
+```
+
+```{r}
+summary(data)
+```
+
+```{r}
+fit<- lm(data$Production~ data$DwellPermit)
+summary(fit)
+```
+
+```{r}
+b = unname(fit$coefficients[1])
+a = unname(fit$coefficients[2])
+```
+
+
+```{r}
+# Scatterplot of DwellPermit & Production
+plot(data$DwellPermit, data$Production, main="Scatterplot of DwellPermit & Production",
+   xlab="DwellPermit", ylab="Production", pch=19)
+```
+**There seems be a very week positive association and one outlier near x=224 (Canada)**
+
+
+
+## B) Solution:
+
+```{r}
+# Scatterplot of DwellPermit & Production
+
+plot(data$DwellPermit, data$Production, main="Scatterplot of DwellPermit & Production with least-squared regression line",
+   xlab="DwellPermit", ylab="Production", pch=19)
+# Add fit lines
+abline(lm(Production~DwellPermit, data = data), col="red") # regression line (y~x)
+```
+
+### Using ggplot2 
+
+```{r}
+#create plot with regression line, regression equation, and R-squared
+ggplot(data=data, aes(x=DwellPermit, y=Production)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=30, label.y=170) +
+        stat_cor(aes(label=..rr.label..), label.x=30, label.y=160)
+```
+
+
+## C) Solution:
+
+```{r}
+x = 160
+sales = a*x + b
+print(paste("Predicted value of Production for a country that has an index of 160 for dwelling permits is", sales))
+```
+
+## D) Solution:
+
+```{r}
+id = which(data$Country == "Netherlands" & data$DwellPermit==160)
+```
+
+
+
+```{r}
+#List of residual for Netherlands (15th on the list)
+print(paste("Residual for Netherlands is",resid(fit)[id]))
+```
+
+## E) Solution:
+```{r}
+cor(data$DwellPermit, data$Production)
+```
+
+```{r}
+rsq <-  cor(data$DwellPermit, data$Production) ^ 2
+rsq
+```
+
+*So 1.99% of the variance of Production can be explained by dwelling permits. In earlier exercise we observed a higher variance explanations between sales and dwelling permit which was due to higher association among the variables.*
+
+
+
+# Problem 2.154
+## A) Solution:
+### Read xls file
+```{r}
+file_name = "ex02-152meis.xls"
+data = read_xls(file_name)
+```
+### Preview tibble
+```{r}
+data
+```
+
+```{r}
+summary(data)
+```
+
+```{r}
+fit<- lm(data$Sales~ data$Production)
+summary(fit)
+```
+
+```{r}
+b = unname(fit$coefficients[1])
+a = unname(fit$coefficients[2])
+```
+
+
+```{r}
+# Scatterplot of Sales & Production
+plot(data$Production, data$Sales, main="Scatterplot of Sales & Production",
+   xlab="Production", ylab="Sales", pch=19)
+```
+**From the plot we get no clear relationship between the two variables.There is an outlier in the data and that is related to y=161 and x=118 (Luxembourg)**
+
+
+
+## B) Solution:
+
+```{r}
+# Scatterplot of DwellPermit & Production
+
+plot(data$Production, data$Sales, main="Scatterplot of sales & Production with least-squared regression line",
+   xlab="Production", ylab="Sales", pch=19)
+# Add fit lines
+abline(lm(Sales~Production, data = data), col="red") # regression line (y~x)
+```
+
+### Using ggplot2 
+
+```{r}
+#create plot with regression line, regression equation, and R-squared
+ggplot(data=data, aes(x=Production, y=Sales)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=90, label.y=170) +
+        stat_cor(aes(label=..rr.label..), label.x=90, label.y=160)
+```
+
+
+## C) Solution:
+
+
+```{r}
+x = 125
+sales = a*x + b
+print(paste("Predicted value of Production for a country that has an index of 125 for Production is", sales))
+```
+
+## D) Solution:
+
+```{r}
+id = which(data$Country == "Finland" & data$Production ==125)
+```
+
+
+```{r}
+#List of residual for Netherlands (15th on the list)
+print(paste("Residual for Finland is",resid(fit)[id]))
+```
+
+## E) Solution:
+
+```{r}
+cor(data$Production, data$Sales)
+```
+
+```{r}
+rsq <-  cor(data$Production, data$Sales) ^ 2
+rsq
+```
+
+*So 2.29% of the variance of sales can be explained by productions. So Sales has more association with dwelling permits than productions.*
+
+
+# Problem 2.157
+## A) Solution:
+### Read xls file
+```{r}
+file_name = "ex02-157fos.xls"
+data = read_xls(file_name)
+```
+### Preview tibble
+```{r}
+data
+```
+
+```{r}
+data <- rbind(data, c("Total", colSums(data[,2:8])))
+data
+```
+
+```{r}
+data = transform(data, Field = as.character(Field), Canada = as.numeric(Canada),France = as.numeric(France),Germany = as.numeric(Germany),Italy = as.numeric(Italy),
+          Japan = as.numeric(Japan),UK = as.numeric(UK),US = as.numeric(US))
+```
+
+
+```{r}
+# Marginal totals
+data$total = rowSums(data[2:8])
+data
+```
+
+
+
+## B) Solution:
+
+```{r}
+library(data.table)
+```
+
+```{r}
+# Marginal distribution of country
+df = as.data.frame(transpose(tail(data[,2:8], n=1)))
+colnames(df) <- c("Total")
+df$country <- colnames(data[,2:8])
+df
+```
+
+```{r}
+barplot(df$Total,names.arg = df$country, main="Marginal Distribution", xlab="Country", ylab = "Total")
+```
+
+```{r}
+ggplot(df, aes(x=country, y=Total)) + geom_bar(stat="identity") + 
+  labs(x="Country", y="Total")
+```
+
+
+## C) Solution:
+
+```{r}
+df2 = data[ , ncol(data), drop = FALSE]
+df2$field = data$Field
+df2
+```
+
+```{r}
+barplot(df2$total,names.arg = df2$field, main="Marginal Distribution", xlab="Field", ylab = "Total")
+```
+
+```{r}
+ggplot(df2, aes(x=field, y=total)) + geom_bar(stat="identity") + 
+  labs(x="Field", y="Total")
+```
+
+# Problem 2.162
+
+### Read xls file
+```{r}
+file_name = "ex02-162raises.xls"
+data = read_xls(file_name)
+```
+### Preview tibble
+```{r}
+data
+```
+
+```{r}
+ggplot(data=data, aes(x=Year, y=Salary)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=2, label.y=120) +
+        stat_cor(aes(label=..rr.label..), label.x=2, label.y=100)
+```
+
+
+## A) Solution:
+*From the graph we can see that there is a strong positive association between salary and year.*
+
+## B) Solution:
+```{r}
+rsq <-  round(cor(data$Year, data$Salary) ^ 2,4)
+rsq
+```
+
+*As the R2 value is 0.9832, 98.32% of variation in salary is explained by the year*
+
+# Problem 2.162
+## A) Solution:
+```{r}
+data.lm = lm(Salary ~ Year, data=data) 
+data.res = resid(data.lm)
+```
+
+```{r}
+plot(data$Year, data.res, ylab="Residuals", xlab="Year", main="Residual plot", pch=19) 
+abline(0, 0)
+```
+
+```{r}
+mean(data.res)
+```
+*In the graph above, we can see that the residual values are not randomly distributed around the horizon (y=0)(which should have been the case had the data been perfectly linear) but follow a pattern. This happened due to inconsistent percentage of raise (<=5%). But the mean of deviations is pretty close to zero.*
+
+## B) Solution:
+*This residual plot indicates that the independent variable (year) does not capture the entire deterministic component. Unfortunately, some of the explanatory data has leaked over to the supposedly random error. The model obviously has room for improvement.*
+
+
+# Problem 2.166
+
+### Read xls file
+```{r}
+file_name = "ex02-166faculty.xls"
+data = read_xls(file_name)
+```
+### Preview tibble
+```{r}
+data
+```
+
+## A) Solution:
+
+```{r}
+# Scatterplot of 2013 & 2021 salary
+plot(data$Salary2012, data$Salary2013, main="Scatterplot of 2013 & 2012 salary",
+   xlab="2012-2013 Salary ($)", ylab="2013-2014 Salary ($)", pch=19)
+grid (NULL,NULL, lty = 6, col = "cornsilk2") 
+```
+
+## B) Solution:
+*The relationship is linear in nature. It is showing an increasing trend. As the 2012-2013 Salary increases, so does the 2013-2014 Salary. There seems to be a very strong positive association between the two variables.*
+
+
+## B) Solution:
+```{r}
+rsq <-  cor(data$Salary2012, data$Salary2013) ^ 2
+rsq
+```
+
+*So 99.84% of the variance of 2013-2014 Salary can be explained by 2012-2013 Salary.*
+
+
+# Problem 2.177
+
+### Read xls file
+```{r}
+file_name = "ex02-177csize.xls"
+data = read_xls(file_name)
+```
+### Preview tibble
+```{r}
+data
+```
+
+```{r}
+colnames(data)
+```
+
+```{r}
+# Total number of classes in department A
+a_tot = sum(data[data$Department=="A",]["Count"])
+print(paste("Total number of classes in department A =",a_tot))
+```
+
+```{r}
+# Total number of small classes in department A
+a_s_tot = sum(data[data$Size=='Small' & data$Department=="A",]["Count"])
+print(paste("Total number of small classes in department A =",a_s_tot))
+
+```
+
+```{r}
+#The percentage of small classes in Department A
+print(paste("The percentage of small classes in department A is", round(a_s_tot/a_tot*100,2), "%"))
+```
+
+```{r}
+# Total number of classes in department B
+b_tot = sum(data[data$Department=="B",]["Count"])
+print(paste("Total number of classes in department B =",b_tot))
+```
+
+```{r}
+# Total number of small classes in department B
+b_s_tot = sum(data[data$Size=='Small' & data$Department=="B",]["Count"])
+print(paste("Total number of small classes in department B =",b_s_tot))
+
+```
+
+```{r}
+#The percentage of small classes in Department B
+print(paste("The percentage of small classes in department B is", round(b_s_tot/b_tot*100,2), "%"))
+```
+*It seems that department A has a higher % of small classes.*
+```{r}
+library(dplyr)
+data = data %>% mutate(row = row_number())
+data
+```
+
+```{r}
+ggplot(data=data, aes(x=reorder(Year,row), y=Count, fill=Size)) +
+geom_bar(stat="identity", position = position_fill()) + xlab("Year") +
+        ylab("Proportion") + facet_wrap(~Department)
+```
+
+*In the y-axis we have the years, in x-axis are the proportions, and bars are stacked with the percentage of large and small classes in each year. Plot on the left is for Department A, and plot on the right is for Department B (see letters above each plot). In fact, the plot shows what Department A pointed out, Third and Fourth Years have a large proportion of small classes. If Department A has a higher proportion of smaller classes, we may think that it has a higher proportion of third and Fourth year classes. We can change the plot a bit to check for this assumption. Plotting the percentages of classes per year in each department. *
+
+```{r}
+ggplot(data=data, aes(x=Department, y=Count, fill=reorder(Year,row))) +
+geom_bar(stat="identity", position = position_fill()) +
+ylab("Proportion") + scale_fill_discrete(name = "Year")
+```
+
+*So, Department A has large proportion of third and fourth years classes.*
+
+*Finally, we can test if there is an statistical association between years and size of the class, controlling by department. In other words, if the counts of large and small classes are statistically different between years, inside each department. This is done by analyzing this data as a contingency table. The test that evaluates association between two factors (Size and Year in this case), controlling for a third factor (department in this case) is the Mantel-Haenzel test. As in a chi-squared statistics, this evaluates deviations between observed and expected frequencies.*
+
+*The hypothesis tested are: *
+
+*H0 (null): There is not an association between year and size*
+
+*H1 (alternative): There is an association between year and size*
+
+*As in classical hypothesis testing, a p-value for the value of the statistic obtained in computed. The p-value is the probability of finding a value of the statistic equal or higher than the one obtained. The decision about which hypothesis the data supports is made based on a cutoff (alpha, level of significance, usually = 0.05). If p-value is smaller than alpha we reject the null hypothesis, if p-value is higher than alpha we do not reject the null hypothesis.*
+
+```{r}
+CT_data <- xtabs(data$Count~data$Size+data$Year+data$Department)
+
+mantelhaen.test(CT_data)
+```
+
+*So, the p-value is below 0.05. We can reject the null hypothesis. So there are statistical differences in the proportions of small and large classes between years within each department. As we saw in the first figure, larger counts are associated with years third and fourth, and these differences are significant, and the differences of small classes proportion between two departments is due to the fact that department A has higher proportions of third and fourth classes (as shown in second figure)*

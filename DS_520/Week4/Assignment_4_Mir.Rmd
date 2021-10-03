@@ -1,6 +1,8 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  word_document: default
+  html_notebook: default
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
@@ -44,11 +46,11 @@ print(paste("Probability of the average amount exceeding $70 is", round(p,5)))
 ```{r}
 # Here
 n = 12
-x = 6
+x = 9
 p = 3/4
 
 ans = (factorial(n)/(factorial(x)*factorial(n-x)))*(p^x)*(1-p)^(n-x)
-print(paste("The probability that exactly 6 out of 12 of these plants have red blossoms is",round(ans,4)))
+print(paste("The probability that exactly 9 out of 12 of these plants have red blossoms is",round(ans,4)))
 ```
 
 ## B) Solution:

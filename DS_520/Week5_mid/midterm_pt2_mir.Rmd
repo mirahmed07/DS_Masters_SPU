@@ -1,0 +1,177 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  word_document: default
+  pdf_document: default
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+### Dependency
+```{r}
+##library(tidyverse)
+library(dplyr)
+library(readxl)
+library(ggplot2)
+library(ggpubr)
+```
+
+
+### Read xls file
+```{r}
+file_name = "Hydrocarbon(2).xlsx"
+df = read_excel(file_name)
+```
+### Preview tibble
+```{r}
+df
+```
+
+# Q-1
+## SUmmary
+```{r}
+summary(df)
+```
+
+## Histogram
+```{r}
+ggplot(df, aes(x=Y)) + geom_histogram(bins=20) + labs( y="Counts", x="Hydrocarbon escaping")
+```
+
+## Histogram with density curve
+
+```{r}
+ggplot(df, aes(x=Y)) + geom_histogram(aes(y=..density..),bins=20) + geom_density(alpha=.2)+ labs( y="Density", x="Hydrocarbon escaping")
+```
+
+*So looking at the graphs above, we can see that the curve is right skewed. This means more observations were found with hydrocarbon escaping values less than mean*
+
+
+
+# Q-2
+
+```{r}
+fit<- lm(df$Y~df$X4)
+summary(fit)
+```
+## Scatter plot
+```{r}
+#create plot with regression line, regression equation, and R-squared
+ggplot(data=df, aes(x=X4, y=Y)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=5, label.y=50) +
+        stat_cor(aes(label=..rr.label..), label.x=5, label.y=45) + labs( x="Petrol Pressure", y="Hydrocarbon escaping")
+```
+
+```{r}
+cor(x= df$X4, y= df$Y)
+```
+
+*So based on the graph and the correlation value we can say that the relation is linear, pretty strong and positive. There seems to be one outlier for X4 = 5.8*
+
+
+# Q-3
+
+
+##Least Square Regression Line
+```{r}
+#create plot with regression line, regression equation, and R-squared
+ggplot(data=df, aes(x=X4, y=Y)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=5, label.y=50) +
+        stat_cor(aes(label=..rr.label..), label.x=5, label.y=45) + labs( x="Petrol Pressure", y="Hydrocarbon escaping")
+```
+## testing df
+```{r}
+t_df = data.frame(X4 = c(3.4,4,4.5))
+t_df
+```
+```{r}
+intercept <- fit$coefficients[1]
+slope <- fit$coefficients[2]
+intercept
+slope
+```
+
+### predict_sales <- intercept + slope*(x)
+
+### Y = 4.305422 + 6.202851(X)
+```{r}
+t_df$pred_Y = intercept + slope*(t_df$X4)
+t_df
+```
+
+# Q-4
+
+```{r}
+df.lm = lm(Y ~ X4, data=df) 
+df.res = resid(df.lm)
+df
+```
+## Residual values
+```{r}
+df.res
+```
+
+
+
+
+
+## Residual plot
+```{r}
+plot(df$Y, df.res, ylab="Residuals", xlab="Y", main="Residual plot", pch=19) 
+abline(0, 0)
+```
+
+```{r}
+mean(df.res)
+```
+*So the mean is pretty close to zero. The data seems a little over fitted though.*
+
+```{r}
+t_df = filter(df[,5:6], X4 %in% c(3.45,4.02,5.8))
+t_df
+```
+
+```{r}
+t_df$pred_Y = intercept + slope*(t_df$X4)
+t_df
+```
+
+
+
+```{r}
+t_df$res = t_df$Y-t_df$pred_Y
+t_df
+```
+
+# Q-5
+
+```{r}
+qqnorm(df$Y, pch = 1, frame = FALSE)
+qqline(df$Y, col = "steelblue", lwd = 2)
+```
+
+*It seems like a good fit to as it is close to a straight line. The distribution of Hydrocarbon escaping values is close to Normal*
+
+
+
+
+
+
+

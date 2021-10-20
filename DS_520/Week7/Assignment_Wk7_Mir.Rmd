@@ -1,0 +1,654 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+
+```{r}
+#load necessary libraries
+library(dplyr)
+library(readxl)
+library(ggplot2)
+library(ggpubr)
+library(qqplotr)
+#library(car)
+library(e1071)
+library(nortest)
+library(BSDA)
+```
+# 7.38
+## Potential insurance fraud
+```{r}
+file_name = "ex07-38jocko.xls"
+df = read_xls(file_name)
+df
+```
+
+## A) Solution:
+```{r}
+df$difference = df$Jocko-df$Other
+df
+```
+
+```{r}
+# mean of the differences
+mean(df$difference)
+```
+
+```{r}
+# standard deviation of the difference
+sd(df$difference)
+```
+
+## B) Solution:
+*Null Hypothesis H0: µd = 0* 
+*Alternate hypothesis Ha: µd <> 0*
+```{r}
+# Here 
+u0 = 0
+xbar = mean(df$difference)
+S = sd(df$difference)
+n = length(df$Car) # sample size
+n
+```
+
+```{r}
+# degree of freedom
+d_f = n-1
+d_f
+```
+
+```{r}
+# T-value for paired t test
+t = (xbar-u0)/(S/sqrt(n))
+t
+```
+
+```{r}
+# P-value of a two-tailed test
+2*pt(t, d_f, lower.tail = FALSE)
+```
+
+```{r}
+# Test statistics for a paired t test
+t_test = t.test(df$Jocko,df$Other,paired=TRUE,alternative="two.sided", conf.level = .95)
+t_test
+```
+*So, we can reject the null hypothesis as the p-value is less than the 5% level of significance. There us sufficient evidence to indicate tat there is a difference between Jocko's garage and other garage. The result is statistically significant.*
+
+
+## C) Solution:
+```{r}
+# 95% confidence interval for the difference in estimates
+t_test[4]
+```
+
+## D) Solution:
+*Using part (c) confidence level intervals, I would recommend the insurance company to seek for a repayment amount between $32.16 and $195.84.*
+
+# 7.71
+## Sadness and spending
+```{r}
+file_name = "ex07-71sadness.xls"
+df = read_xls(file_name, range = 'A1:B32')
+df
+```
+
+```{r}
+summary(df)
+```
+#### Function to recreate Minitab Normal Probability Plot in R (Source: http://aleph-nought.blogspot.com/2013/03/solved-recreate-minitab-normal.html)
+```{r}
+minitab_normal_prob_plot <- function(data, x_label) {
+   
+    # The labels for the y-axis, corresponding to percentiles
+
+    y_axis_labels = c(1,5,10,20,30,40,50,60,70,80,90,95,99)
+
+    # Lengths, mean, and sd of data
+
+    n = length(data)
+    my_mean = mean(data)
+    my_sd = sd(data)
+
+    ### Set up the y-axis values
+
+    # Translate labels to decimal percentages
+
+    percentages = y_axis_labels / 100
+
+    # Convert percentages to z-values and shift so that all values are >= 0
+
+    y_axis_points = qnorm(percentages)
+    y_shift = y_axis_points[1]
+    y_axis_points = y_axis_points - y_shift
+
+    # The minimum and maximum y values
+
+    y_min = y_axis_points[1]
+    y_max = y_axis_points[length(y_axis_points)]
+
+    ### Calculate the main data set
+    # x and y values per http://en.wikipedia.org/wiki/Normal_probability_plot.
+
+    x_data_points = sort(data)
+
+    data_percents = c()
+    for(i in 1:n) {
+        if (i == 1) {
+            data_percents[i] = 1 - 0.5^(1/n)
+        } else if (i == n) {
+            data_percents[i] = 0.5^(1/n)
+        } else {
+            data_percents[i] = (i - 0.3175)/(n+0.365)
+        }
+    }
+
+    ### Trend line calculation
+    # Project a line represented expected distribution values on assumption
+    # that data is normal.
+
+    trend_x0 = qnorm(percentages[1], mean = my_mean, sd = my_sd)
+    trend_x1 = qnorm(
+            percentages[length(percentages)], mean = my_mean, sd = my_sd
+    )
+
+    # Convert percents to z-values and shift as before
+
+    y_data_points = qnorm(data_percents) - y_shift
+
+    ### Set up the envelope
+    # Stolen from
+    # http://stackoverflow.com/questions/3929611/recreate-minitab-normal-probability-plot
+
+    library(MASS)
+    qprobs<-qnorm(percentages)
+    fd<-fitdistr(data, "normal") #Maximum-likelihood Fitting of Univariate Dist from MASS
+    xp_hat<-fd$estimate[1]+qprobs*fd$estimate[2]  #estimated perc. for the fitted normal
+    v_xp_hat<- fd$sd[1]^2+qprobs^2*fd$sd[2]^2+2*qprobs*fd$vcov[1,2] #var. of estimated perc
+    xpl<-xp_hat + qnorm(0.025)*sqrt(v_xp_hat)  #lower bound
+    xpu<-xp_hat + qnorm(0.975)*sqrt(v_xp_hat)  #upper bound
+
+    ### Set up the x-axis
+
+    x_min = min(c(data, trend_x0, trend_x1, xpl, xpu))
+    x_max = max(c(data, trend_x0, trend_x1, xpl, xpu))
+
+    ### Plot it all
+
+    # Data set. Points plotted twice due to keep them from getting clobbered by
+    # white rectangle.
+    par(bg = "beige")
+    plot(
+        x_data_points, y_data_points,
+        xlim = c(x_min, x_max), ylim = c(y_min, y_max),
+        axes = FALSE,
+        ylab = "Percent", xlab = x_label,
+        pch = 16, col = "red",
+        main = paste("Probability Plot of", x_label,"\nNormal - 95% CI")
+    )
+    rect(par("usr")[1], par("usr")[3], par("usr")[2], par("usr")[4], col = "white")
+    points(x_data_points, y_data_points, pch = 16, col = "red")
+
+    # Trend line
+
+    segments(trend_x0, y_min, trend_x1, y_max, col = "blue")
+
+    # Lower and upper bounds
+
+    lines(xpl, y_axis_points, col = "blue")
+    lines(xpu, y_axis_points, col = "blue")
+
+    # Y-axis gridlines
+
+    for (i in 1:length(y_axis_points)) {
+        abline(h = y_axis_points[i], col = "gray", lty = 2)
+    }
+
+    # Axes
+
+    axis(1)
+    axis(2, at = y_axis_points, labels = y_axis_labels)
+
+    # Box and x-grid
+
+    box()
+    grid(ny = NA, lty = 2)
+
+    # Legend
+
+    #legend(
+     #   "topright",
+      #  c(
+       #     paste("Mean", my_mean, sep = " "),
+        #    paste("StDev", my_sd, sep = " ")
+        #),
+        #bg = "white"
+    #)
+}
+
+```
+
+
+## A) Solution:
+```{r}
+# For Sad group
+sad_df = filter(df,Group == 'S')
+x = sad_df$Price
+summary(sad_df)
+sd(sad_df$Price)
+```
+
+#### Using ggplot2
+```{r}
+ggplot(data = sad_df, mapping = aes(sample = Price)) +
+    stat_qq_band(conf = 0.95) +
+    stat_qq_line() +
+    stat_qq_point() +
+    labs(x = "Theoretical Quantiles", y = "Sample Quantiles")+ggtitle("Q-Q plot of Sad group with 95% confidence interval")
+```
+*From the normal quantile plot, we can see that all the data points lies pretty close to a central straight line and within the confidence interval band.*
+
+#### Using probplot from e1071
+```{r}
+# Normal probability plot of Sad group
+probplot(x)
+```
+
+```{r}
+# Anderson-Darling test
+ad.test(x)
+```
+
+```{r}
+minitab_normal_prob_plot(x, 'price')
+```
+
+*Again, from the normal probability plot, we can see that all the data points lies pretty close to a central straight line.*
+*So, based on the graphs above, the dataset of the price of purchasing insulated water bottle for the sad group follows normal distribution.*
+
+```{r}
+# For neutral group
+neutral_df = filter(df,Group == 'N')
+x = neutral_df$Price
+summary(neutral_df)
+sd(neutral_df$Price)
+```
+
+#### Using ggplot2
+```{r}
+ggplot(data = neutral_df, mapping = aes(sample = Price)) +
+    stat_qq_band(conf = 0.95) +
+    stat_qq_line() +
+    stat_qq_point() +
+    labs(x = "Theoretical Quantiles", y = "Sample Quantiles")+ggtitle("Q-Q plot of Sad group with 95% confidence interval")
+```
+*From the normal quantile plot, we can see that all the data points lies pretty close to a central straight line and within the confidence interval band.*
+
+#### Using probplot from e1071
+```{r}
+# Normal probability plot of neutral group
+probplot(x)
+```
+
+```{r}
+# Anderson-Darling test
+ad.test(x)
+```
+```{r}
+minitab_normal_prob_plot(x, 'price')
+```
+
+*Again, from the normal probability plot, we can see that most of the data points lies pretty close to a central straight line and some data points fell outside the confidence interval band.*
+*So, based on the graphs above, the dataset of the price of purchasing insulated water bottle for the neutral group follows normal distribution.*
+
+*As we are trying to determine if there is a significant difference between the means price of purchasing insulated water bottles of two groups, use of t-procedures is appropriate.*
+
+## B) Solution:
+```{r}
+group_df = df%>% group_by(Group) %>%  summarise(count = n(), mean = round(mean(Price),3), st_dev = round(sd(Price),3))
+group_df
+```
+
+## C) Solution:
+It is appropriate to test whether there is any sufficient significant difference of the mean price of purchasing insulated water bottles for the neutral group and sad group.
+
+The null Hypothesis:
+H0: There is no sufficient significant difference of the mean price of purchasing insulated water bottles for the neutral group and sad group.
+
+So, H0: u1 = u2
+
+Alternate hypothesis:
+H1: There is sufficient significant difference of the mean price of purchasing insulated water bottles for the neutral group and sad group.
+
+So, H1: u1 <> u2
+
+## D) Solution:
+
+```{r}
+# Here
+x1 = group_df[1,3]
+x2 = group_df[2,3]
+s1 = group_df[1,4]
+s2 = group_df[2,4]
+n1 = group_df[1,2]
+n2 = group_df[2,2]
+
+t = (x1-x2)/sqrt((s1^2/n1)+(s2^2/n2))
+t_cal = t$mean
+paste("T-value",round(t_cal,4))
+
+```
+
+```{r}
+d_f = min(n1-1, n2-1)
+paste("Degrees of freedom",d_f)
+```
+
+```{r}
+# P-value = 2*(t> T-value calculated)
+#         = 1 - 2*(t<= T-value calculated)
+2*pt(q=t_cal, df = d_f, lower.tail = T)
+```
+
+*As the P-value is less than a = .05 we can reject the null hypothesis. We can say that there exists statistically significant evidence.*
+*To conclude, there is sufficient significant difference of the mean price of purchasing insulated water bottles for the neutral group and sad group.*
+*So, H1: u1 <> u2*
+
+```{r}
+# t critical value for 5% level of significance for a two tailed test
+t_crit = qt(p=.05/2, df=13, lower.tail=FALSE)
+t_crit
+```
+
+## E) Solution:
+
+```{r}
+# 95% confidence interval for the mean difference in purchase price between the two groups
+left_ci = (x1-x2) - (t_crit)*sqrt((s1^2/n1) + (s2^2/n2))
+right_ci = (x1-x2) + (t_crit)*sqrt((s1^2/n1) + (s2^2/n2))
+paste0('(', round(left_ci,3),', ',round(right_ci,3),')')
+```
+
+# 7.90
+## Revisiting the sadness and spending study
+
+```{r}
+# Test statistics for an unpaired t test with two tails and 95% level of confidence with assumed equal variance for pooled method
+t_test <- t.test(Price ~ Group, data = df, mu=0, paired=FALSE,alternative="two.sided", conf.level = .95, var.equal = T)
+t_test
+```
+
+```{r}
+# 95% confidence interval for the mean difference in purchase price between the two groups
+t_test[4]
+```
+*As the P-value from the t-test is less than a = .05 and since the confidence interval does not contain zero we can reject the null hypothesis. We can say that there exists statistically significant evidence.*
+*To conclude, there is sufficient significant difference of the mean price of purchasing insulated water bottles for the neutral group and sad group.*
+*So, H1: u1 <> u2*
+
+# 7.125
+## Interracial friendships in college
+## A) Solution:
+
+*Even though proportions are not normally distributed, it may still be appropriate to use the t procedures for these data due to larger sample sizes of average proportions which are greater than or equal to 40.*
+
+## B) Solution:
+
+*Test the difference between the two groups in the middle of first year and in the middle of third year.*
+
+*From the given scenario, te null and the alternate hypotheses are as follows:*
+
+Middle of first year:
+H0: uB = uW
+H1: uB <> uW
+
+Middle of third year:
+H0: uB = uW
+H1: uB <> uW
+
+## C) Solution:
+### Middle of first year:
+```{r}
+# Here
+uB = 0.085
+uW = 0.063
+s1 = 0.134
+s2 = 0.112
+n1 = 41
+n2 = 197
+
+t = (uB-uW)/sqrt((s1^2/n1)+(s2^2/n2))
+
+paste("T-value",round(t,4))
+
+```
+
+```{r}
+d_f = floor((s1^2/n1 + s2^2/n2)^2/((s1^2/n1)^2/(n1-1) + (s2^2/n2)^2/(n2-1)))
+paste("Degrees of freedom",d_f)
+```
+
+```{r}
+# P-value = 2*(t> T-value calculated)
+#         = 1 - 2*(t<= T-value calculated)
+p = 2*pt(q=t, df = d_f, lower.tail = F)
+paste("P-value",p)
+```
+
+```{r}
+# t critical value for 5% level of significance for a two tailed test
+t_crit = qt(p=.05/2, df=d_f, lower.tail=FALSE)
+t_crit
+```
+```{r}
+# 95% confidence interval for the mean difference in purchase price between the two groups
+left_ci = (uB-uW) - (t_crit)*sqrt((s1^2/n1) + (s2^2/n2))
+right_ci = (uB-uW) + (t_crit)*sqrt((s1^2/n1) + (s2^2/n2))
+paste0('(', round(left_ci,3),', ',round(right_ci,3),')')
+```
+
+### Middle of third year:
+```{r}
+# Here
+uB = 0.146
+uW = 0.062
+s1 = 0.243
+s2 = 0.154
+n1 = 41
+n2 = 197
+
+t = (uB-uW)/sqrt((s1^2/n1)+(s2^2/n2))
+
+paste("T-value",round(t,4))
+
+```
+
+```{r}
+d_f = floor((s1^2/n1 + s2^2/n2)^2/((s1^2/n1)^2/(n1-1) + (s2^2/n2)^2/(n2-1)))
+paste("Degrees of freedom",d_f)
+```
+
+```{r}
+# P-value = 2*(t> T-value calculated)
+#         = 1 - 2*(t<= T-value calculated)
+p = 2*pt(q=t, df = d_f, lower.tail = F)
+paste("P-value",p)
+```
+
+```{r}
+# t critical value for 5% level of significance for a two tailed test
+t_crit = qt(p=.05/2, df=d_f, lower.tail=FALSE)
+t_crit
+```
+```{r}
+# 95% confidence interval for the mean difference in purchase price between the two groups
+left_ci = (uB-uW) - (t_crit)*sqrt((s1^2/n1) + (s2^2/n2))
+right_ci = (uB-uW) + (t_crit)*sqrt((s1^2/n1) + (s2^2/n2))
+paste0('(', round(left_ci,3),', ',round(right_ci,3),')')
+```
+
+## D) Solution:
+
+### Decision for middle of first year:
+*The P-value in context is greater than 0.05 (level of significance). So we cannot reject the null hypothesis. There is insufficient evidence to indicate that there is a difference in the average between black roommate and white roommate in the middle of first year. The result is not statistically significant.*
+
+### Decision for middle of third year:
+*The P-value in context is less than 0.05 (level of significance). So we can reject the null hypothesis. There is sufficient evidence to indicate that there is a difference in the average between black roommate and white roommate in the middle of third year. The result is statistically significant.*
+
+
+# 7.140
+## Occupation and diet
+## A) Solution:
+
+*The data is given in the format of x̅± se.*
+*By definitions, 'se' standard mean of error which is calculated by se = S/√n *
+So, S = se * √n
+```{r}
+# Here from the given data
+u1D = 2821 # Total calories Driver
+u1C = 2844 # Total calories Conductor
+u2D = .24 # Alcohol (grams) Driver
+u2C = .39 # Alcohol (grams) Conductor
+nD = 98 # Sample size of Driver
+nC = 83 # Sample size of Conductor
+se1D = 44 # standard mean of error for total calories of Driver
+se1C = 48 # standard mean of error for total calories of Conductor
+se2D = 0.06 # standard mean of error for Alcohol (grams) consumption of Driver
+se2C = 0.11 # standard mean of error for Alcohol (grams) consumption of Conductor
+s1D = se1D*sqrt(nD) # standard deviation for total calories of Driver
+s2D = se2D*sqrt(nD) # standard deviation for Alcohol (grams) consumption of Driver
+s1C = se1C*sqrt(nC) # standard deviation for total calories of Conductor
+s2C = se2C*sqrt(nC) # standard deviation for Alcohol (grams) consumption of Conductor
+s1D
+s1C
+s2D
+s2C
+```
+
+## B) Solution:
+
+*Let's assume that the two samples are from a normal population.*
+
+*Here we have to test whether there is enough evidence to claim that conductors consume more calories per day than drivers do.*
+
+So our null hypothesis, H0: u1D = u1C
+Alternate hypothesis, H1: u1D < u1C
+
+```{r}
+# Under the null hypothesis
+t = (u1D-u1C)/sqrt((s1D^2/nD)+(s1C^2/nC))
+
+paste("T-value",round(t,4))
+```
+
+```{r}
+d_f = floor((s1D^2/nD + s1C^2/nC)^2/((s1D^2/nD)^2/(nD-1) + (s1C^2/nC)^2/(nC-1)))
+paste("Degrees of freedom",d_f)
+```
+
+```{r}
+# P-value for one tailed test for lower tail
+# P-value = (t< T-value calculated)
+p = pt(q=t, df = d_f, lower.tail = T)
+paste("P-value",round(p,4))
+```
+
+*As the P-value is greater than a = 0.05 level of significance, we fail to reject the null hypothesis.*
+*Therefore, there is no evidence to conclude that conductors consume more calories per day than drivers.*
+
+```{r}
+# t critical value for 5% level of significance for a one tailed test
+t_crit = qt(p=.05, df=d_f, lower.tail=T)
+t_crit
+```
+
+```{r}
+# 95% confidence interval for the mean difference in total calories consumption between the two groups
+left_ci = (u1D-u1C) - (t_crit)*sqrt((s1D^2/nD) + (s1C^2/nC))
+right_ci = (u1D-u1C) + (t_crit)*sqrt((s1D^2/nD) + (s1C^2/nC))
+paste0('(', round(left_ci,3),', ',round(right_ci,3),')')
+```
+#### Alternate solution:
+```{r}
+tsum.test(mean.x=u1D, s.x=s1D, n.x=nD,
+          mean.y=u1C, s.y=s1C, n.y=nC,alternative = "less",  mu = 0,  var.equal = FALSE,  conf.level = 0.95)
+```
+
+## C) Solution:
+
+*Let's assume that the two samples are from a normal population.*
+
+*Here we have to test whether there is a significant evidence of mean difference in alcohol consumption between drivers and conductors.*
+
+So our null hypothesis, H0: u2D = u2C
+Alternate hypothesis, H1: u2D ≠ u2C
+
+```{r}
+# Under the null hypothesis
+t = (u2D-u2C)/sqrt((s2D^2/nD)+(s2C^2/nC))
+
+paste("T-value",round(t,4))
+```
+
+```{r}
+d_f = floor((s2D^2/nD + s2C^2/nC)^2/((s2D^2/nD)^2/(nD-1) + (s2C^2/nC)^2/(nC-1)))
+paste("Degrees of freedom",d_f)
+```
+
+```{r}
+# P-value for one tailed test for lower tail
+# P-value = (t< T-value calculated)
+p = 2*pt(q=t, df = d_f, lower.tail = T)
+paste("P-value",round(p,4))
+```
+
+*As the P-value is greater than a = 0.05 level of significance, we fail to reject the null hypothesis.*
+*Therefore, there is no evidence to conclude that conductors consume more calories per day than drivers.*
+
+#### Alternate solution:
+```{r}
+alc_test_95 = tsum.test(mean.x=u2D, s.x=s2D, n.x=nD,
+          mean.y=u2C, s.y=s2C, n.y=nC,alternative = "two.sided",  mu = 0,  var.equal = FALSE,  conf.level = 0.95)
+alc_test_95
+```
+
+## D) Solution:
+```{r}
+cal_test_95 = tsum.test(mean.x=u1D, s.x=s1D, n.x=nD,
+          mean.y=u1C, s.y=s1C, n.y=nC,alternative = "two.sided",  mu = 0,  var.equal = FALSE,  conf.level = 0.95)
+```
+
+```{r}
+# 95% confidence interval for the difference in mean daily calories consumption between drivers and conductors
+cal_test_95[4]
+```
+
+```{r}
+# 95% confidence interval for the difference in mean daily alcohol consumption between drivers and conductors
+alc_test_95[4]
+```
+
+## E) Solution:
+```{r}
+alc_test_99 = tsum.test(mean.x=u2D, s.x=s2D, n.x=nD,
+          mean.y=u2C, s.y=s2C, n.y=nC,alternative = "two.sided",  mu = 0,  var.equal = FALSE,  conf.level = 0.99)
+alc_test_99
+```
+
+```{r}
+# 99% confidence interval for the difference in mean daily alcohol consumption between drivers and conductors
+alc_test_99[4]
+```

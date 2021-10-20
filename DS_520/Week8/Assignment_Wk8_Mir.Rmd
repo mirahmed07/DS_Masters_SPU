@@ -1,0 +1,414 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+```{r}
+#load necessary libraries
+library(dplyr)
+library(readxl)
+library(ggplot2)
+library(ggpubr)
+library(qqplotr)
+#library(car)
+library(e1071)
+library(nortest)
+library(BSDA)
+```
+
+# 8.58
+## Teeth and military service
+## A) Solution:
+```{r}
+# For recruits who were under 20
+x1 = 68
+n1 = 58952
+p1 = round(x1/n1,6)
+p1
+```
+
+```{r}
+# For recruits who were at the age of 40 or over
+x2 = 3801
+n2 = 43786
+p2 = round(x2/n2,6)
+p2
+```
+## B) Solution:
+```{r}
+# Estimate for difference
+p1-p2
+```
+```{r}
+dat = data.frame(sample = c(1,2), x = c(x1,x2), n = c(n1,n2), P = c(p1,p2))
+dat
+```
+
+```{r}
+p_test = prop.test(x = c(x1,x2), n = c(n1,n2), alternative = 'two.sided', conf.level = .99, correct = F)
+p_test
+```
+```{r}
+# As difference in population proportions is negative
+# So Z-value
+-unname(sqrt(p_test$statistic))
+```
+```{r}
+# 99% confidence interval for the difference in the proportions
+p_test$conf.int
+```
+
+```{r}
+# mean / difference in population proportions
+m = p1-p2
+m
+# Standard error of mean / difference
+sd = sqrt((p1*(1-p1)/n1) + (p2*(1-p2)/n2))
+sd
+# pooled estimate
+p = (p1*n1+p2*n2)/(n1+n2)
+p
+# Z-value
+z = (p1-p2)/sqrt(p*(1-p)*(1/n1+1/n2))
+z
+```
+
+## C) Solution:
+*The null Hypothesis:*
+H0: p1 = p2
+*The alternate Hypothesis:*
+H1: p1 ≠ p2
+*Here p1 = Proportion of rejects for recruits who were under 20 and p2 = Proportion of rejects for recruits who were 40 or above*
+```{r}
+# P-value
+pnorm(z,m,sd, lower.tail = T)
+# Or
+p_test$p.value
+```
+
+*As the p-value in this context is way less than 0.01, th null hypothesis is rejected at 1% level of significance.There is sufficient evidence to indicate that there is a difference between proportions of rejection among recruits who were under age of 20 and who were age of 40 or above. The result is statistically significant.*
+
+## D) Solution:
+#### The guidelines for using large sample method for a 99% confidence interval is that to check the below conditions for recruits who were under the age of 20 
+#### n1*p1>=10 and n1*(1-p1)>=10
+```{r}
+n1*p1
+n1*(1-p1)
+```
+*As both of them are greater than 10, we can say the guideline is satisfied.*
+
+#### The guidelines for using large sample method for a 99% confidence interval is that to check the below conditions for recruits who were at the age of 40 or above 
+#### n2*p2>=10 and n2*(1-p2)>=10
+```{r}
+n2*p2
+n2*(1-p2)
+```
+*As both of them are greater than 10, we can say the guideline is satisfied.*
+
+
+# 8.71
+## Gender bias in textbooks
+## A) Solution:
+```{r}
+# For female
+n1 = 60 
+x1 = 48
+p1 = x1/n1
+p1
+se1 = sqrt(p1*(1-p1)/n1)
+se1
+```
+
+```{r}
+# For male
+n2 = 132 
+x2 = 52
+p2 = x2/n2
+p2
+se2 = sqrt(p2*(1-p2)/n2)
+se2
+```
+
+## B) Solution:
+```{r}
+# Estimate for difference
+p1-p2
+```
+
+```{r}
+# pooled estimate
+p = (p1*n1+p2*n2)/(n1+n2)
+p
+```
+
+```{r}
+options(scipen = n)
+p_test = prop.test(x = c(x1,x2), n = c(n1,n2), alternative = 'two.sided', conf.level = .95, correct = F)
+p_test
+```
+
+*So the P-value is 0.0000001785 and the difference in the two proportions is somewhere between 0.2749423 and 0.5371789 using 95% confidence intervals.*
+
+## C) Solution:
+*The null Hypothesis:*
+H0: p1 = p2
+*The alternate Hypothesis:*
+H1: p1 ≠ p2
+*Here p1 = Proportion of juvenile among female and p2 = Proportion of juvenile among male*
+*Using level of significance a = .05, we can reject null hypothesis (H0) if z value from the difference in proportions is either less than -1.96 or greater than 1.96*
+```{r}
+# Z-value
+unname(sqrt(p_test$statistic))
+```
+*Our Z-value is 5.220477. So we can reject H0. Also P-value was really low.*
+
+*The test statistic value falls in the rejection region, so we reject the null hypothesis. There is a difference in the proportion of female juveniles and male juveniles.*
+
+
+# 9.37
+## Health care fraud
+## A) Solution:
+```{r}
+#Here
+n1 = 57
+n2 = 17
+n3 = 5
+x1 = 6
+x2 = 5
+x3 = 1
+dat = data.frame(Stratum = c("Small", "Medium", "Large"), "Numbers_Allowed" = c(n1-x1,n2-x2,n3-x3), "Numbers_not_allowed" = c(x1,x2,x3), Total = c(n1,n2,n3))
+#, Total = c(n1,n2,n3)
+dat
+```
+
+```{r}
+dat <- rbind(dat, c("Total", colSums(dat[,2:4])))
+dat
+```
+
+```{r}
+#3 × 2 table of counts
+dat = transform(dat,  Numbers_Allowed = as.numeric(Numbers_Allowed),Numbers_not_allowed = as.numeric(Numbers_not_allowed),Total = as.numeric(Total))
+dat
+```
+
+## B) Solution:
+```{r}
+#the percent of claims that were not allowed in each of the three strata
+dat$pct_not_allowed = round(dat$Numbers_not_allowed/dat$Total*100,2)
+dat[1:3,c(1,5)]
+```
+
+## C) Solution:
+*In a 3x2 table, the expected count corresponding to the cell (Large, Numbers_not_allowed) is less then 5. SO need to combine Medium and Large rows.*
+```{r}
+# Combining medium and large row
+dat = subset(dat, select = -c(pct_not_allowed))
+dat <- rbind(dat, c("Medium & Large", colSums(dat[2:3,2:4])))
+dat = dat[-c(2,3),]
+dat = transform(dat, Numbers_Allowed = as.numeric(Numbers_Allowed),Numbers_not_allowed = as.numeric(Numbers_not_allowed),Total = as.numeric(Total))
+dat
+```
+
+
+```{r}
+# reordering the rows
+dat = dat[c(1,3,2),]
+row.names(dat) <- NULL
+
+dat
+```
+
+## D) Solution:
+#### The null hypothesis:
+*H0: There is no relationship between claims sizes and whether a claim is allowed.*
+#### The alternate hypothesis:
+*H0: There is a relationship between claims sizes and whether a claim is allowed.*
+
+## E) Solution:
+
+```{r}
+row.names(dat)  = dat[,1]
+dat = dat[,c(2,3,4)]
+dat
+```
+
+```{r}
+# Expected frequencies
+xsq = chisq.test(dat[1:2,1:2], correct = F)
+freq_df = data.frame(xsq$expected)
+freq_df <- cbind(freq_df, Total = rowSums(freq_df))
+freq_df <- rbind(freq_df, c(colSums(freq_df[,1:3])))
+rownames(freq_df)[rownames(freq_df)==3]  = c("Total")
+freq_df
+```
+
+```{r}
+# expected frequency without totals
+xsq$expected
+```
+
+```{r}
+# Chi -square test statistics
+xsq$statistic
+```
+
+```{r}
+# Degree of freedom
+xsq$parameter
+```
+
+```{r}
+# P-value
+xsq$p.value
+```
+
+```{r}
+xsq
+```
+
+*The smallest P-value suggests that there is not enough evidence to reject the null hypothesis. So we failed to reject the null hypothesis as p-value (.0634) is higher than 5 times in 100.*
+
+
+# 9.41
+## When do Canadian students enter private career colleges?
+## A) Solution:
+```{r}
+file_name = "ex09-41canf.xls"
+dat = read_xls(file_name)
+dat
+```
+
+```{r}
+after_df = filter(dat, Time == 'AfterHS')
+after_df$after = after_df$n*after_df$Percent/100
+after_df = after_df[c(2,5)]
+after_df
+```
+
+```{r}
+later_df = filter(dat, Time == 'Later')
+later_df$later = later_df$n*later_df$Percent/100
+later_df = later_df[c(2,5)]
+later_df
+```
+
+```{r}
+# 6x2 table with observed counts
+main_df = merge(x = after_df, y = later_df, by = "Field", all = TRUE)
+main_df <- cbind(main_df, Total = rowSums(main_df[2:3]))
+main_df <- rbind(main_df, c("Total", colSums(main_df[2:4])))
+main_df = transform(main_df, after = as.numeric(after),later = as.numeric(later),Total = as.numeric(Total))
+row.names(main_df)  = main_df[,1]
+main_df = main_df[,c(2,3,4)]
+main_df
+```
+
+## B) Solution:
+```{r}
+# Total number of Canadian students surveyed
+main_df[max(rownames(main_df)),max(colnames(main_df))]
+```
+
+```{r}
+# The percentage of student enrolled right after high school is
+paste0(round(main_df[max(rownames(main_df)),2]/main_df[max(rownames(main_df)),max(colnames(main_df))]*100,2),"%")
+```
+
+```{r}
+# The percentage of student enrolled later is
+paste0(round(main_df[max(rownames(main_df)),3]/main_df[max(rownames(main_df)),max(colnames(main_df))]*100,2),"%")
+```
+
+## C) Solution:
+#### The null hypothesis:
+*H0: There is no relationship between field of study and when a Canadian enrolls for a college.*
+#### The alternate hypothesis:
+*H0: There is a relationship between field of study and when a Canadian enrolls for a college.*
+
+```{r}
+# Expected frequencies
+xsq = chisq.test(main_df[1:6,1:2], correct = F)
+freq_df = data.frame(xsq$expected)
+freq_df <- cbind(freq_df, Total = rowSums(freq_df))
+freq_df <- rbind(freq_df, c(colSums(freq_df[,1:3])))
+rownames(freq_df)[rownames(freq_df)==7]  = c("Total")
+freq_df
+```
+
+```{r}
+# Chi-square summary
+xsq
+```
+
+*The smallest P-value suggests that we have enough evidence to reject the null hypothesis.*
+
+# 9.50
+## Goodness of fit to a standard Normal distribution
+## A) Solution:
+
+```{r}
+#With the given data
+dat = data.frame(category = c(1,2,3,4,5), observed = c(139,102,41,78,140))
+dat
+```
+
+```{r}
+summary(dat)
+```
+
+```{r}
+s = sd(dat$observed)
+m = mean(dat$observed)
+n = sum(dat[,2])
+n
+```
+
+```{r}
+# For first category, the probability of less than or equal to -0.6
+p1 = pnorm(-.6,lower.tail = T)
+# For second category, the probability of greater than -0.6 and less than or equal to -0.1
+p2 = pnorm(-.1,lower.tail = T) - pnorm(-.6,lower.tail = T)
+# For third category, the probability of greater than -0.1 and less than or equal to 0.1
+p3 = pnorm(.1,lower.tail = T) - pnorm(-.1,lower.tail = T)
+# For fourth category, the probability of greater than 0.1 and less than or equal to 0.6
+p4 = pnorm(.6,lower.tail = T) - pnorm(.1,lower.tail = T)
+# For fifth category, the probability of greater than 0.6
+p5 = pnorm(.6,lower.tail = F)
+```
+
+```{r}
+dat$expected = c(n*p1, n*p2, n*p3, n*p4, n*p5)
+dat$"(o-E)^2" = (dat$observed-dat$expected)^2
+dat$"(o-E)^2/E" = dat$`(o-E)^2`/dat$expected
+dat
+```
+
+```{r}
+# Chi-square value
+chisq = sum(dat$`(o-E)^2/E`)
+chisq
+```
+
+```{r}
+# Degree of freedom (n-1)
+d_f = length(dat)-1
+d_f
+```
+
+```{r}
+# P-value = P(X^2 >= 3.407)
+pchisq(chisq, df=d_f, lower.tail=FALSE)
+```
+*The P-value > a = 0.05*
+*Therefore, the test is not a good fit.*

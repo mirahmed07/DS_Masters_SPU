@@ -1,0 +1,86 @@
+---
+title: "R Notebook"
+output:
+  word_document: default
+  html_notebook: default
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+```{r}
+#load necessary libraries
+library(dplyr)
+library(readxl)
+library(ggplot2)
+library(ggpubr)
+```
+
+# 1+2) Solution:
+```{r}
+# Importing the dataset into a dataframe
+file_name = "simpledata.csv"
+df = read.csv(file = file_name)
+df
+```
+
+```{r}
+# Scatterplot
+plot(df$X, df$Y)
+```
+
+```{r}
+#create plot with regression line, regression equation, and R-squared
+ggplot(data=df, aes(x=X, y=Y)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=150, label.y=100) +
+        stat_cor(aes(label=..rr.label..), label.x=150, label.y=90)
+```
+
+```{r}
+# Dataframe summary
+summary(df)
+```
+
+```{r}
+# Dataframe structure
+str(df)
+```
+
+```{r}
+# Correlation
+cor(df$X,df$Y)
+```
+
+*So the the variables have a strong, positive, linear relationship.*
+
+```{r}
+# Linear regression
+fit<- lm(df$Y ~ df$X)
+summary(fit)
+```
+
+```{r}
+# Intercept and slope
+a = unname(fit$coefficients[1])
+b = unname(fit$coefficients[2])
+paste0("Intercept = ",b)
+paste0("Slope = ",a)
+```
+
+```{r}
+# Linear Equation
+paste0("y = ",round(a,2),"x + ",round(b,2))
+```
+
+# 3) Solution:
+*The results are same but the calculations take a lot less time in R.*
+

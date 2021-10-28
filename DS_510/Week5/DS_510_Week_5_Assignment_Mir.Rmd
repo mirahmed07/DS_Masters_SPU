@@ -1,0 +1,145 @@
+---
+title: "R Notebook"
+output:
+  word_document: default
+  html_document:
+    df_print: paged
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+### Dependency
+```{r}
+library(ggplot2)
+library(ggpubr)
+```
+
+## Creating the dataframe
+```{r}
+x = c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131, 153, 177, 148, 189, 138, 146, 199, 167, 153, 130)
+y = c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48, 65, 84, 59, 93, 49, 55, 79, 75, 66, 49)
+df = data.frame("X" = x, "Y" = y)
+df
+```
+
+## five point summary
+```{r}
+summary(df)
+```
+
+## Creating a linear regression model using the dataframe
+```{r}
+fit<- lm(df$Y~df$X)
+summary(fit)
+```
+
+
+# 1
+
+## Formula for standard deviation is square root of [ (1/(N-1))*(xi - mu)^2 ]
+
+### Manual calculation
+
+```{r}
+df$X_xbar = df$X - mean(x) 
+df$Y_ybar = df$Y - mean(y)
+df$X_xbar_times_Y_Ybar = df$X_xbar * df$Y_ybar
+df$X_xbar_sq = (df$X - mean(x))^2
+df$Y_ybar_sq = (df$Y - mean(y))^2
+df
+```
+
+```{r}
+# So standard deviation for X
+S_x = sqrt(sum(df$X_xbar_sq)/(length(x)-1))
+S_x
+```
+
+```{r}
+# So standard deviation for Y
+S_y = sqrt(sum(df$Y_ybar_sq)/(length(y)-1))
+S_y
+```
+
+### Using built-in R functions for standard deviation
+
+```{r}
+print(paste("Sx =",sd(x)))
+```
+
+```{r}
+print(paste("Sy =",sd(y)))
+```
+
+# 2
+## We know that r = sum((X - xbar)*(Y - ybar)) /√(sum((X - xbar)^2)*sum((Y - ybar)^2)
+```{r}
+# let slope  = r
+r = sum(df$X_xbar_times_Y_Ybar)/sqrt(sum(df$X_xbar_sq)*sum(df$Y_ybar_sq))
+r
+```
+
+### Using built-in R functions for correlation coefficient
+```{r}
+cor(x, y)
+```
+## We know slope, b = r * (Sy/Sx)
+```{r}
+b = r * (S_y/S_x)
+b
+```
+
+### Using built-in R functions for slope
+```{r}
+# slope
+fit$coefficients[2]
+```
+
+# 3
+## We know that intercept, 𝒂= ybar- b * xbar
+
+```{r}
+a = mean(y)-b*mean(x)
+a
+```
+### Using built-in R functions for intercept
+```{r}
+# intercept
+fit$coefficients[1]
+```
+
+# 4
+## So the linear equation will be y = a + bx
+```{r}
+print(paste0("y =",round(a,2),"+",round(b,2),"x"))
+```
+
+# 5
+## We know that the value of R-squared is the square of correlation coefficient (r)
+```{r}
+r^2
+```
+
+### Using built-in R functions for R-squared using linear regression
+```{r}
+summary(fit)$r.squared
+```
+
+## Scatter plot
+```{r}
+#create plot with regression line, regression equation, and R-squared
+ggplot(data=df, aes(x=X, y=Y)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=130, label.y=90) +
+        stat_cor(aes(label=..rr.label..), label.x=130, label.y=80) + labs( x="X", y="Y")
+```
+

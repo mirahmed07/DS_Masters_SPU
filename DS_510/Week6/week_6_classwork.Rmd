@@ -1,0 +1,184 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+```{r}
+#load necessary libraries
+library(dplyr)
+library(readxl)
+library(ggplot2)
+library(ggpubr)
+```
+
+```{r}
+# import the csv into a dataframe
+file_name = "LungCapData.csv"
+df = read.csv(file = file_name)
+df
+```
+
+```{r}
+# plot Age vs LungCap
+plot(df$Age, df$LungCap)
+```
+
+```{r}
+#create plot with regression line, regression equation, and R-squared isung ggplot2 package
+ggplot(data=df, aes(x=Age, y=LungCap)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=10, label.y=16) +
+        stat_cor(aes(label=..rr.label..), label.x=10, label.y=15)
+```
+
+```{r}
+# 5 number summary of the dataframe
+summary(df)
+```
+
+```{r}
+# linear regression modeling on the whole dataset 
+fit<- lm(df$LungCap ~ df$Age)
+summary(fit)
+```
+
+```{r}
+b = unname(fit$coefficients[1])
+a = unname(fit$coefficients[2])
+paste0("Intercept = ",b)
+paste0("Slope = ",a)
+```
+
+```{r}
+# Correlation
+cor(df$Age,df$LungCap)
+```
+
+```{r}
+count(df)
+```
+
+
+```{r}
+library(caTools)
+sample <- sample.split(df$LungCap, SplitRatio = 0.8)
+train_data <- subset(df, sample == TRUE)
+test_data <- subset(df, sample == F)
+```
+
+```{r}
+train_data
+```
+
+```{r}
+test_data
+```
+```{r}
+# resetting the rownames in the splits
+rownames(train_data) = NULL
+rownames(test_data) = NULL
+```
+
+```{r}
+# linear regression modeling on the training dataset 
+fit<- lm(LungCap ~ Age, data = train_data)
+summary(fit)
+```
+
+```{r}
+# getting the coefficients
+b = unname(fit$coefficients[1])
+a = unname(fit$coefficients[2])
+paste0("Intercept = ",b)
+paste0("Slope = ",a)
+```
+
+```{r}
+#create plot with regression line, regression equation, and R-squared
+ggplot(data=train_data, aes(x=Age, y=LungCap)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=10, label.y=16) +
+        stat_cor(aes(label=..rr.label..), label.x=10, label.y=15)
+```
+```{r}
+# calcilating the predicted Y values using the coefficients
+y_pred = a*test_data$Age +b
+y_pred
+```
+
+```{r}
+test_data$y_pred = y_pred
+# We could have done all these in one line: test_data$y_pred = a*test_data$Age +b
+test_data
+```
+
+```{r}
+# getting residuals
+test_data = test_data
+test_data$residual = test_data$y_pred - test_data$LungCap
+test_data
+```
+
+```{r}
+# Predict using the model
+predict.lm(fit,data.frame("Age" = test_data$Age), scale = NULL, df = Inf, interval = c("prediction"), level = 0.95)
+```
+
+```{r}
+# Residual plot from test data
+plot(test_data$residual)
+```
+
+```{r}
+# Residual plot from training data
+res = resid(fit)
+plot(res)
+```
+
+```{r}
+hist(test_data$residual,probability = T, breaks = 10)
+```
+
+```{r}
+mean(test_data$residual)
+var(test_data$residual)
+sd(test_data$residual)
+```
+
+
+```{r}
+x_e = seq(-4,4, length = 20)
+y_e = dnorm(x_e, mean(test_data$residual), sd(test_data$residual))
+hist(test_data$residual,probability = T, breaks = 10)
+lines(density(test_data$residual), col='red',lwd=3)
+lines(x_e,y_e, col='blue', lwd = 3)
+```
+
+```{r}
+# linear regreesion model using multiple variables for x
+fit2 = lm(LungCap ~ Age + Height, data = train_data)
+summary(fit2)
+```
+
+
+
+
+
+
+
+
+
+

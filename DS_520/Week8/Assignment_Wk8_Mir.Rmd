@@ -1,18 +1,9 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  word_document: default
+  html_notebook: default
 ---
-
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
-
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
-
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
-
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
-
 ```{r}
 #load necessary libraries
 library(dplyr)
@@ -96,7 +87,7 @@ pnorm(z,m,sd, lower.tail = T)
 p_test$p.value
 ```
 
-*As the p-value in this context is way less than 0.01, th null hypothesis is rejected at 1% level of significance.There is sufficient evidence to indicate that there is a difference between proportions of rejection among recruits who were under age of 20 and who were age of 40 or above. The result is statistically significant.*
+*As the p-value in this context is way less than 0.01, the null hypothesis is rejected at 1% level of significance.There is sufficient evidence to indicate that there is a difference between proportions of rejection among recruits who were under age of 20 and who were age of 40 or above. The result is statistically significant.*
 
 ## D) Solution:
 #### The guidelines for using large sample method for a 99% confidence interval is that to check the below conditions for recruits who were under the age of 20 
@@ -232,8 +223,9 @@ dat
 ## D) Solution:
 #### The null hypothesis:
 *H0: There is no relationship between claims sizes and whether a claim is allowed.*
+
 #### The alternate hypothesis:
-*H0: There is a relationship between claims sizes and whether a claim is allowed.*
+*H1: There is a relationship between claims sizes and whether a claim is allowed.*
 
 ## E) Solution:
 
@@ -333,8 +325,9 @@ paste0(round(main_df[max(rownames(main_df)),3]/main_df[max(rownames(main_df)),ma
 ## C) Solution:
 #### The null hypothesis:
 *H0: There is no relationship between field of study and when a Canadian enrolls for a college.*
+
 #### The alternate hypothesis:
-*H0: There is a relationship between field of study and when a Canadian enrolls for a college.*
+*H1: There is a relationship between field of study and when a Canadian enrolls for a college.*
 
 ```{r}
 # Expected frequencies
@@ -407,8 +400,16 @@ d_f
 ```
 
 ```{r}
+# The Chi-square value with α = 0.05 and 4 degrees of freedom is
+qchisq(p = .05, df = d_f, lower.tail=F)
+```
+
+```{r}
 # P-value = P(X^2 >= 3.407)
 pchisq(chisq, df=d_f, lower.tail=FALSE)
 ```
-*The P-value > a = 0.05*
-*Therefore, the test is not a good fit.*
+*The P-value > a = 0.05 and the test statistic is lower than the Chi-square value. We fail to reject the hypothesis of equal proportions.*
+
+*Therefore, the test is a good fit.*
+
+

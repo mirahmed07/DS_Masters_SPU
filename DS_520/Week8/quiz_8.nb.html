@@ -215,774 +215,247 @@ pre code {
 
 
 <!-- rnb-text-begin -->
+<p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
+<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2xvYWQgbmVjZXNzYXJ5IGxpYnJhcmllc1xubGlicmFyeShkcGx5cilcbmBgYCJ9 -->
-<pre class="r"><code>#load necessary libraries
-library(dplyr)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgIn0= -->
+<pre class="r"><code>plot(cars)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5BdHRhY2hpbmcgcGFja2FnZTog4oCYZHBseXLigJlcblxuVGhlIGZvbGxvd2luZyBvYmplY3RzIGFyZSBtYXNrZWQgZnJvbSDigJhwYWNrYWdlOnN0YXRz4oCZOlxuXG4gICAgZmlsdGVyLCBsYWdcblxuVGhlIGZvbGxvd2luZyBvYmplY3RzIGFyZSBtYXNrZWQgZnJvbSDigJhwYWNrYWdlOmJhc2XigJk6XG5cbiAgICBpbnRlcnNlY3QsIHNldGRpZmYsIHNldGVxdWFsLCB1bmlvblxuIn0= -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
+<p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
+<p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHQoLjYzLDk5KVxuYGBgIn0= -->
+<pre class="r"><code>pt(.63,99)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuNzM0OTI3XG4ifQ== -->
+<pre><code>[1] 0.734927</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJvcC50ZXN0KHg9NjQsIG49MTAwLCBwPTAuNTAsIGFsdGVybmF0aXZlPVwiZ3JlYXRlclwiLCBjb3JyZWN0PUYpXG5gYGAifQ== -->
+<pre class="r"><code>prop.test(x=64, n=100, p=0.50, alternative=&quot;greater&quot;, correct=F)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdDEtc2FtcGxlIHByb3BvcnRpb25zIHRlc3Qgd2l0aG91dCBjb250aW51aXR5IGNvcnJlY3Rpb25cblxuZGF0YTogIDY0IG91dCBvZiAxMDAsIG51bGwgcHJvYmFiaWxpdHkgMC41XG5YLXNxdWFyZWQgPSA3Ljg0LCBkZiA9IDEsIHAtdmFsdWUgPSAwLjAwMjU1NVxuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHJ1ZSBwIGlzIGdyZWF0ZXIgdGhhbiAwLjVcbjk1IHBlcmNlbnQgY29uZmlkZW5jZSBpbnRlcnZhbDpcbiAwLjU1ODMxODcgMS4wMDAwMDAwXG5zYW1wbGUgZXN0aW1hdGVzOlxuICAgcCBcbjAuNjQgXG4ifQ== -->
 <pre><code>
-Attaching package: ‘dplyr’
+    1-sample proportions test without continuity correction
 
-The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkeGwpXG5saWJyYXJ5KGdncGxvdDIpXG5saWJyYXJ5KGdncHVicilcbmBgYCJ9 -->
-<pre class="r"><code>library(readxl)
-library(ggplot2)
-library(ggpubr)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2Qgb3ZlcndyaXR0ZW4gYnkgJ2RhdGEudGFibGUnOlxuICBtZXRob2QgICAgICAgICAgIGZyb21cbiAgcHJpbnQuZGF0YS50YWJsZSAgICAgXG4ifQ== -->
-<pre><code>Registered S3 method overwritten by &#39;data.table&#39;:
-  method           from
-  print.data.table     </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShxcXBsb3RyKVxuYGBgIn0= -->
-<pre class="r"><code>library(qqplotr)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5BdHRhY2hpbmcgcGFja2FnZTog4oCYcXFwbG90cuKAmVxuXG5UaGUgZm9sbG93aW5nIG9iamVjdHMgYXJlIG1hc2tlZCBmcm9tIOKAmHBhY2thZ2U6Z2dwbG90MuKAmTpcblxuICAgIHN0YXRfcXFfbGluZSwgU3RhdFFxTGluZVxuIn0= -->
-<pre><code>
-Attaching package: ‘qqplotr’
-
-The following objects are masked from ‘package:ggplot2’:
-
-    stat_qq_line, StatQqLine</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2xpYnJhcnkoY2FyKVxubGlicmFyeShlMTA3MSlcbmxpYnJhcnkobm9ydGVzdClcbmxpYnJhcnkoQlNEQSlcbmBgYCJ9 -->
-<pre class="r"><code>#library(car)
-library(e1071)
-library(nortest)
-library(BSDA)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiTG9hZGluZyByZXF1aXJlZCBwYWNrYWdlOiBsYXR0aWNlXG5cbkF0dGFjaGluZyBwYWNrYWdlOiDigJhCU0RB4oCZXG5cblRoZSBmb2xsb3dpbmcgb2JqZWN0IGlzIG1hc2tlZCBmcm9tIOKAmHBhY2thZ2U6ZGF0YXNldHPigJk6XG5cbiAgICBPcmFuZ2VcbiJ9 -->
-<pre><code>Loading required package: lattice
-
-Attaching package: ‘BSDA’
-
-The following object is masked from ‘package:datasets’:
-
-    Orange</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<div id="section" class="section level1">
-<h1>8.58</h1>
-<div id="teeth-and-military-service" class="section level2">
-<h2>Teeth and military service</h2>
-</div>
-<div id="a-solution" class="section level2">
-<h2>A) Solution:</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBGb3IgcmVjcnVpdHMgd2hvIHdlcmUgdW5kZXIgMjBcbngxID0gNjhcbm4xID0gNTg5NTJcbnAxID0gcm91bmQoeDEvbjEsNilcbnAxXG5gYGAifQ== -->
-<pre class="r"><code># For recruits who were under 20
-x1 = 68
-n1 = 58952
-p1 = round(x1/n1,6)
-p1</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDAxMTUzXG4ifQ== -->
-<pre><code>[1] 0.001153</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBGb3IgcmVjcnVpdHMgd2hvIHdlcmUgYXQgdGhlIGFnZSBvZiA0MCBvciBvdmVyXG54MiA9IDM4MDFcbm4yID0gNDM3ODZcbnAyID0gcm91bmQoeDIvbjIsNilcbnAyXG5gYGAifQ== -->
-<pre class="r"><code># For recruits who were at the age of 40 or over
-x2 = 3801
-n2 = 43786
-p2 = round(x2/n2,6)
-p2</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDg2ODA5XG4ifQ== -->
-<pre><code>[1] 0.086809</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="b-solution" class="section level2">
-<h2>B) Solution:</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBFc3RpbWF0ZSBmb3IgZGlmZmVyZW5jZVxucDEtcDJcbmBgYCJ9 -->
-<pre class="r"><code># Estimate for difference
-p1-p2</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjA4NTY1NlxuIn0= -->
-<pre><code>[1] -0.085656</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0ID0gZGF0YS5mcmFtZShzYW1wbGUgPSBjKDEsMiksIHggPSBjKHgxLHgyKSwgbiA9IGMobjEsbjIpLCBQID0gYyhwMSxwMikpXG5kYXRcbmBgYCJ9 -->
-<pre class="r"><code>dat = data.frame(sample = c(1,2), x = c(x1,x2), n = c(n1,n2), P = c(p1,p2))
-dat</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MiwibmNvbCI6NCwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbMiB4IDRdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmd0eWlURG1pdUJpWUdCZ1ptQmhaR1JnWmdVeUdkaWNBd3lOVEkwWUdGaVlnRHhHQmhZR1RoQmRBVlFsREdTd0FERWZFRFBaZjJBQUF3Y0dPQUNMT3dSQ3hkZHVRaFYvY3hJaS9qVFJBVm5jUHVnSlI5Q1dHN3ZzdDFuS2h2K2ZIWVptTVd0ZVltNXFNWkFoQUxZY0lzaFduSmhia0pPS2NCdVVrUWRqQktDWndsbVVYNjRITTRrWFpDMVlFa3lqV3BlY2sxZ01zdzRteUpXU1dKS29sMVlFMUEvay9VUFR3cDVmVUpLWm53ZlV4QVFLSUZZMHpZeEZhQUw4cFhrZ2w2VG9KbWVVNW1Ycm1vSXNnTHFHQWVvNnFNdmdiQmFJbFV6L29VYXh3c0loTlM4OU13OFdEcXc1aVVtcE9WQU9IOURIWUEvckZSUmw1cFhBZkFJVUxkWXJ5UzlKaEtualNzN1BnWW1BL2Nid0R3QnRzQy94R0FJQUFBPT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["sample"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["x"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["n"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["P"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"68","3":"58952","4":"0.001153"},{"1":"2","2":"3801","3":"43786","4":"0.086809"}],"options":{"columns":{"min":{},"max":[10],"total":[4]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucF90ZXN0ID0gcHJvcC50ZXN0KHggPSBjKHgxLHgyKSwgbiA9IGMobjEsbjIpLCBhbHRlcm5hdGl2ZSA9ICd0d28uc2lkZWQnLCBjb25mLmxldmVsID0gLjk5LCBjb3JyZWN0ID0gRilcbnBfdGVzdFxuYGBgIn0= -->
-<pre class="r"><code>p_test = prop.test(x = c(x1,x2), n = c(n1,n2), alternative = &#39;two.sided&#39;, conf.level = .99, correct = F)
-p_test</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdDItc2FtcGxlIHRlc3QgZm9yIGVxdWFsaXR5IG9mIHByb3BvcnRpb25zIHdpdGhvdXQgY29udGludWl0eSBjb3JyZWN0aW9uXG5cbmRhdGE6ICBjKHgxLCB4Mikgb3V0IG9mIGMobjEsIG4yKVxuWC1zcXVhcmVkID0gNTA4Ni40LCBkZiA9IDEsIHAtdmFsdWUgPCAyLjJlLTE2XG5hbHRlcm5hdGl2ZSBoeXBvdGhlc2lzOiB0d28uc2lkZWRcbjk5IHBlcmNlbnQgY29uZmlkZW5jZSBpbnRlcnZhbDpcbiAtMC4wODkxMzk2MSAtMC4wODIxNzA1N1xuc2FtcGxlIGVzdGltYXRlczpcbiAgICAgcHJvcCAxICAgICAgcHJvcCAyIFxuMC4wMDExNTM0ODEgMC4wODY4MDg1NjkgXG4ifQ== -->
-<pre><code>
-    2-sample test for equality of proportions without continuity correction
-
-data:  c(x1, x2) out of c(n1, n2)
-X-squared = 5086.4, df = 1, p-value &lt; 2.2e-16
-alternative hypothesis: two.sided
-99 percent confidence interval:
- -0.08913961 -0.08217057
+data:  64 out of 100, null probability 0.5
+X-squared = 7.84, df = 1, p-value = 0.002555
+alternative hypothesis: true p is greater than 0.5
+95 percent confidence interval:
+ 0.5583187 1.0000000
 sample estimates:
-     prop 1      prop 2 
-0.001153481 0.086808569 </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBcyBkaWZmZXJlbmNlIGluIHBvcHVsYXRpb24gcHJvcG9ydGlvbnMgaXMgbmVnYXRpdmVcbiMgU28gWi12YWx1ZVxuLXVubmFtZShzcXJ0KHBfdGVzdCRzdGF0aXN0aWMpKVxuYGBgIn0= -->
-<pre class="r"><code># As difference in population proportions is negative
-# So Z-value
--unname(sqrt(p_test$statistic))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC03MS4zMTkxNlxuIn0= -->
-<pre><code>[1] -71.31916</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyA5OSUgY29uZmlkZW5jZSBpbnRlcnZhbCBmb3IgdGhlIGRpZmZlcmVuY2UgaW4gdGhlIHByb3BvcnRpb25zXG5wX3Rlc3QkY29uZi5pbnRcbmBgYCJ9 -->
-<pre class="r"><code># 99% confidence interval for the difference in the proportions
-p_test$conf.int</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjA4OTEzOTYxIC0wLjA4MjE3MDU3XG5hdHRyKCxcImNvbmYubGV2ZWxcIilcblsxXSAwLjk5XG4ifQ== -->
-<pre><code>[1] -0.08913961 -0.08217057
-attr(,&quot;conf.level&quot;)
-[1] 0.99</code></pre>
+   p 
+0.64 </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBtZWFuIC8gZGlmZmVyZW5jZSBpbiBwb3B1bGF0aW9uIHByb3BvcnRpb25zXG5tID0gcDEtcDJcbm1cbmBgYCJ9 -->
-<pre class="r"><code># mean / difference in population proportions
-m = p1-p2
-m</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjA4NTY1NlxuIn0= -->
-<pre><code>[1] -0.085656</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBTdGFuZGFyZCBlcnJvciBvZiBtZWFuIC8gZGlmZmVyZW5jZVxuc2QgPSBzcXJ0KChwMSooMS1wMSkvbjEpICsgKHAyKigxLXAyKS9uMikpXG5zZFxuYGBgIn0= -->
-<pre class="r"><code># Standard error of mean / difference
-sd = sqrt((p1*(1-p1)/n1) + (p2*(1-p2)/n2))
-sd</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDAxMzUyNzc3XG4ifQ== -->
-<pre><code>[1] 0.001352777</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBwb29sZWQgZXN0aW1hdGVcbnAgPSAocDEqbjErcDIqbjIpLyhuMStuMilcbnBcbmBgYCJ9 -->
-<pre class="r"><code># pooled estimate
-p = (p1*n1+p2*n2)/(n1+n2)
-p</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDM3NjU4ODFcbiJ9 -->
-<pre><code>[1] 0.03765881</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBaLXZhbHVlXG56ID0gKHAxLXAyKS9zcXJ0KHAqKDEtcCkqKDEvbjErMS9uMikpXG56XG5gYGAifQ== -->
-<pre class="r"><code># Z-value
-z = (p1-p2)/sqrt(p*(1-p)*(1/n1+1/n2))
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucCA9IC42NFxubiA9IDEwMFxucDAgPSAuNVxueiA9IChwLXAwKS9zcXJ0KHAwKigxLXAwKS9uKVxuelxuYGBgIn0= -->
+<pre class="r"><code>p = .64
+n = 100
+p0 = .5
+z = (p-p0)/sqrt(p0*(1-p0)/n)
 z</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC03MS4zMlxuIn0= -->
-<pre><code>[1] -71.32</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="c-solution" class="section level2">
-<h2>C) Solution:</h2>
-<p><em>The null Hypothesis:</em> H0: p1 = p2 <em>The alternate Hypothesis:</em> H1: p1 ≠ p2 <em>Here p1 = Proportion of rejects for recruits who were under 20 and p2 = Proportion of rejects for recruits who were 40 or above</em></p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBQLXZhbHVlXG5wbm9ybSh6LG0sc2QsIGxvd2VyLnRhaWwgPSBUKVxuYGBgIn0= -->
-<pre class="r"><code># P-value
-pnorm(z,m,sd, lower.tail = T)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDBcbiJ9 -->
-<pre><code>[1] 0</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBPclxucF90ZXN0JHAudmFsdWVcbmBgYCJ9 -->
-<pre class="r"><code># Or
-p_test$p.value</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDBcbiJ9 -->
-<pre><code>[1] 0</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p><em>As the p-value in this context is way less than 0.01, the null hypothesis is rejected at 1% level of significance.There is sufficient evidence to indicate that there is a difference between proportions of rejection among recruits who were under age of 20 and who were age of 40 or above. The result is statistically significant.</em></p>
-</div>
-<div id="d-solution" class="section level2">
-<h2>D) Solution:</h2>
-<div id="the-guidelines-for-using-large-sample-method-for-a-99-confidence-interval-is-that-to-check-the-below-conditions-for-recruits-who-were-under-the-age-of-20" class="section level4">
-<h4>The guidelines for using large sample method for a 99% confidence interval is that to check the below conditions for recruits who were under the age of 20</h4>
-</div>
-<div id="n1p110-and-n11-p110" class="section level4">
-<h4>n1<em>p1&gt;=10 and n1</em>(1-p1)&gt;=10</h4>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubjEqcDFcbmBgYCJ9 -->
-<pre class="r"><code>n1*p1</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDY3Ljk3MTY2XG4ifQ== -->
-<pre><code>[1] 67.97166</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubjEqKDEtcDEpXG5gYGAifQ== -->
-<pre class="r"><code>n1*(1-p1)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDU4ODg0LjAzXG4ifQ== -->
-<pre><code>[1] 58884.03</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p><em>As both of them are greater than 10, we can say the guideline is satisfied.</em></p>
-</div>
-<div id="the-guidelines-for-using-large-sample-method-for-a-99-confidence-interval-is-that-to-check-the-below-conditions-for-recruits-who-were-at-the-age-of-40-or-above" class="section level4">
-<h4>The guidelines for using large sample method for a 99% confidence interval is that to check the below conditions for recruits who were at the age of 40 or above</h4>
-</div>
-<div id="n2p210-and-n21-p210" class="section level4">
-<h4>n2<em>p2&gt;=10 and n2</em>(1-p2)&gt;=10</h4>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubjIqcDJcbmBgYCJ9 -->
-<pre class="r"><code>n2*p2</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDM4MDEuMDE5XG4ifQ== -->
-<pre><code>[1] 3801.019</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubjIqKDEtcDIpXG5gYGAifQ== -->
-<pre class="r"><code>n2*(1-p2)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDM5OTg0Ljk4XG4ifQ== -->
-<pre><code>[1] 39984.98</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p><em>As both of them are greater than 10, we can say the guideline is satisfied.</em></p>
-</div>
-</div>
-</div>
-<div id="section-1" class="section level1">
-<h1>8.71</h1>
-<div id="gender-bias-in-textbooks" class="section level2">
-<h2>Gender bias in textbooks</h2>
-</div>
-<div id="a-solution-1" class="section level2">
-<h2>A) Solution:</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBGb3IgZmVtYWxlXG5uMSA9IDYwIFxueDEgPSA0OFxucDEgPSB4MS9uMVxucDFcbmBgYCJ9 -->
-<pre class="r"><code># For female
-n1 = 60 
-x1 = 48
-p1 = x1/n1
-p1</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuOFxuIn0= -->
-<pre><code>[1] 0.8</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2UxID0gc3FydChwMSooMS1wMSkvbjEpXG5zZTFcbmBgYCJ9 -->
-<pre class="r"><code>se1 = sqrt(p1*(1-p1)/n1)
-se1</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDUxNjM5NzhcbiJ9 -->
-<pre><code>[1] 0.05163978</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDIuOFxuIn0= -->
+<pre><code>[1] 2.8</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBGb3IgbWFsZVxubjIgPSAxMzIgXG54MiA9IDUyXG5wMiA9IHgyL24yXG5wMlxuYGBgIn0= -->
-<pre class="r"><code># For male
-n2 = 132 
-x2 = 52
-p2 = x2/n2
-p2</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG5vcm0oeiwgbG93ZXIudGFpbD1GQUxTRSlcbmBgYCJ9 -->
+<pre class="r"><code>pnorm(z, lower.tail=FALSE)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMzkzOTM5NFxuIn0= -->
-<pre><code>[1] 0.3939394</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2UyID0gc3FydChwMiooMS1wMikvbjIpXG5zZTJcbmBgYCJ9 -->
-<pre class="r"><code>se2 = sqrt(p2*(1-p2)/n2)
-se2</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDQyNTI5MDZcbiJ9 -->
-<pre><code>[1] 0.04252906</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="b-solution-1" class="section level2">
-<h2>B) Solution:</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBFc3RpbWF0ZSBmb3IgZGlmZmVyZW5jZVxucDEtcDJcbmBgYCJ9 -->
-<pre class="r"><code># Estimate for difference
-p1-p2</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuNDA2MDYwNlxuIn0= -->
-<pre><code>[1] 0.4060606</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDAyNTU1MTNcbiJ9 -->
+<pre><code>[1] 0.00255513</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBwb29sZWQgZXN0aW1hdGVcbnAgPSAocDEqbjErcDIqbjIpLyhuMStuMilcbnBcbmBgYCJ9 -->
-<pre class="r"><code># pooled estimate
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucDEgPSAuNVxucDIgPSAuMlxubjEgPSAyMFxubjIgPSAzMFxucCA9IChwMSpuMStwMipuMikvKG4xK24yKVxucFxuYGBgIn0= -->
+<pre class="r"><code>p1 = .5
+p2 = .2
+n1 = 20
+n2 = 30
 p = (p1*n1+p2*n2)/(n1+n2)
 p</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuNTIwODMzM1xuIn0= -->
-<pre><code>[1] 0.5208333</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMzJcbiJ9 -->
+<pre><code>[1] 0.32</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuKHAxKm4xKSsocDIqbjIpXG5gYGAifQ== -->
+<pre class="r"><code>(p1*n1)+(p2*n2)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDE2XG4ifQ== -->
+<pre><code>[1] 16</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubjErbjJcbmBgYCJ9 -->
+<pre class="r"><code>n1+n2</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDUwXG4ifQ== -->
+<pre><code>[1] 50</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxub3B0aW9ucyhzY2lwZW4gPSBuKVxucF90ZXN0ID0gcHJvcC50ZXN0KHggPSBjKHgxLHgyKSwgbiA9IGMobjEsbjIpLCBhbHRlcm5hdGl2ZSA9ICd0d28uc2lkZWQnLCBjb25mLmxldmVsID0gLjk1LCBjb3JyZWN0ID0gRilcbnBfdGVzdFxuYGBgIn0= -->
-<pre class="r"><code>options(scipen = n)
-p_test = prop.test(x = c(x1,x2), n = c(n1,n2), alternative = &#39;two.sided&#39;, conf.level = .95, correct = F)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucDEqbjFcbmBgYCJ9 -->
+<pre class="r"><code>p1*n1</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEwXG4ifQ== -->
+<pre><code>[1] 10</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucDIqbjJcbmBgYCJ9 -->
+<pre class="r"><code>p2*n2</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDZcbiJ9 -->
+<pre><code>[1] 6</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubiA9IDIwMFxucCA9IDUwL25cblxucW5vcm0oLjk1KSpzcXJ0KHAqKDEtcCkvbilcbmBgYCJ9 -->
+<pre class="r"><code>n = 200
+p = 50/n
+
+qnorm(.95)*sqrt(p*(1-p)/n)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDUwMzYzMTVcbiJ9 -->
+<pre><code>[1] 0.05036315</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3FydChwKigxLXApL24pXG5gYGAifQ== -->
+<pre class="r"><code>sqrt(p*(1-p)/n)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDMwNjE4NjJcbiJ9 -->
+<pre><code>[1] 0.03061862</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucFxuYGBgIn0= -->
+<pre class="r"><code>p</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMjVcbiJ9 -->
+<pre><code>[1] 0.25</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucW5vcm0oLjk3NSkqc3FydChwKigxLXApL24pXG5gYGAifQ== -->
+<pre class="r"><code>qnorm(.975)*sqrt(p*(1-p)/n)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDYwMDExNFxuIn0= -->
+<pre><code>[1] 0.0600114</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueCA9IDVcbm4gPSAyNVxucCA9IHgvblxuc3FydChwKigxLXApL24pXG5gYGAifQ== -->
+<pre class="r"><code>x = 5
+n = 25
+p = x/n
+sqrt(p*(1-p)/n)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDhcbiJ9 -->
+<pre><code>[1] 0.08</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucF90ZXN0ID0gcHJvcC50ZXN0KHggPSBjKDE1LDEyKSwgbiA9IGMoMTAwLDEwMCksIGFsdGVybmF0aXZlID0gJ3R3by5zaWRlZCcsIGNvbmYubGV2ZWwgPSAuOTUsIGNvcnJlY3QgPSBGKVxucF90ZXN0XG5gYGAifQ== -->
+<pre class="r"><code>p_test = prop.test(x = c(15,12), n = c(100,100), alternative = &#39;two.sided&#39;, conf.level = .95, correct = F)
 p_test</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdDItc2FtcGxlIHRlc3QgZm9yIGVxdWFsaXR5IG9mIHByb3BvcnRpb25zIHdpdGhvdXQgY29udGludWl0eSBjb3JyZWN0aW9uXG5cbmRhdGE6ICBjKHgxLCB4Mikgb3V0IG9mIGMobjEsIG4yKVxuWC1zcXVhcmVkID0gMjcuMjUzLCBkZiA9IDEsIHAtdmFsdWUgPSAxLjc4NWUtMDdcbmFsdGVybmF0aXZlIGh5cG90aGVzaXM6IHR3by5zaWRlZFxuOTUgcGVyY2VudCBjb25maWRlbmNlIGludGVydmFsOlxuIDAuMjc0OTQyMyAwLjUzNzE3ODlcbnNhbXBsZSBlc3RpbWF0ZXM6XG4gICBwcm9wIDEgICAgcHJvcCAyIFxuMC44MDAwMDAwIDAuMzkzOTM5NCBcbiJ9 -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdDItc2FtcGxlIHRlc3QgZm9yIGVxdWFsaXR5IG9mIHByb3BvcnRpb25zIHdpdGhvdXQgY29udGludWl0eSBjb3JyZWN0aW9uXG5cbmRhdGE6ICBjKDE1LCAxMikgb3V0IG9mIGMoMTAwLCAxMDApXG5YLXNxdWFyZWQgPSAwLjM4NTM2LCBkZiA9IDEsIHAtdmFsdWUgPSAwLjUzNDhcbmFsdGVybmF0aXZlIGh5cG90aGVzaXM6IHR3by5zaWRlZFxuOTUgcGVyY2VudCBjb25maWRlbmNlIGludGVydmFsOlxuIC0wLjA2NDYyNzkxICAwLjEyNDYyNzkxXG5zYW1wbGUgZXN0aW1hdGVzOlxucHJvcCAxIHByb3AgMiBcbiAgMC4xNSAgIDAuMTIgXG4ifQ== -->
 <pre><code>
     2-sample test for equality of proportions without continuity correction
 
-data:  c(x1, x2) out of c(n1, n2)
-X-squared = 27.253, df = 1, p-value = 1.785e-07
+data:  c(15, 12) out of c(100, 100)
+X-squared = 0.38536, df = 1, p-value = 0.5348
 alternative hypothesis: two.sided
 95 percent confidence interval:
- 0.2749423 0.5371789
+ -0.06462791  0.12462791
 sample estimates:
-   prop 1    prop 2 
-0.8000000 0.3939394 </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p><em>So the P-value is 0.0000001785 and the difference in the two proportions is somewhere between 0.2749423 and 0.5371789 using 95% confidence intervals.</em></p>
-</div>
-<div id="c-solution-1" class="section level2">
-<h2>C) Solution:</h2>
-<p><em>The null Hypothesis:</em> H0: p1 = p2 <em>The alternate Hypothesis:</em> H1: p1 ≠ p2 <em>Here p1 = Proportion of juvenile among female and p2 = Proportion of juvenile among male</em> <em>Using level of significance a = .05, we can reject null hypothesis (H0) if z value from the difference in proportions is either less than -1.96 or greater than 1.96</em></p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBaLXZhbHVlXG51bm5hbWUoc3FydChwX3Rlc3Qkc3RhdGlzdGljKSlcbmBgYCJ9 -->
-<pre class="r"><code># Z-value
-unname(sqrt(p_test$statistic))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDUuMjIwNDc3XG4ifQ== -->
-<pre><code>[1] 5.220477</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p><em>Our Z-value is 5.220477. So we can reject H0. Also P-value was really low.</em></p>
-<p><em>The test statistic value falls in the rejection region, so we reject the null hypothesis. There is a difference in the proportion of female juveniles and male juveniles.</em></p>
-</div>
-</div>
-<div id="section-2" class="section level1">
-<h1>9.37</h1>
-<div id="health-care-fraud" class="section level2">
-<h2>Health care fraud</h2>
-</div>
-<div id="a-solution-2" class="section level2">
-<h2>A) Solution:</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI0hlcmVcbm4xID0gNTdcbm4yID0gMTdcbm4zID0gNVxueDEgPSA2XG54MiA9IDVcbngzID0gMVxuZGF0ID0gZGF0YS5mcmFtZShTdHJhdHVtID0gYyhcIlNtYWxsXCIsIFwiTWVkaXVtXCIsIFwiTGFyZ2VcIiksIFwiTnVtYmVyc19BbGxvd2VkXCIgPSBjKG4xLXgxLG4yLXgyLG4zLXgzKSwgXCJOdW1iZXJzX25vdF9hbGxvd2VkXCIgPSBjKHgxLHgyLHgzKSwgVG90YWwgPSBjKG4xLG4yLG4zKSlcbiMsIFRvdGFsID0gYyhuMSxuMixuMylcbmRhdFxuYGBgIn0= -->
-<pre class="r"><code>#Here
-n1 = 57
-n2 = 17
-n3 = 5
-x1 = 6
-x2 = 5
-x3 = 1
-dat = data.frame(Stratum = c(&quot;Small&quot;, &quot;Medium&quot;, &quot;Large&quot;), &quot;Numbers_Allowed&quot; = c(n1-x1,n2-x2,n3-x3), &quot;Numbers_not_allowed&quot; = c(x1,x2,x3), Total = c(n1,n2,n3))
-#, Total = c(n1,n2,n3)
-dat</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MywibmNvbCI6NCwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbMyB4IDRdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmwxUlRVL0RNQXgxdnphdDBzYWtjZUFuY0ZtbERuSGd4QkJja0FaQ2pNTnVVOWFHVVpFbVU1cHFIUG5KL0lJTnAwa1FTNlRJOXJOZi9PeThQcXl1MGxVS0FCSEVRUUJSZ2k3MDdsL3kyZlVNSUE0eENpQ0dnYlpmV0RWQko4WTdOcFF1a1N4cndwZ05layswck5yYXBSWkViaWs2STEwL2Yveld6OFA4RW93ZGd6c21mMkh4YzJOdmY3ejh3dkx6MHpwUGFNSkpUUnNyTXJaZ2Y2a2tVWC9DenA3YmVrTmxzNzVqVE94cGFlR0pnN2xRYTNLU1N0NkVJc3hyTlpCaW43bDJRN3loVVlpNzhUUVZqRFJPa3dQVGtpaVN2VXZrWTNUd0tIMnhVNVhnU0FyMTFoT1BIRWdQR0xkY0t5bW54VWZMUDZmNWplN1E1YzBaV2ovNjU4ZW1aM2kwYnlYdUZ5bmZWcHc2OFl4c3FQdmdFWTdjVFp6dFpNV1ZHd1hSSmxQZGlpeFNDT2FRYmpnNC9BS05IeW1IYmdJQUFBPT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Stratum"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Numbers_Allowed"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Numbers_not_allowed"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Total"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Small","2":"51","3":"6","4":"57"},{"1":"Medium","2":"12","3":"5","4":"17"},{"1":"Large","2":"4","3":"1","4":"5"}],"options":{"columns":{"min":{},"max":[10],"total":[4]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0IDwtIHJiaW5kKGRhdCwgYyhcIlRvdGFsXCIsIGNvbFN1bXMoZGF0WywyOjRdKSkpXG5kYXRcbmBgYCJ9 -->
-<pre class="r"><code>dat &lt;- rbind(dat, c(&quot;Total&quot;, colSums(dat[,2:4])))
-dat</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NCwibmNvbCI6NCwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbNCB4IDRdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmwxU1VVK0RNQkErR0d3WnlYVEpmc2VJb0l6NGFQUlJGK044Mk52U1FaM0UwaTZsWkQ3Nnk2ZHR4eEZwRTlMdnZ1dDNkeC90MjlQMk50cEdBRENDd1BOZ0ZHb0k0OGZYSk0xU2dNRFhrUWNCVE0zK3JVOHROQWowTjdmN0pSRnVhc0pZRjR4ZmFGbTFOYWFlaVR4UURONkZJc3dSKzFtQ0tFbXgweDFTcTl3NTdxMFFaQWorNjkzYWVaL0xYWjJmM3pzR1EwNXEyamcxSmhzbGllb05YYS9iZWs5bHMzdGdUSnhvMmRFTHBMbFFPekpJb2V0QnE2a1VweGpiemN3MFAyQlg0TTVVTU5MZ1RFaEdKVkVrL3BCYXI2T3pJNW1JbzZvRTF5TGYzRmJvaUQzcEVQT1dtMG5LWmZIWjhxOWxlbU02MlB4bHpUb2NETEhwNmY5MnRVSzhmY29QRmU4dm5KRTl4WWR4cFMxYngvRlJWbHloRmMwMnNiSy9xR01Ld1pDeDV1RDhCMzNRU2NHbUFnQUEifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Stratum"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Numbers_Allowed"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Numbers_not_allowed"],"name":[3],"type":["chr"],"align":["left"]},{"label":["Total"],"name":[4],"type":["chr"],"align":["left"]}],"data":[{"1":"Small","2":"51","3":"6","4":"57"},{"1":"Medium","2":"12","3":"5","4":"17"},{"1":"Large","2":"4","3":"1","4":"5"},{"1":"Total","2":"67","3":"12","4":"79"}],"options":{"columns":{"min":{},"max":[10],"total":[4]},"rows":{"min":[10],"max":[10],"total":[4]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIzMgw5cgMiB0YWJsZSBvZiBjb3VudHNcbmRhdCA9IHRyYW5zZm9ybShkYXQsICBOdW1iZXJzX0FsbG93ZWQgPSBhcy5udW1lcmljKE51bWJlcnNfQWxsb3dlZCksTnVtYmVyc19ub3RfYWxsb3dlZCA9IGFzLm51bWVyaWMoTnVtYmVyc19ub3RfYWxsb3dlZCksVG90YWwgPSBhcy5udW1lcmljKFRvdGFsKSlcbmRhdFxuYGBgIn0= -->
-<pre class="r"><code>#3 × 2 table of counts
-dat = transform(dat,  Numbers_Allowed = as.numeric(Numbers_Allowed),Numbers_not_allowed = as.numeric(Numbers_not_allowed),Total = as.numeric(Total))
-dat</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NCwibmNvbCI6NCwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbNCB4IDRdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmwxU3pVckRRQkNlcEVsTEE2MkZldkFSdkRUUWlHY2plaEdxRk9PaHQ3Sk4xaHJjN0piTmhucnNvL2xJUGtIcmJMSWJTQmFXbWZubTk5dlo5K2ZOWGJBSkFHQUFudVBBd0VjVmhrL3JaWFFmQVhndVdnNTRNTmJ5QjZQbXFIaDRaN1ZzSEg1U0VNYU1NWHlsV1Y0VjFyVWljayt0OFNFVVlhaE1kWEw4Y3RLOUlMNkZSczZNWFArQ09VM2NqY0d2Ry9ud0I1MjhObTVsNmkyNzhYRmk2M1hZK0p3VXRPd3hHU1ZLRXRWT2YvVldGVHNxeSswalkrSklNd1BQTGN5RjJwS095MUxzdEJwTGNReHR1d2xlOTJRRzZzK1VNbExhbVN3WVpFU1I4Rk5pUGxyblhzcElIRlF1T0NhNWVqVitMOW1SUFdCV2NUMUp0a2kvS3Y2OWlQUmpCYlcvT1JPamUxMWQ5M1F2cHBadlYwMzVQdWZ0ZGhuWlVmc0xwa2k1Wmh3ZVpNNlZwWUpvR2FyNmlReVNDbWFSbWh5Yy93SE5sTmVEa3dJQUFBPT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Stratum"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Numbers_Allowed"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Numbers_not_allowed"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Total"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Small","2":"51","3":"6","4":"57"},{"1":"Medium","2":"12","3":"5","4":"17"},{"1":"Large","2":"4","3":"1","4":"5"},{"1":"Total","2":"67","3":"12","4":"79"}],"options":{"columns":{"min":{},"max":[10],"total":[4]},"rows":{"min":[10],"max":[10],"total":[4]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="b-solution-2" class="section level2">
-<h2>B) Solution:</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI3RoZSBwZXJjZW50IG9mIGNsYWltcyB0aGF0IHdlcmUgbm90IGFsbG93ZWQgaW4gZWFjaCBvZiB0aGUgdGhyZWUgc3RyYXRhXG5kYXQkcGN0X25vdF9hbGxvd2VkID0gcm91bmQoZGF0JE51bWJlcnNfbm90X2FsbG93ZWQvZGF0JFRvdGFsKjEwMCwyKVxuZGF0WzE6MyxjKDEsNSldXG5gYGAifQ== -->
-<pre class="r"><code>#the percent of claims that were not allowed in each of the three strata
-dat$pct_not_allowed = round(dat$Numbers_not_allowed/dat$Total*100,2)
-dat[1:3,c(1,5)]</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MywibmNvbCI6Miwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbMyB4IDJdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmwxUVRVdkVNQkNkcHMwdVc5Z1A4RGNJZXRpQ1ZZOUNRWThLNGw3MnNMREVOdTRXMDZTa0tldlJmK0IvOGo5NVhaMjBpV2dMYVdiZXpIc3ZNMDkzNjh0NEhRTkFDRkVRUUVneGhOSHQ0MFY2blFKRUJMTUFJcGpZK3cyN1RqQ3c0S0tuZEFXNnFwZ1FMaGs5OEtKc0sxKzZaM3JITVpqWi91eDB2am43K3Z6SWJ2YjQzNXhuVitDK2YwWlVzb28zem9RNGNMd3ltcGxmNFhtZG02MVVab3ZPNnNDTGdjUkVxMFBpWmFaVzVyMDNDb2RldVdDTjkvSmdYREREa2hlTmZNeU9BOHBZMWFaVUVrbkVib01PeUlFZUFJdFcycGNVeTN6Znl0ZGxtbHFIcnQ2ZnFidkRQekhwUGNtMzA2Sit1MXp1U3NuOTR3Vjc1bjd4TXh5NW16aXBkU21OSHdYUkpqSEtNTjhYNTBwNHBCc09qajhWTjVDMEJnSUFBQT09In0= -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Stratum"],"name":[1],"type":["chr"],"align":["left"]},{"label":["pct_not_allowed"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Small","2":"10.53","_rn_":"1"},{"1":"Medium","2":"29.41","_rn_":"2"},{"1":"Large","2":"20.00","_rn_":"3"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="c-solution-2" class="section level2">
-<h2>C) Solution:</h2>
-<p><em>In a 3x2 table, the expected count corresponding to the cell (Large, Numbers_not_allowed) is less then 5. SO need to combine Medium and Large rows.</em></p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBDb21iaW5pbmcgbWVkaXVtIGFuZCBsYXJnZSByb3dcbmRhdCA9IHN1YnNldChkYXQsIHNlbGVjdCA9IC1jKHBjdF9ub3RfYWxsb3dlZCkpXG5kYXQgPC0gcmJpbmQoZGF0LCBjKFwiTWVkaXVtICYgTGFyZ2VcIiwgY29sU3VtcyhkYXRbMjozLDI6NF0pKSlcbmRhdCA9IGRhdFstYygyLDMpLF1cbmRhdCA9IHRyYW5zZm9ybShkYXQsIE51bWJlcnNfQWxsb3dlZCA9IGFzLm51bWVyaWMoTnVtYmVyc19BbGxvd2VkKSxOdW1iZXJzX25vdF9hbGxvd2VkID0gYXMubnVtZXJpYyhOdW1iZXJzX25vdF9hbGxvd2VkKSxUb3RhbCA9IGFzLm51bWVyaWMoVG90YWwpKVxuZGF0XG5gYGAifQ== -->
-<pre class="r"><code># Combining medium and large row
-dat = subset(dat, select = -c(pct_not_allowed))
-dat &lt;- rbind(dat, c(&quot;Medium &amp; Large&quot;, colSums(dat[2:3,2:4])))
-dat = dat[-c(2,3),]
-dat = transform(dat, Numbers_Allowed = as.numeric(Numbers_Allowed),Numbers_not_allowed = as.numeric(Numbers_not_allowed),Total = as.numeric(Total))
-dat</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MywibmNvbCI6NCwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbMyB4IDRdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmwxU1FVK0RNQmo5WUxCbEpOTWx1K3k0ay9FeW9peDZ4dWpGWkpwRlBPeTJkRkFuc2JSTEtabEhmOXArMmJTRnJ5cVFrUGE5eC91Kzk1VytQS3dYd1RvQWdCNTRqZ005WDIraGY3KzZqbTRpQU0vVnlBRVBobWI5MUY5TjlNYlQ3N2l4MUlLZkZJUXhDMTZGSWhhY1BkRXNyNHJaeFd4SjVJNGF4dmppeHkvVEJ1TFZzVm12d0Q2TlBtMUFmSW5ydEtNdjBaK2cvOWJLcmNBK0p3VXRNYXlINUNCUmtxaXFRSGorWEJWYktzdk5IV1BpUURPa0o1Ym1RbTFJUzhJQjI2MkdVaHhDMjI1VW40MFJtN1B5dTdsU1JrcWJ5NUpCUmhRSjM2U3VvZEdwWXhtSXZjb0YxeVozMGxSc21SM1pJY1lWTjJteWVmcGU4WTk1dERBZE1KS0RFUjJNT2ZxTGFucTYzMWpMeDFwOXluYzVwelk4STF2NiszLzEyUFhVNFY3bVhObFJORnVHNnQ4OUNGTEJMRk1QQjZjZmxTNEwrWG9DQUFBPSJ9 -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Stratum"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Numbers_Allowed"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Numbers_not_allowed"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Total"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Small","2":"51","3":"6","4":"57","_rn_":"1"},{"1":"Total","2":"67","3":"12","4":"79","_rn_":"4"},{"1":"Medium & Large","2":"16","3":"6","4":"22","_rn_":"5"}],"options":{"columns":{"min":{},"max":[10],"total":[4]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyByZW9yZGVyaW5nIHRoZSByb3dzXG5kYXQgPSBkYXRbYygxLDMsMiksXVxucm93Lm5hbWVzKGRhdCkgPC0gTlVMTFxuXG5kYXRcbmBgYCJ9 -->
-<pre class="r"><code># reordering the rows
-dat = dat[c(1,3,2),]
-row.names(dat) &lt;- NULL
-
-dat</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MywibmNvbCI6NCwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbMyB4IDRdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmwxUlBVL0RNQkM5cEVtclJpcFU2c0xZQ2JFMGd2QXhGOEdDVkZCRkdMcFZibUpLaEdOWGpxTXk4dFA0WlFVN1BsY2tsaXpmdmVmbmUzZCtmVnhkUjZzSUFIb1FlQjcwUWgxQy8yRjVsZHdtQUlHdk13OENHSnJ6UzkrYTZDRFFlMndsRFJHbUpXRU1rNU5ubWhkMU9UMmZMb2pjVW5mbFRTakNERzEwODZkdlV3Ym1sMkRQNVEvZ3N2d1o0dTY4Z0RhL1FQMGQ4cW5UdHd5SG5KUzBRck1CZ29OVVNhTHFFdFBUbDdyY1VGbXQ3eGtUZTVvalBIRXdGMnBOV3BScnBWVnFLTVUrZHVWR2V2dldvWjVSeDFQR1NPVThPVERLaVNMeHU5UjZuUjA2a29IWXFVSndMZkxOOU1PTzJKTWRZRnh6NHlTZlpSODEvNXdsTjZaQ3c5czF3cmozTHc1c1RmOFgzd3J4clQ3bDI0SWZmNUdSRFQxK3RHNjU2VGpleVlJcjE0cEdxMWcxSTBJa0U4d2hUWE53K0FNRDU1QjZkZ0lBQUE9PSJ9 -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Stratum"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Numbers_Allowed"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Numbers_not_allowed"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Total"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Small","2":"51","3":"6","4":"57"},{"1":"Medium & Large","2":"16","3":"6","4":"22"},{"1":"Total","2":"67","3":"12","4":"79"}],"options":{"columns":{"min":{},"max":[10],"total":[4]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="d-solution-1" class="section level2">
-<h2>D) Solution:</h2>
-<div id="the-null-hypothesis" class="section level4">
-<h4>The null hypothesis:</h4>
-<p><em>H0: There is no relationship between claims sizes and whether a claim is allowed.</em></p>
-</div>
-<div id="the-alternate-hypothesis" class="section level4">
-<h4>The alternate hypothesis:</h4>
-<p><em>H1: There is a relationship between claims sizes and whether a claim is allowed.</em></p>
-</div>
-</div>
-<div id="e-solution" class="section level2">
-<h2>E) Solution:</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm93Lm5hbWVzKGRhdCkgID0gZGF0WywxXVxuZGF0ID0gZGF0WyxjKDIsMyw0KV1cbmRhdFxuYGBgIn0= -->
-<pre class="r"><code>row.names(dat)  = dat[,1]
-dat = dat[,c(2,3,4)]
-dat</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MywibmNvbCI6Mywic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbMyB4IDNdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQm4xUVRVL0NRQkNkZml5R0ppSUpGNCtjakJjYXJNRXpSaThtYUloNDRFYVdkc0hHN1M3WmJvTkhmNXEvRE5qZDdwSzBNVFpwWnVhOWVXOTI1djE1ZVI4dEl3QUlJUFE4Q0pCS29mTTB2MHNtQ1VEb3E4cURFTG82ZnF1dWdXa0Y2T2s0ZmZuUjdUQWRReDNudjJDL21yKzJ1SXUzME9SblZ2OWcrWVhUTndZamhndFNxcVJmdjlPQVYyOVZzU2FpWEQxU3l2Y2tzL0RBd1l6TEZXNVE2SU5MVEZ2ZVhjSDM4Vi8rYUZFb3VTMTZyeVRMcTJKNE01eGhzU1gvR2FLVTR0S1pPVERLc01UeFJxZzVxanEwSkJkOEozUE9sTWpYNTBVdHNTZGFRTDlpK3NYWktQMnMyTmNvbWVnSmhxLy9TeHVEWnE1bitrZnJoYXhYaDdCdHpzNGJVYndtNTZYVmFjeGw0cDNJbVhTcktMU01wZG5jSWltbkRqSEx3ZUVFeDRLcUhGY0NBQUE9In0= -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Numbers_Allowed"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Numbers_not_allowed"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Total"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"51","2":"6","3":"57","_rn_":"Small"},{"1":"16","2":"6","3":"22","_rn_":"Medium & Large"},{"1":"67","2":"12","3":"79","_rn_":"Total"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBFeHBlY3RlZCBmcmVxdWVuY2llc1xueHNxID0gY2hpc3EudGVzdChkYXRbMToyLDE6Ml0sIGNvcnJlY3QgPSBGKVxuYGBgIn0= -->
-<pre class="r"><code># Expected frequencies
-xsq = chisq.test(dat[1:2,1:2], correct = F)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZyBpbiBjaGlzcS50ZXN0KGRhdFsxOjIsIDE6Ml0sIGNvcnJlY3QgPSBGKSA6XG4gIENoaS1zcXVhcmVkIGFwcHJveGltYXRpb24gbWF5IGJlIGluY29ycmVjdFxuIn0= -->
-<pre><code>Warning in chisq.test(dat[1:2, 1:2], correct = F) :
-  Chi-squared approximation may be incorrect</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZnJlcV9kZiA9IGRhdGEuZnJhbWUoeHNxJGV4cGVjdGVkKVxuZnJlcV9kZiA8LSBjYmluZChmcmVxX2RmLCBUb3RhbCA9IHJvd1N1bXMoZnJlcV9kZikpXG5mcmVxX2RmIDwtIHJiaW5kKGZyZXFfZGYsIGMoY29sU3VtcyhmcmVxX2RmWywxOjNdKSkpXG5yb3duYW1lcyhmcmVxX2RmKVtyb3duYW1lcyhmcmVxX2RmKT09M10gID0gYyhcIlRvdGFsXCIpXG5mcmVxX2RmXG5gYGAifQ== -->
-<pre class="r"><code>freq_df = data.frame(xsq$expected)
-freq_df &lt;- cbind(freq_df, Total = rowSums(freq_df))
-freq_df &lt;- rbind(freq_df, c(colSums(freq_df[,1:3])))
-rownames(freq_df)[rownames(freq_df)==3]  = c(&quot;Total&quot;)
-freq_df</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MywibmNvbCI6Mywic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbMyB4IDNdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmd0eWlURG1pdUJpWUdCZ1ptQmhaR1JnWmdVeUdkaWNBd3lOVEkwWUdGaVlnRHhHQmhZR1RoQmRBVlFsREZiS3dNQUhvaDA4dFBjYnpPNE9kekJhMFRqdnhNdEFoNEFEREZBQWtWY01aTGFkZUdtUkE5ZnV6NXc3dGxZNGFEQ2d5dnMwZ0RrT1poQkJoMkNZZmhTTFdmTVNjMU9MZ1F3QmlEdkJndngrcGJsSnFVWEY4WTQ1T2ZubHFTbFFZV0dZY0Y1K1NYd2lpaFJyU0g1SllnNmEyWnhGK2VWNjJNeG5EYzRGYW9keStIeFRVekpMY3hYVUZId1NpOUpUOFJuSW1weVRXQXd6RENiSWxaSllrcWlYVmdTMEI4ajdoNmFGUGIrZ0pETS9ENmlKQ1JTOHJHaWFHWXZRQkFSSzgwQXVUdEZOemlqTnk5WTFBb1VlRjFnZWdubWhORE1xRzJRbjAzK29XYXhRczloUzg5SXo4K0EreWtsTVNvVjdHaGcwNEpEUkt5akt6Q3VCZVFVb1dxeFhBdlk1VkNRNVB3Y21Bdlljd3o4QVNnY1NmMWNDQUFBPSJ9 -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Numbers_Allowed"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Numbers_not_allowed"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Total"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"48.34177","2":"8.658228","3":"57","_rn_":"Small"},{"1":"18.65823","2":"3.341772","3":"22","_rn_":"Medium & Large"},{"1":"67.00000","2":"12.000000","3":"79","_rn_":"Total"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBleHBlY3RlZCBmcmVxdWVuY3kgd2l0aG91dCB0b3RhbHNcbnhzcSRleHBlY3RlZFxuYGBgIn0= -->
-<pre class="r"><code># expected frequency without totals
-xsq$expected</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgICAgTnVtYmVyc19BbGxvd2VkIE51bWJlcnNfbm90X2FsbG93ZWRcblNtYWxsICAgICAgICAgICAgICAgICA0OC4zNDE3NyAgICAgICAgICAgIDguNjU4MjI4XG5NZWRpdW0gJiBMYXJnZSAgICAgICAgMTguNjU4MjMgICAgICAgICAgICAzLjM0MTc3MlxuIn0= -->
-<pre><code>               Numbers_Allowed Numbers_not_allowed
-Small                 48.34177            8.658228
-Medium &amp; Large        18.65823            3.341772</code></pre>
+prop 1 prop 2 
+  0.15   0.12 </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBDaGkgLXNxdWFyZSB0ZXN0IHN0YXRpc3RpY3NcbnhzcSRzdGF0aXN0aWNcbmBgYCJ9 -->
-<pre class="r"><code># Chi -square test statistics
-xsq$statistic</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJvcC50ZXN0KHg9MjksIG49ODEsIGFsdGVybmF0aXZlPVwiZ3JlYXRlclwiLCBjb3JyZWN0PUYsIGNvbmYubGV2ZWwgPSAuOTApXG5gYGAifQ== -->
+<pre class="r"><code>prop.test(x=29, n=81, alternative=&quot;greater&quot;, correct=F, conf.level = .90)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWC1zcXVhcmVkIFxuICAzLjQ1NTUxIFxuIn0= -->
-<pre><code>X-squared 
-  3.45551 </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBEZWdyZWUgb2YgZnJlZWRvbVxueHNxJHBhcmFtZXRlclxuYGBgIn0= -->
-<pre class="r"><code># Degree of freedom
-xsq$parameter</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiZGYgXG4gMSBcbiJ9 -->
-<pre><code>df 
- 1 </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBQLXZhbHVlXG54c3EkcC52YWx1ZVxuYGBgIn0= -->
-<pre class="r"><code># P-value
-xsq$p.value</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDYzMDQxM1xuIn0= -->
-<pre><code>[1] 0.0630413</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueHNxXG5gYGAifQ== -->
-<pre class="r"><code>xsq</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBDaGktc3F1YXJlZCB0ZXN0XG5cbmRhdGE6ICBkYXRbMToyLCAxOjJdXG5YLXNxdWFyZWQgPSAzLjQ1NTUsIGRmID0gMSwgcC12YWx1ZSA9IDAuMDYzMDRcbiJ9 -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdDEtc2FtcGxlIHByb3BvcnRpb25zIHRlc3Qgd2l0aG91dCBjb250aW51aXR5IGNvcnJlY3Rpb25cblxuZGF0YTogIDI5IG91dCBvZiA4MSwgbnVsbCBwcm9iYWJpbGl0eSAwLjVcblgtc3F1YXJlZCA9IDYuNTMwOSwgZGYgPSAxLCBwLXZhbHVlID0gMC45OTQ3XG5hbHRlcm5hdGl2ZSBoeXBvdGhlc2lzOiB0cnVlIHAgaXMgZ3JlYXRlciB0aGFuIDAuNVxuOTAgcGVyY2VudCBjb25maWRlbmNlIGludGVydmFsOlxuIDAuMjkzMjAyMyAxLjAwMDAwMDBcbnNhbXBsZSBlc3RpbWF0ZXM6XG4gICAgICAgIHAgXG4wLjM1ODAyNDcgXG4ifQ== -->
 <pre><code>
-    Pearson&#39;s Chi-squared test
+    1-sample proportions test without continuity correction
 
-data:  dat[1:2, 1:2]
-X-squared = 3.4555, df = 1, p-value = 0.06304</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p><em>The smallest P-value suggests that there is not enough evidence to reject the null hypothesis. So we failed to reject the null hypothesis as p-value (.0634) is higher than 5 times in 100.</em></p>
-</div>
-</div>
-<div id="section-3" class="section level1">
-<h1>9.41</h1>
-<div id="when-do-canadian-students-enter-private-career-colleges" class="section level2">
-<h2>When do Canadian students enter private career colleges?</h2>
-</div>
-<div id="a-solution-3" class="section level2">
-<h2>A) Solution:</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZV9uYW1lID0gXCJleDA5LTQxY2FuZi54bHNcIlxuZGF0ID0gcmVhZF94bHMoZmlsZV9uYW1lKVxuZGF0XG5gYGAifQ== -->
-<pre class="r"><code>file_name = &quot;ex09-41canf.xls&quot;
-dat = read_xls(file_name)
-dat</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6MTIsIm5jb2wiOjQsInN1bW1hcnkiOnsiQSB0aWJibGUiOlsiMTIgeCA0Il19fSwicmRmIjoiSDRzSUFBQUFBQUFBQnMxU3pVN0NRQkRlbHBhR0JnaUpGMStDSnBaNEZwUW9FbjlRT0hCZDJ3VTJsaTNaTHVyUmVQZG80c25FbTNlZng3ZndUTjNTMmNZMjllNG1rMisrbVoyZG41M3IvclJqVDIyRVVBVVptb1lxcGxSUjlXaTA1KzY3Q0JtNlpCb3lVQzNCQjNsclJ5cUdsSmFVT2ppczNrd1FQaGdETmMrd3BQL0tsNiszT3VIWUoxRTU2NU9JemxrNUd4QWNpRVVwczg2SlQvSHA1QTg2SnZ5T2VxU2NtcGRpa1RVQUJLRm1VbkgzZVpWOENNcndxWnZIejY4OGZyem04V1Uzais5dk9jenk5RkxTSFQybWVBSTRCT3lEL3dMd0FQQUs2amhVOFlCRHdJRktrMXNsaytHbEhIbjZMUVlZalFsZFppTTVwaVR3MWVLcEQ3QkdoSHVFaWNKck5SN2VPK3JGaGhROUtUcU80KzlpV2kvQWtVcXJqTGFQQlhabVhNWkx0aW1FV09GSzBKREpJRDFaZmJNUXJQR0NvYlZtU1NWKzIxdXMyVzI3NHlZWnR2NzBORUN2LzlLTk5LY2V3MXVtMmpEQzVwUmxJd253RFFtQU5HWEwyNDZkRmFkeUlOQ0t0RWFPQ0FWVzkyd3ZESlJsMnh6YS9BQzUrUnJ3OHdNQUFBPT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Time"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Field"],"name":[2],"type":["chr"],"align":["left"]},{"label":["n"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Percent"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"AfterHS","2":"Trades","3":"942","4":"34"},{"1":"Later","2":"Trades","3":"942","4":"66"},{"1":"AfterHS","2":"Design","3":"584","4":"47"},{"1":"Later","2":"Design","3":"584","4":"53"},{"1":"AfterHS","2":"Health","3":"5085","4":"40"},{"1":"Later","2":"Health","3":"5085","4":"60"},{"1":"AfterHS","2":"MediaIT","3":"3148","4":"31"},{"1":"Later","2":"MediaIT","3":"3148","4":"69"},{"1":"AfterHS","2":"Service","3":"1350","4":"36"},{"1":"Later","2":"Service","3":"1350","4":"64"},{"1":"AfterHS","2":"Other","3":"2255","4":"52"},{"1":"Later","2":"Other","3":"2255","4":"48"}],"options":{"columns":{"min":{},"max":[10],"total":[4]},"rows":{"min":[10],"max":[10],"total":[12]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWZ0ZXJfZGYgPSBmaWx0ZXIoZGF0LCBUaW1lID09ICdBZnRlckhTJylcbmFmdGVyX2RmJGFmdGVyID0gYWZ0ZXJfZGYkbiphZnRlcl9kZiRQZXJjZW50LzEwMFxuYWZ0ZXJfZGYgPSBhZnRlcl9kZltjKDIsNSldXG5hZnRlcl9kZlxuYGBgIn0= -->
-<pre class="r"><code>after_df = filter(dat, Time == &#39;AfterHS&#39;)
-after_df$after = after_df$n*after_df$Percent/100
-after_df = after_df[c(2,5)]
-after_df</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Miwic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI2IHggMiJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJsMVJQVTdETUJoMTBpUlZJN1dxUk8vQTFFZzBZa1NLUkFWbFFLRFNvU01tY1JxTDRBVEhCZFNCY2dJR0xzREEzbk53QStaZWc2SEJUdndoaUFmN3ZlZnZmVC8yZER6MzNibUxFR29oeXpCUXk1WVFPY2VYQjZQREVVS1dLWm1CTE5SUjU1T00ycE5BaVgwVnBpK2NHY2NSS1lDTlNVRVhETmlFNEZRa21yWFBTVVR4MlF6b0ZlRVBOQ1NhMmhjaUlWeUNuaklHd2xwdFR6ZUQ0SDUvTTFodEo4SDdwK29OQmE5cjl5ai8rQXFlcjJ2K05vM1ZhblJyTTN3bmU2bzdOVUU4b1NTTmdPQllxSEwvYkIyZVBYcGc3U3JyaTl6S3N2eHU1ZzlUWEVCK0VOMElDK3pGWFBvbDJ6VXM3U3dYTkdQU1pLcG50QnRtZ3plRS9wS3BUcUpobUN6WjdkRDNWWVhxdmw1ZGpaMC8yS3hybXFYT1pjTS9FTGFnN1BlbFUzeERVazE2Y3VScVlpL25sQWtZUmFxRkp6S0JJYzROc3hTVWFqaTArd0ViOU5DU1B3SUFBQT09In0= -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Field"],"name":[1],"type":["chr"],"align":["left"]},{"label":["after"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Trades","2":"320.28"},{"1":"Design","2":"274.48"},{"1":"Health","2":"2034.00"},{"1":"MediaIT","2":"975.88"},{"1":"Service","2":"486.00"},{"1":"Other","2":"1172.60"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGF0ZXJfZGYgPSBmaWx0ZXIoZGF0LCBUaW1lID09ICdMYXRlcicpXG5sYXRlcl9kZiRsYXRlciA9IGxhdGVyX2RmJG4qbGF0ZXJfZGYkUGVyY2VudC8xMDBcbmxhdGVyX2RmID0gbGF0ZXJfZGZbYygyLDUpXVxubGF0ZXJfZGZcbmBgYCJ9 -->
-<pre class="r"><code>later_df = filter(dat, Time == &#39;Later&#39;)
-later_df$later = later_df$n*later_df$Percent/100
-later_df = later_df[c(2,5)]
-later_df</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Miwic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI2IHggMiJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJndHlpVERtaXVCaVlHQmdabUJoWkdSZ1pnVXlHZGljQXd5TlRJMFlHRmlZZ0R4R0JoWUdUaEJkQVZRbERHU0FCQVZBeXFBU2JDRkZpU21weFRDZVMycHhabm9lak9lUm1waFRrZ0hsc2Z1bXBtUW1lb2JBdU1HcFJXV1p5YWxRTHF0L1NVWnFFWkRCQjlMbzBKeDdxRDlHNDV0RGNVVGc2MWE1SFE3THI0SGN4dUN3NElkdHdlTHJYQTdkREJEK2hKY3pnV0FXbW10Wjh4SnpnVzZDdUpRSkp1aVdtWnFUQXVQa0pKYUFyRVBSeGxtVVg2NEgwOG9MMHRvQUpQNy8vLzhMM2Z6a25NUmltUGt3UWE2VXhKSkV2YlFpb0g0Zzd4K2FGdmI4Z3BMTS9EeWdKaVpRTUxLaWFXWXNRaE1RS00wRHVTUkZOem1qTkM5YjE5Z0VaQU5ZSGdKNG9XdzJKRFlUeEU2bS8xQ3pXR0h4a0pxWG5wbVhpdkI2VW1vT2xNTUg5RExZeDNvRlJabDVKVEN2QUVXTDlVcnlTeEpoNnJpUzgzTmdJbURQTWZ3REFDeWtwNUkvQWdBQSJ9 -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Field"],"name":[1],"type":["chr"],"align":["left"]},{"label":["later"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Trades","2":"621.72"},{"1":"Design","2":"309.52"},{"1":"Health","2":"3051.00"},{"1":"MediaIT","2":"2172.12"},{"1":"Service","2":"864.00"},{"1":"Other","2":"1082.40"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyA2eDIgdGFibGUgd2l0aCBvYnNlcnZlZCBjb3VudHNcbm1haW5fZGYgPSBtZXJnZSh4ID0gYWZ0ZXJfZGYsIHkgPSBsYXRlcl9kZiwgYnkgPSBcIkZpZWxkXCIsIGFsbCA9IFRSVUUpXG5tYWluX2RmIDwtIGNiaW5kKG1haW5fZGYsIFRvdGFsID0gcm93U3VtcyhtYWluX2RmWzI6M10pKVxubWFpbl9kZiA8LSByYmluZChtYWluX2RmLCBjKFwiVG90YWxcIiwgY29sU3VtcyhtYWluX2RmWzI6NF0pKSlcbm1haW5fZGYgPSB0cmFuc2Zvcm0obWFpbl9kZiwgYWZ0ZXIgPSBhcy5udW1lcmljKGFmdGVyKSxsYXRlciA9IGFzLm51bWVyaWMobGF0ZXIpLFRvdGFsID0gYXMubnVtZXJpYyhUb3RhbCkpXG5yb3cubmFtZXMobWFpbl9kZikgID0gbWFpbl9kZlssMV1cbm1haW5fZGYgPSBtYWluX2RmWyxjKDIsMyw0KV1cbm1haW5fZGZcbmBgYCJ9 -->
-<pre class="r"><code># 6x2 table with observed counts
-main_df = merge(x = after_df, y = later_df, by = &quot;Field&quot;, all = TRUE)
-main_df &lt;- cbind(main_df, Total = rowSums(main_df[2:3]))
-main_df &lt;- rbind(main_df, c(&quot;Total&quot;, colSums(main_df[2:4])))
-main_df = transform(main_df, after = as.numeric(after),later = as.numeric(later),Total = as.numeric(Total))
-row.names(main_df)  = main_df[,1]
-main_df = main_df[,c(2,3,4)]
-main_df</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NywibmNvbCI6Mywic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbNyB4IDNdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmd0eWlURG1pdUJpWUdCZ1ptQmhaR1JnWmdVeUdkaWNBd3lOVEkwWUdGaVlnRHhHQmhZR1RoQmRBVlFsREZiS3dNQUh4T3dPaGVyclJLb2VlampNUHdIU3h1RFFWODlsVzdENHVzT2tvRFFRY0toTGdJaVhzRlE5ZEY4bjRyQ2xIeVROQmRkZkhCSDR1bFZ1aDhQeWF4QjFDMzZBNVIwbXZKd0pCTE1jdWhrZzRzMjVoL3BqTkw0NTdGOENwdUg2bXh3ZzhwdnZRdWdWTXlEMHdua1FlcW9FaE80dGdOQ25wQ0FHb25xTU5TOHhON1VZeUJDQWhBTkVNREd0SkxVSXhzbEpST0tFNUpjazVxQ1p3Vm1VWDY2SGJBNDdWSUxOSmJVNE16MFB4dk5JVGN3cHlZRHkySDFUVXpJVFBVTmdCdnVYWk1CdFlROU9MU3JMVEU2RmFRd3BTa3dCR283SENhekpPWW5GTU90aGdsd3BpU1dKZW1sRlFKY0JlZi9RdExEbkY1Ums1dWNCTlRHQklwWVZUVE5qRVpxQVFHa2V5SThwdXNrWnBYblp1c2FtSUJ2QThoRE1DNlhaa2RqTUVEdVova1BOWW9YNUtEVXZQVE12RlJIQ1NhazVVQTRmTUREQllhbFhVSlNaVndMekNsQzBXSzhFN0hPb1NISitEa3dFN0RtR2Z3Qis2L3BvMFFJQUFBPT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["after"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["later"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Total"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"274.48","2":"309.52","3":"584","_rn_":"Design"},{"1":"2034.00","2":"3051.00","3":"5085","_rn_":"Health"},{"1":"975.88","2":"2172.12","3":"3148","_rn_":"MediaIT"},{"1":"1172.60","2":"1082.40","3":"2255","_rn_":"Other"},{"1":"486.00","2":"864.00","3":"1350","_rn_":"Service"},{"1":"320.28","2":"621.72","3":"942","_rn_":"Trades"},{"1":"5263.24","2":"8100.76","3":"13364","_rn_":"Total"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[7]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="b-solution-3" class="section level2">
-<h2>B) Solution:</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBUb3RhbCBudW1iZXIgb2YgQ2FuYWRpYW4gc3R1ZGVudHMgc3VydmV5ZWRcbm1haW5fZGZbbWF4KHJvd25hbWVzKG1haW5fZGYpKSxtYXgoY29sbmFtZXMobWFpbl9kZikpXVxuYGBgIn0= -->
-<pre class="r"><code># Total number of Canadian students surveyed
-main_df[max(rownames(main_df)),max(colnames(main_df))]</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDk0MlxuIn0= -->
-<pre><code>[1] 942</code></pre>
+data:  29 out of 81, null probability 0.5
+X-squared = 6.5309, df = 1, p-value = 0.9947
+alternative hypothesis: true p is greater than 0.5
+90 percent confidence interval:
+ 0.2932023 1.0000000
+sample estimates:
+        p 
+0.3580247 </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBUaGUgcGVyY2VudGFnZSBvZiBzdHVkZW50IGVucm9sbGVkIHJpZ2h0IGFmdGVyIGhpZ2ggc2Nob29sIGlzXG5wYXN0ZTAocm91bmQobWFpbl9kZlttYXgocm93bmFtZXMobWFpbl9kZikpLDJdL21haW5fZGZbbWF4KHJvd25hbWVzKG1haW5fZGYpKSxtYXgoY29sbmFtZXMobWFpbl9kZikpXSoxMDAsMiksXCIlXCIpXG5gYGAifQ== -->
-<pre class="r"><code># The percentage of student enrolled right after high school is
-paste0(round(main_df[max(rownames(main_df)),2]/main_df[max(rownames(main_df)),max(colnames(main_df))]*100,2),&quot;%&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucCA9IHJvdW5kKDI5LzgxLDIpXG4jIHAgPSAyOS84MVxubiA9IDgxXG5wK3Fub3JtKC45NSkqc3FydChwKigxLXApL24pXG5gYGAifQ== -->
+<pre class="r"><code>p = round(29/81,2)
+# p = 29/81
+n = 81
+p+qnorm(.95)*sqrt(p*(1-p)/n)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiNjYlXCJcbiJ9 -->
-<pre><code>[1] &quot;66%&quot;</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuNDQ3NzI1NVxuIn0= -->
+<pre><code>[1] 0.4477255</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucC1xbm9ybSguOTUpKnNxcnQocCooMS1wKS9uKVxuYGBgIn0= -->
+<pre class="r"><code>p-qnorm(.95)*sqrt(p*(1-p)/n)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMjcyMjc0NVxuIn0= -->
+<pre><code>[1] 0.2722745</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBUaGUgcGVyY2VudGFnZSBvZiBzdHVkZW50IGVucm9sbGVkIGxhdGVyIGlzXG5wYXN0ZTAocm91bmQobWFpbl9kZlttYXgocm93bmFtZXMobWFpbl9kZikpLDNdL21haW5fZGZbbWF4KHJvd25hbWVzKG1haW5fZGYpKSxtYXgoY29sbmFtZXMobWFpbl9kZikpXSoxMDAsMiksXCIlXCIpXG5gYGAifQ== -->
-<pre class="r"><code># The percentage of student enrolled later is
-paste0(round(main_df[max(rownames(main_df)),3]/main_df[max(rownames(main_df)),max(colnames(main_df))]*100,2),&quot;%&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucFxuYGBgIn0= -->
+<pre class="r"><code>p</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiMTAwJVwiXG4ifQ== -->
-<pre><code>[1] &quot;100%&quot;</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMzZcbiJ9 -->
+<pre><code>[1] 0.36</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-</div>
-<div id="c-solution-3" class="section level2">
-<h2>C) Solution:</h2>
-<div id="the-null-hypothesis-1" class="section level4">
-<h4>The null hypothesis:</h4>
-<p><em>H0: There is no relationship between field of study and when a Canadian enrolls for a college.</em></p>
-</div>
-<div id="the-alternate-hypothesis-1" class="section level4">
-<h4>The alternate hypothesis:</h4>
-<p><em>H1: There is a relationship between field of study and when a Canadian enrolls for a college.</em></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBFeHBlY3RlZCBmcmVxdWVuY2llc1xueHNxID0gY2hpc3EudGVzdChtYWluX2RmWzE6NiwxOjJdLCBjb3JyZWN0ID0gRilcbmZyZXFfZGYgPSBkYXRhLmZyYW1lKHhzcSRleHBlY3RlZClcbmZyZXFfZGYgPC0gY2JpbmQoZnJlcV9kZiwgVG90YWwgPSByb3dTdW1zKGZyZXFfZGYpKVxuZnJlcV9kZiA8LSByYmluZChmcmVxX2RmLCBjKGNvbFN1bXMoZnJlcV9kZlssMTozXSkpKVxucm93bmFtZXMoZnJlcV9kZilbcm93bmFtZXMoZnJlcV9kZik9PTddICA9IGMoXCJUb3RhbFwiKVxuZnJlcV9kZlxuYGBgIn0= -->
-<pre class="r"><code># Expected frequencies
-xsq = chisq.test(main_df[1:6,1:2], correct = F)
-freq_df = data.frame(xsq$expected)
-freq_df &lt;- cbind(freq_df, Total = rowSums(freq_df))
-freq_df &lt;- rbind(freq_df, c(colSums(freq_df[,1:3])))
-rownames(freq_df)[rownames(freq_df)==7]  = c(&quot;Total&quot;)
-freq_df</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYgPSBkYXRhLmZyYW1lKHBlcCA9IGMoMTgsMTQsMyksIHZlZyA9IGMoMTEsMTIsOSksIGNoZSA9IGMoNiw3LDIwKSlcbmRmXG5gYGAifQ== -->
+<pre class="r"><code>df = data.frame(pep = c(18,14,3), veg = c(11,12,9), che = c(6,7,20))
+df</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NywibmNvbCI6Mywic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbNyB4IDNdIl19fSwicmRmIjoiSDRzSUFBQUFBQUFBQmd0eWlURG1pdUJpWUdCZ1ptQmhaR1JnWmdVeUdkaWNBd3lOVEkwWUdGaVlnRHhHQmhZR1RoQmRBVlFsREZiS3dNQUh4T3dPT1FmWVM4eTJhem5NOTFyNitxeWZzOFBrZUtNNXZVWm1EdDBITGszZjk2elpvV0Z1SWF1U2c1bER1ZjdMTDErUGJuYlkwbTlic1BnNkYxeC9tZndmMXlkTHNoeFdpS3psa295NDd6RDN3dG5rb3JPbkhLWkdUOXVpMExQUG9YTlMzNis3KzA4NU5ON2dabTJWVlhmWXYrUlFmNHpHTjdqK0pnZVFjeGtjTnQrRjBDdG1RT2lGOHlEMFZBa0kzVnNBb1U5Sk1VQUFpc2RZOHhKelU0dUJEQUZJT0VBRUU5TktVb3Rnbkp4RUpFNUlma2xpRHBvWm5FWDU1WHJJNXJCREpkaGNVb3N6MC9OZ1BJL1V4SnlTRENpUDNUYzFKVFBSTXdSbXNIOUpCdHdXOXVEVW9yTE01RlNZeHBDaXhCU2c0WGljd0pxY2sxZ01zeDRteUpXU1dKS29sMVlFZEJtUTl3OU5DM3QrUVVsbWZoNVFFeE1vWWxuUk5ETVdvUWtJbE9hQi9KaWltNXhSbXBldGEyd0pzZ0VzRDhHOFVKb2RpYzBNc1pQcFA5UXNWcGlQVXZQU00vTlNFU0djbEpvRDVmQUJBeE1jbG5vRlJabDVKVEN2QUVXTDlVckFQb2VLSk9mbndFVEFubVA0QndEaSsrbU4wUUlBQUE9PSJ9 -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MywibmNvbCI6Mywic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFCbDFRUFUvRE1CQzl4RWsvSXJXcXhNTEF4SUFZYUFTaDdKWG9EMEJNWGQzVWJTT0NIU1V1TVBMTDI1NmR1NkUreWJwMzd6N2VuVDlYNjlkc25RR0FnQ1NLUUtRSVlmRCs4Vks4RlFCSmpGRUVDWXlkLzhPcUcxOEtNSFYrV1lDMzVSUDVFYkQxK1FmaUg4bmZCL2xiNHUvSUx6aDlKWnhxK2EwNkJMTitUMCtLUmpVTWY5U2VZWGxRUWZlNE5iODVUNWpnaS85N0RSSEtsTFhzV0liSmJDdXR6SGN0OW1OMENscUdwckdWMGRnVXU0OUpnK2FvRFlqWlVidE50dlB5Y05SZjg4V3pVL0Q1M2lhRXhUVjJtdkdaWnFVMGE2RDB2dEtLbDYvbFJ0VVVUUEZrZjNIZXRKVzJmQXF5WFc2TmxWeVhsYVpteGg4SHB3dWVyR1pwRVFJQUFBPT0ifQ== -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["after"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["later"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Total"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"230.0009","2":"353.9991","3":"584","_rn_":"Design"},{"1":"2002.6620","2":"3082.3380","3":"5085","_rn_":"Health"},{"1":"1239.7994","2":"1908.2006","3":"3148","_rn_":"MediaIT"},{"1":"888.1028","2":"1366.8972","3":"2255","_rn_":"Other"},{"1":"531.6802","2":"818.3198","3":"1350","_rn_":"Service"},{"1":"370.9946","2":"571.0054","3":"942","_rn_":"Trades"},{"1":"5263.2400","2":"8100.7600","3":"13364","_rn_":"Total"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[7]},"pages":{}}}
+{"columns":[{"label":["pep"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["veg"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["che"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"18","2":"11","3":"6"},{"1":"14","2":"12","3":"7"},{"1":"3","2":"9","3":"20"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
   </script>
 </div>
 <!-- rnb-frame-end -->
@@ -990,160 +463,160 @@ freq_df</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBDaGktc3F1YXJlIHN1bW1hcnlcbnhzcVxuYGBgIn0= -->
-<pre class="r"><code># Chi-square summary
-xsq</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueHNxPSBjaGlzcS50ZXN0KGRmLCBjb3JyZWN0ID0gRilcbmBgYCJ9 -->
+<pre class="r"><code>xsq= chisq.test(df, correct = F)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBDaGktc3F1YXJlZCB0ZXN0XG5cbmRhdGE6ICBtYWluX2RmWzE6NiwgMToyXVxuWC1zcXVhcmVkID0gMjc1Ljk0LCBkZiA9IDUsIHAtdmFsdWUgPCAyLjJlLTE2XG4ifQ== -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdCh4c3EpXG5gYGAifQ== -->
+<pre class="r"><code>plot(xsq)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4geHkuY29vcmRzKHgsIHksIHhsYWJlbCwgeWxhYmVsLCBsb2cpIDogXG4gICd4JyBpcyBhIGxpc3QsIGJ1dCBkb2VzIG5vdCBoYXZlIGNvbXBvbmVudHMgJ3gnIGFuZCAneSdcbiJ9 -->
+<pre><code>Error in xy.coords(x, y, xlabel, ylabel, log) : 
+  &#39;x&#39; is a list, but does not have components &#39;x&#39; and &#39;y&#39;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuMjAqMjgvMTEyXG5gYGAifQ== -->
+<pre class="r"><code>20*28/112</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDVcbiJ9 -->
+<pre><code>[1] 5</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubiA9IDE1XG5wID0gKDMrMikvKG4rNClcbnNxcnQocCooMS1wKS8obis0KSlcbmBgYCJ9 -->
+<pre class="r"><code>n = 15
+p = (3+2)/(n+4)
+sqrt(p*(1-p)/(n+4))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMTAxMDIyNlxuIn0= -->
+<pre><code>[1] 0.1010226</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuNS8xOVxuYGBgIn0= -->
+<pre class="r"><code>5/19</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMjYzMTU3OVxuIn0= -->
+<pre><code>[1] 0.2631579</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucCA9IDEvMjc3XG5uID0gMjc3XG5wK3Fub3JtKC45NSkqc3FydChwKigxLXApL24pXG5gYGAifQ== -->
+<pre class="r"><code>p = 1/277
+n = 277
+p+qnorm(.95)*sqrt(p*(1-p)/n)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDA5NTM3NDhcbiJ9 -->
+<pre><code>[1] 0.00953748</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucC1xbm9ybSguOTUpKnNxcnQocCooMS1wKS9uKVxuYGBgIn0= -->
+<pre class="r"><code>p-qnorm(.95)*sqrt(p*(1-p)/n)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAwMjMxNzI2M1xuIn0= -->
+<pre><code>[1] -0.002317263</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucCtxbm9ybSguOTc1KSpzcXJ0KHAqKDEtcCkvbilcbmBgYCJ9 -->
+<pre class="r"><code>p+qnorm(.975)*sqrt(p*(1-p)/n)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDEwNjczMDFcbiJ9 -->
+<pre><code>[1] 0.01067301</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucC1xbm9ybSguOTc1KSpzcXJ0KHAqKDEtcCkvbilcbmBgYCJ9 -->
+<pre class="r"><code>p-qnorm(.975)*sqrt(p*(1-p)/n)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAwMzQ1Mjc5XG4ifQ== -->
+<pre><code>[1] -0.00345279</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJvcC50ZXN0KHg9MSxuPTI3NyxwID0gLjAxOSwgYWx0ZXJuYXRpdmUgPSBcImxlc3NcIiwgY29uZi5sZXZlbCA9IC45NSwgY29ycmVjdCA9IEYpXG5gYGAifQ== -->
+<pre class="r"><code>prop.test(x=1,n=277,p = .019, alternative = &quot;less&quot;, conf.level = .95, correct = F)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdDEtc2FtcGxlIHByb3BvcnRpb25zIHRlc3Qgd2l0aG91dCBjb250aW51aXR5IGNvcnJlY3Rpb25cblxuZGF0YTogIDEgb3V0IG9mIDI3NywgbnVsbCBwcm9iYWJpbGl0eSAwLjAxOVxuWC1zcXVhcmVkID0gMy41MTk5LCBkZiA9IDEsIHAtdmFsdWUgPSAwLjAzMDMyXG5hbHRlcm5hdGl2ZSBoeXBvdGhlc2lzOiB0cnVlIHAgaXMgbGVzcyB0aGFuIDAuMDE5XG45NSBwZXJjZW50IGNvbmZpZGVuY2UgaW50ZXJ2YWw6XG4gMC4wMDAwMDAwIDAuMDE2MDE3NFxuc2FtcGxlIGVzdGltYXRlczpcbiAgICAgICAgICBwIFxuMC4wMDM2MTAxMDggXG4ifQ== -->
 <pre><code>
-    Pearson&#39;s Chi-squared test
+    1-sample proportions test without continuity correction
 
-data:  main_df[1:6, 1:2]
-X-squared = 275.94, df = 5, p-value &lt; 2.2e-16</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p><em>The smallest P-value suggests that we have enough evidence to reject the null hypothesis.</em></p>
-</div>
-</div>
-</div>
-<div id="section-4" class="section level1">
-<h1>9.50</h1>
-<div id="goodness-of-fit-to-a-standard-normal-distribution" class="section level2">
-<h2>Goodness of fit to a standard Normal distribution</h2>
-</div>
-<div id="a-solution-4" class="section level2">
-<h2>A) Solution:</h2>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI1dpdGggdGhlIGdpdmVuIGRhdGFcbmRhdCA9IGRhdGEuZnJhbWUoY2F0ZWdvcnkgPSBjKDEsMiwzLDQsNSksIG9ic2VydmVkID0gYygxMzksMTAyLDQxLDc4LDE0MCkpXG5kYXRcbmBgYCJ9 -->
-<pre class="r"><code>#With the given data
-dat = data.frame(category = c(1,2,3,4,5), observed = c(139,102,41,78,140))
-dat</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NSwibmNvbCI6Miwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFCbDFQeTI3Q01CRGNoSmhISkNnUy9RMGlGZFJ6a2NvSFZPMkYzbW9TUTZPbU5uSk1IemMrdVY5QXU3WjNwWktWb3BtZDdPeDRIOWViWmI3SkFhQUhXWkpBVHlDRi92M0R6ZUoyQVpDbDJDV1F3Y2pqRjA3TmtIaHhncCs0KzRGUUt5QWNFazRKcjRFcnpLL2tTOVNmVHhIWGhFK0U4a1RqRjhGQ3kzZlZJcG1HOENnT1MrblUzdGh2N3MyMlZmWkRWUjN6eUpyUGdoZU0vUUxLRU4yVXNwRXRwN0NZVjlMSlltZlJqOTI1WXhtWWc2dU5SbE02aXhzdnpJbnRDRmRIN1Y5U3pjdlhvMzZiTDMxQStCMXJURno4NDJtTVRIOXBsYUJWZmFYM3RWYjg5a1p1VlVQTkJDOE9CeGNIVzJ2SGw2RGFGczQ0eVhONWFScFd3bTF3L2dOa0dZcUlEd0lBQUE9PSJ9 -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["category"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["observed"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"139"},{"1":"2","2":"102"},{"1":"3","2":"41"},{"1":"4","2":"78"},{"1":"5","2":"140"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[5]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeShkYXQpXG5gYGAifQ== -->
-<pre class="r"><code>summary(dat)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgIGNhdGVnb3J5ICAgIG9ic2VydmVkICBcbiBNaW4uICAgOjEgICBNaW4uICAgOiA0MSAgXG4gMXN0IFF1LjoyICAgMXN0IFF1LjogNzggIFxuIE1lZGlhbiA6MyAgIE1lZGlhbiA6MTAyICBcbiBNZWFuICAgOjMgICBNZWFuICAgOjEwMCAgXG4gM3JkIFF1Ljo0ICAgM3JkIFF1LjoxMzkgIFxuIE1heC4gICA6NSAgIE1heC4gICA6MTQwICBcbiJ9 -->
-<pre><code>    category    observed  
- Min.   :1   Min.   : 41  
- 1st Qu.:2   1st Qu.: 78  
- Median :3   Median :102  
- Mean   :3   Mean   :100  
- 3rd Qu.:4   3rd Qu.:139  
- Max.   :5   Max.   :140  </code></pre>
+data:  1 out of 277, null probability 0.019
+X-squared = 3.5199, df = 1, p-value = 0.03032
+alternative hypothesis: true p is less than 0.019
+95 percent confidence interval:
+ 0.0000000 0.0160174
+sample estimates:
+          p 
+0.003610108 </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucyA9IHNkKGRhdCRvYnNlcnZlZClcbm0gPSBtZWFuKGRhdCRvYnNlcnZlZClcbm4gPSBzdW0oZGF0WywyXSlcbm5cbmBgYCJ9 -->
-<pre class="r"><code>s = sd(dat$observed)
-m = mean(dat$observed)
-n = sum(dat[,2])
-n</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucFxuYGBgIn0= -->
+<pre class="r"><code>p</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDUwMFxuIn0= -->
-<pre><code>[1] 500</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDAzNjEwMTA4XG4ifQ== -->
+<pre><code>[1] 0.003610108</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2UgPSBzcXJ0KHAgKiAoMS1wKS9uKVxuc2VcbmBgYCJ9 -->
+<pre class="r"><code>se = sqrt(p * (1-p)/n)
+se</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDAzNjAzNTg2XG4ifQ== -->
+<pre><code>[1] 0.003603586</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucCAtIHFub3JtKC45NSkgKiBzZVxuYGBgIn0= -->
+<pre class="r"><code>p - qnorm(.95) * se</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0wLjAwMjMxNzI2M1xuIn0= -->
+<pre><code>[1] -0.002317263</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucCArIHFub3JtKC45NSkgKiBzZVxuYGBgIn0= -->
+<pre class="r"><code>p + qnorm(.95) * se</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuMDA5NTM3NDhcbiJ9 -->
+<pre><code>[1] 0.00953748</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBGb3IgZmlyc3QgY2F0ZWdvcnksIHRoZSBwcm9iYWJpbGl0eSBvZiBsZXNzIHRoYW4gb3IgZXF1YWwgdG8gLTAuNlxucDEgPSBwbm9ybSgtLjYsbG93ZXIudGFpbCA9IFQpXG4jIEZvciBzZWNvbmQgY2F0ZWdvcnksIHRoZSBwcm9iYWJpbGl0eSBvZiBncmVhdGVyIHRoYW4gLTAuNiBhbmQgbGVzcyB0aGFuIG9yIGVxdWFsIHRvIC0wLjFcbnAyID0gcG5vcm0oLS4xLGxvd2VyLnRhaWwgPSBUKSAtIHBub3JtKC0uNixsb3dlci50YWlsID0gVClcbiMgRm9yIHRoaXJkIGNhdGVnb3J5LCB0aGUgcHJvYmFiaWxpdHkgb2YgZ3JlYXRlciB0aGFuIC0wLjEgYW5kIGxlc3MgdGhhbiBvciBlcXVhbCB0byAwLjFcbnAzID0gcG5vcm0oLjEsbG93ZXIudGFpbCA9IFQpIC0gcG5vcm0oLS4xLGxvd2VyLnRhaWwgPSBUKVxuIyBGb3IgZm91cnRoIGNhdGVnb3J5LCB0aGUgcHJvYmFiaWxpdHkgb2YgZ3JlYXRlciB0aGFuIDAuMSBhbmQgbGVzcyB0aGFuIG9yIGVxdWFsIHRvIDAuNlxucDQgPSBwbm9ybSguNixsb3dlci50YWlsID0gVCkgLSBwbm9ybSguMSxsb3dlci50YWlsID0gVClcbiMgRm9yIGZpZnRoIGNhdGVnb3J5LCB0aGUgcHJvYmFiaWxpdHkgb2YgZ3JlYXRlciB0aGFuIDAuNlxucDUgPSBwbm9ybSguNixsb3dlci50YWlsID0gRilcbmBgYCJ9 -->
-<pre class="r"><code># For first category, the probability of less than or equal to -0.6
-p1 = pnorm(-.6,lower.tail = T)
-# For second category, the probability of greater than -0.6 and less than or equal to -0.1
-p2 = pnorm(-.1,lower.tail = T) - pnorm(-.6,lower.tail = T)
-# For third category, the probability of greater than -0.1 and less than or equal to 0.1
-p3 = pnorm(.1,lower.tail = T) - pnorm(-.1,lower.tail = T)
-# For fourth category, the probability of greater than 0.1 and less than or equal to 0.6
-p4 = pnorm(.6,lower.tail = T) - pnorm(.1,lower.tail = T)
-# For fifth category, the probability of greater than 0.6
-p5 = pnorm(.6,lower.tail = F)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucCA9IDFcbm4gPSAyNzdcbnAwID0gLjAxOVxueiA9IChwLXAwKS9zcXJ0KHAwKigxLXAwKS9uKVxuelxuYGBgIn0= -->
+<pre class="r"><code>p = 1
+n = 277
+p0 = .019
+z = (p-p0)/sqrt(p0*(1-p0)/n)
+z</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0JGV4cGVjdGVkID0gYyhuKnAxLCBuKnAyLCBuKnAzLCBuKnA0LCBuKnA1KVxuZGF0JFwiKG8tRSleMlwiID0gKGRhdCRvYnNlcnZlZC1kYXQkZXhwZWN0ZWQpXjJcbmRhdCRcIihvLUUpXjIvRVwiID0gZGF0JGAoby1FKV4yYC9kYXQkZXhwZWN0ZWRcbmRhdFxuYGBgIn0= -->
-<pre class="r"><code>dat$expected = c(n*p1, n*p2, n*p3, n*p4, n*p5)
-dat$&quot;(o-E)^2&quot; = (dat$observed-dat$expected)^2
-dat$&quot;(o-E)^2/E&quot; = dat$`(o-E)^2`/dat$expected
-dat</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NSwibmNvbCI6NSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFCZ3R5aVREbWl1QmlZR0JnWm1CaFpHUmdaZ1V5R2RpY0F3eU5USTBZR0ZpWWdEeEdCaFlHVGhCZEFWUWxER1NBMVBDQmFQc1BER0Rnd0FDbE9hQzBBSlFXWVlBQnNIcUh4QVNJZUdRRGhIYUIwc0ZRT3JFQlRiMEt6MUdqbGNzZHdtMHpMakljMmVuZy9QTGJwUFQ1ejZEODNUQjV1SG9lRVk2MFZZNXVEaUY1ZTlSWVdLZmFmLzE5MlBDdWdKaEQ5ay9EMVNJbERnNEt6Wm5Gb2RHRmNQZlBNbDF3Tk9KOHJmMGJwVnhPa1FVdjdCZXVYUDE2WDJhVUE3T1RlK3Rra3czMjY2NUlSMHpZcW9RV0VLeDVpYm1weFVDR0FEZ3dJSUljeVlrbHFlbjVSWlV3Zm41U2NXcFJXV29Lako5YVVaQ2FYQUxuczJ2azY3cHF4aGxCdVp4UXJyNHJtbVdjUmZubGVqQUxlWUdZQ1JwR3JPaXVTczVKTElhNUNpYklsWkpZa3FpWFZnVFVEK1Q5UTlQQ25sOVFrcG1mQjlURUJJdFhaTTJNUldnQy9LVjVJSmVrNkNabmxPWmw2NXFETEFCTFF3QXZsTTJLeWdaWnlmUWZMYmpZVXZQU00vTlNZVzdQU1V4S3pZRnkrSUErQm50WXI2QW9NNjhFNWhPZ2FMRmVTWDVKSWt3ZFYzSitEa3dFN0RlR2Z3RDcxWGF1endJQUFBPT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["category"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["observed"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["expected"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["(o-E)^2"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["(o-E)^2/E"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"139","3":"137.12656","4":"3.509782","5":"0.02559520"},{"1":"2","2":"102","3":"92.95952","4":"81.730234","5":"0.87920238"},{"1":"3","2":"41","3":"39.82784","4":"1.373965","5":"0.03449762"},{"1":"4","2":"78","3":"92.95952","4":"223.787313","5":"2.40736298"},{"1":"5","2":"140","3":"137.12656","4":"8.256664","5":"0.06021200"}],"options":{"columns":{"min":{},"max":[10],"total":[5]},"rows":{"min":[10],"max":[10],"total":[5]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBDaGktc3F1YXJlIHZhbHVlXG5jaGlzcSA9IHN1bShkYXQkYChvLUUpXjIvRWApXG5jaGlzcVxuYGBgIn0= -->
-<pre class="r"><code># Chi-square value
-chisq = sum(dat$`(o-E)^2/E`)
-chisq</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDMuNDA2ODdcbiJ9 -->
-<pre><code>[1] 3.40687</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDExOS41OTA3XG4ifQ== -->
+<pre><code>[1] 119.5907</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBEZWdyZWUgb2YgZnJlZWRvbSAobi0xKVxuZF9mID0gbGVuZ3RoKGRhdCktMVxuZF9mXG5gYGAifQ== -->
-<pre class="r"><code># Degree of freedom (n-1)
-d_f = length(dat)-1
-d_f</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG5vcm0oeiwgbG93ZXIudGFpbD1GQUxTRSlcbmBgYCJ9 -->
+<pre class="r"><code>pnorm(z, lower.tail=FALSE)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDRcbiJ9 -->
-<pre><code>[1] 4</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDBcbiJ9 -->
+<pre><code>[1] 0</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucWNoaXNxKHAgPSAuMDUsIGRmID0gZF9mLCBsb3dlci50YWlsPUYpXG5gYGAifQ== -->
-<pre class="r"><code>qchisq(p = .05, df = d_f, lower.tail=F)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDkuNDg3NzI5XG4ifQ== -->
-<pre><code>[1] 9.487729</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBQLXZhbHVlID0gUChYXjIgPj0gMy40MDcpXG5wY2hpc3EoY2hpc3EsIGRmPWRfZiwgbG93ZXIudGFpbD1GQUxTRSlcbmBgYCJ9 -->
-<pre class="r"><code># P-value = P(X^2 &gt;= 3.407)
-pchisq(chisq, df=d_f, lower.tail=FALSE)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuNDkyMTc5NVxuIn0= -->
-<pre><code>[1] 0.4921795</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p><em>The P-value &gt; a = 0.05 and the test statistic is lower than the Chi-square value. We fail to reject the hypothesis of equal proportions.</em></p>
-<p><em>Therefore, the test is a good fit.</em></p>
-<!-- rnb-text-end -->
-</div>
-</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6DQogIHdvcmRfZG9jdW1lbnQ6IGRlZmF1bHQNCiAgaHRtbF9ub3RlYm9vazogZGVmYXVsdA0KLS0tDQpgYGB7cn0NCiNsb2FkIG5lY2Vzc2FyeSBsaWJyYXJpZXMNCmxpYnJhcnkoZHBseXIpDQpsaWJyYXJ5KHJlYWR4bCkNCmxpYnJhcnkoZ2dwbG90MikNCmxpYnJhcnkoZ2dwdWJyKQ0KbGlicmFyeShxcXBsb3RyKQ0KI2xpYnJhcnkoY2FyKQ0KbGlicmFyeShlMTA3MSkNCmxpYnJhcnkobm9ydGVzdCkNCmxpYnJhcnkoQlNEQSkNCmBgYA0KDQojIDguNTgNCiMjIFRlZXRoIGFuZCBtaWxpdGFyeSBzZXJ2aWNlDQojIyBBKSBTb2x1dGlvbjoNCmBgYHtyfQ0KIyBGb3IgcmVjcnVpdHMgd2hvIHdlcmUgdW5kZXIgMjANCngxID0gNjgNCm4xID0gNTg5NTINCnAxID0gcm91bmQoeDEvbjEsNikNCnAxDQpgYGANCg0KYGBge3J9DQojIEZvciByZWNydWl0cyB3aG8gd2VyZSBhdCB0aGUgYWdlIG9mIDQwIG9yIG92ZXINCngyID0gMzgwMQ0KbjIgPSA0Mzc4Ng0KcDIgPSByb3VuZCh4Mi9uMiw2KQ0KcDINCmBgYA0KIyMgQikgU29sdXRpb246DQpgYGB7cn0NCiMgRXN0aW1hdGUgZm9yIGRpZmZlcmVuY2UNCnAxLXAyDQpgYGANCmBgYHtyfQ0KZGF0ID0gZGF0YS5mcmFtZShzYW1wbGUgPSBjKDEsMiksIHggPSBjKHgxLHgyKSwgbiA9IGMobjEsbjIpLCBQID0gYyhwMSxwMikpDQpkYXQNCmBgYA0KDQpgYGB7cn0NCnBfdGVzdCA9IHByb3AudGVzdCh4ID0gYyh4MSx4MiksIG4gPSBjKG4xLG4yKSwgYWx0ZXJuYXRpdmUgPSAndHdvLnNpZGVkJywgY29uZi5sZXZlbCA9IC45OSwgY29ycmVjdCA9IEYpDQpwX3Rlc3QNCmBgYA0KYGBge3J9DQojIEFzIGRpZmZlcmVuY2UgaW4gcG9wdWxhdGlvbiBwcm9wb3J0aW9ucyBpcyBuZWdhdGl2ZQ0KIyBTbyBaLXZhbHVlDQotdW5uYW1lKHNxcnQocF90ZXN0JHN0YXRpc3RpYykpDQpgYGANCmBgYHtyfQ0KIyA5OSUgY29uZmlkZW5jZSBpbnRlcnZhbCBmb3IgdGhlIGRpZmZlcmVuY2UgaW4gdGhlIHByb3BvcnRpb25zDQpwX3Rlc3QkY29uZi5pbnQNCmBgYA0KDQpgYGB7cn0NCiMgbWVhbiAvIGRpZmZlcmVuY2UgaW4gcG9wdWxhdGlvbiBwcm9wb3J0aW9ucw0KbSA9IHAxLXAyDQptDQojIFN0YW5kYXJkIGVycm9yIG9mIG1lYW4gLyBkaWZmZXJlbmNlDQpzZCA9IHNxcnQoKHAxKigxLXAxKS9uMSkgKyAocDIqKDEtcDIpL24yKSkNCnNkDQojIHBvb2xlZCBlc3RpbWF0ZQ0KcCA9IChwMSpuMStwMipuMikvKG4xK24yKQ0KcA0KIyBaLXZhbHVlDQp6ID0gKHAxLXAyKS9zcXJ0KHAqKDEtcCkqKDEvbjErMS9uMikpDQp6DQpgYGANCg0KIyMgQykgU29sdXRpb246DQoqVGhlIG51bGwgSHlwb3RoZXNpczoqDQpIMDogcDEgPSBwMg0KKlRoZSBhbHRlcm5hdGUgSHlwb3RoZXNpczoqDQpIMTogcDEg4omgIHAyDQoqSGVyZSBwMSA9IFByb3BvcnRpb24gb2YgcmVqZWN0cyBmb3IgcmVjcnVpdHMgd2hvIHdlcmUgdW5kZXIgMjAgYW5kIHAyID0gUHJvcG9ydGlvbiBvZiByZWplY3RzIGZvciByZWNydWl0cyB3aG8gd2VyZSA0MCBvciBhYm92ZSoNCmBgYHtyfQ0KIyBQLXZhbHVlDQpwbm9ybSh6LG0sc2QsIGxvd2VyLnRhaWwgPSBUKQ0KIyBPcg0KcF90ZXN0JHAudmFsdWUNCmBgYA0KDQoqQXMgdGhlIHAtdmFsdWUgaW4gdGhpcyBjb250ZXh0IGlzIHdheSBsZXNzIHRoYW4gMC4wMSwgdGhlIG51bGwgaHlwb3RoZXNpcyBpcyByZWplY3RlZCBhdCAxJSBsZXZlbCBvZiBzaWduaWZpY2FuY2UuVGhlcmUgaXMgc3VmZmljaWVudCBldmlkZW5jZSB0byBpbmRpY2F0ZSB0aGF0IHRoZXJlIGlzIGEgZGlmZmVyZW5jZSBiZXR3ZWVuIHByb3BvcnRpb25zIG9mIHJlamVjdGlvbiBhbW9uZyByZWNydWl0cyB3aG8gd2VyZSB1bmRlciBhZ2Ugb2YgMjAgYW5kIHdobyB3ZXJlIGFnZSBvZiA0MCBvciBhYm92ZS4gVGhlIHJlc3VsdCBpcyBzdGF0aXN0aWNhbGx5IHNpZ25pZmljYW50LioNCg0KIyMgRCkgU29sdXRpb246DQojIyMjIFRoZSBndWlkZWxpbmVzIGZvciB1c2luZyBsYXJnZSBzYW1wbGUgbWV0aG9kIGZvciBhIDk5JSBjb25maWRlbmNlIGludGVydmFsIGlzIHRoYXQgdG8gY2hlY2sgdGhlIGJlbG93IGNvbmRpdGlvbnMgZm9yIHJlY3J1aXRzIHdobyB3ZXJlIHVuZGVyIHRoZSBhZ2Ugb2YgMjAgDQojIyMjIG4xKnAxPj0xMCBhbmQgbjEqKDEtcDEpPj0xMA0KYGBge3J9DQpuMSpwMQ0KbjEqKDEtcDEpDQpgYGANCipBcyBib3RoIG9mIHRoZW0gYXJlIGdyZWF0ZXIgdGhhbiAxMCwgd2UgY2FuIHNheSB0aGUgZ3VpZGVsaW5lIGlzIHNhdGlzZmllZC4qDQoNCiMjIyMgVGhlIGd1aWRlbGluZXMgZm9yIHVzaW5nIGxhcmdlIHNhbXBsZSBtZXRob2QgZm9yIGEgOTklIGNvbmZpZGVuY2UgaW50ZXJ2YWwgaXMgdGhhdCB0byBjaGVjayB0aGUgYmVsb3cgY29uZGl0aW9ucyBmb3IgcmVjcnVpdHMgd2hvIHdlcmUgYXQgdGhlIGFnZSBvZiA0MCBvciBhYm92ZSANCiMjIyMgbjIqcDI+PTEwIGFuZCBuMiooMS1wMik+PTEwDQpgYGB7cn0NCm4yKnAyDQpuMiooMS1wMikNCmBgYA0KKkFzIGJvdGggb2YgdGhlbSBhcmUgZ3JlYXRlciB0aGFuIDEwLCB3ZSBjYW4gc2F5IHRoZSBndWlkZWxpbmUgaXMgc2F0aXNmaWVkLioNCg0KDQojIDguNzENCiMjIEdlbmRlciBiaWFzIGluIHRleHRib29rcw0KIyMgQSkgU29sdXRpb246DQpgYGB7cn0NCiMgRm9yIGZlbWFsZQ0KbjEgPSA2MCANCngxID0gNDgNCnAxID0geDEvbjENCnAxDQpzZTEgPSBzcXJ0KHAxKigxLXAxKS9uMSkNCnNlMQ0KYGBgDQoNCmBgYHtyfQ0KIyBGb3IgbWFsZQ0KbjIgPSAxMzIgDQp4MiA9IDUyDQpwMiA9IHgyL24yDQpwMg0Kc2UyID0gc3FydChwMiooMS1wMikvbjIpDQpzZTINCmBgYA0KDQojIyBCKSBTb2x1dGlvbjoNCmBgYHtyfQ0KIyBFc3RpbWF0ZSBmb3IgZGlmZmVyZW5jZQ0KcDEtcDINCmBgYA0KDQpgYGB7cn0NCiMgcG9vbGVkIGVzdGltYXRlDQpwID0gKHAxKm4xK3AyKm4yKS8objErbjIpDQpwDQpgYGANCg0KYGBge3J9DQpvcHRpb25zKHNjaXBlbiA9IG4pDQpwX3Rlc3QgPSBwcm9wLnRlc3QoeCA9IGMoeDEseDIpLCBuID0gYyhuMSxuMiksIGFsdGVybmF0aXZlID0gJ3R3by5zaWRlZCcsIGNvbmYubGV2ZWwgPSAuOTUsIGNvcnJlY3QgPSBGKQ0KcF90ZXN0DQpgYGANCg0KKlNvIHRoZSBQLXZhbHVlIGlzIDAuMDAwMDAwMTc4NSBhbmQgdGhlIGRpZmZlcmVuY2UgaW4gdGhlIHR3byBwcm9wb3J0aW9ucyBpcyBzb21ld2hlcmUgYmV0d2VlbiAwLjI3NDk0MjMgYW5kIDAuNTM3MTc4OSB1c2luZyA5NSUgY29uZmlkZW5jZSBpbnRlcnZhbHMuKg0KDQojIyBDKSBTb2x1dGlvbjoNCipUaGUgbnVsbCBIeXBvdGhlc2lzOioNCkgwOiBwMSA9IHAyDQoqVGhlIGFsdGVybmF0ZSBIeXBvdGhlc2lzOioNCkgxOiBwMSDiiaAgcDINCipIZXJlIHAxID0gUHJvcG9ydGlvbiBvZiBqdXZlbmlsZSBhbW9uZyBmZW1hbGUgYW5kIHAyID0gUHJvcG9ydGlvbiBvZiBqdXZlbmlsZSBhbW9uZyBtYWxlKg0KKlVzaW5nIGxldmVsIG9mIHNpZ25pZmljYW5jZSBhID0gLjA1LCB3ZSBjYW4gcmVqZWN0IG51bGwgaHlwb3RoZXNpcyAoSDApIGlmIHogdmFsdWUgZnJvbSB0aGUgZGlmZmVyZW5jZSBpbiBwcm9wb3J0aW9ucyBpcyBlaXRoZXIgbGVzcyB0aGFuIC0xLjk2IG9yIGdyZWF0ZXIgdGhhbiAxLjk2Kg0KYGBge3J9DQojIFotdmFsdWUNCnVubmFtZShzcXJ0KHBfdGVzdCRzdGF0aXN0aWMpKQ0KYGBgDQoqT3VyIFotdmFsdWUgaXMgNS4yMjA0NzcuIFNvIHdlIGNhbiByZWplY3QgSDAuIEFsc28gUC12YWx1ZSB3YXMgcmVhbGx5IGxvdy4qDQoNCipUaGUgdGVzdCBzdGF0aXN0aWMgdmFsdWUgZmFsbHMgaW4gdGhlIHJlamVjdGlvbiByZWdpb24sIHNvIHdlIHJlamVjdCB0aGUgbnVsbCBoeXBvdGhlc2lzLiBUaGVyZSBpcyBhIGRpZmZlcmVuY2UgaW4gdGhlIHByb3BvcnRpb24gb2YgZmVtYWxlIGp1dmVuaWxlcyBhbmQgbWFsZSBqdXZlbmlsZXMuKg0KDQoNCiMgOS4zNw0KIyMgSGVhbHRoIGNhcmUgZnJhdWQNCiMjIEEpIFNvbHV0aW9uOg0KYGBge3J9DQojSGVyZQ0KbjEgPSA1Nw0KbjIgPSAxNw0KbjMgPSA1DQp4MSA9IDYNCngyID0gNQ0KeDMgPSAxDQpkYXQgPSBkYXRhLmZyYW1lKFN0cmF0dW0gPSBjKCJTbWFsbCIsICJNZWRpdW0iLCAiTGFyZ2UiKSwgIk51bWJlcnNfQWxsb3dlZCIgPSBjKG4xLXgxLG4yLXgyLG4zLXgzKSwgIk51bWJlcnNfbm90X2FsbG93ZWQiID0gYyh4MSx4Mix4MyksIFRvdGFsID0gYyhuMSxuMixuMykpDQojLCBUb3RhbCA9IGMobjEsbjIsbjMpDQpkYXQNCmBgYA0KDQpgYGB7cn0NCmRhdCA8LSByYmluZChkYXQsIGMoIlRvdGFsIiwgY29sU3VtcyhkYXRbLDI6NF0pKSkNCmRhdA0KYGBgDQoNCmBgYHtyfQ0KIzMgw5cgMiB0YWJsZSBvZiBjb3VudHMNCmRhdCA9IHRyYW5zZm9ybShkYXQsICBOdW1iZXJzX0FsbG93ZWQgPSBhcy5udW1lcmljKE51bWJlcnNfQWxsb3dlZCksTnVtYmVyc19ub3RfYWxsb3dlZCA9IGFzLm51bWVyaWMoTnVtYmVyc19ub3RfYWxsb3dlZCksVG90YWwgPSBhcy5udW1lcmljKFRvdGFsKSkNCmRhdA0KYGBgDQoNCiMjIEIpIFNvbHV0aW9uOg0KYGBge3J9DQojdGhlIHBlcmNlbnQgb2YgY2xhaW1zIHRoYXQgd2VyZSBub3QgYWxsb3dlZCBpbiBlYWNoIG9mIHRoZSB0aHJlZSBzdHJhdGENCmRhdCRwY3Rfbm90X2FsbG93ZWQgPSByb3VuZChkYXQkTnVtYmVyc19ub3RfYWxsb3dlZC9kYXQkVG90YWwqMTAwLDIpDQpkYXRbMTozLGMoMSw1KV0NCmBgYA0KDQojIyBDKSBTb2x1dGlvbjoNCipJbiBhIDN4MiB0YWJsZSwgdGhlIGV4cGVjdGVkIGNvdW50IGNvcnJlc3BvbmRpbmcgdG8gdGhlIGNlbGwgKExhcmdlLCBOdW1iZXJzX25vdF9hbGxvd2VkKSBpcyBsZXNzIHRoZW4gNS4gU08gbmVlZCB0byBjb21iaW5lIE1lZGl1bSBhbmQgTGFyZ2Ugcm93cy4qDQpgYGB7cn0NCiMgQ29tYmluaW5nIG1lZGl1bSBhbmQgbGFyZ2Ugcm93DQpkYXQgPSBzdWJzZXQoZGF0LCBzZWxlY3QgPSAtYyhwY3Rfbm90X2FsbG93ZWQpKQ0KZGF0IDwtIHJiaW5kKGRhdCwgYygiTWVkaXVtICYgTGFyZ2UiLCBjb2xTdW1zKGRhdFsyOjMsMjo0XSkpKQ0KZGF0ID0gZGF0Wy1jKDIsMyksXQ0KZGF0ID0gdHJhbnNmb3JtKGRhdCwgTnVtYmVyc19BbGxvd2VkID0gYXMubnVtZXJpYyhOdW1iZXJzX0FsbG93ZWQpLE51bWJlcnNfbm90X2FsbG93ZWQgPSBhcy5udW1lcmljKE51bWJlcnNfbm90X2FsbG93ZWQpLFRvdGFsID0gYXMubnVtZXJpYyhUb3RhbCkpDQpkYXQNCmBgYA0KDQoNCmBgYHtyfQ0KIyByZW9yZGVyaW5nIHRoZSByb3dzDQpkYXQgPSBkYXRbYygxLDMsMiksXQ0Kcm93Lm5hbWVzKGRhdCkgPC0gTlVMTA0KDQpkYXQNCmBgYA0KDQojIyBEKSBTb2x1dGlvbjoNCiMjIyMgVGhlIG51bGwgaHlwb3RoZXNpczoNCipIMDogVGhlcmUgaXMgbm8gcmVsYXRpb25zaGlwIGJldHdlZW4gY2xhaW1zIHNpemVzIGFuZCB3aGV0aGVyIGEgY2xhaW0gaXMgYWxsb3dlZC4qDQoNCiMjIyMgVGhlIGFsdGVybmF0ZSBoeXBvdGhlc2lzOg0KKkgxOiBUaGVyZSBpcyBhIHJlbGF0aW9uc2hpcCBiZXR3ZWVuIGNsYWltcyBzaXplcyBhbmQgd2hldGhlciBhIGNsYWltIGlzIGFsbG93ZWQuKg0KDQojIyBFKSBTb2x1dGlvbjoNCg0KYGBge3J9DQpyb3cubmFtZXMoZGF0KSAgPSBkYXRbLDFdDQpkYXQgPSBkYXRbLGMoMiwzLDQpXQ0KZGF0DQpgYGANCg0KYGBge3J9DQojIEV4cGVjdGVkIGZyZXF1ZW5jaWVzDQp4c3EgPSBjaGlzcS50ZXN0KGRhdFsxOjIsMToyXSwgY29ycmVjdCA9IEYpDQpmcmVxX2RmID0gZGF0YS5mcmFtZSh4c3EkZXhwZWN0ZWQpDQpmcmVxX2RmIDwtIGNiaW5kKGZyZXFfZGYsIFRvdGFsID0gcm93U3VtcyhmcmVxX2RmKSkNCmZyZXFfZGYgPC0gcmJpbmQoZnJlcV9kZiwgYyhjb2xTdW1zKGZyZXFfZGZbLDE6M10pKSkNCnJvd25hbWVzKGZyZXFfZGYpW3Jvd25hbWVzKGZyZXFfZGYpPT0zXSAgPSBjKCJUb3RhbCIpDQpmcmVxX2RmDQpgYGANCg0KYGBge3J9DQojIGV4cGVjdGVkIGZyZXF1ZW5jeSB3aXRob3V0IHRvdGFscw0KeHNxJGV4cGVjdGVkDQpgYGANCg0KYGBge3J9DQojIENoaSAtc3F1YXJlIHRlc3Qgc3RhdGlzdGljcw0KeHNxJHN0YXRpc3RpYw0KYGBgDQoNCmBgYHtyfQ0KIyBEZWdyZWUgb2YgZnJlZWRvbQ0KeHNxJHBhcmFtZXRlcg0KYGBgDQoNCmBgYHtyfQ0KIyBQLXZhbHVlDQp4c3EkcC52YWx1ZQ0KYGBgDQoNCmBgYHtyfQ0KeHNxDQpgYGANCg0KKlRoZSBzbWFsbGVzdCBQLXZhbHVlIHN1Z2dlc3RzIHRoYXQgdGhlcmUgaXMgbm90IGVub3VnaCBldmlkZW5jZSB0byByZWplY3QgdGhlIG51bGwgaHlwb3RoZXNpcy4gU28gd2UgZmFpbGVkIHRvIHJlamVjdCB0aGUgbnVsbCBoeXBvdGhlc2lzIGFzIHAtdmFsdWUgKC4wNjM0KSBpcyBoaWdoZXIgdGhhbiA1IHRpbWVzIGluIDEwMC4qDQoNCg0KIyA5LjQxDQojIyBXaGVuIGRvIENhbmFkaWFuIHN0dWRlbnRzIGVudGVyIHByaXZhdGUgY2FyZWVyIGNvbGxlZ2VzPw0KIyMgQSkgU29sdXRpb246DQpgYGB7cn0NCmZpbGVfbmFtZSA9ICJleDA5LTQxY2FuZi54bHMiDQpkYXQgPSByZWFkX3hscyhmaWxlX25hbWUpDQpkYXQNCmBgYA0KDQpgYGB7cn0NCmFmdGVyX2RmID0gZmlsdGVyKGRhdCwgVGltZSA9PSAnQWZ0ZXJIUycpDQphZnRlcl9kZiRhZnRlciA9IGFmdGVyX2RmJG4qYWZ0ZXJfZGYkUGVyY2VudC8xMDANCmFmdGVyX2RmID0gYWZ0ZXJfZGZbYygyLDUpXQ0KYWZ0ZXJfZGYNCmBgYA0KDQpgYGB7cn0NCmxhdGVyX2RmID0gZmlsdGVyKGRhdCwgVGltZSA9PSAnTGF0ZXInKQ0KbGF0ZXJfZGYkbGF0ZXIgPSBsYXRlcl9kZiRuKmxhdGVyX2RmJFBlcmNlbnQvMTAwDQpsYXRlcl9kZiA9IGxhdGVyX2RmW2MoMiw1KV0NCmxhdGVyX2RmDQpgYGANCg0KYGBge3J9DQojIDZ4MiB0YWJsZSB3aXRoIG9ic2VydmVkIGNvdW50cw0KbWFpbl9kZiA9IG1lcmdlKHggPSBhZnRlcl9kZiwgeSA9IGxhdGVyX2RmLCBieSA9ICJGaWVsZCIsIGFsbCA9IFRSVUUpDQptYWluX2RmIDwtIGNiaW5kKG1haW5fZGYsIFRvdGFsID0gcm93U3VtcyhtYWluX2RmWzI6M10pKQ0KbWFpbl9kZiA8LSByYmluZChtYWluX2RmLCBjKCJUb3RhbCIsIGNvbFN1bXMobWFpbl9kZlsyOjRdKSkpDQptYWluX2RmID0gdHJhbnNmb3JtKG1haW5fZGYsIGFmdGVyID0gYXMubnVtZXJpYyhhZnRlciksbGF0ZXIgPSBhcy5udW1lcmljKGxhdGVyKSxUb3RhbCA9IGFzLm51bWVyaWMoVG90YWwpKQ0Kcm93Lm5hbWVzKG1haW5fZGYpICA9IG1haW5fZGZbLDFdDQptYWluX2RmID0gbWFpbl9kZlssYygyLDMsNCldDQptYWluX2RmDQpgYGANCg0KIyMgQikgU29sdXRpb246DQpgYGB7cn0NCiMgVG90YWwgbnVtYmVyIG9mIENhbmFkaWFuIHN0dWRlbnRzIHN1cnZleWVkDQptYWluX2RmW21heChyb3duYW1lcyhtYWluX2RmKSksbWF4KGNvbG5hbWVzKG1haW5fZGYpKV0NCmBgYA0KDQpgYGB7cn0NCiMgVGhlIHBlcmNlbnRhZ2Ugb2Ygc3R1ZGVudCBlbnJvbGxlZCByaWdodCBhZnRlciBoaWdoIHNjaG9vbCBpcw0KcGFzdGUwKHJvdW5kKG1haW5fZGZbbWF4KHJvd25hbWVzKG1haW5fZGYpKSwyXS9tYWluX2RmW21heChyb3duYW1lcyhtYWluX2RmKSksbWF4KGNvbG5hbWVzKG1haW5fZGYpKV0qMTAwLDIpLCIlIikNCmBgYA0KDQpgYGB7cn0NCiMgVGhlIHBlcmNlbnRhZ2Ugb2Ygc3R1ZGVudCBlbnJvbGxlZCBsYXRlciBpcw0KcGFzdGUwKHJvdW5kKG1haW5fZGZbbWF4KHJvd25hbWVzKG1haW5fZGYpKSwzXS9tYWluX2RmW21heChyb3duYW1lcyhtYWluX2RmKSksbWF4KGNvbG5hbWVzKG1haW5fZGYpKV0qMTAwLDIpLCIlIikNCmBgYA0KDQojIyBDKSBTb2x1dGlvbjoNCiMjIyMgVGhlIG51bGwgaHlwb3RoZXNpczoNCipIMDogVGhlcmUgaXMgbm8gcmVsYXRpb25zaGlwIGJldHdlZW4gZmllbGQgb2Ygc3R1ZHkgYW5kIHdoZW4gYSBDYW5hZGlhbiBlbnJvbGxzIGZvciBhIGNvbGxlZ2UuKg0KDQojIyMjIFRoZSBhbHRlcm5hdGUgaHlwb3RoZXNpczoNCipIMTogVGhlcmUgaXMgYSByZWxhdGlvbnNoaXAgYmV0d2VlbiBmaWVsZCBvZiBzdHVkeSBhbmQgd2hlbiBhIENhbmFkaWFuIGVucm9sbHMgZm9yIGEgY29sbGVnZS4qDQoNCmBgYHtyfQ0KIyBFeHBlY3RlZCBmcmVxdWVuY2llcw0KeHNxID0gY2hpc3EudGVzdChtYWluX2RmWzE6NiwxOjJdLCBjb3JyZWN0ID0gRikNCmZyZXFfZGYgPSBkYXRhLmZyYW1lKHhzcSRleHBlY3RlZCkNCmZyZXFfZGYgPC0gY2JpbmQoZnJlcV9kZiwgVG90YWwgPSByb3dTdW1zKGZyZXFfZGYpKQ0KZnJlcV9kZiA8LSByYmluZChmcmVxX2RmLCBjKGNvbFN1bXMoZnJlcV9kZlssMTozXSkpKQ0Kcm93bmFtZXMoZnJlcV9kZilbcm93bmFtZXMoZnJlcV9kZik9PTddICA9IGMoIlRvdGFsIikNCmZyZXFfZGYNCmBgYA0KDQpgYGB7cn0NCiMgQ2hpLXNxdWFyZSBzdW1tYXJ5DQp4c3ENCmBgYA0KDQoqVGhlIHNtYWxsZXN0IFAtdmFsdWUgc3VnZ2VzdHMgdGhhdCB3ZSBoYXZlIGVub3VnaCBldmlkZW5jZSB0byByZWplY3QgdGhlIG51bGwgaHlwb3RoZXNpcy4qDQoNCiMgOS41MA0KIyMgR29vZG5lc3Mgb2YgZml0IHRvIGEgc3RhbmRhcmQgTm9ybWFsIGRpc3RyaWJ1dGlvbg0KIyMgQSkgU29sdXRpb246DQoNCmBgYHtyfQ0KI1dpdGggdGhlIGdpdmVuIGRhdGENCmRhdCA9IGRhdGEuZnJhbWUoY2F0ZWdvcnkgPSBjKDEsMiwzLDQsNSksIG9ic2VydmVkID0gYygxMzksMTAyLDQxLDc4LDE0MCkpDQpkYXQNCmBgYA0KDQpgYGB7cn0NCnN1bW1hcnkoZGF0KQ0KYGBgDQoNCmBgYHtyfQ0KcyA9IHNkKGRhdCRvYnNlcnZlZCkNCm0gPSBtZWFuKGRhdCRvYnNlcnZlZCkNCm4gPSBzdW0oZGF0WywyXSkNCm4NCmBgYA0KDQpgYGB7cn0NCiMgRm9yIGZpcnN0IGNhdGVnb3J5LCB0aGUgcHJvYmFiaWxpdHkgb2YgbGVzcyB0aGFuIG9yIGVxdWFsIHRvIC0wLjYNCnAxID0gcG5vcm0oLS42LGxvd2VyLnRhaWwgPSBUKQ0KIyBGb3Igc2Vjb25kIGNhdGVnb3J5LCB0aGUgcHJvYmFiaWxpdHkgb2YgZ3JlYXRlciB0aGFuIC0wLjYgYW5kIGxlc3MgdGhhbiBvciBlcXVhbCB0byAtMC4xDQpwMiA9IHBub3JtKC0uMSxsb3dlci50YWlsID0gVCkgLSBwbm9ybSgtLjYsbG93ZXIudGFpbCA9IFQpDQojIEZvciB0aGlyZCBjYXRlZ29yeSwgdGhlIHByb2JhYmlsaXR5IG9mIGdyZWF0ZXIgdGhhbiAtMC4xIGFuZCBsZXNzIHRoYW4gb3IgZXF1YWwgdG8gMC4xDQpwMyA9IHBub3JtKC4xLGxvd2VyLnRhaWwgPSBUKSAtIHBub3JtKC0uMSxsb3dlci50YWlsID0gVCkNCiMgRm9yIGZvdXJ0aCBjYXRlZ29yeSwgdGhlIHByb2JhYmlsaXR5IG9mIGdyZWF0ZXIgdGhhbiAwLjEgYW5kIGxlc3MgdGhhbiBvciBlcXVhbCB0byAwLjYNCnA0ID0gcG5vcm0oLjYsbG93ZXIudGFpbCA9IFQpIC0gcG5vcm0oLjEsbG93ZXIudGFpbCA9IFQpDQojIEZvciBmaWZ0aCBjYXRlZ29yeSwgdGhlIHByb2JhYmlsaXR5IG9mIGdyZWF0ZXIgdGhhbiAwLjYNCnA1ID0gcG5vcm0oLjYsbG93ZXIudGFpbCA9IEYpDQpgYGANCg0KYGBge3J9DQpkYXQkZXhwZWN0ZWQgPSBjKG4qcDEsIG4qcDIsIG4qcDMsIG4qcDQsIG4qcDUpDQpkYXQkIihvLUUpXjIiID0gKGRhdCRvYnNlcnZlZC1kYXQkZXhwZWN0ZWQpXjINCmRhdCQiKG8tRSleMi9FIiA9IGRhdCRgKG8tRSleMmAvZGF0JGV4cGVjdGVkDQpkYXQNCmBgYA0KDQpgYGB7cn0NCiMgQ2hpLXNxdWFyZSB2YWx1ZQ0KY2hpc3EgPSBzdW0oZGF0JGAoby1FKV4yL0VgKQ0KY2hpc3ENCmBgYA0KDQpgYGB7cn0NCiMgRGVncmVlIG9mIGZyZWVkb20gKG4tMSkNCmRfZiA9IGxlbmd0aChkYXQpLTENCmRfZg0KYGBgDQoNCmBgYHtyfQ0KIyBUaGUgQ2hpLXNxdWFyZSB2YWx1ZSB3aXRoIM6xID0gMC4wNSBhbmQgNCBkZWdyZWVzIG9mIGZyZWVkb20gaXMNCnFjaGlzcShwID0gLjA1LCBkZiA9IGRfZiwgbG93ZXIudGFpbD1GKQ0KYGBgDQoNCmBgYHtyfQ0KIyBQLXZhbHVlID0gUChYXjIgPj0gMy40MDcpDQpwY2hpc3EoY2hpc3EsIGRmPWRfZiwgbG93ZXIudGFpbD1GQUxTRSkNCmBgYA0KKlRoZSBQLXZhbHVlID4gYSA9IDAuMDUgYW5kIHRoZSB0ZXN0IHN0YXRpc3RpYyBpcyBsb3dlciB0aGFuIHRoZSBDaGktc3F1YXJlIHZhbHVlLiBXZSBmYWlsIHRvIHJlamVjdCB0aGUgaHlwb3RoZXNpcyBvZiBlcXVhbCBwcm9wb3J0aW9ucy4qDQoNCipUaGVyZWZvcmUsIHRoZSB0ZXN0IGlzIGEgZ29vZCBmaXQuKg0KDQoNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQpwbG90KGNhcnMpDQpgYGANCg0KQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLg0KDQpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkN0cmwrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4NCg0KVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLg0KDQpgYGB7cn0NCnB0KC42Myw5OSkNCmBgYA0KDQpgYGB7cn0NCnByb3AudGVzdCh4PTY0LCBuPTEwMCwgcD0wLjUwLCBhbHRlcm5hdGl2ZT0iZ3JlYXRlciIsIGNvcnJlY3Q9RikNCmBgYA0KDQpgYGB7cn0NCnAgPSAuNjQNCm4gPSAxMDANCnAwID0gLjUNCnogPSAocC1wMCkvc3FydChwMCooMS1wMCkvbikNCnoNCmBgYA0KDQpgYGB7cn0NCnBub3JtKHosIGxvd2VyLnRhaWw9RkFMU0UpDQpgYGANCg0KYGBge3J9DQpwMSA9IC41DQpwMiA9IC4yDQpuMSA9IDIwDQpuMiA9IDMwDQpwID0gKHAxKm4xK3AyKm4yKS8objErbjIpDQpwDQoocDEqbjEpKyhwMipuMikNCm4xK24yDQpgYGANCg0KYGBge3J9DQpwMSpuMQ0KcDIqbjINCmBgYA0KDQpgYGB7cn0NCm4gPSAyMDANCnAgPSA1MC9uDQoNCnFub3JtKC45NSkqc3FydChwKigxLXApL24pDQpgYGANCg0KYGBge3J9DQpzcXJ0KHAqKDEtcCkvbikNCmBgYA0KDQpgYGB7cn0NCnANCnFub3JtKC45NzUpKnNxcnQocCooMS1wKS9uKQ0KYGBgDQoNCmBgYHtyfQ0KeCA9IDUNCm4gPSAyNQ0KcCA9IHgvbg0Kc3FydChwKigxLXApL24pDQpgYGANCg0KYGBge3J9DQpwX3Rlc3QgPSBwcm9wLnRlc3QoeCA9IGMoMTUsMTIpLCBuID0gYygxMDAsMTAwKSwgYWx0ZXJuYXRpdmUgPSAndHdvLnNpZGVkJywgY29uZi5sZXZlbCA9IC45NSwgY29ycmVjdCA9IEYpDQpwX3Rlc3QNCmBgYA0KDQpgYGB7cn0NCnByb3AudGVzdCh4PTI5LCBuPTgxLCBhbHRlcm5hdGl2ZT0iZ3JlYXRlciIsIGNvcnJlY3Q9RiwgY29uZi5sZXZlbCA9IC45MCkNCmBgYA0KDQpgYGB7cn0NCnAgPSByb3VuZCgyOS84MSwyKQ0KIyBwID0gMjkvODENCm4gPSA4MQ0KcCtxbm9ybSguOTUpKnNxcnQocCooMS1wKS9uKQ0KcC1xbm9ybSguOTUpKnNxcnQocCooMS1wKS9uKQ0KYGBgDQoNCmBgYHtyfQ0KcA0KYGBgDQoNCmBgYHtyfQ0KZGYgPSBkYXRhLmZyYW1lKHBlcCA9IGMoMTgsMTQsMyksIHZlZyA9IGMoMTEsMTIsOSksIGNoZSA9IGMoNiw3LDIwKSkNCmRmDQpgYGANCg0KYGBge3J9DQp4c3E9IGNoaXNxLnRlc3QoZGYsIGNvcnJlY3QgPSBGKQ0KYGBgDQoNCg0KYGBge3J9DQpwbG90KHhzcSkNCmBgYA0KDQoNCmBgYHtyfQ0KMjAqMjgvMTEyDQpgYGANCg0KYGBge3J9DQpuID0gMTUNCnAgPSAoMysyKS8obis0KQ0Kc3FydChwKigxLXApLyhuKzQpKQ0KYGBgDQoNCmBgYHtyfQ0KNS8xOQ0KYGBgDQoNCg0KYGBge3J9DQpwID0gMS8yNzcNCm4gPSAyNzcNCnArcW5vcm0oLjk1KSpzcXJ0KHAqKDEtcCkvbikNCnAtcW5vcm0oLjk1KSpzcXJ0KHAqKDEtcCkvbikNCnArcW5vcm0oLjk3NSkqc3FydChwKigxLXApL24pDQpwLXFub3JtKC45NzUpKnNxcnQocCooMS1wKS9uKQ0KYGBgDQoNCmBgYHtyfQ0KcHJvcC50ZXN0KHg9MSxuPTI3NyxwID0gLjAxOSwgYWx0ZXJuYXRpdmUgPSAibGVzcyIsIGNvbmYubGV2ZWwgPSAuOTUsIGNvcnJlY3QgPSBGKQ0KYGBgDQoNCmBgYHtyfQ0KcA0Kc2UgPSBzcXJ0KHAgKiAoMS1wKS9uKQ0Kc2UNCnAgLSBxbm9ybSguOTUpICogc2UNCnAgKyBxbm9ybSguOTUpICogc2UNCmBgYA0KDQpgYGB7cn0NCnAgPSAxDQpuID0gMjc3DQpwMCA9IC4wMTkNCnogPSAocC1wMCkvc3FydChwMCooMS1wMCkvbikNCnoNCmBgYA0KDQpgYGB7cn0NCnBub3JtKHosIGxvd2VyLnRhaWw9RkFMU0UpDQpgYGANCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg==</div>
 
 
 
@@ -1190,7 +663,7 @@ $(document).ready(function () {
 <!-- code folding -->
 <script>
 $(document).ready(function () {
-  window.initializeSourceEmbed("Assignment_Wk8_Mir.Rmd");
+  window.initializeSourceEmbed("quiz_8.Rmd");
   window.initializeCodeFolding("show" === "show");
 });
 </script>

@@ -1,0 +1,191 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+```{r}
+pt(.63,99)
+```
+
+```{r}
+prop.test(x=64, n=100, p=0.50, alternative="greater", correct=F)
+```
+
+```{r}
+p = .64
+n = 100
+p0 = .5
+z = (p-p0)/sqrt(p0*(1-p0)/n)
+z
+```
+
+```{r}
+pnorm(z, lower.tail=FALSE)
+```
+
+```{r}
+p1 = .5
+p2 = .2
+n1 = 20
+n2 = 30
+p = (p1*n1+p2*n2)/(n1+n2)
+p
+(p1*n1)+(p2*n2)
+n1+n2
+```
+
+```{r}
+p1*n1
+p2*n2
+```
+
+```{r}
+n = 200
+p = 50/n
+
+qnorm(.95)*sqrt(p*(1-p)/n)
+```
+
+```{r}
+sqrt(p*(1-p)/n)
+```
+
+```{r}
+p
+qnorm(.975)*sqrt(p*(1-p)/n)
+```
+
+```{r}
+x = 5
+n = 25
+p = x/n
+sqrt(p*(1-p)/n)
+```
+
+```{r}
+p_test = prop.test(x = c(15,12), n = c(100,100), alternative = 'two.sided', conf.level = .95, correct = F)
+p_test
+```
+
+```{r}
+prop.test(x=29, n=81, alternative="greater", correct=F, conf.level = .90)
+```
+
+```{r}
+p = round(29/81,2)
+# p = 29/81
+n = 81
+p+qnorm(.95)*sqrt(p*(1-p)/n)
+p-qnorm(.95)*sqrt(p*(1-p)/n)
+```
+
+```{r}
+p
+```
+
+```{r}
+df = data.frame(pep = c(18,14,3), veg = c(11,12,9), che = c(6,7,20))
+df
+```
+
+```{r}
+xsq= chisq.test(df, correct = F)
+```
+
+
+```{r}
+plot(xsq)
+```
+
+
+```{r}
+20*28/112
+```
+
+```{r}
+n = 15
+p = (3+2)/(n+4)
+sqrt(p*(1-p)/(n+4))
+```
+
+```{r}
+5/19
+```
+
+
+```{r}
+p = 1/277
+n = 277
+p+qnorm(.95)*sqrt(p*(1-p)/n)
+p-qnorm(.95)*sqrt(p*(1-p)/n)
+p+qnorm(.975)*sqrt(p*(1-p)/n)
+p-qnorm(.975)*sqrt(p*(1-p)/n)
+```
+
+```{r}
+prop.test(x=1,n=277,p = .019, alternative = "less", conf.level = .95, correct = F)
+```
+
+```{r}
+p
+se = sqrt(p * (1-p)/n)
+se
+p - qnorm(.95) * se
+p + qnorm(.95) * se
+```
+
+```{r}
+p = 1
+n = 277
+p0 = .019
+z = (p-p0)/sqrt(p0*(1-p0)/n)
+z
+```
+
+```{r}
+pnorm(z, lower.tail=FALSE)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

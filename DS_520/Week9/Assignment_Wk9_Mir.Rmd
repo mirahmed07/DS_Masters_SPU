@@ -1,0 +1,420 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+#load necessary libraries
+library(dplyr)
+library(readxl)
+library(ggplot2)
+library(ggpubr)
+library(qqplotr)
+#library(car)
+library(e1071)
+library(nortest)
+library(BSDA)
+options("scipen"=100, "digits"=6)
+```
+
+# 10.23
+## Beer and blood alcohol
+### A) Solution:
+```{r}
+file_name = "ex10-23bac.xls"
+df = read_xls(file_name)
+df
+```
+
+```{r}
+summary(df)
+```
+
+```{r}
+ggplot(data=df, aes(x=Beers, y=BAC)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=2, label.y=.20) +
+        stat_cor(aes(label=..rr.label..), label.x=2, label.y=.18)
+```
+
+```{r}
+fit<- lm(BAC~Beer,data=df)
+summary(fit)
+```
+```{r}
+# Least squared regression equation
+b = unname(fit$coefficients[1])
+a = unname(fit$coefficients[2])
+paste0("Least squared regression equation is: y = ",round(a,5),"x + ",round(b,5))
+```
+
+```{r}
+# r^2 value
+summary(fit)$r.squared
+```
+*So r-squared value is 79.98%.*
+
+### B) Solution:
+
+*The null hypothesis:*
+H0: B = 0
+*The alternate hypothesis:*
+H1: B > 0
+
+```{r}
+summary(fit)$coefficients
+```
+
+*From the obtained output above, the test statistic value corresponding to the beers is t = 7.48 and the two tailed P-value is 0.00000296948.*
+*Obviously one-tailed P-value is less than this (closer to zero). The P-value is less than any level of significance. So we can reject the null hypothesis.*
+*Therefore, it can be concluded that drinking more beers increases BAC.*
+
+### C) Solution:
+*After 5 drinks, to be able to legally drive, Steve's BAC has to 0.8*
+```{r}
+# So
+x = 5
+# The estimated mean balance is
+y = a*x + b
+y
+```
+
+```{r}
+# The standard error for beer is
+se = summary(fit)$coefficients[2,2]
+```
+
+```{r}
+# 90% prediction interval
+predict.lm(fit, data.frame(x), interval = "predict", level = 0.9)[1,]
+```
+*90% prediction interval for Steve’s BAC is (0.040, 0.114). The upper limit in the prediction interval is way past the legal limit. So he cannot be too confident.*
+
+# 10.28
+## Sales price versus assessed value, continued
+
+```{r}
+file_name = "ex10-28sales.xls"
+df = read_xls(file_name)
+df = filter(df, Property != 11)
+df
+```
+
+```{r}
+summary(df)
+```
+
+```{r}
+ggplot(data=df, aes(x=`Assessed Value`, y= `Sales Price`)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=120, label.y=300) +
+        stat_cor(aes(label=..rr.label..), label.x=120, label.y=280)
+```
+
+```{r}
+cor(df$`Assessed Value`,df$`Sales Price`, method = "pearson")
+```
+
+```{r}
+fit<- lm(df$`Sales Price`~ df$`Assessed Value`)
+summary(fit)
+```
+
+```{r}
+# Least squared regression equation
+b = unname(fit$coefficients[1])
+a = unname(fit$coefficients[2])
+paste0("Least squared regression equation is: y = ",round(a,5),"x + ",round(b,5))
+```
+
+### A) Solution:
+```{r}
+new_x = c(155,220,285)
+new_data = data.frame('assessed_value_in_thousand' = new_x)
+new_data$predicted_value_in_thousand = a*new_data$assessed_value + b
+new_data
+```
+
+### B) Solution:
+
+```{r}
+# 95% prediction interval of the slope
+confint(fit, level=.95)
+```
+
+*So 95% prediction interval of the slope is (0.601012, 1.09671). With every increase in thousand dollars assessed value of a home, sales price increases between $601.01 and $1096.71.*
+
+### C) Solution:
+
+*The intercept shows the value of y at x = 0 and there would be no sales price/ property for which assessed value is $0. Therefore, inference of b (intercept) is not interest for this problem.*
+
+### D) Solution:
+
+*The 95% confidence interval of the slope contains 1. This suggest that it is plausible that average value is equal to sales value (y = x).*
+
+# 10.45
+## Completing an ANOVA table
+
+```{r}
+# Here
+dft = 19
+# So sample size
+n = dft+1
+n
+```
+
+```{r}
+# Number of independent variables
+k = 1
+dfm = 1
+# So, degrees of freedom for the residual error
+dfe = n - 2
+dfe
+```
+
+```{r}
+# from the minitab output
+sst = 8251.5
+ssm = 4947.2
+sse = sst - ssm
+sse
+```
+
+```{r}
+# model mean sum of squares
+msm = ssm/dfm
+msm
+```
+
+```{r}
+# error mean sum of square
+mse = sse/dfe
+mse
+```
+
+```{r}
+# calculated F ratio
+f = msm/mse
+f
+```
+
+```{r}
+# The complete ANOVA table
+a_tbl = data.frame("Source" = c("Regression", "Residual Error", "Total"), "DF" = c(dfm, dfe,dft), "SS"= c(ssm, sse,sst), "MS"= c(msm,mse,NA), "F" = c(f,NA,NA))
+a_tbl
+```
+
+# 11.37
+## Predicting bone formation
+### A) Solution:
+```{r}
+file_name = "ex11-37biomark.xls"
+df = read_xls(file_name)
+df
+```
+
+```{r}
+fit = lm(voplus ~ oc, data = df)
+summary(fit)
+```
+
+```{r}
+anova(fit)
+```
+
+```{r}
+# Least squared regression equation
+b = unname(fit$coefficients[1])
+a = unname(fit$coefficients[2])
+paste0("Least squared regression equation is: Voplus = ",round(a,5),"Oc + ",round(b,5))
+```
+
+```{r}
+# R-squared value
+summary(fit)$r.squared
+```
+
+*So the R-squared value is 43.51% .*
+*The t statistics is 4.73 .*
+*The p-value is 0.0000543 .*
+
+```{r}
+res = resid(fit)
+st_res = rstandard(fit)
+plot(df$oc, st_res, pch=19, col = 'red', main = "Residual vs. Oc (response is voplus)", xlab = "oc", ylab = "Standardized residual")
+abline(0,0, lwd=1)
+```
+
+*From the above plot we observe that the residual against OC is slightly curved.*
+
+### B) Solution:
+```{r}
+fit = lm(voplus ~ oc+trap, data = df)
+summary(fit)
+```
+
+```{r}
+anova(fit)
+```
+
+```{r}
+# Least squared regression equation
+b0 = unname(fit$coefficients[1])
+b1 = unname(fit$coefficients[2])
+b2 = unname(fit$coefficients[3])
+paste0("Least squared regression equation is: Voplus = ",round(b1,2),"Oc + ",round(b2,2),"trap + ",round(b0,2))
+```
+
+```{r}
+# R-squared value
+summary(fit)$r.squared
+```
+
+*So the R-squared value is 60.7% .*
+
+
+*From the regression  output*
+*The t statistics of oc is 1.25 .*
+*The p-value of oc is 0.221 .*
+
+*As the p-value is greater than the level of significance we can conclude that the oc's coefficient is not significant enough.*
+
+*From the regression  output*
+*The t statistics of TRAP is 3.50 .*
+*The p-value of TRAP is 0.0016 .*
+
+*As the p-value is greater less the level of significance we can conclude that the TRAP's coefficient is significant*
+
+*As we can clearly see that, using multi-linear regression and trap as one of the explanatory variables efficiently increased the R^2. And also the p-value of the TRAP variable is < 0.05 which way more significant in this model compared to the oc variable here.*
+
+```{r}
+cor(df$voplus,df$oc)
+```
+
+```{r}
+cor(df$voplus,df$trap)
+```
+
+*So TRAP and voplus has a stronger correlation than oc and voplus.*
+
+*From the above results we observe that TRAP is measured with more precision than OC*
+
+# 11.38
+## More on predicting bone formation
+### A) Solution:
+```{r}
+file_name = "ex11-38biomark.xls"
+df = read_xls(file_name)
+df
+```
+
+*The statistical model is:*
+Voplus = b0 + b1.oc + b2.trap + b3.vominus + ϵi
+
+*Assumptions:*
+1. independent ϵi(s)
+2. N(0,σ) random variables
+
+### B) Solution:
+```{r}
+fit = lm(voplus ~ oc+trap+vominus, data = df)
+summary(fit)
+```
+
+```{r}
+anova(fit)
+```
+
+```{r}
+# Least squared regression equation
+b0 = unname(fit$coefficients[1])
+b1 = unname(fit$coefficients[2])
+b2 = unname(fit$coefficients[3])
+b3 = unname(fit$coefficients[4])
+paste0("Least squared regression equation is: Voplus = ",round(b0,2)," + " ,round(b1,2),"Oc + ",round(b2,2),"trap + ",round(b3,2),"vominus + ϵi")
+```
+
+*The R-squared value is 88.4% .*
+
+```{r}
+# Residual standard error
+summary(fit)[6]
+```
+*The value of Residual standard error: 207.836*
+
+### C) Solution:
+
+```{r}
+summary(lm(voplus ~ oc, data = df))$coefficients
+```
+
+```{r}
+summary(lm(voplus ~ oc+trap, data = df))$coefficients
+```
+
+```{r}
+summary(lm(voplus ~ oc+trap+vominus, data = df))$coefficients
+```
+
+*Intercept decreases as we add new explanatory variables.*
+*Slop for oc decreases as we add trap as explanatory variables, but increases again when we add vominus as explanatory variable.*
+*Slop for trap decreases as we add vominus as explanatory variables.*
+*P-value for oc becomes insignificant when trap is added, but p-value for trap is significant.*
+*P-value for trap become insignificant when vominus is added, but p-values for both oc and vominus is significant.*
+
+### D) Solution:
+
+```{r}
+# R-squared value and residual standard error with just oc as explanatory variable
+summary(lm(voplus ~ oc, data = df))$r.squared
+summary(lm(voplus ~ oc, data = df))[6]
+```
+
+*So 43.51% of the variation in voplus is explained by the model and estimate of σ is 443.274 .*
+
+```{r}
+# R-squared value and residual standard error with oc and trap as explanatory variables
+summary(lm(voplus ~ oc+trap, data = df))$r.squared
+summary(lm(voplus ~ oc+trap, data = df))[6]
+```
+
+*So 60.7% of the variation in voplus is explained by the model and estimate of σ is 376.265 .*
+
+```{r}
+# R-squared value and residual standard error with oc, trap and vominus as explanatory variables
+summary(lm(voplus ~ oc+trap+vominus, data = df))$r.squared
+summary(lm(voplus ~ oc+trap+vominus, data = df))[6]
+```
+
+*So 88.4% of the variation in voplus is explained by the model and estimate of σ is 207.836 .*
+
+### E) Solution:
+
+*We can eliminate trap from explanatory variable and run the modeling*
+
+```{r}
+fit = lm(voplus ~ oc+vominus, data = df)
+summary(fit)
+```
+
+```{r}
+# Least squared regression equation
+b0 = unname(fit$coefficients[1])
+b1 = unname(fit$coefficients[2])
+b2 = unname(fit$coefficients[3])
+paste0("Least squared regression equation is: Voplus = ",round(b0,2)," + " ,round(b1,2),"Oc + ",round(b2,2),"vominus + ϵi")
+```
+
+```{r}
+summary(fit)$r.squared
+summary(fit)[6]
+```
+
+*So the R-squared values is 88.26% .*
+*The value of Residual standard error is 205.63 .*
+
+*From the result of part B and E, the R-squared values are pretty close.*
+
+

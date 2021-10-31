@@ -1,0 +1,300 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+#load necessary libraries
+library(tidyverse)
+library(dplyr)
+library(readxl)
+library(ggplot2)
+library(ggpubr)
+library(qqplotr)
+#library(car)
+library(e1071)
+library(nortest)
+library(BSDA)
+# options("scipen"=100, "digits"=6)
+library(reshape2)
+```
+
+# 12.34
+## Do labels matter?
+### A) Solution:
+```{r}
+n = c(130,248,174,68)
+x = c(2.93,3.00,3.01,3.39)
+df = data.frame(label = factor(c("Asian American", "Specific ethnicity", "Ethnicity American", "Other")), n = n, x = x)
+df
+```
+
+```{r}
+# Total sample size
+N = sum(n)
+# x bar
+xbar =mean(x)
+# number of categories
+cat_num = length(unique(df$label)) # or nrow(df)
+# Degree of freedom of numerator (groups)
+dfg = cat_num - 1
+paste("Degree of freedom of numerator (groups) is",dfg)
+# Degree of freedom of denominator (error)
+dfe =  N - cat_num
+paste("Degree of freedom of denominator (error) is",dfe)
+```
+
+### B) Solution:
+```{r}
+df$"(x-xbar)^2" = (df$x - xbar)^2
+df$"n(x-xbar)^2" = df$n * df$`(x-xbar)^2`
+df
+```
+
+```{r}
+# sum of squares for groups
+ssg = sum(df$`n(x-xbar)^2`)
+ssg
+```
+
+### C) Solution:
+```{r}
+# Here
+sse = 797.25
+# Mean square for groups
+msg = ssg/dfg
+msg
+# Mean square for error
+mse = sse/dfe
+mse
+# F-statistics
+f = msg/mse
+f
+```
+### D) Solution:
+```{r}
+# Corresponding P-value for F statistics
+pf(f, dfg, dfe, lower.tail = FALSE)
+```
+*Null hypothesis:*
+H0: means are equal
+*Alternate hypothesis:*
+H1: means are not equal
+*Since p value is less than the .05 significance level therefore we can reject the null hypothesis.*
+
+### E) Solution:
+*Even though the sample mean are pretty close to each other, due to the fact the sample sizes differ by a good margin, the means are not equal. It supports the conclusion obtained in part D.*
+
+# 12.54
+## A dandruff study.
+### A) Solution:
+```{r}
+file_name = "ex12-54dandruff.xls"
+df = read_xls(file_name)
+head(df)
+```
+
+```{r}
+summary(df)
+```
+
+```{r}
+# df = df[-c(4,5)]
+df = df[c(1,2,3)]
+head(df)
+```
+
+```{r}
+# df = na.omit(df)
+summary(df)
+```
+
+
+```{r}
+report = group_by(df, Treatment) %>%
+  summarise(
+    count = n(),
+    mean = mean(Flaking, na.rm = TRUE),
+    sd = sd(Flaking, na.rm = TRUE),
+    se = sd(Flaking, na.rm = TRUE)/sqrt(n())
+  ) %>% arrange(desc(count))
+report
+```
+
+
+```{r}
+plot(report$mean, xaxt="n", type = "o", main = "Mean plot", col = "blue", pch = 19, xlab = "Treatment", ylab = "Mean")
+axis(1, at = seq(1, 4, 1), labels = report$Treatment)
+```
+
+### B) Solution:
+
+*From the given data, H0 and H1 for ANOVA*
+
+*H0: Population mean scores for four groups are same*
+
+*H1: Population mean scores for four groups are not same*
+```{r}
+# one sample anova test
+aov(Flaking~Treatment,df)
+```
+
+
+```{r}
+# ANOVA table
+anova(aov(Flaking~Treatment,df))
+```
+
+
+```{r}
+# Total degree of freedom
+sum(anova(aov(Flaking~Treatment,df))[1])
+```
+
+```{r}
+# Total sum of squares
+sum(anova(aov(Flaking~Treatment,df))[2])
+```
+*Test statistics of ANOVA test, F = 967.82 . Degree of freedom for group is 3 and Degree of freedom for error is 351.*
+
+*The P-value is almost zero which indicates a very strong evidence against H0.*
+
+*So, not all means are same.*
+
+
+# 13.43
+## A comparison of plant species under low water conditions.
+
+```{r}
+file_name = "ex13-43plants1.xls"
+df = read_xls(file_name, sheet = 2, range = cell_cols("A:D"))
+head(df)
+```
+
+```{r}
+df$species = as.factor(df$species)
+df$water = as.factor(df$water)
+summary(df)
+```
+
+```{r}
+report = group_by(df, species,water) %>%
+  summarise(
+    # count = n(),
+    mean = mean(pctnit, na.rm = TRUE),
+    sd = sd(pctnit, na.rm = TRUE),
+    # se = sd(pctnit, na.rm = TRUE)/sqrt(n())
+  )# %>% arrange(desc(count))
+report
+```
+
+### A) Solution:
+```{r}
+# mean for each species by water
+dcast(df, species~water, value.var='pctnit', mean)
+```
+
+```{r}
+ggplot(data = report) +
+  geom_line(aes(x = water, y = mean, colour = species, group = species), lwd = 1) + ggtitle("Plot for Means")
+
+```
+
+*Means change across multiple species. So we can say that there is a main effect for species.*
+
+*Means change across multiple water quantities. So we can say that there is a main effect for water*
+
+*Plot for means patterns do not seem to be parallel. So we can assume that there is some kind of interaction.*
+
+### B) Solution:
+```{r}
+# Standard deviation for each species by water
+dcast(df, species~water, value.var='pctnit', sd)
+```
+
+```{r}
+# Build the linear model
+model  <- lm(pctnit~species*water, data = df)
+# Create a QQ plot of residuals
+ggqqplot(residuals(model))
+```
+
+*In the QQ plot, as all the points fall approximately along the reference line, we can assume normality.*
+
+*Also, the sample sizes are equal and sample standard deviations are similar, assumption of equal population variance may be reasonable and the pooled procedure could be used*
+
+###C) Solution:
+```{r}
+# two-way ANOVA test without interaction effect (NOT APPLICABLE IN THIS CASE)
+# anova(aov(pctnit~species+water,df))
+```
+
+```{r}
+# Two-way ANOVA with interaction effect
+# anova(aov(pctnit~species*water, df))
+anova(aov(pctnit~species+water + species:water,df))
+```
+*Null hypotheses:*
+H0(species): main effect due to species is statistically insignificant.
+H0(water): main effect due to water is statistically insignificant.
+H0(interaction): interaction effect due to species and water is statistically insignificant.
+
+*As all the P-values are less than .05 level of significance, we can reject all the null hypotheses and conclude main effects due to species and water as well as interaction are statistically significant.*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+#load necessary libraries
+library(dplyr)
+library(readxl)
+library(ggplot2)
+library(ggpubr)
+library(qqplotr)
+#library(car)
+library(e1071)
+library(nortest)
+library(BSDA)
+library(psych)
+library(caret)
+library(leaps)
+library(gvlma)
+```
+
+```{r}
+file_name = "fidelity_mutual_funds_return_w_risk.csv"
+df = read.csv(file_name)
+df
+```
+
+```{r}
+str(df)
+```
+
+```{r}
+# Removing all case with null value in any columns
+df <- na.omit(df)
+summary(df)
+```
+
+
+```{r}
+resize.win <- function(Width=6, Height=6)
+{
+        # works for windows
+    #dev.off(); # dev.new(width=6, height=6)
+    windows(record=TRUE, width=Width, height=Height)
+}
+resize.win(10,10)
+```
+
+```{r}
+# Scatter plot of matrices
+dev.new(width=30, height=30)
+pairs.panels(df[,2:18],method = "pearson",hist.col ="#00AFBB" ,density = TRUE,ellipses = TRUE )
+```
+
+
+
+```{r}
+# To find out which independent variable to use in our multiple regression we are going to use the step wise regression
+null=lm(yr10~1,data=df[,3:18])
+full=lm(yr10~.,data=df[,3:18])
+step(null,scope=list(upper=full),data=df_train,direction="both")
+```
+
+
+```{r}
+fit = lm(formula = yr10 ~ yr5 + yr3 + life_of_fund + ytdDaily + yr1 + 
+    r2 + gross_expense_ratio + morningstar_rating_overall + risk + 
+    sharpe_ratio_3_yr + std_dev + net_expense_ratio + minimum_investment, 
+    data = df[, 3:18])
+summary(fit)
+```
+
+```{r}
+anova(fit)
+```
+
+```{r}
+# Global Validation of Linear Models Assumptions
+gvlma(fit)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

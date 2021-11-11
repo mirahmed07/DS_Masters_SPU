@@ -1,6 +1,8 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  word_document: default
+  html_notebook: default
 ---
 
 ```{r}
@@ -235,8 +237,11 @@ ggqqplot(residuals(model))
 anova(aov(pctnit~species+water + species:water,df))
 ```
 *Null hypotheses:*
+
 H0(species): main effect due to species is statistically insignificant.
+
 H0(water): main effect due to water is statistically insignificant.
+
 H0(interaction): interaction effect due to species and water is statistically insignificant.
 
 *As all the P-values are less than .05 level of significance, we can reject all the null hypotheses and conclude main effects due to species and water as well as interaction are statistically significant.*

@@ -1,0 +1,549 @@
+---
+title: "R Notebook"
+output:
+  word_document: default
+  html_notebook: default
+---
+
+```{r}
+#load necessary libraries
+library(dplyr)
+library(readxl)
+library(ggplot2)
+library(ggpubr)
+library(qqplotr)
+#library(car)
+library(e1071)
+library(nortest)
+library(BSDA)
+library(psych)
+library(caret)
+library(leaps)
+library(gvlma)
+# options("scipen"=100, "digits"=6)
+```
+
+```{r}
+# Import the csv into a dataframe
+file_name = "auto-mpg.csv"
+df = read.csv(file_name)
+head(df)
+```
+# Preliminary analysis
+```{r}
+# structure of the dataframe
+str(df)
+```
+
+```{r}
+# Converting the horsepower column to a numeric column
+df$horsepower = as.numeric(df$horsepower)
+head(df)
+```
+
+```{r}
+# Summary of the dataframe
+summary(df)
+```
+
+*There are 6 instances where horsepower is null. We need to remove those cases.*
+
+```{r}
+# Removing all case with null value in any columns
+df <- na.omit(df)
+summary(df)
+```
+
+*This summary does not show any major problems. The gap between the means and the median are not significant. This table is telling us that any data point greater than 1.5 times IQR might be an outlier and may cause an issue for our linear regression model.Please note that even though there outliers in our data, we choose to ignore them for now.*
+
+```{r}
+# Scatter plot of matrices
+pairs.panels(df[,1:6],method = "pearson",hist.col ="#00AFBB" ,density = TRUE,ellipses = TRUE)
+```
+
+*This output show three different things which are the correlation between variables, the scatter plots that tell us how the variables are associated and, the histograms the inform us how skewed our data are. We noticed that cylinder, displacement, horsepower and weight are strongly correlated and negatively correlated with the MPG. There is a multicollinearity among the independent variables. This scatter plots denote that the relationships that could be linear are the one between weight and displacement and the one between weight and horsepower, all the other are clearly not linear as they have some curve. Based on the above plots of the independent variables vs mpg, our initial assessment is to consider either weight and horsepower or weight and displacement as possible candidates for our final multi linear regression model.*
+
+# FInding outliers using boxplot
+```{r}
+for (i in names(df[,1:6])) {
+  boxplot(df[,i], names = "names(df[,i])", ylab = i)
+}
+```
+
+*We see some outliers for horsepower and acceleration on the above boxplots.*
+
+## Splitting the dataset for training and testing
+```{r}
+#Using the rest 300 samples in the dataframe, run a simple linear regression to determine the relationship between mpg and a single variable
+df_train <- df[1:300,1:6]
+df_test <- df[301:nrow(df),1:6]
+```
+
+# Model with displacement as explanatory variable
+```{r}
+# Linear regression plot
+ggplot(data=df_train, aes(x=displacement, y=mpg)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=300, label.y=40) +
+        stat_cor(aes(label=..rr.label..), label.x=300, label.y=38)
+```
+
+
+```{r}
+#performing regression
+dis_model <- lm(mpg~displacement, data=df_train)
+summary(dis_model)
+```
+
+```{r}
+# mean of residuals
+mean(resid(dis_model))
+```
+
+```{r}
+#plot the variable
+plot(df_train$mpg~df_train$displacement,main="mpg vs displacement",xlab="displacement",ylab = "mpg")
+abline(dis_model,col="red")
+
+#residuals vs. the predictor variable
+residual <- dis_model$residuals
+plot(df_train$mpg~residual,lwd=3, col="blue",main="mpg vs residual", xlab="residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+
+#absolute value of the residuals vs. the predictor variable
+abs_residual <- abs(residual)
+plot(df_train$mpg~abs_residual,lwd=3, col="red",main="mpg vs Abs_residual", xlab="abs_residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+#histogram of the residuals
+hist(residual,prob=T,breaks=20,main="HISTOGRAM OF DISPLACEMENT RESIDUALS",xlab="Residuals")
+lines(density(residual),col="red",lwd=3)
+```
+
+```{r}
+plot(dis_model)
+```
+
+```{r}
+# Make predictions and compute the R2, RMSE and MAE
+dis_predict <- dis_model %>% predict(df_test)  
+data.frame( R2 = R2(dis_predict, df_test$mpg),
+            RMSE = RMSE(dis_predict, df_test$mpg),
+            MAE = MAE(dis_predict, df_test$mpg))
+```
+
+```{r}
+prediction_error = RMSE(dis_predict, df_test$mpg)/mean(df_test$mpg)
+prediction_error
+```
+
+```{r}
+compare_dis = as.data.frame(cbind(df_test$mpg,dis_predict),row=FALSE)
+names(compare_dis) = c("observed","dis_predict")
+head(compare_dis)
+```
+
+*In this model all the estimated values are statistically significant with a p-value less than 2e-16 . It is shown that the plot of MPG vs the Displacement is not linear and there is a sort of relationship between the variable and the residual. This model is definitely not the ideal one. The diagnostic plot reveal that these following data point 112,245,248 are outliers. The adjusted R-square state that 70.94% of displacement explain MPG.*
+
+# Model with horsepower as explanatory variable
+```{r}
+# Linear regression plot
+ggplot(data=df_train, aes(x=horsepower, y=mpg)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=200, label.y=40) +
+        stat_cor(aes(label=..rr.label..), label.x=200, label.y=38)
+```
+
+
+```{r}
+#performing regression
+hors_model <- lm(mpg~horsepower, data=df_train)
+summary(hors_model)
+```
+
+```{r}
+#plot the variable
+plot(df_train$mpg~df_train$horsepower,main="mpg vs horsepower",xlab="horsepower",ylab = "mpg")
+abline(hors_model,col="red")
+
+#residuals vs. the predictor variable
+residual <- hors_model$residuals
+plot(df_train$mpg~residual,lwd=3, col="blue",main="mpg vs residual", xlab="residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+
+#absolute value of the residuals vs. the predictor variable
+abs_residual <- abs(residual)
+plot(df_train$mpg~abs_residual,lwd=3, col="red",main="mpg vs Abs_residual", xlab="abs_residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+#histogram of the residuals
+hist(residual,prob=T,breaks=20,main="HISTOGRAM OF HORSEPOWER RESIDUALS",xlab="Residuals")
+lines(density(residual),col="red",lwd=3)
+```
+
+```{r}
+plot(hors_model)
+```
+
+
+```{r}
+# mean of residuals
+mean(resid(hors_model))
+```
+
+```{r}
+# Make predictions and compute the R2, RMSE and MAE
+hors_predict <- hors_model %>% predict(df_test)  
+data.frame( R2 = R2(hors_predict, df_test$mpg),
+            RMSE = RMSE(hors_predict, df_test$mpg),
+            MAE = MAE(hors_predict, df_test$mpg))
+```
+
+```{r}
+prediction_error = RMSE(hors_predict, df_test$mpg)/mean(df_test$mpg)
+prediction_error
+```
+
+```{r}
+compare_hors = as.data.frame(cbind(df_test$mpg,hors_predict),row=FALSE)
+names(compare_hors) = c("observed","hors_predict")
+head(compare_hors)
+```
+
+*In this model all the estimated values are statistically significant with a p-value less than 2e-16 . It is shown that the plot of MPG vs the horsepower is not linear and there is a sort of non-linear relationship between the variable and the residual. This model is definitely not the ideal one. The diagnostic plot reveal that these following data point 245,248,296 are outliers. The adjusted R-square state that 63.97 % of horsepower explain MPG.*
+
+# Model with cylinder as explanatory variable
+```{r}
+# Linear regression plot
+ggplot(data=df_train, aes(x=cylinder, y=mpg)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=5, label.y=40) +
+        stat_cor(aes(label=..rr.label..), label.x=5, label.y=38)
+```
+
+
+```{r}
+#performing regression
+cylinder_model <- lm(mpg~cylinder, data=df_train)
+summary(cylinder_model)
+```
+
+```{r}
+# mean of residuals
+mean(resid(cylinder_model))
+```
+
+```{r}
+#plot the variable
+plot(df_train$mpg~df_train$cylinder,main="mpg vs cylinder",xlab="cylinder",ylab = "mpg")
+abline(cylinder_model,col="red")
+
+#residuals vs. the predictor variable
+residual <- cylinder_model$residuals
+plot(df_train$mpg~residual,lwd=3, col="blue",main="mpg vs residual", xlab="residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+
+#absolute value of the residuals vs. the predictor variable
+abs_residual <- abs(residual)
+plot(df_train$mpg~abs_residual,lwd=3, col="red",main="mpg vs Abs_residual", xlab="abs_residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+#histogram of the residuals
+hist(residual,prob=T,breaks=20,main="HISTOGRAM OF CYLINDER RESIDUALS",xlab="Residuals")
+lines(density(residual),col="red",lwd=3)
+```
+
+```{r}
+plot(cylinder_model)
+```
+
+```{r}
+# Make predictions and compute the R2, RMSE and MAE
+cyl_predict <- cylinder_model %>% predict(df_test)  
+data.frame( R2 = R2(cyl_predict, df_test$mpg),
+            RMSE = RMSE(cyl_predict, df_test$mpg),
+            MAE = MAE(cyl_predict, df_test$mpg))
+```
+
+```{r}
+prediction_error = RMSE(cyl_predict, df_test$mpg)/mean(df_test$mpg)
+prediction_error
+```
+
+```{r}
+compare_cyl = as.data.frame(cbind(df_test$mpg,cyl_predict),row=FALSE)
+names(compare_cyl) = c("observed","cyl_predict")
+head(compare_cyl)
+```
+
+*In this model all the estimated values are statistically significant with a p-value less than 2e-16 . It is shown that the plot of MPG vs the cylinder is not linear and there is a sort of non-linear relationship between the variable and the residual. This model is definitely not the ideal one. The diagnostic plot reveal that these following data point 245,248,112 are outliers. The adjusted R-square state that 66.24 % of cylinder explain MPG.*
+
+
+# Model with weight as explanatory variable
+```{r}
+# Linear regression plot
+ggplot(data=df_train, aes(x=weight, y=mpg)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=3000, label.y=40) +
+        stat_cor(aes(label=..rr.label..), label.x=3000, label.y=38)
+```
+
+
+```{r}
+#performing regression
+weight_model <- lm(mpg~weight, data=df_train)
+summary(weight_model)
+```
+
+```{r}
+# mean of residuals
+mean(resid(weight_model))
+```
+
+```{r}
+#plot the variable
+plot(df_train$mpg~df_train$weight,main="mpg vs weight",xlab="weight",ylab = "mpg")
+abline(weight_model,col="red")
+
+#residuals vs. the predictor variable
+residual <- weight_model$residuals
+plot(df_train$mpg~residual,lwd=3, col="blue",main="mpg vs residual", xlab="residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+
+#absolute value of the residuals vs. the predictor variable
+abs_residual <- abs(residual)
+plot(df_train$mpg~abs_residual,lwd=3, col="red",main="mpg vs Abs_residual", xlab="abs_residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+#histogram of the residuals
+hist(residual,prob=T,breaks=20,main="HISTOGRAM OF WEIGHT RESIDUALS",xlab="Residuals")
+lines(density(residual),col="red",lwd=3)
+```
+
+```{r}
+plot(weight_model)
+```
+
+```{r}
+# Make predictions and compute the R2, RMSE and MAE
+weight_predict <- weight_model %>% predict(df_test)  
+data.frame( R2 = R2(weight_predict, df_test$mpg),
+            RMSE = RMSE(weight_predict, df_test$mpg),
+            MAE = MAE(weight_predict, df_test$mpg))
+```
+
+```{r}
+prediction_error = RMSE(weight_predict, df_test$mpg)/mean(df_test$mpg)
+prediction_error
+```
+
+```{r}
+compare_wght = as.data.frame(cbind(df_test$mpg,weight_predict),row=FALSE)
+names(compare_wght) = c("observed","weight_predict")
+head(compare_wght)
+```
+
+*In this model all the estimated values are statistically significant with a p-value less than 2e-16 . It is shown that the plot of MPG vs the weight is not linear and there is a sort of non-linear relationship between the variable and the residual. This model is definitely not the ideal one. The diagnostic plot reveal that these following data point 245,248,112 are outliers. The adjusted R-square state that 77.06% of weight explain MPG.*
+
+
+# Model with acceleration as explanatory variable
+```{r}
+# Linear regression plot
+ggplot(data=df_train, aes(x=acceleration, y=mpg)) +
+        geom_smooth(method="lm") +
+        geom_point() +
+        stat_regline_equation(label.x=8, label.y=40) +
+        stat_cor(aes(label=..rr.label..), label.x=8, label.y=38)
+```
+
+```{r}
+#performing regression
+acc_model <- lm(mpg~acceleration, data=df_train)
+summary(acc_model)
+```
+
+```{r}
+# mean of residuals
+mean(resid(acc_model))
+```
+
+```{r}
+#plot the variable
+plot(df_train$mpg~df_train$acceleration,main="mpg vs acceleration",xlab="acceleration",ylab = "mpg")
+abline(acc_model,col="red")
+
+#residuals vs. the predictor variable
+residual <- acc_model$residuals
+plot(df_train$mpg~residual,lwd=3, col="blue",main="mpg vs residual", xlab="residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+
+#absolute value of the residuals vs. the predictor variable
+abs_residual <- abs(residual)
+plot(df_train$mpg~abs_residual,lwd=3, col="red",main="mpg vs Abs_residual", xlab="abs_residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+#histogram of the residuals
+hist(residual,prob=T,breaks=20,main="HISTOGRAM OF ACCELERATION RESIDUALS",xlab="Residuals")
+lines(density(residual),col="red",lwd=3)
+```
+
+```{r}
+plot(acc_model)
+```
+
+```{r}
+# Make predictions and compute the R2, RMSE and MAE
+acc_predict <- acc_model %>% predict(df_test)  
+data.frame( R2 = R2(acc_predict, df_test$mpg),
+            RMSE = RMSE(acc_predict, df_test$mpg),
+            MAE = MAE(acc_predict, df_test$mpg))
+```
+
+```{r}
+prediction_error = RMSE(acc_predict, df_test$mpg)/mean(df_test$mpg)
+prediction_error
+```
+
+```{r}
+compare_acc = as.data.frame(cbind(df_test$mpg,acc_predict),row=FALSE)
+names(compare_acc) = c("observed","acc_predict")
+head(compare_acc)
+```
+
+*In this model all the estimated values are statistically significant with a p-value less than 2e-16 . It is shown that the plot of MPG vs the acceleration is not linear and there is a sort of non-linear relationship between the variable and the residual. This model is probably the worst one. The diagnostic plot reveal that these following data point 245,248,155 are outliers. The adjusted R-square state that only 20.25% of acceleration explain MPG.*
+
+# Multiple regression
+## Feature selection
+### Stepwise regression
+
+```{r}
+# To find out which independent variable to use in our multiple regression we are going to use the step wise regression
+null=lm(mpg~1,data=df_train)
+full=lm(mpg~.,data=df_train)
+step(null,scope=list(upper=full),data=df_train,direction="both")
+```
+
+*As shown in the R results above the step function produced weight and horsepower   as the optimum variables to produce the desired linear regression model . This step function use AIC as criterion. It selects the combination of variables with which we can have the lower AIC statistic.This would be our final model.*
+
+# Building the final model
+```{r}
+final_model <- lm(mpg ~ weight + horsepower, data = df_train)
+summary(final_model)
+```
+
+```{r}
+plot(final_model)
+```
+
+```{r}
+#residuals vs. the predictor variable
+residual <- final_model$residuals
+plot(df_train$mpg~residual,lwd=3, col="blue",main="mpg vs residual", xlab="residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+
+#absolute value of the residuals vs. the predictor variable
+abs_residual <- abs(residual)
+plot(df_train$mpg~abs_residual,lwd=3, col="red",main="mpg vs Abs_residual", xlab="abs_residual",ylab = "mpg")
+grid(NA, 5, lwd = 2,col = "darkgray")
+
+#histogram of the residuals
+hist(residual,prob=T,breaks=20,main="HISTOGRAM OF weight + horsepower RESIDUALS",xlab="Residuals")
+lines(density(residual),col="red",lwd=3)
+```
+
+*From the model summary,the model p value and predictor’s p value are less than the significance level (5%).We can state that our model is statistically significant.The R-Squared and the Adjusted R-Squared are respectively 0.7796 and 0.7781 which mean that more than 77% of the model are explained by the independent variables. We decided to plot test weight against test mpg and found that the linear regression line through this data confirm our suspicion that the linear regression model is not truly representing the data. From the plot (residual vs fitted), the red line is pretty flat, with no increasing or decreasing trend. The Normal Q-Q plot indicate that the data are normally distributed.These plot are showing some outliers that we decided to keep in the previous models.*
+
+
+```{r}
+# Global Validation of Linear Models Assumptions
+gvlma(final_model)
+```
+
+*None of the assumptions are satisfied. This could be due to the fact that we have some outliers in the data that can impact the quality of the model. Let’s remove them from the data then see what happen.*
+
+```{r}
+final_model2 <- lm(mpg ~ weight + horsepower, data = df_train[-c(112,245,248),])
+summary(final_model2)
+```
+
+```{r}
+plot(final_model2)
+```
+
+
+```{r}
+# Global Validation of Linear Models Assumptions
+gvlma(final_model2)
+```
+
+*We notice that even if we remove the outlier the linear model assumptions are not satisfied. R-squared and adjusted R-squared values did not improve much even after removing the outliers. We suspect that a non linear model would perform better on this car data.*
+
+# Prediction
+```{r}
+# Make predictions and compute the R2, RMSE and MAE
+predict_final <- final_model2 %>% predict(df_test)  
+data.frame( R2 = R2(predict_final, df_test$mpg),
+            RMSE = RMSE(predict_final, df_test$mpg),
+            MAE = MAE(predict_final, df_test$mpg))
+```
+
+```{r}
+predictions_error <- RMSE(predict_final, df_test$mpg)/mean(df_test$mpg)
+predictions_error
+```
+
+```{r}
+compare_final <- as.data.frame(cbind(df_test$mpg,predict_final),row=FALSE)
+names(compare_final) <- c("observed","predict_final")
+head(compare_final)
+```
+
+```{r}
+cor(compare_final)
+```
+
+*The correlation between The actual values and the predicted values is 73.74% .*
+
+```{r}
+summary(compare_final)
+```
+
+```{r}
+plot(compare_final)
+```
+
+```{r}
+compare_final$error = compare_final$observed - compare_final$predict_final
+# compare_final$residuals = final_model$residuals
+head(compare_final)
+```
+
+```{r}
+summary(compare_final)
+```
+
+```{r}
+# Residuals plot
+plot(compare_final$error)
+abline(h = 0, col= 'red')
+```
+
+```{r}
+#histogram of the residuals
+hist(compare_final$error,prob=T,breaks=20,main="HISTOGRAM OF weight + horsepower RESIDUALS",xlab="Residuals")
+lines(density(compare_final$error),col="red",lwd=3)
+```
+
+*So it seems like our regression model is predicting more than the actual value most of the time.*
+
+# So the final formula is mpg = 40.2859314 - 0.0052394 * weight - 0.0269430 * horsepower

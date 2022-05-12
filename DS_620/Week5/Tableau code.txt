@@ -1,0 +1,20 @@
+Times of FPL
+IF  [Pivot Field Names (Pivot1)] = '< 100% of FPL'
+THEN'<1.0'
+ELSEIF  [Pivot Field Names (Pivot1)] = '≥ 100%  to ≤ 150% of FPL' 
+THEN '<1.5'
+ELSEIF  [Pivot Field Names (Pivot1)] = '> 150% to ≤ 200% of FPL' 
+THEN '<2.0'
+ELSEIF  [Pivot Field Names (Pivot1)] = '> 200% to ≤ 250% of FPL' 
+THEN '<2.5'
+ELSEIF  [Pivot Field Names (Pivot1)] = '> 250% to ≤ 300% of FPL' 
+THEN '<3.0'
+ELSEIF  [Pivot Field Names (Pivot1)] = '> 300% to ≤ 400% of FPL' 
+THEN '<4.0'
+ELSEIF  [Pivot Field Names (Pivot1)] = '> 400% of FPL' 
+THEN '>4.0'
+ELSE 'Unknown' END
+
+APTC Applied
+IF [APTC] =  'Yes APTC' THEN 'Yes'
+ELSE'No' END

@@ -10,8 +10,8 @@ st.title('COVID in 2020')
 
 @st.cache
 def final_data():
-    covid_stats_df =  pd.read_csv("resources/covid_stats_2020.csv")
-    populations_df = pd.read_csv("resources/population_standardized_2020.csv")
+    covid_stats_df =  pd.read_csv("covid_stats_2020.csv")
+    populations_df = pd.read_csv("population_standardized_2020.csv")
     final_df = pd.merge(covid_stats_df, populations_df[['standard_names', 'Migrants (net)', 'Med. Age',\
                                                     'Urban Pop %']], on = 'standard_names',\
                    how = 'inner')
@@ -41,7 +41,7 @@ status_text = st.sidebar.empty()
 
 @st.cache
 def load_data():
-    data = pd.read_csv("resources/ultimate_no_null.csv")
+    data = pd.read_csv("ultimate_no_null.csv")
     return data
 ultimate_no_null_df = load_data()
 

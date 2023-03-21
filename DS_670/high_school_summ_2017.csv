@@ -1,0 +1,397 @@
+rank,school,grades,district,students,free_lunch_rec,total_exp,score,year
+1,Academy for Mathematics Science and Engineering,12-Sep,Morris County Vocational School District,101,0.00%,"$12,298 ",98.8,2017
+2,Marine Academy of Technology and Environmental Science,12-Sep,Ocean County Vocational Technical School District,280,7.50%,"$12,615 ",98.7,2017
+3,Middlesex County Vocational Academy Math Science &Engineering Techn,12-Sep,Middlesex County Vocational and Technical School District,160,1.90%,"$11,783 ",98,2017
+4,Academy For Allied Health Sciences,12-Sep,Union County Vocational-Technical School District,291,11.00%,"$8,221 ",97.7,2017
+5,Union County Magnet High School,12-Sep,Union County Vocational-Technical School District,298,10.40%,"$8,753 ",97.6,2017
+6,Academy For Information Technology,12-Sep,Union County Vocational-Technical School District,287,10.80%,"$8,671 ",97.2,2017
+7,Middlesex County Vocational Academy Allied Health & Biomedical Science,12-Aug,Middlesex County Vocational and Technical School District,276,9.10%,"$9,375 ",96.9,2017
+8,Dr Ronald McNair High School,12-Sep,Jersey City Public Schools,685,54.70%,"$11,528 ",96.4,2017
+9,Communications High School,12-Sep,Monmouth County Vocational School District,312,1.30%,"$16,390 ",96.3,2017
+10,Monmouth County Academy of Allied Health and Science,12-Sep,Monmouth County Vocational School District,300,4.30%,"$16,078 ",96.3,2017
+11,Marine Academy of Science and Technology,12-Sep,Monmouth County Vocational School District,290,3.80%,"$16,104 ",96.1,2017
+12,Biotechnology High School,12-Sep,Monmouth County Vocational School District,330,2.40%,"$16,641 ",95.8,2017
+13,High Technology High School,12-Sep,Monmouth County Vocational School District,291,1.70%,"$16,345 ",95.6,2017
+14,Bergen County Academies,12-Sep,Bergen County Vocational Technical School District,"1,069",4.70%,"$18,595 ",95.3,2017
+15,Academy For Performing Arts,12-Sep,Union County Vocational-Technical School District,209,11.00%,"$11,042 ",95,2017
+16,Bergen County Technical High School - Teterboro,12-Sep,Bergen County Vocational Technical School District,677,8.70%,"$17,807 ",94.5,2017
+17,Infinity Institute,12-Jun,Jersey City Public Schools,253,74.70%,"$9,826 ",93.3,2017
+18,Union County Technical,12-Sep,Union County Vocational-Technical School District,425,17.60%,"$6,462 ",91.6,2017
+19,Morris County School of Technology,12-Sep,Morris County Vocational School District,727,4.30%,"$13,307 ",91.6,2017
+20,West Windsor-Plainsboro High School North,12-Sep,West Windsor-Plainsboro Regional School District,"1,387",5.80%,"$14,022 ",87.2,2017
+21,Kinnelon High School,12-Sep,Kinnelon School District,676,3.80%,"$19,732 ",86.7,2017
+22,Ridge High School,12-Sep,Bernards Township School District,"1,898",1.70%,"$10,069 ",86.4,2017
+23,Science Park High School,12-Jul,Newark Public School District,805,70.40%,"$11,449 ",86.2,2017
+24,Technology High School,12-Sep,Newark Public School District,615,87.80%,"$11,824 ",85.3,2017
+25,Mountain Lakes High School,12-Sep,Mountain Lakes Public School District,714,2.90%,"$13,883 ",85.1,2017
+26,West Windsor-Plainsboro High School South,12-Sep,West Windsor-Plainsboro Regional School District,"1,597",5.40%,"$12,191 ",84.2,2017
+27,Montgomery High School,12-Sep,Montgomery Township School District,"1,653",4.10%,"$13,405 ",84.2,2017
+28,Summit High School,12-Sep,Summit Public School District,"1,245",16.10%,"$7,246 ",84,2017
+29,Millburn High School,12-Sep,Millburn Township School District,"1,457",1.70%,"$16,959 ",83.9,2017
+30,Northern Valley Regional High School at Old Tappan,12-Sep,Northern Valley Regional High School District,"1,230",0.90%,"$14,765 ",83.5,2017
+31,Ridgewood High School,12-Sep,Ridgewood Public School District,"1,738",1.50%,"$11,059 ",82.5,2017
+32,John P. Stevens High School,12-Sep,Edison Township School District,"2,337",17.00%,"$6,666 ",82.4,2017
+33,Glen Ridge High School,12-Jul,Glen Ridge Public School District,828,0.00%,"$10,966 ",81.8,2017
+34,New Providence High School,12-Sep,New Providence School District,657,4.90%,"$12,987 ",81.4,2017
+35,Mahwah High School,12-Sep,Mahwah Township Public School District,932,9.80%,"$12,658 ",81.2,2017
+36,West Morris Central High School,12-Sep,West Morris Regional High School District,"1,298",1.30%,"$13,366 ",80.5,2017
+37,Madison High School,12-Sep,Madison Public School District,837,7.20%,"$14,709 ",80,2017
+38,Chatham High School,12-Sep,School District of the Chathams,"1,241",1.70%,"$9,966 ",79.3,2017
+39,North Hunterdon High School,12-Sep,North Hunterdon-Voorhees Regional High School District,"1,617",2.20%,"$13,041 ",79,2017
+40,Mount Olive High School,12-Sep,Mount Olive Township School District,"1,487",14.20%,"$10,202 ",78.8,2017
+41,Tenafly High School,12-Sep,Tenafly Public School District,"1,161",2.60%,"$11,703 ",78.5,2017
+42,Northern Valley Regional High School at Demarest,12-Sep,Northern Valley Regional High School District,"1,022",0.70%,"$15,340 ",76.9,2017
+43,Haddonfield Memorial High School,12-Sep,Haddonfield School District,827,1.80%,"$8,175 ",76.6,2017
+44,North Star Academy Charter School,K-12,North Star Academy Charter School,"4,490",86.90%,"$10,058 ",76.3,2017
+45,Dumont High School,12-Sep,Dumont Public School District,805,9.20%,"$10,719 ",76.2,2017
+46,Northern Highlands Regional High School,12-Sep,Northern Highlands Regional High School District,"1,361",0.40%,"$15,404 ",76.2,2017
+47,Fair Lawn High School,12-Sep,Fair Lawn Public School District,"1,451",14.10%,"$8,865 ",75.6,2017
+48,Scotch Plains-Fanwood High School,12-Sep,Scotch Plains-Fanwood School District,"1,530",6.20%,"$9,238 ",75.3,2017
+49,Princeton High School,12-Sep,Princeton Public School District,"1,586",8.80%,"$11,506 ",74.5,2017
+50,Hunterdon Central Regional High School District,12-Sep,Hunterdon Central Regional High School District,"3,020",6.10%,"$15,819 ",74.2,2017
+51,Park Ridge High School,12-Jul,Park Ridge School District,574,4.70%,"$17,389 ",73.9,2017
+52,Metuchen High School,12-Sep,Metuchen Public School District,656,11.10%,"$8,384 ",73.8,2017
+53,Bridgewater-Raritan High School,12-Sep,Bridgewater-Raritan Regional School District,"2,916",9.80%,"$11,278 ",73.8,2017
+54,Central Jersey College Prep Charter School,K-12,Central Jersey College Prep Charter School,476,23.70%,"$8,883 ",73.6,2017
+55,Livingston High School,12-Sep,Livingston Board of Education School District,"1,894",1.60%,"$12,895 ",72.9,2017
+56,Pompton Lakes High School,12-Sep,Pompton Lakes School District,633,12.20%,"$11,245 ",72.6,2017
+57,Cumberland County Technical Education Center,12-Sep,Cumberland County Board of Vocational Education,274,47.40%,"$14,176 ",72,2017
+58,Gloucester County Institute of Technology,12-Sep,Gloucester County Vocational-Technical School District,"1,297",10.30%,"$11,295 ",71.9,2017
+59,Monroe Township High School,12-Sep,Monroe Township School District,"2,162",11.10%,"$13,410 ",71.9,2017
+60,Leonia High School,12-Sep,Leonia Public School District,667,16.90%,"$13,390 ",71.8,2017
+61,West Morris Mendham High School,12-Sep,West Morris Regional High School District,"1,293",1.20%,"$12,763 ",71.5,2017
+62,Glen Rock High School,12-Sep,Glen Rock Public School District,709,1.30%,"$15,807 ",71.2,2017
+63,Parsippany High School,12-Sep,Parsippany-Troy Hills Township School District,916,22.20%,"$12,402 ",71,2017
+64,Point Pleasant Beach High School,12-Sep,Point Pleasant Beach School District,351,10.80%,"$14,625 ",70.5,2017
+65,River Dell Regional High School,12-Sep,River Dell Regional School District,"1,057",0.60%,"$15,861 ",70.2,2017
+66,Randolph High School,12-Sep,Randolph Township School District,"1,605",7.70%,"$11,061 ",69.9,2017
+67,Hillsborough High School,12-Sep,Hillsborough Township Public School District,"2,277",6.90%,"$7,277 ",69.9,2017
+68,Voorhees High School,12-Sep,North Hunterdon-Voorhees Regional High School District,981,4.60%,"$15,592 ",69.6,2017
+69,High Technical High School,12-Sep,Hudson County Schools of Technology School District,"1,049",33.00%,"$11,480 ",69.6,2017
+70,Pascack Hills High School,12-Sep,Pascack Valley Regional High School District,829,2.40%,"$16,816 ",69.3,2017
+71,South Plainfield High School,12-Sep,South Plainfield School District,"1,025",29.20%,"$6,934 ",68.8,2017
+72,Montville Township High School,12-Sep,Montville Township School District,"1,210",1.40%,"$15,537 ",68.8,2017
+73,OCVTS Grunin Performing Arts Academy,12-Sep,Ocean County Vocational Technical School District,274,8.00%,"$15,088 ",68.5,2017
+74,Emerson Junior Senior High,12-Jul,Emerson Public School District,535,6.50%,"$15,333 ",68.1,2017
+75,Liberty High School,12-Sep,Jersey City Public Schools,189,69.30%,"$14,454 ",68.1,2017
+76,Wayne Hills High School,12-Sep,Wayne Township Public School District,"1,327",6.70%,"$16,896 ",67.9,2017
+77,Paramus High School,12-Sep,Paramus Public School District,"1,280",7.10%,"$15,572 ",67.8,2017
+78,New Milford High School,12-Sep,New Milford Public School District,631,13.80%,"$12,896 ",67.4,2017
+79,Cranford High School,12-Sep,Cranford Public School District,"1,208",2.90%,"$10,384 ",67.2,2017
+80,Ramsey High School,12-Sep,Ramsey School District,845,4.40%,"$13,739 ",67,2017
+81,Westwood Regional High School,12-Sep,Westwood Regional School District,"1,101",8.70%,"$9,306 ",66.9,2017
+82,Ramapo High School,12-Sep,Ramapo Indian Hills Regional High School District,"1,134",1.70%,"$15,831 ",66.8,2017
+83,Westfield Senior High School,12-Sep,Westfield Public School District,"1,879",3.00%,"$7,575 ",66.7,2017
+84,Matawan Regional High School,12-Sep,Matawan-Aberdeen Regional School District,"1,042",28.70%,"$14,800 ",66.6,2017
+85,Fort Lee High School,12-Sep,Fort Lee School District,953,27.00%,"$10,393 ",66.5,2017
+86,Cherry Hill High School East,12-Sep,Cherry Hill School District,"2,188",13.00%,"$7,332 ",66.3,2017
+87,Morris Hills High School,12-Sep,Morris Hills Regional School District,"1,235",25.10%,"$13,656 ",66.1,2017
+88,Passaic County Technical Institute,12-Sep,Passaic County Technical-Vocational School District,"3,461",49.80%,"$17,412 ",65.9,2017
+89,Wayne Valley High School,12-Sep,Wayne Township Public School District,"1,300",10.00%,"$16,982 ",65.9,2017
+90,James Caldwell High School,12-Sep,Caldwell-West School District,795,5.50%,"$14,431 ",65.7,2017
+91,Robbinsville High School,12-Sep,Robbinsville Public Schools,981,4.60%,"$5,500 ",65.6,2017
+92,Rancocas Valley Regional High School,12-Sep,Rancocas Valley Regional High School District,"2,085",26.30%,"$11,409 ",64.8,2017
+93,Hackettstown High School,12-Sep,Hackettstown Public School District,882,16.90%,"$13,359 ",64.5,2017
+94,Indian Hills High School,12-Sep,Ramapo Indian Hills Regional High School District,"1,140",2.20%,"$16,207 ",63.8,2017
+95,Elizabeth High School - Frank J Cicarell Academy,12-Sep,Elizabeth Public Schools,979,72.60%,"$7,448 ",63.5,2017
+96,Moorestown High School,12-Sep,Moorestown Township Public School District,"1,336",8.80%,"$8,774 ",62.9,2017
+97,County Prep High School,12-Sep,Hudson County Schools of Technology School District,838,47.30%,"$16,033 ",62.2,2017
+98,Point Pleasant Borough High School,12-Sep,Point Pleasant Borough School District,857,14.60%,"$13,364 ",62.1,2017
+99,Marlboro High School,12-Sep,Freehold Regional High School District,"1,937",4.00%,"$9,633 ",62,2017
+100,South Brunswick High School,12-Sep,South Brunswick School District,"2,920",12.10%,"$11,617 ",62,2017
+101,Hopewell Valley Central High School,12-Sep,Hopewell Valley Regional School District,"1,200",4.30%,"$11,670 ",61.6,2017
+102,Ridgefield Memorial High School,12-Sep,Ridgefield School District,534,28.10%,"$14,548 ",61.4,2017
+103,Red Bank Regional High School,12-Sep,Red Bank Regional School District,"1,211",25.00%,"$16,802 ",61.3,2017
+104,Clearview Regional High School,12-Sep,Clearview Regional High School District,"1,541",13.70%,"$7,784 ",60.8,2017
+105,Allentown High School,12-Sep,Upper Freehold Regional School District,"1,275",9.60%,"$8,870 ",60.7,2017
+106,Morris Knolls High School,12-Sep,Morris Hills Regional School District,"1,572",8.30%,"$14,021 ",60.5,2017
+107,Sparta High School,12-Sep,Sparta Township Public School District,"1,082",3.70%,"$11,850 ",60,2017
+108,Bernards High School,12-Sep,Somerset Hills Regional School District,840,11.20%,"$10,867 ",59.9,2017
+109,Waldwick High School,12-Sep,Waldwick School District,449,0.00%,"$11,982 ",59.6,2017
+110,Middlesex High School,12-Sep,Middlesex Borough School District,611,25.50%,"$11,917 ",59.4,2017
+111,Cedar Grove High School,12-Sep,Cedar Grove Township School District,508,2.20%,"$9,924 ",59.3,2017
+112,Montclair High School,12-Sep,Montclair Public School District,"2,038",13.70%,"$9,854 ",59.2,2017
+113,Somerset County Vocational Technical High School,12-Sep,Somerset County Vocational and Technical School District,331,20.20%,"$23,205 ",58.9,2017
+114,Manasquan High School,12-Sep,Manasquan School District,947,13.60%,"$13,060 ",58.9,2017
+115,Pascack Valley High School,12-Sep,Pascack Valley Regional High School District,"1,204",3.10%,"$13,929 ",58.4,2017
+116,Hammonton High School,12-Sep,Hammonton School District,"1,374",34.40%,"$9,983 ",58.2,2017
+117,Parsippany Hills High School,12-Sep,Parsippany-Troy Hills Township School District,"1,058",13.80%,"$12,246 ",57.9,2017
+118,Jefferson Township High School,12-Sep,Jefferson Township Public School District,984,11.40%,"$10,425 ",57.9,2017
+119,Middletown High School South,12-Sep,Middletown Township Public School District,"1,456",7.30%,"$9,833 ",57.9,2017
+120,Lodi High School,12-Sep,Lodi School District,902,55.00%,"$9,400 ",57.7,2017
+121,Columbia High School,12-Sep,South Orange-Maplewood School District,"1,924",22.50%,"$6,150 ",57.7,2017
+122,Verona High School,12-Sep,Verona Public School District,659,0.00%,"$12,611 ",57.7,2017
+123,Phillipsburg High School,12-Sep,Phillipsburg School District,"1,696",30.40%,"$12,579 ",57.6,2017
+124,Pequannock Township High School,12-Sep,Pequannock Township School District,701,4.90%,"$14,463 ",57.6,2017
+125,Lakeland Regional High School,12-Sep,Lakeland Regional High School District,934,12.40%,"$18,801 ",57.4,2017
+126,East Orange STEM Academy High School,12-Jun,East Orange School District,647,60.70%,"$12,197 ",57.2,2017
+127,Cresskill High School,12-Sep,Cresskill Public School District,549,2.70%,"$11,210 ",56.8,2017
+128,Spotswood High School,12-Sep,Spotswood Public School District,721,11.80%,"$12,557 ",56.2,2017
+129,Midland Park Junior/Senior High School,12-Jul,Midland Park School District,456,7.70%,"$19,201 ",56.1,2017
+130,Bergen Arts and Sciences Charter School,K-12,Bergen Arts and Science Charter School,"1,126",46.40%,"$8,403 ",56,2017
+131,Somerville High School,12-Sep,Somerville Public School District,"1,140",16.70%,"$10,063 ",55.7,2017
+132,Secaucus High School,12-Sep,Secaucus School District,611,33.70%,"$12,407 ",55.6,2017
+133,Bogota Junior/Senior High School,12-Aug,Bogota Public School District,514,48.10%,"$9,163 ",55.4,2017
+134,Butler High School,12-Sep,Butler Public School District,543,21.00%,"$20,105 ",55.4,2017
+135,Haddon Township High School,12-Sep,Haddon Township School District,608,17.60%,"$15,679 ",55.1,2017
+136,Wallington Junior Senior High School,12-Jul,Wallington Boro School District,555,31.90%,"$9,056 ",55,2017
+137,Bergenfield High School,12-Sep,Bergenfield Borough School District,"1,190",37.90%,"$12,671 ",54.7,2017
+138,Cicely L. Tyson Community Middle/High School,12-Jun,East Orange School District,741,55.70%,"$14,501 ",54.6,2017
+139,Mainland Regional High School,12-Sep,Mainland Regional High School,"1,302",26.00%,"$16,480 ",54.5,2017
+140,Henry Hudson Regional School,12-Jul,Henry Hudson Regional School District,315,28.60%,"$19,383 ",54.3,2017
+141,Bard Early College High School,12-Sep,Newark Public School District,306,70.30%,"$10,089 ",54.2,2017
+142,Holmdel High School,12-Sep,Holmdel Township School District,921,4.10%,"$16,929 ",53.9,2017
+143,Vernon Township High School,12-Sep,Vernon Township School District,"1,006",15.10%,"$13,232 ",53.8,2017
+144,Wall High School,12-Sep,Wall Township Public School District,"1,122",11.90%,"$12,492 ",53.5,2017
+145,Teaneck High School,12-Sep,Teaneck School District,"1,253",36.50%,"$10,712 ",53.5,2017
+146,Hasbrouck Heights High School,12-Sep,Hasbrouck Heights School District,586,17.40%,"$12,638 ",53.3,2017
+147,Cinnaminson High School,12-Sep,Cinnaminson Township School District,790,12.90%,"$11,982 ",53.2,2017
+148,West Essex High School,12-Sep,West Essex Regional School District,"1,124",3.80%,"$9,583 ",53.1,2017
+149,Highland Park High School,12-Sep,Highland Park Boro School District,493,34.50%,"$12,520 ",53,2017
+150,Rutherford High School,12-Sep,Rutherford School District,738,1.10%,"$11,187 ",52.9,2017
+151,Shawnee High School,12-Sep,Lenape Regional High School District,"1,570",6.70%,"$11,884 ",52.8,2017
+152,Foundation Academy Charter School,K-12,Foundation Academy Charter School,"1,003",78.30%,"$11,069 ",52.7,2017
+153,Alexander Hamilton Preparatory Academy,12-Sep,Elizabeth Public Schools,984,82.30%,"$9,044 ",52.5,2017
+154,Whippany Park High School,12-Sep,Hanover Park Regional High School District,703,4.10%,"$12,403 ",52.2,2017
+155,Governor Livingston High School,12-Sep,Berkeley Heights School District,"1,068",2.20%,"$11,268 ",52.1,2017
+156,Monmouth Regional High School,12-Sep,Monmouth Regional High School,"1,005",31.00%,"$19,654 ",51.9,2017
+157,Jonathan Dayton High School,12-Sep,Springfield Public School District,576,12.50%,"$13,994 ",51.3,2017
+158,Watchung Hills Regional High School,12-Sep,Watchung Hills Regional High School District,"2,074",2.00%,"$14,489 ",51.1,2017
+159,Eastern Regional High School,12-Sep,Eastern Camden County Regional School District,"2,016",9.50%,"$13,338 ",51,2017
+160,Lyndhurst High School,12-Sep,Lyndhurst Public School District,755,12.80%,"$9,965 ",51,2017
+161,Toms River High School East,12-Sep,Toms River Regional School District,"1,387",22.20%,"$7,815 ",51,2017
+162,Lenape High School,12-Sep,Lenape Regional High School District,"1,776",15.90%,"$12,011 ",50.5,2017
+163,Cherokee High School,12-Sep,Lenape Regional High School District,"2,221",12.70%,"$11,792 ",50.4,2017
+164,Manalapan High School,12-Sep,Freehold Regional High School District,"1,909",8.10%,"$9,632 ",50,2017
+165,Toms River High School North,12-Sep,Toms River Regional School District,"2,211",23.90%,"$7,049 ",49.5,2017
+166,Lawrence High School,12-Sep,Lawrence Township Public School District,"1,156",23.60%,"$14,745 ",49.4,2017
+167,Shore Regional High School,12-Sep,Shore Regional High School District,629,6.20%,"$16,545 ",49.4,2017
+168,North Warren Regional School,12-Jul,North Warren Regional School District,879,9.90%,"$15,824 ",49.4,2017
+169,Nutley High School,12-Sep,Nutley Public School District,"1,231",14.90%,"$12,615 ",49.2,2017
+170,Colts Neck High School,12-Sep,Freehold Regional High School District,"1,457",9.70%,"$9,637 ",49.2,2017
+171,Hackensack High School,12-Sep,Hackensack School District,"1,832",54.50%,"$14,756 ",48.8,2017
+172,Freehold Borough High School,12-Sep,Freehold Regional High School District,"1,452",26.20%,"$9,952 ",48.8,2017
+173,Old Bridge High School,12-Sep,Old Bridge Township School District,"2,865",26.10%,"$14,171 ",48.1,2017
+174,Pinelands Regional High School,12-Sep,Pinelands Regional School District,820,36.00%,"$17,248 ",47.7,2017
+175,East Brunswick High School,12-Oct,East Brunswick Township School District,"2,069",15.40%,"$14,963 ",47.7,2017
+176,Essex County Newark Technical,12-Sep,Essex County Schools of Technology,689,85.80%,"$7,912 ",47.5,2017
+177,Freehold Township High School,12-Sep,Freehold Regional High School District,"2,062",10.20%,"$9,748 ",47.4,2017
+178,Collingswood High School,12-Sep,Collingswood Public School District,702,46.00%,"$11,007 ",47.4,2017
+179,New Egypt High School,12-Sep,Plumsted Township School District,508,21.50%,"$11,759 ",47.2,2017
+180,Union City High School,12-Sep,Union City School District,"2,864",84.40%,"$9,632 ",46.8,2017
+181,Bayonne High School,12-Sep,Bayonne School District,"2,631",62.60%,"$11,865 ",46.8,2017
+182,Ocean City High School,12-Sep,Ocean City School District,"1,243",15.80%,"$10,624 ",46.7,2017
+183,Piscataway Township High School,12-Sep,Piscataway Township School District,"2,257",32.80%,"$7,617 ",46.7,2017
+184,Florence Township Memorial High School,12-Sep,Florence Township School District,418,27.00%,"$8,740 ",46.6,2017
+185,Southern Regional High School,12-Sep,Southern Regional School District,"1,963",21.80%,"$12,241 ",46.1,2017
+186,Manville High School,12-Sep,Manville School District,388,51.30%,"$10,806 ",45.9,2017
+187,Lenape Valley Regional High School,12-Sep,Lenape Valley Regional High School District,780,11.80%,"$15,677 ",45.3,2017
+188,Atlantic County Institute of Technology,12-Sep,Atlantic County Vocational School District,"1,495",58.30%,"$8,517 ",44.7,2017
+189,Hightstown High School,12-Sep,East Windsor Regional School District,"1,550",33.70%,"$13,837 ",44.6,2017
+190,Woodstown High School,12-Sep,Woodstown-Pilesgrove Regional School District,634,21.60%,"$6,718 ",44.6,2017
+191,Roselle Park High School,12-Sep,Roselle Park Public School District,630,42.10%,"$10,753 ",44.4,2017
+192,Egg Harbor Township High School,12-Sep,Egg Harbor Township School District,"2,365",47.70%,"$13,344 ",44.3,2017
+193,Absegami High School,12-Sep,Greater Egg Harbor Regional High School District,"1,307",37.30%,"$9,824 ",44.3,2017
+194,Franklin High School,12-Sep,Franklin Township Public School District,"2,142",46.70%,"$8,609 ",44.1,2017
+195,Dover High School,12-Sep,Dover Public School District,953,75.10%,"$6,019 ",43.9,2017
+196,Kingsway Regional High School,12-Sep,Kingsway Regional School District,"1,756",15.10%,"$7,679 ",43.8,2017
+197,Dwight Morrow High School/Academies@Englewood,12-Sep,Englewood Public School District,"1,094",44.90%,"$10,824 ",43.6,2017
+198,Edison High School,12-Sep,Edison Township School District,"1,949",35.50%,"$7,321 ",43.4,2017
+199,Rumson-Fair Haven Regional High School,12-Sep,Rumson-Fair Haven Regional High School District,985,0.40%,"$14,186 ",43,2017
+200,John F. Kennedy Memorial High School,12-Sep,Woodbridge Township School District,"1,329",41.50%,"$8,039 ",42.8,2017
+201,Pitman High School,12-Sep,Pitman Boro School District,411,21.40%,"$11,990 ",42.6,2017
+202,Burlington County Institute of Technology - Westampton,12-Sep,Burlington County Institute of Technology School District,"1,229",50.40%,"$8,041 ",42.6,2017
+203,Wood-Ridge Junior/Senior High School,12-Jul,Wood-Ridge School District,599,22.70%,"$12,907 ",42.6,2017
+204,High Point Regional High School District,12-Sep,High Point Regional High School District,921,17.70%,"$18,626 ",42.4,2017
+205,Boonton High School,12-Sep,Boonton Town Public School District,617,27.20%,"$12,531 ",42.3,2017
+206,Great Oaks Legacy Charter School,"PK, KG-12",Great Oaks Legacy Charter School,"1,332",87.70%,"$13,707 ",42.3,2017
+207,Ridgefield Park Junior Senior High School,12-Jul,Ridgefield Park Public School District,"1,246",39.60%,"$15,040 ",42.2,2017
+208,Brick Township Memorial High School,12-Sep,Brick Township Public School District,"1,546",23.30%,"$8,276 ",42.1,2017
+209,Roxbury High School,12-Sep,Roxbury Township School District,"1,365",12.20%,"$16,112 ",41.8,2017
+210,Union County TEAMS Charter School,K-12,Union County TEAMS Charter School-High School/College LA,394,61.20%,"$9,143 ",41.8,2017
+211,Hanover Park High School,12-Sep,Hanover Park Regional High School District,829,6.50%,"$12,003 ",41.3,2017
+212,Belvidere High School,12-Sep,Belvidere School District,474,14.80%,"$12,744 ",41.1,2017
+213,Lower Cape May Regional High School,12-Sep,Lower Cape May Regional School District,880,47.40%,"$16,326 ",40.9,2017
+214,Newton High School,12-Sep,Newton Public School District,743,21.30%,"$10,627 ",40.5,2017
+215,West Orange High School,12-Sep,West Orange Public Schools,"2,008",47.40%,"$12,571 ",40.4,2017
+216,Seneca High School,12-Sep,Lenape Regional High School District,"1,197",11.90%,"$12,654 ",40.3,2017
+217,North Arlington High School,12-Sep,North Arlington School District,473,16.70%,"$9,528 ",39.9,2017
+218,Warren Hills Regional High School,12-Sep,Warren Hills Regional School District,"1,234",19.50%,"$7,485 ",39.8,2017
+219,Wallkill Valley Regional High School,12-Sep,Wallkill Valley Regional High School,648,13.70%,"$17,942 ",39.7,2017
+220,Howell High School,12-Sep,Freehold Regional High School District,"2,154",8.30%,"$9,633 ",39.7,2017
+221,South River High School,12-Sep,South River Public School District,634,39.60%,"$9,035 ",39.7,2017
+222,Northern Burlington County Regional High School,12-Sep,Northern Burlington County Regional School District,"1,325",10.40%,"$13,164 ",39.6,2017
+223,Carteret High School,12-Sep,Carteret Public School District,"1,019",66.50%,"$5,770 ",39.5,2017
+224,Arts High School,12-Sep,Newark Public School District,703,80.20%,"$12,717 ",39.3,2017
+225,School of Health Science,12-Sep,Paterson Public School District,273,61.50%,"$13,393 ",39.1,2017
+226,Essex County Donald M. Payne Senior School of Technology,12-Sep,Essex County Schools of Technology,656,88.40%,"$8,605 ",38.8,2017
+227,Central Regional High School,12-Sep,Central Regional School District,"1,338",37.10%,"$14,298 ",38.5,2017
+228,Plainfield Academy For The Arts & Advanced Studies,12-Jul,Plainfield Public School District,399,70.70%,"$12,696 ",38.5,2017
+229,Middletown High School North,12-Sep,Middletown Township Public School District,"1,425",16.80%,"$9,145 ",38.5,2017
+230,Salem County Career and Technical High School,12-Sep,Salem County Vocational Technical School District,758,21.50%,"$11,892 ",38.3,2017
+231,Dunellen High School,12-Sep,Dunellen Public School District,364,44.80%,"$7,075 ",38.3,2017
+232,Kittatinny Regional High School,12-Jul,Kittatinny Regional School District,"1,032",12.00%,"$18,501 ",37.9,2017
+233,Camden County Technical School-GTC,12-Sep,Camden County Technical School District,"1,286",61.30%,"$16,079 ",37.5,2017
+234,Delaware Valley Regional High School,12-Sep,Delaware Valley Regional High School District,833,8.40%,"$19,558 ",37.3,2017
+235,West Milford High School,12-Sep,West Milford Township Public School District,"1,104",13.60%,"$13,162 ",37.3,2017
+236,North Brunswick Township High School,12-Sep,North Brunswick Township School District,"1,798",43.10%,"$9,061 ",37.2,2017
+237,Saddle Brook Middle/High School,12-Jul,Saddle Brook School District,781,17.70%,"$12,160 ",37.2,2017
+238,Barnegat High School,12-Sep,Barnegat Township School District,937,33.70%,"$6,736 ",36.8,2017
+239,Henry P. Becton Regional High School,12-Sep,Carlstadt-East Rutherford Regional High School District,475,34.10%,"$16,979 ",36.4,2017
+240,West Deptford High School,12-Sep,West Deptford Township School District,901,25.90%,"$13,092 ",36.4,2017
+241,Lacey Township High School,12-Sep,Lacey Township School District,"1,216",23.10%,"$17,735 ",36.3,2017
+242,Brick Township High School,12-Sep,Brick Township Public School District,"1,347",31.40%,"$9,209 ",36.3,2017
+243,Cedar Creek High School,12-Sep,Greater Egg Harbor Regional High School District,889,30.00%,"$9,022 ",36,2017
+244,Clifton High School,12-Sep,Clifton Public School District,"2,979",55.50%,"$12,104 ",35.9,2017
+245,Delsea Regional High School,12-Sep,Delsea Regional High School District,"1,126",21.60%,"$13,530 ",35.7,2017
+246,Toms River High School South,12-Sep,Toms River Regional School District,"1,392",28.20%,"$7,311 ",35.5,2017
+247,Raritan High School,12-Sep,Hazlet Township Public School District,953,18.70%,"$9,618 ",35.3,2017
+248,Passaic Valley Regional High School,12-Sep,Passaic Valley Regional High School District #1,"1,277",34.40%,"$15,358 ",35.2,2017
+249,Maple Shade High School,12-Jul,Maple Shade School District,853,39.40%,"$9,391 ",35.2,2017
+250,Washington Township High School,12-Sep,Washington Township School District,"2,279",19.30%,"$11,737 ",35,2017
+251,Bloomfield High School,12-Sep,Bloomfield Township School District,"1,973",48.00%,"$9,303 ",34.9,2017
+252,Sayreville War Memorial High School,12-Sep,Sayreville School District,"1,690",36.20%,"$7,656 ",34.9,2017
+253,Hamilton East - Steinert,12-Sep,Hamilton Township Public School District,"1,251",13.80%,"$9,572 ",34.5,2017
+254,Bordentown Regional High School,12-Sep,Bordentown Regional School District,728,0.40%,"$8,561 ",34.4,2017
+255,Hawthorne High School,12-Sep,Hawthorne Public School District,713,24.50%,"$12,194 ",34.3,2017
+256,Memorial Senior High School,12-Sep,Elmwood Park School District,743,44.00%,"$8,340 ",34.2,2017
+257,Jackson Memorial High School,12-Sep,Jackson Township School District,"1,585",13.60%,"$7,890 ",33.5,2017
+258,Sussex County Technical School,12-Sep,Sussex County Technical School District,772,8.80%,"$13,517 ",33.1,2017
+259,Weehawken High School,12-Jul,Weehawken Public School District,552,39.70%,"$9,025 ",32.9,2017
+260,Ocean Township High School,12-Sep,Township of Ocean School District,"1,159",26.20%,"$11,226 ",32.6,2017
+261,TEAM Academy Charter School,K-12,TEAM Academy Charter School,"3,694",88.10%,"$11,261 ",32.6,2017
+262,Haddon Heights Junior/Senior High School,12-Jul,HADDON HEIGHTS School District,801,20.80%,"$12,429 ",32.5,2017
+263,Cliffside Park High School,12-Sep,Cliffside Park School District,"1,158",57.70%,"$11,311 ",32.3,2017
+264,Audubon Junior/Senior High School,12-Jul,Audubon Public School District,856,25.80%,"$13,420 ",32.2,2017
+265,Gloucester City High School,12-Sep,Gloucester City Public School District,777,68.10%,"$11,344 ",31.9,2017
+266,Cape May County Technical High School,12-Sep,Cape May County Technical High School District,607,29.20%,"$17,443 ",31.8,2017
+267,Essex County West Caldwell Technical,12-Sep,Essex County Schools of Technology,287,78.70%,"$13,110 ",31.3,2017
+268,Burlington Township High School,12-Sep,Burlington Township School District,"1,283",21.70%,"$10,621 ",31.2,2017
+269,Burlington County Institute of Technology - Medford,12-Sep,Burlington County Institute of Technology School District,787,37.20%,"$10,255 ",31.1,2017
+270,Arthur L. Johnson High School,12-Sep,Clark Township Public School District,727,6.60%,"$13,478 ",30.8,2017
+271,Jackson Liberty High School,12-Sep,Jackson Township School District,"1,295",28.80%,"$8,996 ",30.3,2017
+272,Delran High School,12-Sep,Delran Township School District,895,19.80%,"$12,467 ",30.3,2017
+273,The Barack Obama Green Charter High School,12-Sep,The Barack Obama Green Charter High School District,224,86.60%,"$9,321 ",30.3,2017
+274,Timber Creek Regional High School,12-Sep,Black Horse Pike Regional School District,"1,254",26.40%,"$10,893 ",30.1,2017
+275,Clayton High School,12-Sep,Clayton Public School District,411,51.80%,"$8,878 ",30,2017
+276,Burlington City High School,12-Jul,Burlington City Public School District,690,57.20%,"$20,674 ",30,2017
+277,Palisades Park Junior-Senior High School,12-Jul,Palisades Park School District,664,42.50%,"$14,384 ",29.6,2017
+278,Memorial High School,12-Sep,West New York School District,"1,939",79.00%,"$10,146 ",29.6,2017
+279,Morristown High School,12-Sep,Morris School District,"1,828",26.50%,"$10,700 ",29.6,2017
+280,Sterling High School,12-Sep,Sterling Regional School District,950,35.50%,"$12,772 ",29.5,2017
+281,Willliamstown High School,12-Sep,Monroe Township Public School District,"1,858",34.60%,"$6,210 ",29.5,2017
+282,William L Dickinson High School,12-Sep,Jersey City Public Schools,"1,843",77.70%,"$11,534 ",29.4,2017
+283,Rosa L. Parks School of Fine and Performing Arts,12-Sep,Paterson Public School District,278,65.80%,"$17,357 ",29.4,2017
+284,Buena Regional High School,12-Sep,Buena Regional School District,614,51.50%,"$10,941 ",29.4,2017
+285,Union High School,12-Sep,Township of Union School District,"2,218",40.70%,"$8,460 ",29.3,2017
+286,Middlesex County Vocational School East Brunswick,12-Sep,Middlesex County Vocational and Technical School District,420,36.90%,"$10,118 ",29.1,2017
+287,Linden High School,12-Sep,Linden Public School District,"1,689",54.50%,"$8,990 ",28.8,2017
+288,Triton Regional High School,12-Sep,Black Horse Pike Regional School District,"1,132",27.70%,"$10,893 ",28.8,2017
+289,South Amboy Middle/High School,12-Jun,South Amboy School District,508,42.50%,"$10,459 ",28.6,2017
+290,Colonia High School,12-Sep,Woodbridge Township School District,"1,359",33.00%,"$9,148 ",28.2,2017
+291,Hopatcong High School,12-Aug,Hopatcong Borough School District,458,30.60%,"$13,636 ",28.1,2017
+292,University High School,12-Jul,Newark Public School District,567,76.20%,"$12,448 ",28.1,2017
+293,American History High School,12-Sep,Newark Public School District,451,77.20%,"$11,890 ",28,2017
+294,Camden County Technical School-Pennsauken,12-Sep,Camden County Technical School District,729,85.70%,"$15,466 ",28,2017
+295,Arthur P. Schalick High School,12-Sep,Pittsgrove Township School District,564,31.20%,"$9,266 ",27.6,2017
+296,Passaic County-Manchester Regional High School,12-Sep,Passaic County Manchester Regional High School District,857,70.00%,"$13,765 ",27.5,2017
+297,Middlesex County Vocational School Perth Amboy,12-Sep,Middlesex County Vocational and Technical School District,292,70.50%,"$11,074 ",27.5,2017
+298,Hamilton North - Nottingham,12-Sep,Hamilton Township Public School District,"1,282",53.00%,"$10,323 ",27.5,2017
+299,Chartertech High School for the Performing Arts,12-Sep,Chartertech High School for the Performing Arts,329,65.00%,"$12,908 ",27.3,2017
+300,Hoboken Charter School,K-12,Hoboken Charter School,298,28.90%,"$10,740 ",27.2,2017
+301,Ewing High School,12-Sep,Ewing Township School District,"1,126",41.70%,"$14,002 ",27,2017
+302,Middlesex County Vocational School Piscataway,12-Sep,Middlesex County Vocational and Technical School District,368,70.90%,"$10,965 ",26.7,2017
+303,Hoboken High School,12-Sep,Hoboken Public School District,416,67.50%,"$19,451 ",26.7,2017
+304,Keyport High School,12-Sep,Keyport School District,362,50.80%,"$12,714 ",26.6,2017
+305,North Plainfield High School,12-Sep,North Plainfield School District,969,64.40%,"$11,138 ",26.4,2017
+306,Cumberland Regional High School,12-Sep,Cumberland Regional School District,"1,206",49.60%,"$13,040 ",26.3,2017
+307,Bound Brook High School,12-Sep,Bound Brook School District,606,62.00%,"$9,392 ",26.2,2017
+308,Lincoln High School,12-Sep,Jersey City Public Schools,755,72.20%,"$14,645 ",26,2017
+309,Long Branch High School,12-Sep,LONG BRANCH PUBLIC SCHOOL District,"1,435",70.30%,"$11,214 ",25.6,2017
+310,Leap Academy University Charter School,K-12,LEAP Academy University Charter School,"1,554",7.80%,"$10,261 ",25.5,2017
+311,Kearny High School,12-Sep,Kearny,"1,759",48.20%,"$9,102 ",25.5,2017
+312,Millville Senior High School,12-Sep,Millville School District,"1,126",50.10%,"$11,361 ",25.4,2017
+313,Orange High School,12-Sep,ORANGE BOARD OF EDUCATION School District,857,44.70%,"$11,681 ",25.3,2017
+314,Belleville High School,12-Sep,Belleville Public School District,"1,395",57.60%,,25.3,2017
+315,James J Ferris High School,12-Sep,Jersey City Public Schools,"1,268",70.50%,"$14,071 ",24.9,2017
+316,North Bergen High School,12-Sep,North Bergen School District,"2,452",68.90%,"$6,811 ",24.4,2017
+317,Palmyra High School,12-Sep,Palmyra Public School District,396,43.70%,"$10,185 ",24.1,2017
+318,Academy for Urban Leadership Charter School,12-Jul,Academy for Urban Leadership Charter School,497,81.90%,"$11,684 ",24,2017
+319,Hillside High School,12-Sep,Hillside Public School District,896,62.80%,"$7,219 ",23.9,2017
+320,Oakcrest High School,12-Sep,Greater Egg Harbor Regional High School District,988,58.00%,"$10,231 ",23.6,2017
+321,Dr. Charles E. Brimm Medical Arts High School,12-Sep,Camden City School District,193,53.90%,"$20,795 ",23.6,2017
+322,Perth Amboy High School,12-Sep,Perth Amboy Public School District,"2,139",88.90%,"$14,528 ",23.6,2017
+323,Highland Regional High School,12-Sep,Black Horse Pike Regional School District,"1,286",34.80%,"$10,548 ",23.5,2017
+324,International High School,12-Sep,Paterson Public School District,477,69.20%,"$10,505 ",23.5,2017
+325,Woodbury Junior-Senior High School,12-Jun,Woodbury City Public School District,723,63.90%,"$15,502 ",23.4,2017
+326,Gateway Regional High School,12-Jul,Gateway Regional High School District,951,32.60%,"$16,391 ",23.3,2017
+327,Glassboro High School,12-Sep,Glassboro School District,533,48.60%,,22.5,2017
+328,New Brunswick High School,12-Sep,New Brunswick School District,"1,968",47.80%,"$8,526 ",22.3,2017
+329,Harrison High School,12-Sep,Harrison Public Schools,709,82.40%,"$13,368 ",22.1,2017
+330,Atlantic City High School,12-Sep,Atlantic City School District,"1,861",68.20%,"$12,812 ",22,2017
+331,Vineland Senior High School,12-Sep,Vineland Public School District,"2,625",60.20%,"$13,928 ",22,2017
+332,Winslow Township High School,12-Sep,Winslow Township School District,"1,341",48.70%,"$11,524 ",21.9,2017
+333,Woodbridge High School,12-Sep,Woodbridge Township School District,"1,505",42.50%,"$8,691 ",21.9,2017
+334,Neptune High School,12-Sep,Neptune Township School District,"1,407",48.60%,"$11,210 ",21.8,2017
+335,Wildwood High School,12-Sep,Wildwood City School District,231,69.70%,"$20,579 ",21.2,2017
+336,Deptford Township High School,12-Sep,Deptford Township Public School District,"1,117",41.00%,"$8,367 ",21,2017
+337,Middle Township High School,12-Sep,Middle Township Public School District,801,38.50%,"$14,240 ",20.8,2017
+338,Lakewood High School,12-Sep,Lakewood Township School District,"1,202",53.70%,"$15,563 ",20.7,2017
+339,Abraham Clark High School,12-Sep,Roselle Public School District,678,68.30%,"$13,218 ",20.5,2017
+340,Ocean County Vocational Technical School Waretown Center,12-Sep,Ocean County Vocational Technical School District,51,19.60%,"$15,878 ",20.3,2017
+341,Hamilton West-Watson,12-Sep,Hamilton Township Public School District,"1,244",42.60%,"$9,849 ",20.3,2017
+342,Warren County Vocational Technical School,12-Sep,Warren County Vocational Technical School,456,30.70%,"$13,543 ",20.1,2017
+343,Pennsville Memorial High School,12-Sep,Pennsville School District,457,31.50%,"$16,929 ",20,2017
+344,Marion P. Thomas Charter School,"PK, KG-12",Marion P. Thomas Charter School,"1,338",89.60%,"$8,798 ",20,2017
+345,Henry Snyder High School,12-Sep,Jersey City Public Schools,781,74.40%,"$12,551 ",19.8,2017
+346,Peoples Preparatory Charter School,12-Sep,Peoples Preparatory Charter School District,0,,,19.8,2017
+347,Pennsauken High School,12-Sep,Pennsauken Township Board of Education School District,"1,324",64.70%,"$10,909 ",19.7,2017
+348,David Brearley Middle/High School,12-Jul,Kenilworth School District,738,29.00%,"$8,540 ",19.4,2017
+349,Rahway High School,12-Sep,Rahway Public School District,"1,118",36.00%,"$15,697 ",18.9,2017
+350,Garfield High School,12-Sep,Garfield Public School District,"1,022",67.50%,"$13,326 ",18.9,2017
+351,University Academy Charter High School,12-Sep,University Academy Charter High School,428,72.90%,"$12,934 ",18.8,2017
+352,Salem High School,12-Sep,Salem City School District,329,54.70%,"$16,851 ",18.6,2017
+353,Overbrook Senior High School,12-Sep,Pine Hill School District,688,52.00%,"$9,846 ",18.4,2017
+354,Paterson Charter School for Science/Technology,K-12,Paterson Charter School for Science and Technology,"1,068",85.20%,"$9,624 ",17.9,2017
+355,Lindenwold High School,12-Sep,Lindenwold Public School District,587,78.90%,"$11,384 ",17.8,2017
+356,Creative Arts High School,12-Sep,Camden City School District,346,57.80%,"$23,954 ",17.7,2017
+357,Passaic High School No. 12,12-Sep,Passaic City School District,"3,187",99.80%,"$10,541 ",17.5,2017
+358,Irvington High School,12-Sep,Irvington Public School District,"1,234",78.80%,"$11,803 ",17.5,2017
+359,Cherry Hill High School West,12-Sep,Cherry Hill School District,"1,342",29.70%,"$9,892 ",17.4,2017
+360,Paulo Freire Charter School,12-Sep,Paulo Freire Charter School,267,54.30%,,17.3,2017
+361,Manchester Township High School,12-Sep,Manchester Township School District,"1,022",34.10%,"$14,584 ",17.2,2017
+362,Memorial High School,12-Sep,Millville School District,636,61.90%,"$8,645 ",17,2017
+363,Pemberton Township High School,12-Sep,Pemberton Township School District,"1,013",39.50%,"$17,593 ",16.8,2017
+364,Thomas Jefferson Arts Academy,12-Sep,Elizabeth Public Schools,"1,079",81.90%,"$11,734 ",16.3,2017
+365,Newark Early College High School,12-Jul,Newark Public School District,419,64.20%,,16.2,2017
+366,East Side High School,12-Sep,Newark Public School District,"2,074",64.70%,"$9,351 ",16,2017
+367,Trenton Central High School - Main Campus,12-Oct,Trenton Public School District,"1,580",82.80%,"$11,800 ",15.1,2017
+368,Bridgeton High School,12-Sep,Bridgeton City School District,"1,326",49.10%,"$14,944 ",15.1,2017
+369,Eagle Academy for Young Men of Newark,12-Jun,Newark Public School District,158,71.50%,"$13,274 ",14,2017
+370,Asbury Park High School,12-Jul,Asbury Park School District,358,84.40%,"$21,907 ",14,2017
+371,Bergen County Technical High School - Paramus,12-Sep,Bergen County Vocational Technical School District,13,23.10%,"$15,623 ",13.9,2017
+372,John E. Dwyer Technology Academy,12-Sep,Elizabeth Public Schools,"1,289",84.30%,"$10,732 ",13.9,2017
+373,School of Earth and Space Science,12-Sep,Paterson Public School District,207,69.60%,"$14,806 ",13.8,2017
+374,Central High School,12-Sep,Newark Public School District,934,80.50%,"$16,638 ",13.2,2017
+375,Admiral William F. Halsey Junior Health & Public Safety Academy,12-Sep,Elizabeth Public Schools,"1,112",89.40%,"$11,135 ",12.9,2017
+376,Keansburg High School,12-Sep,Keansburg School District,384,74.20%,"$15,844 ",12.8,2017
+377,Pleasantville High School,12-Sep,Pleasantville Public School District,776,89.90%,"$16,528 ",12.8,2017
+378,Academy Charter High School,12-Sep,Academy Charter High School,176,86.90%,"$14,358 ",12.6,2017
+379,Riverside High School,12-Sep,Riverside Township School District,421,49.20%,"$14,147 ",12.6,2017
+380,Weequahic High School,12-Sep,Newark Public School District,282,74.80%,"$14,342 ",12.6,2017
+381,East Orange Campus High School,12-Sep,East Orange School District,"1,503",56.20%,"$11,351 ",12.4,2017
+382,Barringer High School,12-Sep,Newark Public School District,573,70.90%,"$5,862 ",11.9,2017
+383,Thomas A. Edison Career and Technical Academy,12-Sep,Elizabeth Public Schools,718,90.10%,"$10,744 ",11.8,2017
+384,Camden High School,12-Sep,Camden City School District,568,65.00%,"$31,060 ",11.7,2017
+385,Plainfield High School,12-Sep,Plainfield Public School District,"1,716",73.00%,"$10,696 ",11.6,2017
+386,Newark Prep Charter School,12-Sep,Newark Prep Charter School,429,100.00%,,11.6,2017
+387,Penns Grove High School,12-Sep,Penns Grove-Carneys Point Regional School District,482,71.80%,"$12,770 ",11.4,2017
+388,Paulsboro High School,12-Sep,Paulsboro School District,331,84.00%,"$10,884 ",11.3,2017
+389,Daylight/Twilight High School,12-Jun,Trenton Public School District,417,71.70%,"$13,864 ",10.9,2017
+390,Malcolm X Shabazz High School,12-Sep,Newark Public School District,466,67.60%,"$16,251 ",10.6,2017
+391,Willingboro High School,12-Sep,Willingboro Public School District,744,63.60%,"$19,173 ",10.4,2017
+392,John F. Kennedy High School,12-Sep,Paterson Public School District,540,65.70%,"$11,588 ",10.3,2017
+393,Woodrow Wilson High School,12-Sep,Camden City School District,824,61.20%,"$20,818 ",10.2,2017
+394,Camden Big Picture Learning Academy,12-Sep,Camden City School District,309,69.30%,"$25,730 ",10.1,2017
+395,Middlesex County Vocational School East Bruns. School of Career Develop,12-Sep,Middlesex County Vocational and Technical School District,285,41.80%,"$10,558 ",9.2,2017
+396,Alternative High School,12-Jun,Paterson Public School District,179,67.00%,"$15,582 ",6.8,2017

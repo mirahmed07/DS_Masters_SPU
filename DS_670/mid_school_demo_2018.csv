@@ -1,0 +1,694 @@
+rank,school,type,grades,address,city,zip,county,district,year
+1,Infinity Institute,Public,6-12,193 Old Bergen Road,Jersey City,07305,Hudson County,Jersey City Public Schools,2018
+2,Sea Girt Elementary School,Public,"PK, KG-8",451 Bell Place,Sea Girt,08750,Monmouth County,Sea Girt Borough School District,2018
+3,Mendham Township Middle School,Public,5-8,16 Washington Valley Road,Brookside,07926,Morris County,Mendham Township School District,2018
+4,H W Mountz Elementary School,Public,"PK, KG-8",411 Tuttle Ave,Spring Lake,07762,Monmouth County,Spring Lake Borough,2018
+5,Markham Place School,Public,5-8,95 Markham Place,Little Silver,07739,Monmouth County,Little Silver Boro School District,2018
+6,Sara M. Gilmore Academy,Public,1-8,1700 Kerrigan Avenue,Union City,07087,Hudson County,Union City School District,2018
+7,Hoboken Dual Language Charter School,"Public, Charter",K-8,123 Jefferson Street,Hoboken,07030,Hudson County,Hoboken Dual Language Charter School,2018
+8,Demarest Middle School,Public,5-8,568 Piermont Rd,Demarest,07627,Bergen County,Demarest School District,2018
+9,Brookside School,Public,4-8,100 Brookside Avenue,Allendale,07401,Bergen County,Allendale Public School District,2018
+10,Woodcliff Middle School,Public,6-8,134 Woodcliff Ave,Woodcliff Lake,07677,Bergen County,Woodcliff Lake School District,2018
+11,Bay Head Elementary,Public,K-8,145 Grove Street,Bay Head,08742,Ocean County,Bay Head Borough School District,2018
+12,Forrestdale School,Public,4-8,60 Forrest Avenue,Rumson,07760,Monmouth County,Rumson Borough School District,2018
+13,Harding Township School,Public,"PK, KG-8",34 Lees Hill Road,New Vernon,07976,Morris County,Harding Township School District,2018
+14,Nicholas Oresko Community School,Public,"PK, KG-8",33 East 24th Street,Bayonne,07002,Hudson County,Bayonne School District,2018
+15,Ho-Ho-Kus Public School,Public,"PK, KG-8",70 Lloyd Road,Ho Ho Kus,07423,Bergen County,Ho-Ho-Kus School District,2018
+16,Eugene A. Tighe Middle School,Public,5-8,7804 Amherst Avenue,Margate City,08402,Atlantic County,Margate City School District,2018
+17,Tenakill Middle School,Public,5-8,275 High Street,Closter,07624,Bergen County,Closter Public School District,2018
+18,Academy I,Public,6-8,209 Bergen Avenue,Jersey City,07305,Hudson County,Jersey City Public Schools,2018
+19,Millburn Middle School,Public,6-8,25 Old Short Hills Rd,Millburn,07041,Essex County,Millburn Township School District,2018
+20,Emil A. Cavallini Middle School,Public,6-8,392 W  Saddle River Rd,Upper Saddle River,07458,Bergen County,Upper Saddle River School District,2018
+21,New Providence Middle School,Public,7-8,35 Pioneer Drive,New Providence,07974,Union County,New Providence School District,2018
+22,Knollwood School,Public,4-8,224 Hance Road,Fair Haven,07704,Monmouth County,Fair Haven School District,2018
+23,G. Harold Antrim Elementary School,Public,"PK, KG-8",401 Niblick Street,Point Pleasant Beach,08742,Ocean County,Point Pleasant Beach School District,2018
+24,Robert Treat Academy Charter School,"Public, Charter",K-8,443 Clifton Avenue,Newark,07104,Essex County,Robert Treat Academy Charter School,2018
+25,Princeton Charter School,"Public, Charter",K-8,100 Bunn Drive,Princeton,08540,Mercer County,Princeton Charter School,2018
+26,Madison Junior School,Public,6-8,160 Main Street,Madison,07940,Morris County,Madison Public School District,2018
+27,Upper School,Public,3-8,143 Charlotte Pl,Englewood Cliffs,07632,Bergen County,Englewood Cliffs School District,2018
+28,School 28,Public,"PK, KG-8",200 Presidential Boulevard,Paterson,07522,Passaic County,Paterson Public School District,2018
+29,Stewartsville Middle School,Public,6-8,642 South Main Street,Stewartsville,08886,Warren County,Greenwich Township School District,2018
+30,Heritage Middle School,Public,7-8,20 Foxcroft Dr,Livingston,07039,Essex County,Livingston Board of Education School District,2018
+31,Morris Plains Borough School,Public,3-8,500 Speedwell Avenue,Morris Plains,07950,Morris County,Morris Plains School District,2018
+32,Tenafly Middle School,Public,6-8,10 Sunset Lane,Tenafly,07670,Bergen County,Tenafly Public School District,2018
+33,Monmouth Beach Elementary School,Public,"PK, KG-8",7 Hastings Place,Monmouth Beach,07750,Monmouth County,Monmouth Beach School District,2018
+34,East Amwell Township,Public,"PK, KG-8",43 Wertsville Rd,Ringoes,08551,Hunterdon County,East Amwell Township School District,2018
+35,Woodrow Wilson Middle School,Public,6-8,50 Woodrow Wilson Drive,Edison,08820,Middlesex County,Edison Township School District,2018
+36,Northvale Public School,Public,K-8,441 Tappan Road,Northvale,07647,Bergen County,Northvale Public School District,2018
+37,Community Middle School,Public,6-8,95 Grovers Mill Road,Plainsboro,08536,Middlesex County,West Windsor-Plainsboro Regional School District,2018
+38,Dwight D. Eisenhower Middle School,Public,6-8,344 Calvin Ct,Wyckoff,07481,Bergen County,Wyckoff Township Public School District,2018
+39,Marlboro Memorial Middle School,Public,6-8,71 Nolan Road,Morganville,07751,Monmouth County,Marlboro Township School District,2018
+40,Briarcliff Middle School,Public,6-8,93 Briarcliff Rd.,Mountain Lakes,07046,Morris County,Mountain Lakes Public School District,2018
+41,Robert R Lazar Middle School,Public,6-8,123 Changebridge Road,Montville,07045,Morris County,Montville Township School District,2018
+42,Thomas Edison EnergySmart Charter School,"Public, Charter, Alternative",K-12,150 Pierce Street,Somerset,08873,Somerset County,Thomas Edison EnergySmart Charter School,2018
+43,Alpine Elementary School,Public,K-8,500 Hillside Avenue,Alpine,07620,Bergen County,Alpine School District,2018
+44,Central Jersey College Prep Charter School,"Public, Charter, Alternative",K-12,101 Mettlers Road,Somerset,08873,Somerset County,Central Jersey College Prep Charter School,2018
+45,Cranbury School,Public,"PK, KG-8",23 N Main St,Cranbury,08512,Middlesex County,Cranbury Township School District,2018
+46,Charles DeWolf Middle School,Public,5-8,275 Old Tappan Rd,Old Tappan,07675,Bergen County,Old Tappan Public School District,2018
+47,Orange Avenue School,Public,3-8,901 Orange Avenue,Cranford,07016,Union County,Cranford Public School District,2018
+48,Glen Ridge High School,Public,7-12,200 Ridgewood Ave,Glen Ridge,07028,Essex County,Glen Ridge Public School District,2018
+49,John Adams Middle School,Public,6-8,1081 New Dover Road,Edison,08820,Middlesex County,Edison Township School District,2018
+50,Ridgedale Middle School,Public,6-8,71 Ridgedale Avenue,Florham Park,07932,Morris County,Florham Park School District,2018
+51,Woodglen School,Public,5-8,70 Bunnvale Road,Califon,07830,Hunterdon County,Lebanon Township School District,2018
+52,The Gray Charter School,"Public, Charter",K-8,55 Liberty Street,Newark,07102,Essex County,Gray Charter School,2018
+53,Old Turnpike School,Public,6-8,171 Old Turnpike Road,Califon,07830,Hunterdon County,Tewksbury Township School District,2018
+54,Deerfield Elementary School,Public,3-8,302 Central Avenue,Mountainside,07092,Union County,Mountainside School District,2018
+55,Harrington Park School,Public,"PK, KG-8",191 Harriot Ave,Harrington Park,07640,Bergen County,Harrington Park School District,2018
+56,Columbia Middle School,Public,6-8,345 Plainfield Ave,Berkeley Hts,07922,Union County,Berkeley Heights School District,2018
+57,Belhaven Middle School,Public,5-8,51 Belhaven Avenue,Linwood,08221,Atlantic County,Linwood City School District,2018
+58,Medford Memorial Middle School,Public,7-8,55 Mill Street,Medford,08055,Burlington County,Medford Township School District,2018
+59,William R. Satz School,Public,7-8,24 Crawfords Corner Road,Holmdel,07733,Monmouth County,Holmdel Township School District,2018
+60,River Dell Middle School,Public,7-8,230 Woodland Avenue,River Edge,07661,Bergen County,River Dell Regional School District,2018
+61,Little Falls Township Public School # 1,Public,5-8,32 Stevens Avenue,Little Falls,07424,Passaic County,Little Falls Township Public School District,2018
+62,Lavallette Elementary School,Public,K-8,105 Brooklyn Ave.,Lavallette,08735,Ocean County,Lavallette Borough School District,2018
+63,William Allen Middle School,Public,7-8,801 N  Stanwick Road,Moorestown,08057,Burlington County,Moorestown Township Public School District,2018
+64,Lawton C. Johnson Summit Middle School,Public,6-8,272 Morris Ave,Summit,07901,Union County,Summit Public School District,2018
+65,William Annin Middle School,Public,6-8,70 Quincy Road,Basking Ridge,07920,Somerset County,Bernards Township School District,2018
+66,Anthony Wayne Middle School,Public,6-8,201 Garside Avenue,Wayne,07470,Passaic County,Wayne Township Public School District,2018
+67,Hoboken Charter School,"Public, Charter, Alternative",K-12,713 Washington St,Hoboken,07030,Hudson County,Hoboken Charter School,2018
+68,George Washington Middle School,Public,6-8,68 Lenox Road,Wayne,07470,Passaic County,Wayne Township Public School District,2018
+69,Maywood Avenue School,Public,4-8,452 Maywood Ave,Maywood,07607,Bergen County,Maywood School District,2018
+70,Soaring Heights Charter School,"Public, Charter",K-8,1 Romar Avenue,Jersey City,07305,Hudson County,Soaring Heights Charter School,2018
+71,Eric S. Smith Middle School,Public,6-8,2 Monroe Street,Ramsey,07446,Bergen County,Ramsey School District,2018
+72,Shrewsbury Borough Elementary School,Public,"PK, KG-8",20 Obre Place,Shrewsbury,07702,Monmouth County,Shrewsbury Borough School District,2018
+73,Holdrum Middle School,Public,6-8,393 Rivervale Road,River Vale,07675,Bergen County,River Vale Public School District,2018
+74,Fieldstone Middle School,Public,5-8,47 Spring Valley Road,Montvale,07645,Bergen County,Montvale Board of Education School District,2018
+75,Long Valley Middle School,Public,6-8,51 West Mill Rd,Long Valley,07853,Morris County,Washington Township School District,2018
+76,West Essex Middle School,Public,7-8,65 West Greenbrook Rd,North Caldwell,07006,Essex County,West Essex Regional School District,2018
+77,Warren Middle School,Public,6-8,100 Old Stirling Road,Warren,07060,Somerset County,Warren Township School District,2018
+78,Black River Middle School,Public,6-8,133 Rt. 513 - North Road,Chester,07930,Morris County,Chester Township School District,2018
+79,Pearl R. Miller Middle School,Public,6-8,117 Kiel Avenue,Kinnelon,07405,Morris County,Kinnelon School District,2018
+80,Cedar Drive Middle School,Public,6-8,73 Cedar Drive,Colts Neck,07722,Monmouth County,Colts Neck Township School District,2018
+81,Ethel Hoppock Middle School,Public,7-8,280 Asbury  West Portal Rd,Asbury,08802,Hunterdon County,Bethlehem Township School District,2018
+82,Thomas Jefferson Middle School,Public,5-8,35 - 01 Morlot Avenue,Fair Lawn,07410,Bergen County,Fair Lawn Public School District,2018
+83,Haddonfield Middle School,Public,6-8,Five Lincoln Avenue,Haddonfield,08033,Camden County,Haddonfield School District,2018
+84,Kingwood Township School,Public,"PK, KG-8",880 County Road 519,Frenchtown,08825,Hunterdon County,Kingwood Township School District,2018
+85,Emerson Junior Senior High,Public,7-12,131 Main Street,Emerson,07630,Bergen County,Emerson Public School District,2018
+86,Chatham Middle School,Public,6-8,480 Main Street,Chatham,07928,Morris County,School District of the Chathams,2018
+87,Slocum Skewes School,"Public, Alternative",2-9,650 Prospect Ave,Ridgefield,07657,Bergen County,Ridgefield School District,2018
+88,Rosa International Middle School,Public,6-8,485 Browning Lane,Cherry Hill,08003,Camden County,Cherry Hill School District,2018
+89,Terrill Middle School,Public,5-8,1301 Terrill Road,Scotch Plains,07076,Union County,Scotch Plains-Fanwood School District,2018
+90,Brielle Elementary School,Public,"PK, KG-8",605 Union Lane,Brielle,08730,Monmouth County,Brielle Boro School District,2018
+91,Benjamin Franklin Middle School,Public,6-8,335 North Van Dien Ave,Ridgewood,07451,Bergen County,Ridgewood Public School District,2018
+92,Hammarskjold Middle School,Public,6-7,200 Rues Lane,E Brunswick,08816,Middlesex County,East Brunswick Township School District,2018
+93,Mountain View School,Public,5-8,100 Dean Road,Mendham,07945,Morris County,Mendham Borough School District,2018
+94,George Washington Middle School,Public,6-8,155 Washington Pl,Ridgewood,07451,Bergen County,Ridgewood Public School District,2018
+95,Franklin Avenue Middle School,Public,6-8,755 Franklin Avenue,Franklin Lakes,07417,Bergen County,Franklin Lakes School District,2018
+96,Marlboro Middle School,Public,6-8,355 County Road 520,Marlboro,07746,Monmouth County,Marlboro Township School District,2018
+97,Thompson Middle School,Public,6-8,1001 Middletown  Lincroft Road,Middletown,07748,Monmouth County,Middletown Township Public School District,2018
+98,Roosevelt Intermediate School,Public,6-8,301 Clark Street,Westfield,07090,Union County,Westfield Public School District,2018
+99,East Brook Middle School,Public,5-8,190 Spring Valley Road,Paramus,07652,Bergen County,Paramus Public School District,2018
+100,Lincoln Park Middle School,Public,5-8,90 Ryerson Road,Lincoln Park,07035,Morris County,Lincoln Park School District,2018
+101,Mount Olive Middle School,Public,6-8,160 Wolfe Road,Budd Lake,07828,Morris County,Mount Olive Township School District,2018
+102,Ramapo Ridge,Public,6-8,150 Ridge Road,Mahwah,07430,Bergen County,Mahwah Township Public School District,2018
+103,Brooklawn Middle School,Public,6-8,250 Beachwood Road,Parsippany,07054,Morris County,Parsippany-Troy Hills Township School District,2018
+104,Thomas Edison Intermediate School,Public,6-8,800 Rahway Avenue,Westfield,07090,Union County,Westfield Public School District,2018
+105,Union Township Middle School,Public,5-8,165 Perryville Road,Hampton,08827,Hunterdon County,Union Township School District,2018
+106,Norwood Public School,Public,"PK, KG-8",177 Summit St,Norwood,07648,Bergen County,Norwood Public School District,2018
+107,Richard Butler School,Public,5-8,30 Pearl Place,Butler,07405,Morris County,Butler Public School District,2018
+108,West Brook Middle School,Public,5-8,560 Roosevelt Boulevard,Paramus,07652,Bergen County,Paramus Public School District,2018
+109,Schuyler Colfax Middle School,Public,6-8,1500 Hamburg Turnpike,Wayne,07470,Passaic County,Wayne Township Public School District,2018
+110,Pequannock Valley School,Public,6-8,493 Newark Pompton Tpke.,Pompton Plains,07444,Morris County,Pequannock Township School District,2018
+111,Leonia Middle School,Public,5-8,500 Broad Avenue,Leonia,07605,Bergen County,Leonia Public School District,2018
+112,Cresskill Middle School,Public,6-8,220 Jefferson Ave,Cresskill,07626,Bergen County,Cresskill Public School District,2018
+113,Central Middle School,Public,6-8,1620 Route 46,Parsippany,07054,Morris County,Parsippany-Troy Hills Township School District,2018
+114,Sparta Middle School,Public,6-8,350 Main Street,Sparta,07871,Sussex County,Sparta Township Public School District,2018
+115,Morris Goodwin School,Public,"PK, KG-8",839 Ye Greate Street,Greenwich,08323,Cumberland County,Greenwich Township School District,2018
+116,Rockaway Valley School,Public,"PK, KG-8",11 Valley Road,Boonton,07005,Morris County,Boonton Township School District,2018
+117,Norman S. Weir,Public,K-8,152 College Boulevard,Paterson,07505,Passaic County,Paterson Public School District,2018
+118,J.P. Case Middle School,Public,7-8,301 Case Boulevard,Flemington,08822,Hunterdon County,Flemington-Raritan Regional School District,2018
+119,Holland Township Elementary School,Public,"PK, KG-8",710 Milford  Warren Glen Road,Milford,08848,Hunterdon County,Holland Township School District,2018
+120,Thomas R Grover Middle School,Public,6-8,10 Southfield Road,West Windsor,08550,Mercer County,West Windsor-Plainsboro Regional School District,2018
+121,Haworth Public School,Public,K-8,205 Valley Rd,Haworth,07641,Bergen County,Haworth Public School District,2018
+122,William F. Halloran School No.22,Public,2-8,612 Pulaski Street,Elizabeth,07202,Union County,Elizabeth Public Schools,2018
+123,Logan Middle School,Public,5-8,110 School Lane,Logan Township,08085,Gloucester County,Logan Township School District,2018
+124,Manalapan-Englishtown Middle School,Public,7-8,155 Millhurst Road,Manalapan,07726,Monmouth County,Manalapan-Englishtown Regional School District,2018
+125,Science Park High School,Public,7-12,260 Norfolk Street,Newark,07102,Essex County,Newark Public School District,2018
+126,Maple Place Middle School,Public,5-8,2 Maple Place,Oceanport,07757,Monmouth County,Oceanport School District,2018
+127,Princeton Middle School,Public,6-8,217 Walnut Lane,Princeton,08540,Mercer County,Princeton Public School District,2018
+128,Malcolm E Nettingham Middle School,Public,5-8,580 Park Avenue,Scotch Plains,07076,Union County,Scotch Plains-Fanwood School District,2018
+129,Clifton T. Barkalow School,Public,6-8,498 Stillwells Corner Road,Freehold,07728,Monmouth County,Freehold Township School District,2018
+130,Spring Lake Heights Elementary School,Public,"PK, KG-8",1110 Highway 71,Spring Lake,07762,Monmouth County,Spring Lake Heights School District,2018
+131,Oldmans Township School,Public,"PK, KG-8",10 Freed Road,Pedricktown,08067,Salem County,Oldmans Township School District,2018
+132,Hillsborough Township Middle School,Public,7-8,260 Triangle Road,Hillsborough,08844,Somerset County,Hillsborough Township Public School District,2018
+133,Valleyview Middle School,Public,6-8,320 Diamond Spring Road,Denville,07834,Morris County,Denville Township K-8 School District,2018
+134,Califon Public School,Public,"PK, KG-8",6 School Street,Califon,07830,Hunterdon County,Califon Borough School District,2018
+135,Edgar Middle School,Public,5-8,49 Brunswick Avenue,Metuchen,08840,Middlesex County,Metuchen Public School District,2018
+136,Glen Rock Middle School,Public,6-8,600 Harristown Road,Glen Rock,07452,Bergen County,Glen Rock Public School District,2018
+137,Montgomery Upper Middle School,Public,7-8,375 Burnt Hill Road,Skillman,08558,Somerset County,Montgomery Township School District,2018
+138,Westwood Regional Middle School,Public,6-8,23 Third Avenue,Westwood,07675,Bergen County,Westwood Regional School District,2018
+139,Dwight D. Eisenhower School,Public,6-8,279 Burlington Road,Freehold,07728,Monmouth County,Freehold Township School District,2018
+140,North Star Academy Charter School,"Public, Charter, Alternative",K-12,10 Washington Place,Newark,07102,Essex County,North Star Academy Charter School,2018
+141,Bedminster Township Public School,Public,"PK, KG-8",234 Somerville Road,Bedminster,07921,Somerset County,Bedminster Township Public School District,2018
+142,Park Ridge High School,Public,7-12,2 Park Ave,Park Ridge,07656,Bergen County,Park Ridge School District,2018
+143,Pond Road Middle School,Public,5-8,150 Pond Road,Robbinsville,08691,Mercer County,Robbinsville Public Schools,2018
+144,Bridgewater-Raritan Middle School,Public,7-8,128 Merriwood Road,Bridgewater,08807,Somerset County,Bridgewater-Raritan Regional School District,2018
+145,Classical Academy Charter School of Clifton,"Public, Charter",6-8,1255 Main Avenue,Clifton,07011,Passaic County,Classical Academy Charter School of Clifton,2018
+146,Thomas Jefferson Middle School,Public,6-8,75 First Street,Lodi,07644,Bergen County,Lodi School District,2018
+147,Branchburg Central Middle School,Public,6-8,220 Baird Road,Branchburg,08876,Somerset County,Branchburg Township School District,2018
+148,Honiss Elementary/Middle School,Public,K-8,31 Depew St,Dumont,07628,Bergen County,Dumont Public School District,2018
+149,Clinton Township Middle School,Public,6-8,34 Grayrock Road,Clinton,08809,Hunterdon County,Clinton Township School District,2018
+150,Green Brook Middle School,Public,5-8,132 Jefferson Avenue,Green Brook,08812,Somerset County,Green Brook Township Public School District,2018
+151,Delaware Township School,Public,"PK, KG-8",501 Rosemont  Ringoes Road,Sergeantsville,08557,Hunterdon County,Delaware Township School District,2018
+152,Monroe Township Middle School,Public,6-8,1629 Perrineville Road,Monroe Township,08831,Middlesex County,Monroe Township School District,2018
+153,Memorial Junior School,Public,6-8,61 Highland Avenue,Whippany,07981,Morris County,Hanover Township School District,2018
+154,Valley Middle School,Public,6-8,71 Oak St,Oakland,07436,Bergen County,Oakland Public School District,2018
+155,Haskell Elementary School,Public,"PK, KG-8",973 Ringwood Avenue,Haskell,07420,Passaic County,Wanaque School District,2018
+156,Selzer Elementary/Middle School,Public,"PK, KG-8",435 Prospect Ave,Dumont,07628,Bergen County,Dumont Public School District,2018
+157,Riverdale School,Public,"PK, KG-8",52 Newark Pompton Turnpike,Riverdale,07457,Morris County,Riverdale School District,2018
+158,Central Middle School,Public,6-8,90 Central Avenue,Stirling,07980,Morris County,Long Hill Township School District,2018
+159,Kingsway Regional Middle School,Public,7-8,203 Kings Highway,Woolwich Twp,08085,Gloucester County,Kingsway Regional School District,2018
+160,Manasquan Elementary School,Public,"PK, KG-8",168 Broad Street,Manasquan,08736,Monmouth County,Manasquan School District,2018
+161,Crossroads North Middle School,Public,6-8,635 Georges Road,Monmouth Junction,08852,Middlesex County,South Brunswick School District,2018
+162,Montague Township School,Public,"PK, KG-8",475 Route 206,Montague,07827,Sussex County,Montague Township School District,2018
+163,David E. Owens Middle School,Public,6-8,470 Marion Avenue,New Milford,07646,Bergen County,New Milford Public School District,2018
+164,Clinton Public School,Public,"PK, KG-8",10 School Street,Clinton,08809,Hunterdon County,Clinton-Glen Gardner School District,2018
+165,Henry C. Beck Middle School,Public,6-8,950 Cropwell Rd.,Cherry Hill,08003,Camden County,Cherry Hill School District,2018
+166,White Township Consolidated School,Public,"PK, KG-8",565 Cr 519,Belvidere,07823,Warren County,White Township Consolidated School District,2018
+167,Hardyston Township Middle School,Public,5-8,183 Wheatsworth Road,Hamburg,07419,Sussex County,Hardyston Township School District,2018
+168,Green Hills School,Public,K-8,69 Mackerly Road,Greendell,07839,Sussex County,Green Township School District,2018
+169,Carl H. Kumpf School,Public,6-8,59 Mildred Terrace,Clark,07066,Union County,Clark Township Public School District,2018
+170,Lakeside School,Public,6-8,316 Lakeside Avenue,Pompton Lakes,07442,Passaic County,Pompton Lakes School District,2018
+171,Voorhees Middle School,Public,6-8,1000 Holly Oak Dr,Voorhees,08043,Camden County,Voorhees Township School District,2018
+172,Neeta School,Public,3-8,44 Neeta Trail,Medford Lakes,08055,Burlington County,Medford Lakes School District,2018
+173,Bernardsville Middle School,Public,5-8,141 Seney Drive,Bernardsville,07924,Somerset County,Somerset Hills Regional School District,2018
+174,Crossroads South Middle School,Public,6-8,195 Major Road,Monmouth Junction,08852,Middlesex County,South Brunswick School District,2018
+175,East Hanover Middle School,Public,6-8,477 Ridgedale Avenue,East Hanover,07936,Morris County,East Hanover Township School District,2018
+176,Explore Middle School,Public,6-8,180-9th St,Jersey City,07302,Hudson County,Hudson County Schools of Technology School District,2018
+177,Timberlane Middle School,Public,6-8,51 S  Timberlane Drive,Pennington,08534,Mercer County,Hopewell Valley Regional School District,2018
+178,Millstone Township Middle School,Public,6-8,5 Dawson Court,Millstone Township,08535,Monmouth County,Millstone Township School District,2018
+179,Memorial Middle School,Public,5-8,12 - 00 First Street,Fair Lawn,07410,Bergen County,Fair Lawn Public School District,2018
+180,Wanaque Elementary School,Public,"PK, KG-8",First Street,Wanaque,07465,Passaic County,Wanaque School District,2018
+181,Valley View School,Public,5-8,50 Valley View Road,Watchung,07069,Somerset County,Watchung Borough School District,2018
+182,Randolph Middle School,Public,6-8,507 Millbrook Avenue,Randolph,07869,Morris County,Randolph Township School District,2018
+183,Hackettstown Middle School,Public,5-8,500 Washington Street,Hackettstown,07840,Warren County,Hackettstown Public School District,2018
+184,Southampton Township School #3,Public,6-8,100 Warrior Way,Southampton,08088,Burlington County,Southampton Township School District,2018
+185,Avalon Elementary School,Public,5-8,235 32nd Street,Avalon,08202,Cape May County,Avalon School District,2018
+186,Elysian Charter School of Hoboken,"Public, Charter",K-8,1460 Garden Street,Hoboken,07030,Hudson County,Elysian Charter School,2018
+187,Matawan-Aberdeen Middle School,Public,6-8,469 Matawan Avenue,Cliffwood,07721,Monmouth County,Matawan-Aberdeen Regional School District,2018
+188,Franklin Township School,Public,"PK, KG-8",226 Quakertown Road,Quakertown,08868,Hunterdon County,Franklin Township School District,2018
+189,Readington Middle School,Public,6-8,48 Readington Rd,Whitehouse Station,08889,Hunterdon County,Readington Township School District,2018
+190,Memorial Middle School,Public,6-8,Laura Herbert Dr,Point Pleasant Beach,08742,Ocean County,Point Pleasant Borough School District,2018
+191,John H. Walker Middle School,Public,7-8,325 Franklin Ave,Nutley,07110,Essex County,Nutley Public School District,2018
+192,George G White,Public,5-8,120 Magnolia Ave,Hillsdale,07642,Bergen County,Hillsdale School District,2018
+193,Northern Burlington County Regional Middle School,Public,7-8,180 Mansfield Road  East,Columbus,08022,Burlington County,Northern Burlington County Regional School District,2018
+194,Discovery Charter School,"Public, Charter",4-8,240 Halsey St,Newark,07102,Essex County,Discovery Charter School,2018
+195,Wall Intermediate School,Public,6-8,2801 Allaire Road,Wall,07719,Monmouth County,Wall Township Public School District,2018
+196,Hasbrouck Heights Middle School,Public,6-8,365 Boulevard,Hasbrouck Heights,07604,Bergen County,Hasbrouck Heights School District,2018
+197,South Orange Middle School,Public,6-8,70 North Ridgewood Road,South Orange,07079,Essex County,South Orange-Maplewood School District,2018
+198,Frank Antonides School,Public,5-8,135 Locust Avenue,West Long Branch,07764,Monmouth County,West Long Branch School District,2018
+199,Alexander Hamilton Academy,Public,K-8,11  27 16th Avenue,Paterson,07501,Passaic County,Paterson Public School District,2018
+200,Mount Arlington Public School,Public,3-8,235 Howard Boulevard,Mount Arlington,07856,Morris County,Mount Arlington Public School District,2018
+201,Netcong Elementary School,Public,"PK, KG-8",26 College Road,Netcong,07857,Morris County,Netcong School District,2018
+202,Tinton Falls Middle School,Public,6-8,674 Tinton Avenue,Tinton Falls,07724,Monmouth County,Tinton Falls School District,2018
+203,Deptford Township Middle School,Public,7-8,890 Bankbridge Rd,Sewell,08080,Gloucester County,Deptford Township Public School District,2018
+204,Martin J. Ryerson School,Public,6-8,130 Valley Road,Ringwood,07456,Passaic County,Ringwood School District,2018
+205,Saddle Brook Middle/High School,Public,7-12,355 Mayhill Street,Saddle Brook,07663,Bergen County,Saddle Brook School District,2018
+206,Howell Township Middle School South,Public,6-8,220 Ramtown-Greenville Road,Howell,07731,Monmouth County,Howell Township Public School District,2018
+207,Clementon Elementary School,Public,"PK, KG-8",4 Audubon Ave,Clementon,08021,Camden County,Clementon Elementary School District,2018
+208,Great Meadows Regional Middle School,Public,4-8,273 Route 46,Great Meadows,07838,Warren County,Great Meadows Regional School District,2018
+209,Learning Community Charter School,"Public, Charter","PK, KG-8",2495 John F Kennedy Blvd,Jersey City,07304,Hudson County,The Learning Community Charter School,2018
+210,Ocean City Intermediate School,Public,4-8,1901 Bay Avenue,Ocean City,08226,Cape May County,Ocean City School District,2018
+211,Clearview Regional Middle School,Public,7-8,595 Jefferson Rd,Mullica Hill,08062,Gloucester County,Clearview Regional High School District,2018
+212,Lafayette Township School,Public,"PK, KG-8",178 Beaver Run Road,Lafayette,07848,Sussex County,Lafayette Township School District,2018
+213,Indian Mills Memorial School,Public,5-8,295 Indian Mills Road,Shamong,08088,Burlington County,Shamong Township School District,2018
+214,Terence C. Reilly School No 7,Public,2-8,436 First Avenue,Elizabeth,07206,Union County,Elizabeth Public Schools,2018
+215,Hillside Avenue School,Public,K-8,125 Hillside Avenue,Cranford,07016,Union County,Cranford Public School District,2018
+216,Cinnaminson Middle School,Public,6-8,312 N  Forklanding Road,Cinnaminson,08077,Burlington County,Cinnaminson Township School District,2018
+217,Midland Park Junior/Senior High School,Public,7-12,250 Prospect St,Midland Park,07432,Bergen County,Midland Park School District,2018
+218,Alexandria Middle School,Public,4-8,557 County Rd. 513,Pittstown,08867,Hunterdon County,Alexandria Township School District,2018
+219,Riverton School District,Public,"PK, KG-8",600 Fifth Street,Riverton,08077,Burlington County,Riverton School District,2018
+220,Frelinghuysen Middle School,Public,6-8,West Hanover Avenue,Morristown,07960,Morris County,Morris School District,2018
+221,Bergen Arts and Sciences Charter School,"Public, Charter, Alternative",K-12,200 MacArthur Avenue,Garfield,07026,Bergen County,Bergen Arts and Science Charter School,2018
+222,Waldwick Middle School,Public,6-8,155 Wyckoff Avenue,Waldwick,07463,Bergen County,Waldwick School District,2018
+223,Carl W. Goetz Middle School,Public,6-8,835 Patterson Road,Jackson,08527,Ocean County,Jackson Township School District,2018
+224,Iselin Middle School,Public,6-8,900 Woodruff Street,Iselin,08830,Middlesex County,Woodbridge Township School District,2018
+225,Lawrence Middle School,Public,7-8,2455 Princeton Pike,Lawrenceville,08648,Mercer County,Lawrence Township Public School District,2018
+226,Byram Intermediate School,Public,5-8,12 Mansfield Drive,Stanhope,07874,Sussex County,Byram Township School District,2018
+227,Teaneck Community Charter school,"Public, Charter",K-8,563 Chestnut Avenue,Teaneck,07666,Bergen County,Teaneck Community Charter School,2018
+228,Stonebridge Middle School,Public,5-8,1252 Yardville-Allentown Road,Allentown,08501,Monmouth County,Upper Freehold Regional School District,2018
+229,Ventnor Middle School,Public,5-8,400 N  Lafayette Avenue,Ventnor City,08406,Atlantic County,Ventnor City School District,2018
+230,East Orange STEM Academy High School,Public,6-12,129 Renshaw Avenue,East Orange,07017,Essex County,East Orange School District,2018
+231,Northfield Community Middle School,Public,5-8,2000 New Road,Northfield,08225,Atlantic County,Northfield City School District,2018
+232,Alfred Zampella School,Public,"PK, KG-8",201 North St,Jersey City,07307,Hudson County,Jersey City Public Schools,2018
+233,Pittsgrove Township Middle School,Public,5-8,1082 Almond Road,Pittsgrove,08318,Salem County,Pittsgrove Township School District,2018
+234,Avon Elementary School,Public,"PK, KG-8",505 Lincoln Avenue,Avon by the Sea,07717,Monmouth County,Avon Boro School District,2018
+235,Howell Township Middle School North,Public,6-8,501 Squankum  Yellowbrook Road,Farmingdale,07727,Monmouth County,Howell Township Public School District,2018
+236,Dover Middle School,Public,7-8,302 East McFarlan Street,Dover,07801,Morris County,Dover Public School District,2018
+237,Memorial School,Public,"PK, KG-8",Memorial School,South Hackensack,07606,Bergen County,South Hackensack School District,2018
+238,Mannington Township Elementary School,Public,"PK, KG-8",495 Route 45,Salem,08079,Salem County,Mannington Township School District,2018
+239,Lake Riviera Middle School,Public,6-8,171 Beaverson Boulevard,Brick,08723,Ocean County,Brick Township Public School District,2018
+240,Henry B. Whitehorne Middle School,Public,5-8,600 Bloomfield Ave,Verona,07044,Essex County,Verona Public School District,2018
+241,Haddon Heights Junior/Senior High School,Public,7-12,301 Second Avenue,Haddon Heights,08035,Camden County,HADDON HEIGHTS School District,2018
+242,Eisenhower Middle School,Public,7-8,47 Eyland Avenue,Succasunna,07876,Morris County,Roxbury Township School District,2018
+243,Upper Township Middle School,Public,6-8,525 Perry Rd,Woodbine,08270,Cape May County,Upper Township School District,2018
+244,Alloway Township School,Public,"PK, KG-8",43 Cedar St,Alloway,08001,Salem County,Alloway Township School District,2018
+245,Upper Pittsgrove School,Public,"PK, KG-8",235 Pine Tavern Road,Monroeville,08343,Salem County,UPPER PITTSGROVE Township School District,2018
+246,Herbert Hoover Middle School,Public,6-8,174 Jackson Avenue,Edison,08837,Middlesex County,Edison Township School District,2018
+247,Farmingdale Elementary,Public,"PK, KG-8",49 Academy St,Farmingdale,07727,Monmouth County,Farmingdale Public School District,2018
+248,Secaucus Middle School,Public,6-8,11 Mill Ridge Road,Secaucus,07094,Hudson County,Secaucus School District,2018
+249,Walter T. Bergen Middle School,Public,5-8,225 Glenwild Avenue,Bloomingdale,07403,Passaic County,Bloomingdale School District,2018
+250,Park Elementary School,Public,"PK, KG-8",120 Manchester Place,Newark,07104,Essex County,Newark Public School District,2018
+251,Maria Varisco Rogers Charter School,"Public, Charter",K-8,233 Woodside Ave,Newark,07104,Essex County,Maria L. Varisco-Rogers Charter School,2018
+252,Dwight D Eisenhower Middle School,Public,4-8,235 Grove Avenue,West Berlin,08091,Camden County,Berlin Township School District,2018
+253,Grover Cleveland Middle School,Public,6-8,36 Academy Rd,Caldwell,07006,Essex County,Caldwell-West School District,2018
+254,Red Bank Charter School,"Public, Charter","PK, KG-8",58 Oakland Street,Red Bank,07701,Monmouth County,Red Bank Charter School,2018
+255,Nehaunsey Middle School,Public,6-8,415 Swedesboro Road,Gibbstown,08027,Gloucester County,Greenwich Township School District,2018
+256,John Hill School,Public,3-8,435 Lathrop Avenue,Boonton,07005,Morris County,Boonton Town Public School District,2018
+257,Mt Vernon Place School,Public,"PK, KG-8",142 Mount Vernon Pl,Newark,07106,Essex County,Newark Public School District,2018
+258,The Queen City Academy Charter School,"Public, Charter, Alternative",K-12,815 West Seventh Street,Plainfield,07063,Union County,The Queen City Academy Charter School District,2018
+259,Marlton Middle,Public,6-8,150 Tomlinson Mill Road,Marlton,08053,Burlington County,Evesham Township School District,2018
+260,John P. Holland Charter School,"Public, Charter","PK, KG-8",5 Garret Mountain Plaza,Woodland Park,07424,Passaic County,John P Holland Charter School,2018
+261,Delsea Regional Middle School,Public,7-8,Fries Mill Rd,Franklinville,08322,Gloucester County,Delsea Regional High School District,2018
+262,High Bridge Middle School,Public,5-8,50 Thomas St,High Bridge,08829,Hunterdon County,High Bridge Borough School District,2018
+263,Berlin Community School,Public,"PK, KG-8",215 S Franklin Ave,Berlin,08009,Camden County,Berlin Borough School District,2018
+264,Ann Street School,Public,K-8,30 Ann St,Newark,07105,Essex County,Newark Public School District,2018
+265,Frances DeMasi Middle School,Public,6-8,199 Evesboro  Medford Rd,Marlton,08053,Burlington County,Evesham Township School District,2018
+266,Plainfield Academy For The Arts & Advanced Studies,Public,7-12,1700 West Front St,Plainfield,07063,Union County,Plainfield Public School District,2018
+267,Maplewood Middle School,Public,6-8,7 Burnett St,Maplewood,07040,Essex County,South Orange-Maplewood School District,2018
+268,Lewis F. Cole Middle School,Public,5-8,467 Stillwell Avenue,Fort Lee,07024,Bergen County,Fort Lee School District,2018
+269,Thomas Jefferson Middle School,Public,6-8,450 Division Street,Edison,08817,Middlesex County,Edison Township School District,2018
+270,Spotswood Memorial Middle School,Public,6-8,115 Summerhill Road,Spotswood,08884,Middlesex County,Spotswood Public School District,2018
+271,Foundation Academy Charter School,"Public, Charter, Alternative",K-12,363 West State Street,Trenton,08608,Mercer County,Foundation Academy Charter School,2018
+272,William G. Rohrer Middle School,Public,6-8,101 MacArthur Boulevard,Westmont,08108,Camden County,Haddon Township School District,2018
+273,Township of Ocean Intermediate School,Public,5-8,1200 West Park Avenue,Ocean,07712,Monmouth County,Township of Ocean School District,2018
+274,Copeland Middle School,Public,6-8,100 Lake Shore Drive,Rockaway,07866,Morris County,Rockaway Township School District,2018
+275,Southern Regional Middle School,Public,7-8,75 Cedar Bridge Road,Manahawkin,08050,Ocean County,Southern Regional School District,2018
+276,Thomas Jefferson Middle School,Public,5-8,655 Teaneck Rd,Teaneck,07666,Bergen County,Teaneck School District,2018
+277,Von E. Mauger Middle School,Public,6-8,Fisher Avenue,Middlesex,08846,Middlesex County,Middlesex Borough School District,2018
+278,Midland School #1,Public,"PK, KG-8",300 Rochelle Ave,Rochelle Park,07662,Bergen County,Rochelle Park School District,2018
+279,Carl Sandburg Middle School,Public,6-8,3439 Route 516,Old Bridge,08857,Middlesex County,Old Bridge Township School District,2018
+280,Kittatinny Regional High School,Public,7-12,77 Halsey Road,Newton,07860,Sussex County,Kittatinny Regional School District,2018
+281,Ridge and Valley Charter School,"Public, Charter",K-8,1234 State Route 94,Blairstown,07825,Warren County,Ridge and Valley Charter School,2018
+282,High Mountain School,Public,5-8,515 High Mountain Road,North Haledon,07508,Passaic County,North Haledon School District,2018
+283,Lower Alloways Creek Elementary School,Public,"PK, KG-8",967 Main St Canton,Salem,08079,Salem County,The Lower Alloways Creek School District,2018
+284,Memorial Middle School,Public,5-8,500 Ridge Road,Cedar Grove,07009,Essex County,Cedar Grove Township School District,2018
+285,Glen Meadow Middle School,Public,6-8,7 Sammis Road,Vernon,07462,Sussex County,Vernon Township School District,2018
+286,Veterans Memorial Middle School,Public,6-8,105 Hendrickson Avenue,Brick,08724,Ocean County,Brick Township Public School District,2018
+287,Liberty Middle School,Public,7-8,1  Kelly  Drive,West Orange,07052,Essex County,West Orange Public Schools,2018
+288,Bayshore Middle School,Public,6-8,834 Leonardville Road,Leonardo,07737,Monmouth County,Middletown Township Public School District,2018
+289,West Deptford Middle School,Public,5-8,675 Grove Rd,West Deptford,08066,Gloucester County,West Deptford Township School District,2018
+290,Woodstown Middle School,Public,6-8,15 Lincoln Avenue,Woodstown,08098,Salem County,Woodstown-Pilesgrove Regional School District,2018
+291,Joyce Kilmer School,Public,4-8,21 West Church Street,Milltown,08850,Middlesex County,Milltown School District,2018
+292,Florence M. Gaudineer Middle School,Public,6-8,75 South Springfield Ave.,Springfield,07081,Union County,Springfield Public School District,2018
+293,Conackamack Middle School,Public,6-8,5205 Witherspoon Street,Piscataway,08854,Middlesex County,Piscataway Township School District,2018
+294,Roy W. Brown Middle School,Public,6-8,130 S Washington Ave,Bergenfield,07621,Bergen County,Bergenfield Borough School District,2018
+295,Bloomfield Middle School,Public,7-8,60 Huck Road,Bloomfield,07003,Essex County,Bloomfield Township School District,2018
+296,T. E. Harrington Middle School,Public,7-8,514 Mount Laurel Road,Mount Laurel,08054,Burlington County,Mount Laurel Township School District,2018
+297,Frankford Township School,Public,"PK, KG-8",4 Pines Road,Branchville,07826,Sussex County,Frankford Township Consolidated School District,2018
+298,Theodore Schor Middle School,Public,6-8,243 North Randolphville Rd,Piscataway,08854,Middlesex County,Piscataway Township School District,2018
+299,Quinton Township School,Public,"PK, KG-8",8 Robinson Street,Quinton,08072,Salem County,Quinton Township School District,2018
+300,Buzz Aldrin Middle School,Public,6-8,173 Bellevue Ave,Upper Montclair,07042,Essex County,Montclair Public School District,2018
+301,Keyport Central School,Public,"PK, KG-8",335 Broad Street,Keyport,07735,Monmouth County,Keyport School District,2018
+302,Kawameeh Middle School,Public,6-8,490 David Terrace,Union,07083,Union County,Township of Union School District,2018
+303,Allamuchy Township School,Public,3-8,20 Johnsonburg Road,Allamuchy,07820,Warren County,Allamuchy Township School District,2018
+304,Woodrow Wilson Community School,Public,"PK, KG-8",101 West 56th Street,Bayonne,07002,Hudson County,Bayonne School District,2018
+305,Horace Mann Elementary School,Public,1-8,1215  83rd Street,North Bergen,07047,Hudson County,North Bergen School District,2018
+306,New Egypt Middle School,Public,6-8,115 Evergreen Road,New Egypt,08533,Ocean County,Plumsted Township School District,2018
+307,Union School,Public,7-8,359 Union Ave,Rutherford,07070,Bergen County,Rutherford School District,2018
+308,Churchill Junior High School,"Public, Alternative",8-9,18 Norton Road,E Brunswick,08816,Middlesex County,East Brunswick Township School District,2018
+309,Thomas Jefferson Middle School,Public,4-8,95 East Main Street,Rockaway,07866,Morris County,Rockaway Borough School District,2018
+310,Lafayette Street School,Public,"PK, KG-8",205 Lafayette St,Newark,07105,Essex County,Newark Public School District,2018
+311,Colonia Middle School,Public,6-8,Delaware Avenue,Colonia,07067,Middlesex County,Woodbridge Township School District,2018
+312,Robert L. Craig School,Public,"PK, KG-8",20 West Park Street,Moonachie,07074,Bergen County,Moonachie School District,2018
+313,Lopatcong Township Middle School,Public,5-8,321 Stonehenge Drive,Phillipsburg,08865,Warren County,Lopatcong Township School District,2018
+314,Jonas Salk Middle School,Public,6-8,155 W Greystone Road,Old Bridge,08857,Middlesex County,Old Bridge Township School District,2018
+315,Henry Hudson Regional School,Public,7-12,1 Grand Tour,Highlands,07732,Monmouth County,Henry Hudson Regional School District,2018
+316,Lincoln,Public,"PK, KG-8",400 Second Avenue,Garwood,07027,Union County,Garwood Boro,2018
+317,Alfred S. Faust,Public,5-8,100 Uhland Street,East Rutherford,07073,Bergen County,East Rutherford School District,2018
+318,Middle School # 4,Public,6-8,107 Bright Street,Jersey City,07302,Hudson County,Jersey City Public Schools,2018
+319,Union Hill Middle School,Public,7-8,3800 Hudson Ave,Union City,07087,Hudson County,Union City School District,2018
+320,Mary J Donohoe Community School,Public,"PK, KG-8",38 Dodge Street,Bayonne,07002,Hudson County,Bayonne School District,2018
+321,Westampton Township Middle School,Public,4-8,700 Rancocas Road,Westampton,08060,Burlington County,Westampton Township Public School District,2018
+322,Martin Luther King Junior School,Public,"PK, KG-8",886 Bergen Ave,Jersey City,07306,Hudson County,Jersey City Public Schools,2018
+323,Toms River Intermediate School North,Public,6-8,150 Intermediate North Way,Toms River,08753,Ocean County,Toms River Regional School District,2018
+324,Weymouth Township Elementary School,Public,"PK, KG-8",1202 Eleventh Avenue,Dorothy,08317,Atlantic County,Weymouth Township School District,2018
+325,Long Pond School,Public,5-8,707 Limecrest Rd,Newton,07860,Sussex County,Andover Regional School District,2018
+326,Lumberton Middle School,Public,6-8,30 Dimsdale Drive,Lumberton,08048,Burlington County,Lumberton Township Board of Education,2018
+327,School #6/Middle School,Public,5-8,440 Oakdene Ave,Cliffside Park,07010,Bergen County,Cliffside Park School District,2018
+328,Hainesport Township School,Public,"PK, KG-8",211 Broad Street,Hainesport,08036,Burlington County,Hainesport Township School District,2018
+329,Veterans Middle School,Public,6-8,191 Rutherford Place,North Arlington,07031,Bergen County,North Arlington School District,2018
+330,Thorne Middle School,Public,6-8,70 Murphy Road,Port Monmouth,07758,Monmouth County,Middletown Township Public School District,2018
+331,Washington Park School,Public,4-8,10 Crews Street,Totowa,07512,Passaic County,Totowa Public School District,2018
+332,Fernwood Avenue Middle School,Public,6-8,4034 Fernwood Avenue,Egg Harbor Township,08234,Atlantic County,Egg Harbor Township School District,2018
+333,Samuel S. Yellin Elementary School,Public,4-8,111 Warwick Road,Stratford,08084,Camden County,Stratford School District,2018
+334,Woodrow Wilson Middle School,Public,6-8,1400 Van Houten Avenue,Clifton,07013,Passaic County,Clifton Public School District,2018
+335,South Hunterdon Regional High School,Public,7-12,301 Mt Airy Harbourton Rd,Lambertville,08530,Hunterdon County,South Hunterdon Regional School District,2018
+336,Christa McAuliffe School,Public,"PK, KG-8",167 Hancock Ave,Jersey City,07307,Hudson County,Jersey City Public Schools,2018
+337,Estell Manor Elementary School,Public,K-8,128 Cape May Avenue,Estell Manor,08319,Atlantic County,Estell Manor School District,2018
+338,Pride Academy Charter School,"Public, Charter",5-8,117 Elmwood Ave,East Orange,07018,Essex County,Pride Academy Charter School District,2018
+339,Bogota Junior/Senior High School,Public,8-12,2 Henry C  Luthin Place,Bogota,07603,Bergen County,Bogota Public School District,2018
+340,Glenfield Middle School,Public,6-8,25 Maple Ave,Montclair,07042,Essex County,Montclair Public School District,2018
+341,Manchester Township Middle School,Public,6-8,2759 Ridgeway Rd,Manchester,08759,Ocean County,Manchester Township School District,2018
+342,Carlstadt Public School,Public,"PK, KG-8",550 Washington Street,Carlstadt,07072,Bergen County,Carlstadt Public School District,2018
+343,Hope Township School,Public,"PK, KG-8",320 Johnsonburg Road,Hope,07844,Warren County,Hope Township School District,2018
+344,Memorial Middle School,Public,7-8,7 Grant Avenue,Eatontown,07724,Monmouth County,Eatontown Public School District,2018
+345,Hammonton Middle School,Public,6-8,75 North Liberty Street,Hammonton,08037,Atlantic County,Hammonton School District,2018
+346,Cicely L. Tyson Community Middle/High School,Public,6-12,35 Winans Street,East Orange,07017,Essex County,East Orange School District,2018
+347,Unity Charter School,"Public, Charter",K-8,1 Evergreen Place,Morristown,07960,Morris County,Unity Charter School,2018
+348,Lincoln Middle School,Public,6-8,230 Hawthorne Avenue,Hawthorne,07506,Passaic County,Hawthorne Public School District,2018
+349,Roosevelt Middle School,Public,7-8,36 Gilbert Pl,West Orange,07052,Essex County,West Orange Public Schools,2018
+350,Renaissance Middle School at the Rand Building,Public,6-8,176 North Fullerton Avenue,Montclair,07042,Essex County,Montclair Public School District,2018
+351,Memorial School,Public,"PK, KG-8",221 Morningside Avenue,Union Beach,07735,Monmouth County,Union Beach Public School District,2018
+352,First Avenue School,Public,"PK, KG-8",214 First Ave,Newark,07107,Essex County,Newark Public School District,2018
+353,Bradley Beach Elementary School,Public,"PK, KG-8",515 Brinley Avenue,Bradley Beach,07720,Monmouth County,Bradley Beach School District,2018
+354,Charles J. Riley School 9,Public,"PK, KG-8",6 Timothy Street,Paterson,07503,Passaic County,Paterson Public School District,2018
+355,Bordentown Regional Middle School,Public,6-8,50 Dunns Mill Road,Bordentown,08505,Burlington County,Bordentown Regional School District,2018
+356,Christa McAuliffe Middle School,Public,6-8,35 South Hope Chapel Road,Jackson,08527,Ocean County,Jackson Township School District,2018
+357,TEAM Academy Charter School,"Public, Charter, Alternative",K-12,60 Park Place,Newark,07102,Essex County,TEAM Academy Charter School,2018
+358,Philip G. Vroom Community School,Public,"PK, KG-8",18 West 26th St,Bayonne,07002,Hudson County,Bayonne School District,2018
+359,Lacey Township Middle School,Public,7-8,660 Denton Avenue,Forked River,08731,Ocean County,Lacey Township School District,2018
+360,Woodland Middle School,Public,5-8,1 School Lane,Barrington,08007,Camden County,Barrington School District,2018
+361,Belmar Elementary,Public,"PK, KG-8",1101 Main Street,Belmar,07719,Monmouth County,Belmar Elementary School District,2018
+362,Valley Road School,Public,"PK, KG-8",24 Valley Road,Stanhope,07874,Sussex County,Stanhope School District,2018
+363,Emerson Middle School,Public,6-8,318 - 18th Street,Union City,07087,Hudson County,Union City School District,2018
+364,Alder Avenue Middle School,Public,6-8,25 Alder Avenue,Egg Harbor Township,08234,Atlantic County,Egg Harbor Township School District,2018
+365,Melvin H. Kreps Middle School,Public,6-8,5 Kent Lane,East Windsor,08520,Mercer County,East Windsor Regional School District,2018
+366,McKinley Elementary School,Public,K-8,3110 Liberty Ave,North Bergen,07047,Hudson County,North Bergen School District,2018
+367,Dr. Albert Einstein Academy School No. 29,Public,"PK, KG-8",919 North Broad Street,Elizabeth,07208,Union County,Elizabeth Public Schools,2018
+368,Chestnut Ridge Middle School,Public,6-8,641 Hurffville  Crosskeys Rd,Sewell,08080,Gloucester County,Washington Township School District,2018
+369,Passaic Gifted and Talented Academy School No. 20,Public,2-8,19 Henry Street,Passaic,07055,Passaic County,Passaic City School District,2018
+370,Richard M. Teitelman Middle School,Public,7-8,687 Rt 9,Cape May,08204,Cape May County,Lower Cape May Regional School District,2018
+371,Port Republic Elementary School,Public,K-8,137 Pomona Avenue,Port Republic,08241,Atlantic County,Port Republic School District,2018
+372,Dr. Michael Conti School,Public,"PK, KG-8",182 Merseles St,Jersey City,07302,Hudson County,Jersey City Public Schools,2018
+373,Robert Fulton Elementary School,Public,1-8,7407 Hudson Ave,North Bergen,07047,Hudson County,North Bergen School District,2018
+374,Richmond Avenue School,Public,"PK, KG-8",4115 Ventnor Avenue,Atlantic City,08401,Atlantic County,Atlantic City School District,2018
+375,Delran Middle School,Public,6-8,905 Chester Avenue,Delran,08075,Burlington County,Delran Township School District,2018
+376,South Plainfield Middle School,Public,7-8,2201 Plainfield Avenue,South Plainfield,07080,Middlesex County,South Plainfield School District,2018
+377,Pohatcong Township School,Public,"PK, KG-8",240 Rte  519,Phillipsburg,08865,Warren County,Pohatcong Township School District,2018
+378,Benjamin Franklin Middle School,Public,5-8,1315 Taft Road,Teaneck,07666,Bergen County,Teaneck School District,2018
+379,Bunker Hill Middle School,Public,6-8,372 Pitman  Downer Rd,Sewell,08080,Gloucester County,Washington Township School District,2018
+380,Quibbletown Middle School,Public,6-8,99 Academy Street,Piscataway,08854,Middlesex County,Piscataway Township School District,2018
+381,Pennsville Middle School,Public,6-8,4 William Penn Avenue,Pennsville,08070,Salem County,Pennsville School District,2018
+382,Washington Community School #9,Public,"PK, KG-8",191 Avenue B,Bayonne,07002,Hudson County,Bayonne School District,2018
+383,Weehawken High School,Public,7-12,53 Liberty Place,Weehawken,07086,Hudson County,Weehawken Public School District,2018
+384,Elsinboro Township School,Public,K-8,631 Salem  Fort Elfsborg Road,Salem,08079,Salem County,Elsinboro Township School District,2018
+385,Anna L. Klein,Public,"PK, KG-8",301  69th St,Guttenberg,07093,Hudson County,Guttenberg School District,2018
+386,Horace Mann Community School,Public,"PK, KG-8",25 West 38th Street,Bayonne,07002,Hudson County,Bayonne School District,2018
+387,Highland Park Middle School,Public,6-8,330 Wayne Street,Highland Park,08904,Middlesex County,Highland Park Boro School District,2018
+388,Ann A. Mullen Middle School,Public,6-8,1400 Sicklerville Road,Sicklerville,08081,Camden County,Gloucester Township Public Schools,2018
+389,North Warren Regional School,Public,7-12,10 Noe Rd,Blairstown,07825,Warren County,North Warren Regional School District,2018
+390,Toms River Intermediate School East,Public,6-8,1519 Hooper Avenue,Toms River,08753,Ocean County,Toms River Regional School District,2018
+391,Alexander Batcho Intermediate School,Public,5-8,100 North 13th Avenue,Manville,08835,Somerset County,Manville School District,2018
+392,Collingswood Middle School,Public,6-8,414 Collings Ave,Collingswood,08108,Camden County,Collingswood Public School District,2018
+393,Emily C. Reynolds Middle School,Public,6-8,2145 Yardville Hamilton Sq,Hamilton,08690,Mercer County,Hamilton Township Public School District,2018
+394,Oliver Street School,Public,"PK, KG-8",86 Oliver St,Newark,07105,Essex County,Newark Public School District,2018
+395,Chessie Dentley Roberts Academy School No. 30,Public,"PK, KG-8",730 Pennsylvania Ave,Elizabeth,07208,Union County,Elizabeth Public Schools,2018
+396,Bell Oaks Upper Elementary School,Public,5-8,256  Anderson Avenue,Bellmawr,08031,Camden County,Bellmawr Public School District,2018
+397,Emma C Attales,Public,5-8,800 Irelan Avenue,Absecon,08201,Atlantic County,Absecon Public Schools District,2018
+398,Williamstown Middle School,Public,5-8,561 Clayton Rd,Williamstown,08094,Gloucester County,Monroe Township Public School District,2018
+399,Ridgefield Park Junior Senior High School,Public,7-12,1 Ozzie Nelson Drive,Ridgefield Park,07660,Bergen County,Ridgefield Park Public School District,2018
+400,Jefferson Township Middle School,Public,6-8,1000 Weldon Road,Oak Ridge,07438,Morris County,Jefferson Township Public School District,2018
+401,Walter F. Robinson Community School,Public,"PK, KG-8",95 West 31st Street,Bayonne,07002,Hudson County,Bayonne School District,2018
+402,The Ethical Community Charter School,"Public, Charter",K-8,95 Broadway,Jersey City,07306,Hudson County,The Ethical Community Charter School,2018
+403,Glen Landing Middle School,Public,6-8,85 Little Gloucester Road,Blackwood,08012,Camden County,Gloucester Township Public Schools,2018
+404,Burlington Township Middle School at Springside,Public,6-8,1600 Burlington By  Pass,Burlington,08016,Burlington County,Burlington Township School District,2018
+405,Beverly City School District,Public,"PK, KG-8",601 Bentley Ave,Beverly,08010,Burlington County,Beverly City School District,2018
+406,Victor Mravlag School No. 21,Public,"PK, KG-8",132 Shelley Avenue,Elizabeth,07208,Union County,Elizabeth Public Schools,2018
+407,Alpha Borough School,Public,"PK, KG-8",817 North Boulevard,Alpha,08865,Warren County,Alpha Borough School District,2018
+408,Lincoln Middle School,Public,6-8,400  Dunellen Avenue,Dunellen,08812,Middlesex County,Dunellen Public School District,2018
+409,Macopin Middle School,Public,6-8,70 Highlander Drive,West Milford,07480,Passaic County,West Milford Township Public School District,2018
+410,John M. Bailey Community School,Public,"PK, KG-8",75 West 10th Street,Bayonne,07002,Hudson County,Bayonne School District,2018
+411,Sussex County Technology Charter School,"Public, Charter",6-8,385 N. Church Rd.,Sparta,07871,Sussex County,Sussex County Technology Charter School,2018
+412,Philip's Academy Charter School,"Public, Charter","PK, KG-8",342 Central Avenue,Newark,07103,Essex County,Phillip's Academy Charter School,2018
+413,Crest Memorial School,Public,"PK, KG-8",9100 Pacific Ave,Wildwood Crest,08260,Cape May County,Wildwood Crest Borough School District,2018
+414,William Shemin Midtown Community School #8,Public,"PK, KG-8",550 Avenue A,Bayonne,07002,Hudson County,Bayonne School District,2018
+415,Franklin Borough School,Public,"PK, KG-8",50 Washington Avenue,Franklin,07416,Sussex County,Franklin Borough School District,2018
+416,Hopewell Crest,Public,"PK, KG-8",122 Sewall Road,Bridgeton,08302,Cumberland County,Hopewell Township School District,2018
+417,Memorial Elementary School,Public,5-8,130 Liberty St,Little Ferry,07643,Bergen County,Little Ferry Public School District,2018
+418,Freehold Intermediate School,Public,6-8,280 Park Avenue,Freehold,07728,Monmouth County,Freehold Borough School District,2018
+419,Warren Hills Regional Middle School,Public,7-8,64  66 Carlton Avenue,Washington,07882,Warren County,Warren Hills Regional School District,2018
+420,Pinelands Regional Junior High School,Public,7-8,590 Nugentown Road,Little Egg Harbor,08087,Ocean County,Pinelands Regional School District,2018
+421,Roselle Park Middle School,Public,6-8,57 W Grant Ave,Roselle Park,07204,Union County,Roselle Park Public School District,2018
+422,iPrep Academy School No 8,Public,K-8,221-227 Court Street,Elizabeth,07206,Union County,Elizabeth Public Schools,2018
+423,Palisades Park Junior-Senior High School,Public,7-12,Veterans Plaza,Palisades Park,07650,Bergen County,Palisades Park School District,2018
+424,Memorial Middle School,Public,6-8,375 River Drive,Elmwood Park,07407,Bergen County,Elmwood Park School District,2018
+425,John A. Carusi Middle School,Public,6-8,315 Roosevelt Dr.,Cherry Hill,08034,Camden County,Cherry Hill School District,2018
+426,Sussex Middle School,Public,6-8,10 Loomis Avenue,Sussex,07461,Sussex County,Sussex-Wantage Regional School District,2018
+427,Abington Avenue School,Public,"PK, KG-8",209 Abington Avenue,Newark,07107,Essex County,Newark Public School District,2018
+428,Washington Middle School,Public,6-8,One North Fifth Street,Harrison,07029,Hudson County,Harrison Public Schools,2018
+429,Russell O. Brackman Middle School,Public,7-8,600 Barnegat Blvd  North,Barnegat,08005,Ocean County,Barnegat Township School District,2018
+430,Winfield Township,Public,"PK, KG-8",7 1/2 Gulfstream Avenue,Winfield Park,07036,Union County,Winfield Township,2018
+431,Margaret Mace Elementary School,Public,"PK, KG-8",1201 Atlantic Avenue,North Wildwood,08260,Cape May County,North Wildwood School District,2018
+432,Red Bank Middle School,Public,4-8,101 Harding Road,Red Bank,07701,Monmouth County,Red Bank Borough Public School District,2018
+433,Henry E. Harris Community School,Public,"PK, KG-8",135 Avenue C,Bayonne,07002,Hudson County,Bayonne School District,2018
+434,Alfred C. MacKinnon Middle School,Public,6-8,137 East Central Avenue,Wharton,07885,Morris County,Wharton Borough School District,2018
+435,Deal Elementary School,Public,K-8,201 Roseld Avenue,Deal,07723,Monmouth County,Deal Boro School District,2018
+436,Somerdale Park School,Public,"PK, KG-8",301 Grace Street,Somerdale,08083,Camden County,Somerdale School District,2018
+437,Maurice River Township School,Public,"PK, KG-8",3593 Rt 47,Port Elizabeth,08348,Cumberland County,Maurice River Township School District,2018
+438,Wilson Avenue School,Public,K-8,19 Wilson Ave,Newark,07108,Essex County,Newark Public School District,2018
+439,Galloway Township Middle School,Public,7-8,100 S  Reeds Road,Galloway,08205,Atlantic County,Galloway Township Public School District,2018
+440,Ogdensburg Borough School,Public,"PK, KG-8",100 Main Street,Ogdensburg,07439,Sussex County,Ogdensburg Borough School District,2018
+441,Sovereign Avenue School,Public,"PK, KG-8",111 N. Sovereign Avenue,Atlantic City,08401,Atlantic County,Atlantic City School District,2018
+442,Sayreville Middle School,Public,6-8,800 Washington Road,Parlin,08859,Middlesex County,Sayreville School District,2018
+443,Memorial Middle School,Public,6-8,15 Memorial Drive,Woodland Park,07424,Passaic County,Woodland Park School District,2018
+444,Hazlet Middle School,Public,7-8,1639 Union Avenue,Hazlet,07730,Monmouth County,Hazlet Township Public School District,2018
+445,David Brearley Middle/High School,Public,7-12,401 Monroe Avenue,Kenilworth,07033,Union County,Kenilworth School District,2018
+446,Haledon Public School,Public,"PK, KG-8",91 Henry Street,Haledon,07508,Passaic County,Haledon Public School District,2018
+447,Mullica Township Middle School,Public,5-8,500 Elwood Road,Elwood,08217,Atlantic County,Mullica Township School District,2018
+448,Wood-Ridge Junior/Senior High School,Public,7-12,258 Hackensack St,Wood Ridge,07075,Bergen County,Wood-Ridge School District,2018
+449,William Davies Middle School,Public,6-8,1876 Dr  Dennis Foreman Drive,Mays Landing,08330,Atlantic County,Hamilton Township School District,2018
+450,Franklin Middle School at Hamilton Street Campus,Public,6-8,415 Francis Street,Somerset,08873,Somerset County,Franklin Township Public School District,2018
+451,South River Middle School,Public,6-8,3 Montgomery Street,South River,08882,Middlesex County,South River Public School District,2018
+452,The Village Charter School,"Public, Charter",K-8,101 Sullivan Way,Trenton,08638,Mercer County,The Village Charter School,2018
+453,Pitman Middle School,Public,6-8,138 East Holly Avenue,Pitman,08071,Gloucester County,Pitman Boro School District,2018
+454,Dennis Township Elementary/Middle Schools,Public,3-8,165 Academy Road,Dennisville,08214,Cape May County,Dennis Township School District,2018
+455,Link Community Charter School,"Public, Charter",5-8,23 Pennsyvania Ave,Newark,07114,Essex County,Link Community Charter School,2018
+456,Lincoln Elementary School,Public,"PK, KG-8",1206 63rd St,North Bergen,07047,Hudson County,North Bergen School District,2018
+457,Middle Township Elementary #4,Public,6-8,300 E Pacific Ave,Cape May Court House,08210,Cape May County,Middle Township Public School District,2018
+458,Audubon Junior/Senior High School,Public,7-12,350 Edgewood Avenue,Audubon,08106,Camden County,Audubon Public School District,2018
+459,Ridge Street School,Public,K-8,735 Ridge St,Newark,07104,Essex County,Newark Public School District,2018
+460,Burnet Middle School,Public,6-8,1000 Caldwell Avenue,Union,07083,Union County,Township of Union School District,2018
+461,Wallington Junior Senior High School,Public,7-12,234 Main Ave,Wallington,07057,Bergen County,Wallington Boro School District,2018
+462,Gilmore J Fisher Middle School,Public,6-8,1325 Lower Ferry Road,Ewing,08618,Mercer County,Ewing Township School District,2018
+463,Somerville Middle School,Public,6-8,51 West Cliff St.,Somerville,08876,Somerset County,Somerville Public School District,2018
+464,Oxford Central School,Public,"PK, KG-8",17 Kent Street,Oxford,07863,Warren County,Oxford Township School District,2018
+465,Richard C Crockett Middle School,Public,6-8,2631 Kuser Road,Hamilton,08691,Mercer County,Hamilton Township Public School District,2018
+466,Robert Morris School,Public,"PK, KG-8",122 Elizabeth Street,South Bound Brook,08880,Somerset County,South Bound Brook Public School District,2018
+467,Abraham Lincoln School No. 14,Public,K-8,50 Grove Street,Elizabeth,07202,Union County,Elizabeth Public Schools,2018
+468,Sussex Avenue School,Public,"PK, KG-8",307 Sussex Ave,Newark,07107,Essex County,Newark Public School District,2018
+469,Orchard Valley Middle School,Public,6-8,238 Pitman  Downer Rd,Sewell,08080,Gloucester County,Washington Township School District,2018
+470,Woodrow Wilson Elementary School,Public,"PK, KG-8",133 Tunison Rd,New Brunswick,08901,Middlesex County,New Brunswick School District,2018
+471,Chatsworth Elementary School,Public,"PK, KG-8",2 John Bowker Jr. Blvd,Chatsworth,08019,Burlington County,Woodland Township School District,2018
+472,Union County TEAMS Charter School,"Public, Charter, Alternative",K-12,515  517 West Fourth Street,Plainfield,07060,Union County,Union County TEAMS Charter School-High School/College LA,2018
+473,Kenneth R. Olson Middle School,Public,5-8,132 New Road,Tabernacle,08088,Burlington County,Tabernacle Township School District,2018
+474,Eastampton Township Community School,Public,"PK, KG-8",1 Student Drive,Eastampton,08060,Burlington County,Eastampton Township School District,2018
+475,Charles W. Lewis Middle School,Public,6-8,875 Erial Road,Blackwood,08012,Camden County,Gloucester Township Public Schools,2018
+476,West New York Middle School,Public,7-8,201 57th St,West New York,07093,Hudson County,West New York School District,2018
+477,Myron L. Powell Elementary School,Public,"PK, KG-8",225 Main Street,Cedarville,08311,Cumberland County,Lawrence Township School District,2018
+478,Samuel M Ridgway Middle School,Public,5-8,300 Delanco Rd,Edgewater Park,08010,Burlington County,Edgewater Park Township School District,2018
+479,Garfield Middle School,Public,6-8,175 Lanza Ave,Garfield,07026,Bergen County,Garfield Public School District,2018
+480,Paul Robeson Charter School for the Humanities,"Public, Charter",3-8,643 Indiana Ave,Trenton,08638,Mercer County,Paul Robeson Charter School for the Humanities,2018
+481,Pine Hill Middle School,Public,6-8,1100 Turnerville Road,Pine Hill,08021,Camden County,Pine Hill School District,2018
+482,Mary E. Volz Elementary School,Public,4-8,509 West Third Avenue,Runnemede,08078,Camden County,Runnemede Public School District,2018
+483,Forest Street Community Elementary School,Public,"PK, KG-7",651 Forest St,Orange,07050,Essex County,ORANGE BOARD OF EDUCATION School District,2018
+484,Hopatcong Middle School,Public,4-7,1 David Road,Hopatcong,07843,Sussex County,Hopatcong Borough School District,2018
+485,Gateway Regional High School,Public,7-12,775 Tanyard Rd,Woodbury Hts,08096,Gloucester County,Gateway Regional High School District,2018
+486,Jersey City Golden Door Charter School,"Public, Charter","PK, KG-8",3044 Kennedy Blvd,Jersey City,07306,Hudson County,Jersey City Golden Door Charter School,2018
+487,Paterson Charter School for Science/Technology,"Public, Charter, Alternative",K-12,196 West Railway Avenue,Paterson,07503,Passaic County,Paterson Charter School for Science and Technology,2018
+488,Millville Public Charter School,"Public, Charter",K-8,1101 Wheaton Avenue,Millville,08332,Cumberland County,Millville Public Charter School,2018
+489,Central Regional Middle School,Public,7-8,509 Forest Hills Parkway,Bayville,08721,Ocean County,Central Regional School District,2018
+490,Chelsea Heights School,Public,"PK, KG-8",4101  Filbert Avenue,Atlantic City,08401,Atlantic County,Atlantic City School District,2018
+491,Carteret Middle School,Public,6-8,300 Carteret Avenue,Carteret,07008,Middlesex County,Carteret Public School District,2018
+492,Merchantville Elementary School,Public,"PK, KG-8",130 S Centre St,Merchantville,08109,Camden County,Merchantville School District,2018
+493,Hamburg School,Public,"PK, KG-8",30 Linwood Avenue,Hamburg,07419,Sussex County,Hamburg School District,2018
+494,Gibbsboro Elementary School,Public,"PK, KG-8",37 Kirkwood Rd,Gibbsboro,08026,Camden County,Gibbsboro Elementary School District,2018
+495,Community Charter School of Paterson,"Public, Charter",K-8,75 Spruce St,Paterson,07501,Passaic County,Community Charter School of Paterson,2018
+496,Lincoln Community School #5,Public,"PK, KG-8",208 Prospect Avenue,Bayonne,07002,Hudson County,Bayonne School District,2018
+497,Folsom Elementary School,Public,"PK, KG-8",1357 Mays Landing Road,Hammonton,08037,Atlantic County,Folsom Borough School District,2018
+498,Dr. Orlando Edreira Academy School No. 26,Public,"PK, KG-8",1014 South Elmora Avenue,Elizabeth,07202,Union County,Elizabeth Public Schools,2018
+499,Toms River Intermediate School South,Public,6-8,1675 Pinewald Road,Beachwood,08722,Ocean County,Toms River Regional School District,2018
+500,Deerfield Township Elementary School,Public,"PK, KG-8",419  Morton Ave,Rosenhayn,08352,Cumberland County,Deerfield Township School District,2018
+501,Hope Academy Charter School,"Public, Charter",K-8,601 Grand Avenue,Asbury Park,07712,Monmouth County,Hope Academy Charter School,2018
+502,Harmony Township School,Public,"PK, KG-8",2551 Belvidere Road,Phillipsburg,08865,Warren County,Harmony Township School District,2018
+503,Rosa Parks Community School,Public,3-7,369 Main Street,Orange,07050,Essex County,ORANGE BOARD OF EDUCATION School District,2018
+504,Grace M. Breckwedel Middle School,Public,6-8,13 Augusta St,Jamesburg,08831,Middlesex County,Jamesburg Public School District,2018
+505,Hackensack Middle School,Public,5-8,360 Union Street,Hackensack,07601,Bergen County,Hackensack School District,2018
+506,Lawnside School,Public,"PK, KG-8",426 East Charleston Ave,Lawnside,08045,Camden County,Lawnside School Distric,2018
+507,Rahway 7th & 8th Grade Academy,Public,7-8,1157 Kline Place,Rahway,07065,Union County,Rahway Public School District,2018
+508,Clayton Middle School,Public,6-8,55 Pop Kramer Blvd,Clayton,08312,Gloucester County,Clayton Public School District,2018
+509,School 2,Public,K-8,22 Passaic Street,Paterson,07501,Passaic County,Paterson Public School District,2018
+510,Vineland Public Charter School,"Public, Charter","PK, KG-8",1480 Pennsylvania Ave.,Vineland,08332,Cumberland County,Vineland Public Charter School,2018
+511,John F Kennedy Elementary School,Public,1-8,1210 Eleventh St,North Bergen,07047,Hudson County,North Bergen School District,2018
+512,Avenel Middle School,Public,6-8,Woodbine Avenue,Avenel,07001,Middlesex County,Woodbridge Township School District,2018
+513,Passaic Arts and Science Charter School,"Public, Charter, Alternative",K-12,7 St. Francis Way,Passaic,07055,Passaic County,Passaic Arts and Science Charter School,2018
+514,Glassboro Intermediate School,Public,7-8,202 Delsea Dr N,Glassboro,08028,Gloucester County,Glassboro School District,2018
+515,Albert E Grice Middle School,Public,6-8,901 Whitehorse Hamilton Sq,Hamilton,08610,Mercer County,Hamilton Township Public School District,2018
+516,Jordan Road Elementary School,Public,4-8,129 Jordan Road,Somers Point,08244,Atlantic County,Somers Point School District,2018
+517,Christopher Columbus Middle School,Public,6-8,350 Piaget Avenue,Clifton,07011,Passaic County,Clifton Public School District,2018
+518,Woodbridge Middle School,Public,6-8,525 Barron Avenue,Woodbridge,07095,Middlesex County,Woodbridge Township School District,2018
+519,Maple Shade High School,Public,7-12,180 Frederick Ave,Maple Shade,08052,Burlington County,Maple Shade School District,2018
+520,F. W. Holbein Middle School,Public,5-8,333 Levis Drive,Mount Holly,08060,Burlington County,Mount Holly Township Public School District,2018
+521,Fords Middle School,Public,6-8,Fanning Street,Fords,08863,Middlesex County,Woodbridge Township School District,2018
+522,Paterson Arts and Science Charter School,"Public, Charter, Alternative",K-12,225 Grand Street,Paterson,07501,Passaic County,Paterson Arts and Science Charter School,2018
+523,Dr. Antonia Pantoja School No. 27,Public,"PK, KG-8",505 -517 Morris Avenue,Elizabeth,07208,Union County,Elizabeth Public Schools,2018
+524,Halsted Middle School,Public,5-8,59 Halsted Street,Newton,07860,Sussex County,Newton Public School District,2018
+525,Great Oaks Legacy Charter School,"Public, Charter, Alternative","PK, KG-12",909 Broad Street,Newark,07102,Essex County,Great Oaks Legacy Charter School,2018
+526,Howard M. Phifer Middle School,Public,6-8,8201 Park Ave,Pennsauken,08109,Camden County,Pennsauken Township Board of Education School District,2018
+527,Franklin L. Williams School,Public,6-8,222 Laidlaw Avenue,Jersey City,07306,Hudson County,Jersey City Public Schools,2018
+528,Julia A. Barnes School,Public,"PK, KG-8",91 Astor Place,Jersey City,07304,Hudson County,Jersey City Public Schools,2018
+529,Woodrow Wilson,Public,"PK, KG-8",210 West Sylvania Ave,Neptune City,07753,Monmouth County,Neptune City School District,2018
+530,Woodbury Junior-Senior High School,Public,6-12,25 N. Broad Street,Woodbury,08096,Gloucester County,Woodbury City Public School District,2018
+531,Magnolia,Public,"PK, KG-8",420 North Warwick Rd,Magnolia,08049,Camden County,Magnolia School District,2018
+532,Raymond W. Kershaw School,Public,"PK, KG-8",125 South Black Horse Pike,Mount Ephraim,08059,Camden County,Mt. Ephraim School District,2018
+533,Phillipsburg Middle School,Public,6-8,200 Hillcrest Blvd.,Phillipsburg,08865,Warren County,Phillipsburg School District,2018
+534,Heywood Avenue Elementary School,Public,"PK, KG-7",421 Heywood Ave,Orange,07050,Essex County,ORANGE BOARD OF EDUCATION School District,2018
+535,Long Branch Middle School,Public,6-8,350 Indiana Avenue,Long Branch,07740,Monmouth County,LONG BRANCH PUBLIC SCHOOL District,2018
+536,Cleveland Street Elementary School,Public,"PK, KG-7",355 Cleveland St,Orange,07050,Essex County,ORANGE BOARD OF EDUCATION School District,2018
+537,KIPP: Cooper Norcross A New Jersey Nonprofit Corporation,"Public, Alternative",K-10,525 Clinton Street,Camden,08103,Camden County,KIPP: Cooper Norcross A New Jersey Nonprofit Corporation,2018
+538,Jersey City Community Charter School,"Public, Charter",K-8,128 Danforth Avenue,Jersey City,07305,Hudson County,Jersey City Community Charter School,2018
+539,School 25,Public,"PK, KG-8",287 Trenton Avenue,Paterson,07503,Passaic County,Paterson Public School District,2018
+540,Elmora School No. 12,Public,"PK, KG-8",638 Magie Ave,Elizabeth,07208,Union County,Elizabeth Public Schools,2018
+541,James F. Murray School,Public,"PK, KG-8",339 Stegman Parkway,Jersey City,07305,Hudson County,Jersey City Public Schools,2018
+542,Lincoln Avenue Elementary School,Public,"PK, KG-7",216 Lincoln Ave,Orange,07050,Essex County,ORANGE BOARD OF EDUCATION School District,2018
+543,Woodruff Middle School,Public,6-8,1385 Highway 77,Seabrook,08302,Cumberland County,Upper Deerfield Township School District,2018
+544,South Amboy Middle/High School,Public,6-12,200 Governor Harold G  Hoffman,South Amboy,08879,Middlesex County,South Amboy School District,2018
+545,Florence Riverfront School,Public,4-8,500 East Front Street,Florence,08518,Burlington County,Florence Township School District,2018
+546,Park Avenue Elementary School,Public,"PK, KG-8",231 Park Ave,Orange,07050,Essex County,ORANGE BOARD OF EDUCATION School District,2018
+547,Joseph Battin School No 4,Public,K-8,300 South Broad Street,Elizabeth,07202,Union County,Elizabeth Public Schools,2018
+548,Whitney E. Houston Academy,Public,"PK, KG-8",215 Dodd St,East Orange,07017,Essex County,East Orange School District,2018
+549,Franklin Elementary School,Public,1-8,5211 Columbia Avenue,North Bergen,07047,Hudson County,North Bergen School District,2018
+550,Joseph H. Brensinger School,Public,"PK, KG-8",600 Bergen Ave,Jersey City,07304,Hudson County,Jersey City Public Schools,2018
+551,Winslow Township Middle School,Public,7-8,30 Cooper Folly Road,Atco,08004,Camden County,Winslow Township School District,2018
+552,Walnut Street School,Public,6-8,411 Walnut St,Delanco,08075,Burlington County,Delanco Township School District,2018
+553,Belvidere Elementary School,Public,"PK, KG-8",807 Oxford Street,Belvidere,07823,Warren County,Belvidere School District,2018
+554,New Hanover Township School,Public,"PK, KG-8",122 Fort Dix Street,Wrightstown,08562,Burlington County,New Hanover Township,2018
+555,Robert Morris School No. 18,Public,"PK, KG-8",860 Cross Ave,Elizabeth,07208,Union County,Elizabeth Public Schools,2018
+556,Joseph E. Soehl Middle School,Public,6-8,300 East Henry St.,Linden,07036,Union County,Linden Public School District,2018
+557,Lincoln School,Public,5-8,140 Anderson  Avenue,Fairview,07022,Bergen County,Fairview Public School District,2018
+558,Marion P. Thomas Charter School,"Public, Charter, Alternative","PK, KG-12",125 Sussex Ave,Newark,07103,Essex County,Marion P. Thomas Charter School,2018
+559,Samuel E. Shull Middle School,Public,5-8,380 Hall Avenue,Perth Amboy,08861,Middlesex County,Perth Amboy Public School District,2018
+560,Veterans Memorial Middle,Public,6-8,424 S Main Rd,Vineland,08360,Cumberland County,Vineland Public School District,2018
+561,Wildwood Middle School,Public,6-8,4300 Pacific Ave,Wildwood,08260,Cape May County,Wildwood City School District,2018
+562,Nicholas S. Lacorte-Peterstown School No. 3,Public,K-8,700 Second Ave,Elizabeth,07202,Union County,Elizabeth Public Schools,2018
+563,Speedway Avenue School,Public,K-8,701 South Orange Avenue,Newark,07106,Essex County,Newark Public School District,2018
+564,Burlington City High School,Public,7-12,100 Blue Devil Way,Burlington,08016,Burlington County,Burlington City Public School District,2018
+565,Janis E. Dismus Middle School,Public,6-8,325 Tryon Avenue,Englewood,07631,Bergen County,Englewood Public School District,2018
+566,Mahatma K. Gandhi School,Public,"PK, KG-8",143 Romaine Ave,Jersey City,07306,Hudson County,Jersey City Public Schools,2018
+567,School 24,Public,"PK, KG-8",50 Nineteenth Avenue,Paterson,07513,Passaic County,Paterson Public School District,2018
+568,Belleville Middle School,Public,7-8,279 Washington Ave,Belleville,07109,Essex County,Belleville Public School District,2018
+569,Woodrow Wilson School No. 19,Public,"PK, KG-8",529 Edgar Rd,Elizabeth,07202,Union County,Elizabeth Public Schools,2018
+570,Texas Avenue School,Public,K-8,2523 Arctic Avenue,Atlantic City,08401,Atlantic County,Atlantic City School District,2018
+571,Walter O. Krumbiegel Middle School,Public,7-8,145 Hillside Ave,Hillside,07205,Union County,Hillside Public School District,2018
+572,William C. McGinnis Middle School,Public,5-8,271 State Street,Perth Amboy,08861,Middlesex County,Perth Amboy Public School District,2018
+573,Dr Lena Edwards Academic Charter School,"Public, Charter",K-8,509 Bramhall Ave.,Jersey City,07304,Hudson County,Dr Lena Edwards Academic Charter School,2018
+574,Madison Monroe School No. 16,Public,"PK, KG-8",1091 North Ave,Elizabeth,07201,Union County,Elizabeth Public Schools,2018
+575,Myles J. McManus MIddle School,Public,6-8,300 Edgewood Road,Linden,07036,Union County,Linden Public School District,2018
+576,North Plainfield Middle School,Public,7-8,34 Wilson Avenue,North Plainfield,07060,Somerset County,North Plainfield School District,2018
+577,Grace Wilday Junior High School,Public,7-8,400 Brooklawn Ave,Roselle,07203,Union County,Roselle Public School District,2018
+578,Leap Academy University Charter School,"Public, Charter, Alternative",K-12,130 North Broadway,Camden,08102,Camden County,LEAP Academy University Charter School,2018
+579,Mckinley Community School,Public,"PK, KG-8",15 Van Dyke Ave,New Brunswick,08901,Middlesex County,New Brunswick School District,2018
+580,Joseph A. Taub School,Public,6-8,202 Union Avenue,Paterson,07502,Passaic County,Paterson Public School District,2018
+581,Orange Preparatory Academy,"Public, Alternative",8-9,400 Central Ave,Orange,07050,Essex County,ORANGE BOARD OF EDUCATION School District,2018
+582,New Brunswick Middle School,Public,6-8,1125 Livingston Avenue,New Brunswick,08901,Middlesex County,New Brunswick School District,2018
+583,Dr. Charles P. DeFuccio School,Public,"PK, KG-8",214 Plainfield Ave,Jersey City,07306,Hudson County,Jersey City Public Schools,2018
+584,Lincoln Middle School,Public,7-8,121 Beech St,Kearny,07032,Hudson County,Kearny,2018
+585,Downe Township Elementary School,Public,"PK, KG-8",220 Main St,Newport,08345,Cumberland County,Downe Township School District,2018
+586,Prospect Park School No. 1,Public,"PK, KG-8",94 Brown Avenue,Prospect Park,07508,Passaic County,Prospect Park Public School District,2018
+587,Sonia Sotomayor School No 25,Public,K-8,525 First Avenue,Elizabeth,07206,Union County,Elizabeth Public Schools,2018
+588,Cedarbrook Elementary School,Public,K-8,1049 Central Ave,Plainfield,07060,Union County,Plainfield Public School District,2018
+589,Woodlynne Boro Public School,Public,"PK, KG-8",131 Elm Avenue,Woodlynne,08107,Camden County,Woodlynne School District,2018
+590,Helen A. Fort Middle School,Public,7-8,101 Fort Dix Road,Pemberton,08068,Burlington County,Pemberton Township School District,2018
+591,Peshine Avenue School,Public,"PK, KG-8",433 Peshine Avenue,Newark,07112,Essex County,Newark Public School District,2018
+592,Buena Regional Middle School,Public,6-8,175 Weymouth Rd,Buena,08310,Atlantic County,Buena Regional School District,2018
+593,Greater Brunswick Charter School,"Public, Charter",K-8,429 Joyce Kilmer Avenue,New Brunswick,08901,Middlesex County,Greater Brunswick Charter School,2018
+594,School 7,Public,5-8,106 Ramsey Street,Paterson,07501,Passaic County,Paterson Public School District,2018
+595,Rafael Cordero y Molina,Public,"PK, KG-8",158 Erie St,Jersey City,07302,Hudson County,Jersey City Public Schools,2018
+596,Community Middle School,Public,7-8,120 East Second Street,Bound Brook,08805,Somerset County,Bound Brook School District,2018
+597,University Heights Charter School,"Public, Charter","PK, KG-8",74 Hartford Street,Newark,07103,Essex County,University Heights Charter School,2018
+598,Nicholas Murray Butler Academy School No. 23,Public,K-8,631-657 Westminstrer Avenue,Elizabeth,07208,Union County,Elizabeth Public Schools,2018
+599,Benjamin Banneker Preparatory Charter School,"Public, Charter",K-8,11 South Sunset Road,Willingboro,08046,Burlington County,Benjamin Banneker Preparatory Charter School,2018
+600,Cleveland Avenue School,Public,"PK, KG-8",388 Bergen St,Newark,07103,Essex County,Newark Public School District,2018
+601,Union Avenue Middle School,Public,6-8,427     Union Ave,Irvington,07111,Essex County,Irvington Public School District,2018
+602,Camden Street Elementary School,Public,"PK, KG-8",281 Camden St,Newark,07103,Essex County,Newark Public School District,2018
+603,Mabel G. Homes School No. 5,Public,"PK, KG-8",650 Bayway Avenue,Elizabeth,07202,Union County,Elizabeth Public Schools,2018
+604,Avon Avenue School,Public,"PK, KG-8",219 Avon Ave,Newark,07108,Essex County,Newark Public School District,2018
+605,Ivy Hill Elementary School,Public,"PK, KG-8",107 Ivy Street,Newark,07106,Essex County,Newark Public School District,2018
+606,School 18,Public,1-8,51 E  18th Street,Paterson,07524,Passaic County,Paterson Public School District,2018
+607,Lakeside Middle School,Public,6-8,2 N  Sharp St,Millville,08332,Cumberland County,Millville School District,2018
+608,Broad Street School,Public,K-8,251 West Broad Street,Bridgeton,08302,Cumberland County,Bridgeton City School District,2018
+609,McKinley Elementary School,Public,"PK, KG-8",1 Colonnade Pl,Newark,07104,Essex County,Newark Public School District,2018
+610,Joseph R. Bolger Middle School,Public,6-8,100 Palmer Place,Keansburg,07734,Monmouth County,Keansburg School District,2018
+611,Christopher Columbus School No. 15,Public,K-8,511 Third Ave,Elizabeth,07202,Union County,Elizabeth Public Schools,2018
+612,Alice Costello Elementary School,Public,"PK, KG-8",301 Haakon rd.,Brooklawn,08030,Camden County,Brooklawn Public School District,2018
+613,Academy for Urban Leadership Charter School,"Public, Charter",7-12,612 Amboy Ave,Perth Amboy,08861,Middlesex County,Academy for Urban Leadership Charter School,2018
+614,School 26,Public,"PK, KG-8",1 East 32nd Street,Paterson,07514,Passaic County,Paterson Public School District,2018
+615,Hawthorne Avenue School,Public,"PK, KG-8",428 Hawthorne Ave,Newark,07112,Essex County,Newark Public School District,2018
+616,School 3,Public,K-8,448 Main Street,Paterson,07501,Passaic County,Paterson Public School District,2018
+617,Hawkins Street School,Public,K-8,8 Hawkins St,Newark,07105,Essex County,Newark Public School District,2018
+618,Cherry Street School,Public,K-8,11 Cherry Street,Bridgeton,08302,Cumberland County,Bridgeton City School District,2018
+619,Luis Mu?oz Marin Elementary School,Public,"PK, KG-8",663 Broadway,Newark,07104,Essex County,Newark Public School District,2018
+620,John Marshal School No. 20,Public,K-8,521 Magnolia Ave,Elizabeth,07206,Union County,Elizabeth Public Schools,2018
+621,Indian Ave School,Public,K-8,399 Indian Avenue,Bridgeton,08302,Cumberland County,Bridgeton City School District,2018
+622,Neptune Middle School,Public,6-8,2300 Heck Avenue,Neptune,07753,Monmouth County,Neptune Township School District,2018
+623,West Avenue School,Public,K-8,51 North West Avenue,Bridgeton,08302,Cumberland County,Bridgeton City School District,2018
+624,Chaplain Charles Watters School,Public,"PK, KG-8",220 Virginia Ave,Jersey City,07304,Hudson County,Jersey City Public Schools,2018
+625,Maxson Middle School,Public,6-8,920 E Seventh St,Plainfield,07062,Union County,Plainfield Public School District,2018
+626,Quarter Mile Lane School,Public,"PK, KG-8",300 Quarter Mile Lane,Bridgeton,08302,Cumberland County,Bridgeton City School District,2018
+627,School 20,Public,K-8,500 East 37th Street,Paterson,07504,Passaic County,Paterson Public School District,2018
+628,Lakehurst Elementary School,Public,"PK, KG-8",301 Union Ave,Lakehurst,08733,Ocean County,Lakehurst School District,2018
+629,Freedom Prep Charter School,"Public, Charter, Alternative",K-12,1000 Atlantic AVE,Camden,08104,Camden County,Freedom Prep Charter School,2018
+630,Willingboro Memorial Middle School,Public,5-8,451 Van Sciver Parkway,Willingboro,08046,Burlington County,Willingboro Public School District,2018
+631,Chancellor Avenue School,Public,K-8,321 Chancellor Ave,Newark,07112,Essex County,Newark Public School District,2018
+632,Dr. Martin Luther King Junior Educational Complex,Public,"PK, KG-8",851 E  28th Street,Paterson,07513,Passaic County,Paterson Public School District,2018
+633,President Barack Obama Elementary School,Public,"PK, KG-8",1830 Kennedy Blvd,Jersey City,07305,Hudson County,Jersey City Public Schools,2018
+634,Lakewood Middle School,Public,6-8,755 Somerset Avenue,Lakewood,08701,Ocean County,Lakewood Township School District,2018
+635,Dr Martin Luther King Junior School Complex,Public,"PK, KG-8",1700 Marmora Avenue,Atlantic City,08401,Atlantic County,Atlantic City School District,2018
+636,School 13,Public,K-8,690 East 23rd St,Paterson,07504,Passaic County,Paterson Public School District,2018
+637,Penns Grove Middle School,Public,6-8,351 Maple Avenue,Penns Grove,08069,Salem County,Penns Grove-Carneys Point Regional School District,2018
+638,Thirteenth Avenue School,Public,"PK, KG-8",359 Thirteenth Ave,Newark,07103,Essex County,Newark Public School District,2018
+639,Benjamin Franklin School No. 13,Public,K-8,248 Ripley Pl,Elizabeth,07206,Union County,Elizabeth Public Schools,2018
+640,Oakwood Avenue Community School,Public,"PK, KG-7",135 Oakwood Ave,Orange,07050,Essex County,ORANGE BOARD OF EDUCATION School District,2018
+641,Hedgepeth Williams Middle School,Public,6-8,301 Gladstone Ave,Trenton,08629,Mercer County,Trenton Public School District,2018
+642,Lincoln Elementary School,Public,"PK, KG-8",87 Richelieu Ter,Newark,07106,Essex County,Newark Public School District,2018
+643,Hubbard Middle School,Public,6-8,661 W Eighth St,Plainfield,07060,Union County,Plainfield Public School District,2018
+644,Jerome Dunn Academy No 9,Public,K-8,125 Third Street,Elizabeth,07206,Union County,Elizabeth Public Schools,2018
+645,University Middle School,Public,6-8,255 Myrtle Ave,Irvington,07111,Essex County,Irvington Public School District,2018
+646,New Roberto Clemente,Public,6-8,482-506 Market Street,Paterson,07501,Passaic County,Paterson Public School District,2018
+647,Thomas W. Wallace Junior Middle School,Public,6-8,688 North Mill Road,Vineland,08360,Cumberland County,Vineland Public School District,2018
+648,Pleasantville Middle School,Public,6-8,801 Mill Road,Pleasantville,08232,Atlantic County,Pleasantville Public School District,2018
+649,Riverside Middle School,Public,6-8,112 E Washington Street,Riverside,08075,Burlington County,Riverside Township School District,2018
+650,Toussaint Louverture-Marquis de Lafayette School No. 6,Public,"PK, KG-8",1071 Julia St,Elizabeth,07201,Union County,Elizabeth Public Schools,2018
+651,South Seventeenth Street School,Public,K-8,619 S Seventeenth St,Newark,07103,Essex County,Newark Public School District,2018
+652,Mastery Schools of Camden Inc.,"Public, Alternative",K-12,1001 North 17th Street,Camden,08105,Camden County,Mastery Schools of Camden Inc.,2018
+653,Dr. E. Alma Flagg School,Public,K-8,150 Third St,Newark,07104,Essex County,Newark Public School District,2018
+654,George Washington Academy School No. 1,Public,"PK, KG-8",250 Broadway,Elizabeth,07206,Union County,Elizabeth Public Schools,2018
+655,Juan Pablo Duarte - Jose Julian Marti School No 28,Public,"PK, KG-8",25 First Street,Elizabeth,07206,Union County,Elizabeth Public Schools,2018
+656,Quitman Street School,Public,"PK, KG-8",21 Quitman St,Newark,07103,Essex County,Newark Public School District,2018
+657,George Washington Carver Elementary School,Public,"PK, KG-8",333 Clinton Pl,Newark,07112,Essex County,Newark Public School District,2018
+658,Winfield Scott School No. 2,Public,"PK, KG-8",125 Madison Ave,Elizabeth,07201,Union County,Elizabeth Public Schools,2018
+659,School 8,Public,K-8,35 Chadwick Street,Paterson,07503,Passaic County,Paterson Public School District,2018
+660,Dr. Henry H. Davis Elementary School,Public,"PK, KG-8",3425 Cramer Street,Camden,08105,Camden County,Camden City School District,2018
+661,Henry B. Wilson Family School,Public,K-8,2250 South 8th Street,Camden,08104,Camden County,Camden City School District,2018
+662,Octavio V. Catto Community Family School,Public,"PK, KG-8",3100 Westfield Ave,Camden,08105,Camden County,Camden City School District,2018
+663,Buckshutem Road School,Public,K-8,550 Buckshutem Road,Bridgeton,08302,Cumberland County,Bridgeton City School District,2018
+664,Lindenwold Middle School,Public,5-8,40 White Horse Avenue,Lindenwold,08021,Camden County,Lindenwold Public School District,2018
+665,Rafael Hernandez School,Public,"PK, KG-8",345 Broadway,Newark,07104,Essex County,Newark Public School District,2018
+666,Uptown School Complex,Public,"PK, KG-8",323 Madison Avenue,Atlantic City,08401,Atlantic County,Atlantic City School District,2018
+667,Dr. William H. Horton Elementary School,Public,K-8,291 N 7th St,Newark,07107,Essex County,Newark Public School District,2018
+668,Senator Frank Lautenberg School,Public,K-8,137 Carroll Street,Paterson,07501,Passaic County,Paterson Public School District,2018
+669,Pennsylvania Ave School,Public,"PK, KG-8",201 N. Pennsylvania Avenue,Atlantic City,08401,Atlantic County,Atlantic City School District,2018
+670,Louise A. Spencer Elementary School,Public,"PK, KG-8",66 Muhammad Ali Avenue,Newark,07108,Essex County,Newark Public School District,2018
+671,Rev. Dr. Frank Napier Junior School,Public,1-8,55 Clinton Street,Paterson,07522,Passaic County,Paterson Public School District,2018
+672,New York Avenue School,Public,"PK, KG-8",411 N New York Avenue,Atlantic City,08401,Atlantic County,Atlantic City School District,2018
+673,Ezra L. Nolan School,Public,6-8,88 Gates Ave,Jersey City,07305,Hudson County,Jersey City Public Schools,2018
+674,Dunn Middle School,Public,6-8,401 Dayton Street,Trenton,08610,Mercer County,Trenton Public School District,2018
+675,Newcomers,"Public, Alternative",3-11,482-506 Market Street,Paterson,07501,Passaic County,Paterson Public School District,2018
+676,University High School,Public,7-12,55 Clinton Pl,Newark,07108,Essex County,Newark Public School District,2018
+677,Martin Center for the Arts,Public,"PK, KG-8",59 Wilkinson Ave,Jersey City,07305,Hudson County,Jersey City Public Schools,2018
+678,Ollie Culbreth Junior School,Public,"PK, KG-8",153 Union St,Jersey City,07304,Hudson County,Jersey City Public Schools,2018
+679,School 10,Public,K-8,48 Mercer Street,Paterson,07524,Passaic County,Paterson Public School District,2018
+680,Luis Munoz-Rivera Middle School,Public,6-8,400 N  Montgomery Street,Trenton,08618,Mercer County,Trenton Public School District,2018
+681,Whitney M. Young Junior School,Public,"PK, KG-8",135 Stegman St,Jersey City,07305,Hudson County,Jersey City Public Schools,2018
+682,School 21,Public,"PK, KG-8",322 Tenth Avenue,Paterson,07514,Passaic County,Paterson Public School District,2018
+683,Egg Harbor City Community School,Public,4-8,730 Havana Avenue,Egg Harbor City,08215,Atlantic County,Egg Harbor City School District,2018
+684,Salem Middle School,Public,3-8,51 New Market Street,Salem,08079,Salem County,Salem City School District,2018
+685,Veterans Memorial Family School,Public,"PK, KG-8",800 N 26th Street,Camden,08105,Camden County,Camden City School District,2018
+686,Fairfield Township School,Public,"PK, KG-8",375 Gouldtown  Woodruff Road,Bridgeton,08302,Cumberland County,Fairfield Township School District,2018
+687,Joyce Kilmer School,Public,K-8,1300 Stuyvesant Avenue,Trenton,08618,Mercer County,Trenton Public School District,2018
+688,Paulsboro Junior High School,Public,7-8,670 N Delaware Street,Paulsboro,08066,Gloucester County,Paulsboro School District,2018
+689,Belmont Runyon Elementary School,Public,"PK, KG-8",1 Belmont Runyon Way,Newark,07108,Essex County,Newark Public School District,2018
+690,Thomas H. Dudley Family School,Public,"PK, KG-8",2250 Berwick Street,Camden,08105,Camden County,Camden City School District,2018
+691,School 12,Public,K-8,121 North Second Street,Paterson,07522,Passaic County,Paterson Public School District,2018
+692,Cooper's Poynt Family School,Public,"PK, KG-8",201 State Street,Camden,08102,Camden County,Camden City School District,2018
+693,Eagle Academy for Young Men of Newark,Public,6-12,279 Chancellor Avenue,Newark,07112,Essex County,Newark Public School District,2018

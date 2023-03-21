@@ -1,0 +1,1312 @@
+rank,school,grades,district,students,free_lunch_rec,total_exp,score,year
+1,Glenwood School,K-4,Millburn Township School District,357,0.8%,"$13,622",99.2,2020
+2,Lincoln-Hubbard Elementary School,1-5,Summit Public School District,326,4.3%,"$6,083",99.2,2020
+3,School 28,"PK, KG-8",Paterson Public School District,466,58.2%,"$9,579",98.8,2020
+4,Cornelia F. Bradford School,"PK, KG-5",Jersey City Public Schools,774,4.9%,"$6,621",98.7,2020
+5,Clara E Coleman School,K-5,Glen Rock Public School District,317,0.9%,"$12,862",97.9,2020
+6,Wyoming School,K-4,Millburn Township School District,310,1.0%,"$14,064",97.7,2020
+7,Mount Prospect Elementary School,"PK, KG-5",Bernards Township School District,507,0.6%,"$13,495",97.6,2020
+8,Woodbrook Elementary School,K-5,Edison Township School District,988,3.4%,"$6,009",97.6,2020
+9,Thomas Edison EnergySmart Charter School,K-12,Thomas Edison EnergySmart Charter School,591,12.7%,"$7,387",97.5,2020
+10,Littlebrook School,"PK, KG-5",Princeton Public School District,342,6.7%,"$13,695",97.4,2020
+11,Upper School,3-8,Englewood Cliffs School District,292,1.0%,"$12,826",97.4,2020
+12,Sea Girt Elementary School,"PK, KG-8",Sea Girt Borough School District,150,2.0%,"$19,511",97.3,2020
+13,James Madison Intermediate School,3-5,Edison Township School District,635,5.8%,"$5,668",97.3,2020
+14,Deerfield School,K-4,Millburn Township School District,400,0.8%,"$13,641",97.2,2020
+15,Harrison Elementary School,K-5,Livingston Board of Education School District,453,0.7%,"$11,602",97.2,2020
+16,Essex Fells Elementary School,"PK, KG-6",Essex Fells School District,251,1.2%,"$16,556",97.1,2020
+17,Princeton Charter School,K-8,Princeton Charter School,426,4.9%,,97.1,2020
+18,Central School,"PK, KG-5",Glen Rock Public School District,346,0.9%,"$13,648",96.9,2020
+19,Martin Luther King Elementary School,K-5,Edison Township School District,700,5.3%,"$5,998",96.8,2020
+20,Hillside Elementary School,K-5,Livingston Board of Education School District,386,4.1%,"$11,276",96.8,2020
+21,South Mountain School,"PK, KG-4",Millburn Township School District,274,1.1%,"$14,387",96.8,2020
+22,Mount Pleasant Elementary School,K-5,Livingston Board of Education School District,412,1.7%,"$10,849",96.8,2020
+23,Hatikvah International Academy Charter School,K-8,Hatikvah International Academy Charter School,546,4.9%,"$8,359",96.6,2020
+24,Hilldale School,K-5,Montville Township School District,297,1.0%,"$13,513",96.5,2020
+25,Harrington Park School,"PK, KG-8",Harrington Park School District,558,0.5%,"$16,559",96.5,2020
+26,Village School,"PK, KG-3",Holmdel Township School District,707,0.6%,"$19,682",96.4,2020
+27,Orchard Elementary School,K-5,Ridgewood Public School District,299,6.0%,"$12,001",96.3,2020
+28,Allen W. Roberts School,"PK, KG-6",New Providence School District,673,1.3%,"$8,365",96.3,2020
+29,Point Road School,"PK, KG-4",Little Silver Boro School District,397,0.8%,"$9,910",96.2,2020
+30,Washington Elementary School,1-5,Westfield Public School District,285,1.1%,"$6,459",96.1,2020
+31,Dutch Neck Elementary School,K-3,West Windsor-Plainsboro Regional School District,704,3.6%,"$10,469",95.9,2020
+32,Haworth Public School,K-8,Haworth Public School District,392,0.8%,"$17,223",95.8,2020
+33,Tamaques Elementary School,1-5,Westfield Public School District,430,1.6%,"$6,564",95.6,2020
+34,Deane-Porter Elementary School,"PK, KG-3",Rumson Borough School District,357,0.8%,"$11,020",95.6,2020
+35,Mendham Township Elementary School,"PK, KG-4",Mendham Township School District,429,0.7%,"$18,225",95.5,2020
+36,Hoboken Dual Language Charter School,K-8,Hoboken Dual Language Charter School,395,9.1%,"$9,496",95.3,2020
+37,West Cape May Elementary School,"PK, KG-6",West Cape May School District,79,16.5%,"$14,370",95.3,2020
+38,Hillside Elementary School,"PK, KG-4",Closter Public School District,603,0.5%,"$10,174",95.3,2020
+39,Valley View School,"PK, KG-5",Montville Township School District,339,0.9%,"$19,750",95.3,2020
+40,Brayton Elementary School,1-5,Summit Public School District,316,13.3%,"$6,383",95.2,2020
+41,Hartshorn School,K-4,Millburn Township School District,393,0.8%,"$13,657",95.1,2020
+42,Hamilton Primary School,K-4,Bridgewater-Raritan Regional School District,477,3.4%,"$8,485",95,2020
+43,Luther Lee Emerson School,2-4,Demarest School District,218,1.4%,"$12,319",95,2020
+44,Henry B. Milnes Elementary School,K-4,Fair Lawn Public School District,419,6.9%,"$5,535",94.9,2020
+45,Northvail Elementary School,K-5,Parsippany-Troy Hills Township School District,381,7.1%,"$9,614",94.8,2020
+46,Franklin Elementary School,1-5,Summit Public School District,329,4.6%,"$6,028",94.6,2020
+47,Franklin Elementary School,1-5,Westfield Public School District,545,0.6%,"$6,401",94.6,2020
+48,Monmouth Junction Elementary School,"PK, KG-5",South Brunswick School District,326,6.1%,"$11,552",94.5,2020
+49,School No. 1,K-4,Fort Lee School District,526,8.7%,"$7,644",94.5,2020
+50,Merritt Memorial,1-5,Cresskill Public School District,286,1.0%,"$10,439",94.5,2020
+51,Richard Byrd,K-5,Glen Rock Public School District,263,1.1%,"$13,228",94.4,2020
+52,Ralph S Maugham School,K-5,Tenafly Public School District,364,1.4%,"$9,945",94.3,2020
+53,Central School,"PK, KG-5",Haddonfield School District,393,1.0%,"$6,314",94.1,2020
+54,Grandview Elementary School,"PK, KG-3",North Caldwell School District,384,0.8%,"$9,810",94.1,2020
+55,Frank Defino Central Elementary School,K-5,Marlboro Township School District,518,8.5%,"$9,522",94.1,2020
+56,Hilltop School,"PK, KG-4",Mendham Borough School District,241,2.1%,"$10,299",94,2020
+57,Elizabeth Haddon School,"PK, KG-5",Haddonfield School District,352,0.9%,"$6,973",94,2020
+58,Joseph F Brandt Elementary School,K-5,Hoboken Public School District,529,19.3%,"$9,244",93.9,2020
+59,Cherry Hill School,"PK, KG-6",River Edge School District,751,0.9%,"$11,402",93.8,2020
+60,Mt. Horeb School,"PK, KG-5",Warren Township School District,202,1.5%,"$18,115",93.8,2020
+61,Union Township Elementary School,"PK, KG-4",Union Township School District,195,2.6%,"$11,993",93.8,2020
+62,Travell Elementary School,K-5,Ridgewood Public School District,377,0.8%,"$11,151",93.8,2020
+63,Cedar Hill School,"PK, KG-5",Montville Township School District,295,1.0%,"$18,902",93.7,2020
+64,Edward H. Bryan,"PK, KG-5",Cresskill Public School District,485,0.6%,"$11,618",93.7,2020
+65,H W Mountz Elementary School,"PK, KG-8",Spring Lake Borough,169,1.8%,"$25,190",93.7,2020
+66,Ho-Ho-Kus Public School,"PK, KG-8",Ho-Ho-Kus School District,587,0.5%,"$13,291",93.7,2020
+67,Malcolm S Mackay School,K-5,Tenafly Public School District,344,0.9%,"$10,904",93.7,2020
+68,Collins Elementary School,K-5,Livingston Board of Education School District,452,2.4%,"$11,450",93.6,2020
+69,Milltown Primary School,"PK, KG-4",Bridgewater-Raritan Regional School District,402,5.7%,"$11,857",93.4,2020
+70,Oak Tree Elementary School,"PK, KG-3",Monroe Township School District,768,3.8%,"$12,219",93.4,2020
+71,Oak Street School,K-5,Bernards Township School District,406,2.5%,"$9,522",93.2,2020
+72,Navesink Elementary School,K-5,Middletown Township Public School District,206,7.8%,"$10,198",93.2,2020
+73,J Spencer Smith School,K-5,Tenafly Public School District,350,0.9%,"$11,277",93.2,2020
+74,Nut Swamp Elementary School,K-5,Middletown Township Public School District,514,0.6%,"$7,091",93.1,2020
+75,Riker Hill Elementary School,K-5,Livingston Board of Education School District,405,3.0%,"$10,741",93,2020
+76,Mountview Road School,K-5,Hanover Township School District,281,1.4%,"$8,505",93,2020
+77,Littleton Elementary School,"PK, KG-5",Parsippany-Troy Hills Township School District,422,4.0%,"$10,284",92.9,2020
+78,J. Fithian Tatem School,"PK, KG-5",Haddonfield School District,398,1.8%,"$6,211",92.9,2020
+79,Torey J. Sabatini School,K-5,Madison Public School District,271,1.8%,"$12,211",92.8,2020
+80,Cedar Hill School,K-5,Bernards Township School District,483,1.2%,"$10,975",92.8,2020
+81,Riverside School,"PK, KG-5",Princeton Public School District,289,10.7%,"$17,874",92.7,2020
+82,Village Elementary School,3-4,Montgomery Township School District,634,3.0%,"$13,514",92.7,2020
+83,Wilson Elementary School,1-5,Westfield Public School District,316,0.9%,"$6,428",92.6,2020
+84,Hawes Elementary School,K-5,Ridgewood Public School District,393,3.1%,"$10,461",92.6,2020
+85,Milton Avenue School,"PK, KG-3",School District of the Chathams,284,1.1%,"$12,491",92.6,2020
+86,Maurice Hawk Elementary School,"PK, KG-3",West Windsor-Plainsboro Regional School District,723,3.5%,"$11,332",92.5,2020
+87,Mary A. Hubbard Elementary School,"PK, KG-3",Ramsey School District,364,5.2%,"$8,962",92.5,2020
+88,Edith A. Bogert Elementary School,3-5,Upper Saddle River School District,347,0.9%,"$15,177",92.5,2020
+89,Mountain Park School,3-5,Berkeley Heights School District,243,1.2%,"$10,264",92.4,2020
+90,Walter Stillman School,"PK, KG-5",Tenafly Public School District,334,0.9%,"$12,810",92.4,2020
+91,Asher Holmes Elementary School,1-5,Marlboro Township School District,456,1.3%,"$8,890",92.3,2020
+92,Washington Avenue School,"PK, KG-3",School District of the Chathams,314,1.9%,"$8,994",92.3,2020
+93,Brookside Place School,K-5,Cranford Public School District,366,0.8%,"$7,629",92.3,2020
+94,Southern Boulevard School,"PK, KG-3",School District of the Chathams,414,0.7%,"$8,780",92.2,2020
+95,George C. Baker Elementary School,"PK, KG-3",Moorestown Township Public School District,375,6.9%,"$6,999",92.2,2020
+96,T. Baldwin Demarest Elementary School,"PK, KG-4",Old Tappan Public School District,340,0.9%,"$8,945",92.2,2020
+97,Joseph D. Sharp Elementary School,K-5,Cherry Hill School District,402,11.2%,"$6,656",92.1,2020
+98,Mount Tabor Elementary School,K-5,Parsippany-Troy Hills Township School District,388,7.7%,"$8,719",91.9,2020
+99,Radburn Elementary School,K-4,Fair Lawn Public School District,350,4.3%,"$6,159",91.8,2020
+100,Ridgewood Avenue School,3-6,Glen Ridge Public School District,536,0.6%,"$7,808",91.8,2020
+1,Glenwood School,K-4,Millburn Township School District,357,0.8%,"$13,622",99.2,2020
+2,Lincoln-Hubbard Elementary School,1-5,Summit Public School District,326,4.3%,"$6,083",99.2,2020
+3,School 28,"PK, KG-8",Paterson Public School District,466,58.2%,"$9,579",98.8,2020
+4,Cornelia F. Bradford School,"PK, KG-5",Jersey City Public Schools,774,4.9%,"$6,621",98.7,2020
+5,Clara E Coleman School,K-5,Glen Rock Public School District,317,0.9%,"$12,862",97.9,2020
+6,Wyoming School,K-4,Millburn Township School District,310,1.0%,"$14,064",97.7,2020
+7,Mount Prospect Elementary School,"PK, KG-5",Bernards Township School District,507,0.6%,"$13,495",97.6,2020
+8,Woodbrook Elementary School,K-5,Edison Township School District,988,3.4%,"$6,009",97.6,2020
+9,Thomas Edison EnergySmart Charter School,K-12,Thomas Edison EnergySmart Charter School,591,12.7%,"$7,387",97.5,2020
+10,Littlebrook School,"PK, KG-5",Princeton Public School District,342,6.7%,"$13,695",97.4,2020
+11,Upper School,3-8,Englewood Cliffs School District,292,1.0%,"$12,826",97.4,2020
+12,Sea Girt Elementary School,"PK, KG-8",Sea Girt Borough School District,150,2.0%,"$19,511",97.3,2020
+13,James Madison Intermediate School,3-5,Edison Township School District,635,5.8%,"$5,668",97.3,2020
+14,Deerfield School,K-4,Millburn Township School District,400,0.8%,"$13,641",97.2,2020
+15,Harrison Elementary School,K-5,Livingston Board of Education School District,453,0.7%,"$11,602",97.2,2020
+16,Essex Fells Elementary School,"PK, KG-6",Essex Fells School District,251,1.2%,"$16,556",97.1,2020
+17,Princeton Charter School,K-8,Princeton Charter School,426,4.9%,,97.1,2020
+18,Central School,"PK, KG-5",Glen Rock Public School District,346,0.9%,"$13,648",96.9,2020
+19,Martin Luther King Elementary School,K-5,Edison Township School District,700,5.3%,"$5,998",96.8,2020
+20,Hillside Elementary School,K-5,Livingston Board of Education School District,386,4.1%,"$11,276",96.8,2020
+21,South Mountain School,"PK, KG-4",Millburn Township School District,274,1.1%,"$14,387",96.8,2020
+22,Mount Pleasant Elementary School,K-5,Livingston Board of Education School District,412,1.7%,"$10,849",96.8,2020
+23,Hatikvah International Academy Charter School,K-8,Hatikvah International Academy Charter School,546,4.9%,"$8,359",96.6,2020
+24,Hilldale School,K-5,Montville Township School District,297,1.0%,"$13,513",96.5,2020
+25,Harrington Park School,"PK, KG-8",Harrington Park School District,558,0.5%,"$16,559",96.5,2020
+26,Village School,"PK, KG-3",Holmdel Township School District,707,0.6%,"$19,682",96.4,2020
+27,Orchard Elementary School,K-5,Ridgewood Public School District,299,6.0%,"$12,001",96.3,2020
+28,Allen W. Roberts School,"PK, KG-6",New Providence School District,673,1.3%,"$8,365",96.3,2020
+29,Point Road School,"PK, KG-4",Little Silver Boro School District,397,0.8%,"$9,910",96.2,2020
+30,Washington Elementary School,1-5,Westfield Public School District,285,1.1%,"$6,459",96.1,2020
+31,Dutch Neck Elementary School,K-3,West Windsor-Plainsboro Regional School District,704,3.6%,"$10,469",95.9,2020
+32,Haworth Public School,K-8,Haworth Public School District,392,0.8%,"$17,223",95.8,2020
+33,Tamaques Elementary School,1-5,Westfield Public School District,430,1.6%,"$6,564",95.6,2020
+34,Deane-Porter Elementary School,"PK, KG-3",Rumson Borough School District,357,0.8%,"$11,020",95.6,2020
+35,Mendham Township Elementary School,"PK, KG-4",Mendham Township School District,429,0.7%,"$18,225",95.5,2020
+36,Hoboken Dual Language Charter School,K-8,Hoboken Dual Language Charter School,395,9.1%,"$9,496",95.3,2020
+37,West Cape May Elementary School,"PK, KG-6",West Cape May School District,79,16.5%,"$14,370",95.3,2020
+38,Hillside Elementary School,"PK, KG-4",Closter Public School District,603,0.5%,"$10,174",95.3,2020
+39,Valley View School,"PK, KG-5",Montville Township School District,339,0.9%,"$19,750",95.3,2020
+40,Brayton Elementary School,1-5,Summit Public School District,316,13.3%,"$6,383",95.2,2020
+41,Hartshorn School,K-4,Millburn Township School District,393,0.8%,"$13,657",95.1,2020
+42,Hamilton Primary School,K-4,Bridgewater-Raritan Regional School District,477,3.4%,"$8,485",95,2020
+43,Luther Lee Emerson School,2-4,Demarest School District,218,1.4%,"$12,319",95,2020
+44,Henry B. Milnes Elementary School,K-4,Fair Lawn Public School District,419,6.9%,"$5,535",94.9,2020
+45,Northvail Elementary School,K-5,Parsippany-Troy Hills Township School District,381,7.1%,"$9,614",94.8,2020
+46,Franklin Elementary School,1-5,Summit Public School District,329,4.6%,"$6,028",94.6,2020
+47,Franklin Elementary School,1-5,Westfield Public School District,545,0.6%,"$6,401",94.6,2020
+48,Monmouth Junction Elementary School,"PK, KG-5",South Brunswick School District,326,6.1%,"$11,552",94.5,2020
+49,School No. 1,K-4,Fort Lee School District,526,8.7%,"$7,644",94.5,2020
+50,Merritt Memorial,1-5,Cresskill Public School District,286,1.0%,"$10,439",94.5,2020
+51,Richard Byrd,K-5,Glen Rock Public School District,263,1.1%,"$13,228",94.4,2020
+52,Ralph S Maugham School,K-5,Tenafly Public School District,364,1.4%,"$9,945",94.3,2020
+53,Central School,"PK, KG-5",Haddonfield School District,393,1.0%,"$6,314",94.1,2020
+54,Grandview Elementary School,"PK, KG-3",North Caldwell School District,384,0.8%,"$9,810",94.1,2020
+55,Frank Defino Central Elementary School,K-5,Marlboro Township School District,518,8.5%,"$9,522",94.1,2020
+56,Hilltop School,"PK, KG-4",Mendham Borough School District,241,2.1%,"$10,299",94,2020
+57,Elizabeth Haddon School,"PK, KG-5",Haddonfield School District,352,0.9%,"$6,973",94,2020
+58,Joseph F Brandt Elementary School,K-5,Hoboken Public School District,529,19.3%,"$9,244",93.9,2020
+59,Cherry Hill School,"PK, KG-6",River Edge School District,751,0.9%,"$11,402",93.8,2020
+60,Mt. Horeb School,"PK, KG-5",Warren Township School District,202,1.5%,"$18,115",93.8,2020
+61,Union Township Elementary School,"PK, KG-4",Union Township School District,195,2.6%,"$11,993",93.8,2020
+62,Travell Elementary School,K-5,Ridgewood Public School District,377,0.8%,"$11,151",93.8,2020
+63,Cedar Hill School,"PK, KG-5",Montville Township School District,295,1.0%,"$18,902",93.7,2020
+64,Edward H. Bryan,"PK, KG-5",Cresskill Public School District,485,0.6%,"$11,618",93.7,2020
+65,H W Mountz Elementary School,"PK, KG-8",Spring Lake Borough,169,1.8%,"$25,190",93.7,2020
+66,Ho-Ho-Kus Public School,"PK, KG-8",Ho-Ho-Kus School District,587,0.5%,"$13,291",93.7,2020
+67,Malcolm S Mackay School,K-5,Tenafly Public School District,344,0.9%,"$10,904",93.7,2020
+68,Collins Elementary School,K-5,Livingston Board of Education School District,452,2.4%,"$11,450",93.6,2020
+69,Milltown Primary School,"PK, KG-4",Bridgewater-Raritan Regional School District,402,5.7%,"$11,857",93.4,2020
+70,Oak Tree Elementary School,"PK, KG-3",Monroe Township School District,768,3.8%,"$12,219",93.4,2020
+71,Oak Street School,K-5,Bernards Township School District,406,2.5%,"$9,522",93.2,2020
+72,Navesink Elementary School,K-5,Middletown Township Public School District,206,7.8%,"$10,198",93.2,2020
+73,J Spencer Smith School,K-5,Tenafly Public School District,350,0.9%,"$11,277",93.2,2020
+74,Nut Swamp Elementary School,K-5,Middletown Township Public School District,514,0.6%,"$7,091",93.1,2020
+75,Riker Hill Elementary School,K-5,Livingston Board of Education School District,405,3.0%,"$10,741",93,2020
+76,Mountview Road School,K-5,Hanover Township School District,281,1.4%,"$8,505",93,2020
+77,Littleton Elementary School,"PK, KG-5",Parsippany-Troy Hills Township School District,422,4.0%,"$10,284",92.9,2020
+78,J. Fithian Tatem School,"PK, KG-5",Haddonfield School District,398,1.8%,"$6,211",92.9,2020
+79,Torey J. Sabatini School,K-5,Madison Public School District,271,1.8%,"$12,211",92.8,2020
+80,Cedar Hill School,K-5,Bernards Township School District,483,1.2%,"$10,975",92.8,2020
+81,Riverside School,"PK, KG-5",Princeton Public School District,289,10.7%,"$17,874",92.7,2020
+82,Village Elementary School,3-4,Montgomery Township School District,634,3.0%,"$13,514",92.7,2020
+83,Wilson Elementary School,1-5,Westfield Public School District,316,0.9%,"$6,428",92.6,2020
+84,Hawes Elementary School,K-5,Ridgewood Public School District,393,3.1%,"$10,461",92.6,2020
+85,Milton Avenue School,"PK, KG-3",School District of the Chathams,284,1.1%,"$12,491",92.6,2020
+86,Maurice Hawk Elementary School,"PK, KG-3",West Windsor-Plainsboro Regional School District,723,3.5%,"$11,332",92.5,2020
+87,Mary A. Hubbard Elementary School,"PK, KG-3",Ramsey School District,364,5.2%,"$8,962",92.5,2020
+88,Edith A. Bogert Elementary School,3-5,Upper Saddle River School District,347,0.9%,"$15,177",92.5,2020
+89,Mountain Park School,3-5,Berkeley Heights School District,243,1.2%,"$10,264",92.4,2020
+90,Walter Stillman School,"PK, KG-5",Tenafly Public School District,334,0.9%,"$12,810",92.4,2020
+91,Asher Holmes Elementary School,1-5,Marlboro Township School District,456,1.3%,"$8,890",92.3,2020
+92,Washington Avenue School,"PK, KG-3",School District of the Chathams,314,1.9%,"$8,994",92.3,2020
+93,Brookside Place School,K-5,Cranford Public School District,366,0.8%,"$7,629",92.3,2020
+94,Southern Boulevard School,"PK, KG-3",School District of the Chathams,414,0.7%,"$8,780",92.2,2020
+95,George C. Baker Elementary School,"PK, KG-3",Moorestown Township Public School District,375,6.9%,"$6,999",92.2,2020
+96,T. Baldwin Demarest Elementary School,"PK, KG-4",Old Tappan Public School District,340,0.9%,"$8,945",92.2,2020
+97,Joseph D. Sharp Elementary School,K-5,Cherry Hill School District,402,11.2%,"$6,656",92.1,2020
+98,Mount Tabor Elementary School,K-5,Parsippany-Troy Hills Township School District,388,7.7%,"$8,719",91.9,2020
+99,Radburn Elementary School,K-4,Fair Lawn Public School District,350,4.3%,"$6,159",91.8,2020
+100,Ridgewood Avenue School,3-6,Glen Ridge Public School District,536,0.6%,"$7,808",91.8,2020
+101,Bragg Elementary School,3-5,Chester Township School District,325,3.4%,"$11,112",91.8,2020
+102,Deerfield Elementary School,3-8,Mountainside School District,461,1.1%,"$8,613",91.8,2020
+103,Oradell Public School,"PK, KG-6",Oradell Public School District,738,0.4%,"$12,862",91.7,2020
+104,Willard Elementary School,K-5,Ridgewood Public School District,461,1.3%,"$9,772",91.6,2020
+105,Alexander Hamilton School,K-5,Glen Rock Public School District,271,1.1%,"$13,180",91.5,2020
+106,Oak Tree Road Elementary School,K-5,Woodbridge Township School District,478,16.3%,"$4,113",91.5,2020
+107,Angelo L. Tomaso School,K-5,Warren Township School District,248,1.2%,"$15,785",91.5,2020
+108,Thomas P. Hughes School,3-5,Berkeley Heights School District,264,1.1%,"$9,155",91.5,2020
+109,Central Jersey College Prep Charter School,K-12,Central Jersey College Prep Charter School,"1,219",20.3%,"$8,883",91.4,2020
+110,Shrewsbury Borough Elementary School,"PK, KG-8",Shrewsbury Borough School District,441,1.4%,"$14,231",91.3,2020
+111,Chairville Elementary School,K-5,Medford Township School District,360,8.6%,"$9,524",91.3,2020
+112,Somerville Elementary School,K-5,Ridgewood Public School District,383,0.8%,"$11,464",91.3,2020
+113,Burnet Hill Elementary School,"PK, KG-5",Livingston Board of Education School District,433,1.2%,"$12,821",91.1,2020
+114,Woodmont School,K-5,Montville Township School District,307,4.2%,"$15,994",90.9,2020
+115,Monmouth Beach Elementary School,"PK, KG-8",Monmouth Beach School District,257,1.2%,"$15,153",90.9,2020
+116,Signal Hill School,"PK, KG-5",Voorhees Township School District,448,8.7%,"$12,765",90.8,2020
+117,Salt Brook School,K-6,New Providence School District,641,0.8%,"$8,390",90.8,2020
+118,Robertsville Elementary School,1-5,Marlboro Township School District,457,7.0%,"$10,138",90.8,2020
+119,Viola L Sickles School,"PK, KG-3",Fair Haven School District,415,0.7%,"$8,188",90.7,2020
+120,Ridge Elementary School,K-5,Ridgewood Public School District,443,0.7%,"$11,275",90.4,2020
+121,Frank J. Dugan Elementary School,K-5,Marlboro Township School District,623,3.7%,"$8,652",90.4,2020
+122,McKinley Elementary School,1-5,Westfield Public School District,325,1.5%,"$6,690",90.3,2020
+123,East Brook Elementary School,K-6,Park Ridge School District,320,4.1%,"$11,625",90.3,2020
+124,Dorchester Elementary School,"PK, KG-5",Woodcliff Lake School District,452,0.7%,"$14,696",90,2020
+125,Millstone River School,3-5,West Windsor-Plainsboro Regional School District,967,6.3%,"$12,449",90,2020
+126,Wolf Hill School,"PK, KG-4",Oceanport School District,285,7.7%,"$13,997",89.9,2020
+127,Alpine Elementary School,K-8,Alpine School District,151,2.0%,"$27,835",89.8,2020
+128,Cranberry Pines Elementary,K-5,Medford Township School District,365,1.9%,"$8,592",89.6,2020
+129,Jefferson Elementary School,1-5,Westfield Public School District,470,0.6%,"$6,449",89.5,2020
+130,Warnsdorfer Elementary School,"PK, KG-5",East Brunswick Township School District,447,9.2%,"$11,155",89.3,2020
+131,Menlo Park Elementary School,K-5,Edison Township School District,851,10.3%,"$5,996",89.2,2020
+132,Roberge Elementary School,"PK, KG-5",River Vale Public School District,302,1.0%,"$14,173",89.1,2020
+133,Jefferson Elementary School,3-5,South Orange-Maplewood School District,468,7.5%,"$4,804",88.9,2020
+134,Stonybrook Elementary School,3-5,Kinnelon School District,346,3.5%,"$12,633",88.9,2020
+135,Stony Brook Elementary School,"PK, KG-5",Hopewell Valley Regional School District,378,2.4%,"$12,315",88.5,2020
+136,East Amwell Township,"PK, KG-8",East Amwell Township School District,336,13.7%,"$16,880",88,2020
+137,Washington Elementary School,1-5,Summit Public School District,335,12.8%,"$6,324",87.8,2020
+138,Wandell School,"PK, KG-5",Saddle River School District,129,2.3%,"$23,157",87.7,2020
+139,Community Park School,"PK, KG-5",Princeton Public School District,332,19.3%,"$14,862",87.6,2020
+140,Lincoln Elementary School,K-5,Edison Township School District,939,6.4%,"$5,981",87.5,2020
+141,West Ridge Elementary School,"PK, KG-6",Park Ridge School District,347,1.2%,"$11,688",87.4,2020
+142,Cranbury School,"PK, KG-8",Cranbury Township School District,458,5.0%,"$18,574",87.3,2020
+143,John Marshall Elementary School,K-5,Edison Township School District,774,9.9%,"$5,975",87.3,2020
+144,Hillside Elementary School,"PK, KG-3",Allendale Public School District,343,0.9%,"$7,428",87.2,2020
+145,Avon Elementary School,"PK, KG-8",Avon Boro School District,133,8.3%,"$17,400",87.2,2020
+146,Kirby's Mill Elementary School,"PK, KG-5",Medford Township School District,300,8.3%,"$10,032",87.1,2020
+147,Whiton Elementary School,"PK, KG-3",Branchburg Township School District,544,4.8%,"$15,143",86.8,2020
+148,Califon Public School,"PK, KG-8",Califon Borough School District,90,3.3%,"$28,096",86.7,2020
+149,Marlboro Elementary School,K-5,Marlboro Township School District,478,1.5%,"$9,088",86.7,2020
+150,Knollwood Elementary School,K-3,Piscataway Township School District,505,19.4%,"$5,790",86.7,2020
+151,Chesterfield Township Elementary School,"PK, KG-6",Chesterfield Township School District,715,1.8%,"$10,698",86.6,2020
+152,Meadowbrook,"PK, KG-4",Hillsdale School District,311,2.6%,"$11,913",86.6,2020
+153,Taunton Forge Elementary School,K-5,Medford Township School District,251,1.2%,"$9,935",86.6,2020
+154,Frost Elementary School,"PK, KG-5",East Brunswick Township School District,449,12.0%,"$11,319",86.5,2020
+155,Cambridge Elementary School,"PK, KG-5",South Brunswick School District,488,5.7%,"$10,867",86.2,2020
+156,Liberty Corner School,K-5,Bernards Township School District,466,1.9%,"$8,877",86.1,2020
+157,Roosevelt School,K-6,River Edge School District,499,0.8%,"$7,192",85.7,2020
+158,Spring Garden School,"PK, KG-6",Nutley Public School District,416,4.1%,"$12,955",85.6,2020
+159,Lakeview Elementary School,"PK, KG-5",Denville Township K-8 School District,632,4.7%,"$10,419",85.6,2020
+160,Middletown Village Elementary School,"PK, KG-5",Middletown Township Public School District,408,7.6%,"$8,779",85.5,2020
+161,Lyncrest Elementary School,K-4,Fair Lawn Public School District,210,10.0%,"$6,699",85.3,2020
+162,Stone Harbor Elementary School,K-4,Stone Harbor School District,92,3.3%,"$19,958",85.3,2020
+163,Walter M. Schirra Elementary School,K-5,Old Bridge Township School District,253,7.9%,"$14,693",85.3,2020
+164,J. Ackerman Coles Elementary School,"PK, KG-4",Scotch Plains-Fanwood School District,489,1.6%,"$7,390",85.3,2020
+165,Memorial School,"PK, KG-3",Maywood School District,391,7.7%,"$11,306",85.2,2020
+166,Highland Elementary School,3-6,Midland Park School District,254,3.5%,"$16,024",85.1,2020
+167,Copper Hill Elementary School,"PK, KG-4",Flemington-Raritan Regional School District,404,13.4%,"$15,346",85.1,2020
+168,Amsterdam Elementary School,K-4,Hillsborough Township Public School District,456,3.1%,"$5,293",85.1,2020
+169,Conover Road Elementary School,3-5,Colts Neck Township School District,283,2.5%,"$12,760",85,2020
+170,Van Holten Primary School,K-4,Bridgewater-Raritan Regional School District,334,3.3%,"$10,870",85,2020
+171,Wesley D Tisdale Elementary School,"PK, KG-3",Ramsey School District,351,8.3%,"$9,070",84.9,2020
+172,School No. 3,"PK, KG-4",Fort Lee School District,362,13.5%,"$6,876",84.9,2020
+173,Bret Harte Elementary School,K-5,Cherry Hill School District,358,7.0%,"$7,655",84.9,2020
+174,Sharon School,"PK, KG-4",Robbinsville Public Schools,971,4.2%,"$4,555",84.8,2020
+175,Edward T. Hamilton,K-5,Voorhees Township School District,379,5.8%,"$12,766",84.8,2020
+176,Hillsborough Township Elementary School,K-4,Hillsborough Township Public School District,488,9.6%,"$5,497",84.6,2020
+177,School No. 4,K-4,Fort Lee School District,408,8.3%,"$7,973",84.6,2020
+178,Beach Haven School,"PK, KG-6",Beach Haven School District,86,3.5%,"$23,211",84.5,2020
+179,Kings Road School,K-5,Madison Public School District,285,4.9%,"$12,736",84.5,2020
+180,Old Farmers Road School,K-5,Washington Township School District,310,3.5%,"$9,844",84.3,2020
+181,William Mason School,K-5,Montville Township School District,239,3.3%,"$19,549",84.2,2020
+182,Valley Road School,K-5,Clark Township Public School District,409,3.7%,"$10,631",84.1,2020
+183,William Woodruff School,K-2,Berkeley Heights School District,180,1.7%,"$11,076",84,2020
+184,Central Avenue School,"PK, KG-5",Madison Public School District,502,7.8%,"$13,439",84,2020
+185,Springville Elementary School,"PK, KG-4",Mount Laurel Township School District,460,6.7%,"$8,454",83.9,2020
+186,Hillview School,K-5,Pequannock Township School District,313,2.6%,"$13,405",83.4,2020
+187,Hillside Elementary School,3-5,Montclair Public School District,489,20.0%,"$12,700",83.4,2020
+188,Franklin Township School,"PK, KG-8",Franklin Township School District,253,3.6%,"$14,956",83.3,2020
+189,Tuscan Elementary School,K-5,South Orange-Maplewood School District,597,7.0%,"$5,473",83.2,2020
+190,South Mountain Elementary School,"PK, KG-5",South Orange-Maplewood School District,612,3.1%,"$5,242",83.1,2020
+191,Irene E. Feldkirchner Elementary School,"PK, KG-4",Green Brook Township Public School District,330,6.7%,"$17,389",83.1,2020
+192,Allenwood Elementary School,K-5,Wall Township Public School District,402,3.2%,"$10,534",83,2020
+193,Manito Elementary School,K-5,Oakland Public School District,276,2.5%,"$14,161",82.9,2020
+194,Troy Hills Elementary School,K-5,Parsippany-Troy Hills Township School District,301,18.9%,"$15,561",82.7,2020
+195,Riverview Elementary School,K-5,Denville Township K-8 School District,427,1.4%,"$9,403",82.6,2020
+196,Harrison Township Elementary School,"PK, KG-3",Harrison Township School District,737,10.9%,"$10,581",82.4,2020
+197,Lincoln Elementary School,K-5,Caldwell-West School District,260,8.8%,"$14,951",82.4,2020
+198,Albert Payson Terhune Elementary,K-5,Wayne Township Public School District,371,5.4%,"$15,455",82.3,2020
+199,Central Elementary School,"PK, KG-5",East Brunswick Township School District,430,18.6%,"$14,235",82.3,2020
+200,Constable Elementary School,K-5,South Brunswick School District,470,16.2%,"$11,281",82.2,2020
+201,Lebanon Borough School,"PK, KG-6",Lebanon Borough School District,92,5.4%,"$16,745",81.9,2020
+202,Anna C. Scott Elementary School,"PK, KG-4",Leonia Public School District,728,11.5%,"$13,425",81.9,2020
+203,Orange Avenue School,3-8,Cranford Public School District,722,0.4%,"$7,540",81.9,2020
+204,Brooklake School,3-5,Florham Park School District,321,0.9%,"$8,965",81.8,2020
+205,Calvin Coolidge Elementary School,K-5,Wyckoff Township Public School District,289,1.0%,"$12,914",81.6,2020
+206,Betsy Ross Elementary,K-3,Mahwah Township Public School District,241,3.7%,"$9,947",81.6,2020
+207,Wenonah Elementary School,"PK, KG-6",Wenonah Boro School District,165,1.8%,"$14,142",81.5,2020
+208,A. Russell Knight Elementary School,K-5,Cherry Hill School District,394,5.6%,"$8,892",81.4,2020
+209,St. Cloud Elementary School,K-5,West Orange Public Schools,395,12.4%,"$10,534",81.4,2020
+210,Oak View Elementary School,"PK, KG-6",Bloomfield Township School District,337,6.8%,"$8,218",81.2,2020
+211,William F. Halloran School No.22,2-8,Elizabeth Public Schools,"1,055",62.4%,"$6,924",81.2,2020
+212,Livingston Avenue School,3-5,Cranford Public School District,260,1.2%,"$8,649",81.1,2020
+213,Indian Fields Elementary School,"PK, KG-5",South Brunswick School District,598,10.5%,"$12,419",80.9,2020
+214,Charles H. Bullock School,K-5,Montclair Public School District,434,13.4%,"$12,790",80.7,2020
+215,Old Mill Elementary School,K-5,Wall Township Public School District,357,5.3%,"$10,056",80.6,2020
+216,Crescent Elementary School,K-5,Waldwick School District,344,0.9%,"$9,264",80.5,2020
+217,South Valley Elementary School,"PK, KG-3",Moorestown Township Public School District,345,9.3%,"$7,108",80.4,2020
+218,Colonial Road School,"PK, KG-5",Franklin Lakes School District,238,2.5%,"$16,575",80.4,2020
+219,Eastlake Elementary School,"PK, KG-5",Parsippany-Troy Hills Township School District,367,8.2%,"$12,346",80.3,2020
+220,Grant Elementary School,K-5,Dumont Public School District,390,8.5%,"$8,269",80.3,2020
+221,Central Elementary School,K-5,Wall Township Public School District,495,8.9%,"$8,202",80.3,2020
+222,Round Valley,3-5,Clinton Township School District,378,5.0%,"$3,600",80.3,2020
+223,Brooks Crossing Elementary School,"PK, KG-5",South Brunswick School District,584,10.1%,"$11,554",80.2,2020
+224,Upper Township Elementary School,3-5,Upper Township School District,434,15.9%,"$8,254",80.2,2020
+225,Johnson Park School,"PK, KG-5",Princeton Public School District,329,26.1%,"$15,867",79.8,2020
+226,Westmoreland Elementary School,"PK, KG-4",Fair Lawn Public School District,379,11.6%,"$4,704",79.8,2020
+227,Clyde S. Jennings Elementary School,K-5,Haddon Township School District,99,19.2%,"$12,020",79.8,2020
+228,Riverdale School,"PK, KG-8",Riverdale School District,295,20.7%,"$12,574",79.7,2020
+229,Hopewell Elementary School,"PK, KG-5",Hopewell Valley Regional School District,400,3.3%,"$11,069",79.6,2020
+230,Toll Gate Grammar School,"PK, KG-5",Hopewell Valley Regional School District,306,1.6%,"$12,454",79.6,2020
+231,Midland Elementary School,K-4,Paramus Public School District,156,10.3%,"$15,352",79.6,2020
+232,Crim Primary School,"PK, KG-4",Bridgewater-Raritan Regional School District,342,6.4%,"$11,542",79.5,2020
+233,School No. 2,"PK, KG-4",Fort Lee School District,361,15.2%,"$11,389",79.4,2020
+234,Brookdale Elementary School,K-6,Bloomfield Township School District,319,3.8%,"$6,568",79.3,2020
+235,Richard Stockton Elementary School,K-5,Cherry Hill School District,333,8.7%,"$8,457",79.3,2020
+236,Milton H. Allen Elementary School,K-5,Medford Township School District,339,3.2%,"$9,181",79.2,2020
+237,Clinton Elementary School,"PK, KG-5",South Orange-Maplewood School District,581,16.7%,"$5,261",79,2020
+238,Jersey City Global Charter School,K-8,Jersey City Global Charter School,507,0.6%,"$6,567",79,2020
+239,School One Elementary,"PK, KG-4",Scotch Plains-Fanwood School District,345,6.4%,"$8,863",79,2020
+240,Woods Road Elementary School,"PK, KG-4",Hillsborough Township Public School District,421,2.1%,"$4,675",79,2020
+241,Fairview Elementary School,"PK, KG-5",Middletown Township Public School District,302,12.3%,"$9,003",78.8,2020
+242,Bradford Elementary School,"PK, KG-5",Montclair Public School District,389,8.5%,"$13,293",78.8,2020
+243,Triangle Elementary School,K-4,Hillsborough Township Public School District,354,9.6%,"$5,950",78.8,2020
+244,Watchung Elementary School,K-5,Montclair Public School District,400,10.3%,"$11,719",78.8,2020
+245,Seaview Elementary School,"PK, KG-4",Linwood City School District,429,12.6%,"$10,304",78.6,2020
+246,Heights Elementary School,"PK, KG-5",Oakland Public School District,359,4.5%,"$11,259",78.5,2020
+247,Jefferson Elementary School,1-5,Summit Public School District,204,29.4%,"$8,684",78.4,2020
+248,Barley Sheaf Elementary School,K-4,Flemington-Raritan Regional School District,344,7.6%,"$11,427",78.3,2020
+249,Intervale Elementary School,K-5,Parsippany-Troy Hills Township School District,275,12.7%,"$11,528",78.2,2020
+250,Spring Lake Heights Elementary School,"PK, KG-8",Spring Lake Heights School District,338,6.5%,"$13,667",78.2,2020
+251,Elysian Charter School of Hoboken,K-8,Elysian Charter School,287,6.3%,"$8,361",78.1,2020
+252,William J. McGinn Elementary School,K-4,Scotch Plains-Fanwood School District,460,0.7%,"$8,178",78.1,2020
+253,Lincroft Elementary School,K-5,Middletown Township Public School District,449,1.6%,"$8,048",77.8,2020
+254,Lester C Noecker,"PK, KG-6",Roseland School District,457,2.4%,"$13,133",77.8,2020
+255,Learning Community Charter School,"PK, KG-8",The Learning Community Charter School,616,30.7%,"$9,314",77.7,2020
+256,George Washington Elementary School,K-5,Wyckoff Township Public School District,346,0.9%,"$12,788",77.6,2020
+257,J.V.B. Wicoff Elementary School,K-3,West Windsor-Plainsboro Regional School District,349,3.4%,"$12,430",77.6,2020
+258,Rockaway Valley School,"PK, KG-8",Boonton Township School District,384,2.1%,"$16,532",77.5,2020
+259,Hillside Avenue School,K-8,Cranford Public School District,687,1.9%,"$10,688",77.5,2020
+260,Seventh Avenue,3-6,HADDON HEIGHTS School District,128,2.3%,"$10,786",77.3,2020
+261,Samuel Mickle School,3-6,East Greenwich Township School District,728,8.1%,"$10,092",77.2,2020
+262,Forest Avenue School,K-4,Verona Public School District,213,1.4%,"$14,134",77.2,2020
+263,Bayberry School,"PK, KG-4",Watchung Borough School District,334,0.9%,"$9,432",77.1,2020
+264,James F. Cooper Elementary School,K-5,Cherry Hill School District,233,13.7%,"$11,363",77.1,2020
+265,Mansfield Township Elementary School,3-6,Mansfield Township School District,288,5.6%,"$9,680",77.1,2020
+266,Thomas B. Conley Elementary School,"PK, KG-6",Bethlehem Township School District,252,2.8%,"$19,833",77.1,2020
+267,Sara M. Gilmore Academy,1-8,Union City School District,383,46.2%,"$11,311",77.1,2020
+268,Center Grove School,"PK, KG-5",Randolph Township School District,466,6.4%,"$12,140",77,2020
+269,Woodfern Elementary School,K-4,Hillsborough Township Public School District,354,11.3%,"$5,571",76.9,2020
+270,Stephen J. Gerace School,K-5,Pequannock Township School District,278,2.2%,"$8,745",76.9,2020
+271,Warren Point Elementary School,K-4,Fair Lawn Public School District,410,8.8%,"$6,327",76.9,2020
+272,Gregory Elementary School,K-5,West Orange Public Schools,443,17.2%,"$11,810",76.5,2020
+273,Ridge Ranch Elementary School,K-4,Paramus Public School District,349,4.6%,"$15,309",76.5,2020
+274,Frank K. Hehnly,K-5,Clark Township Public School District,558,2.3%,"$10,499",76.4,2020
+275,Wallace Elementary School,"PK, KG-5",Hoboken Public School District,594,26.9%,"$12,764",76.3,2020
+276,Osage School,K-5,Voorhees Township School District,703,19.2%,"$12,761",76.3,2020
+277,Terence C. Reilly School No 7,2-8,Elizabeth Public Schools,"1,112",62.6%,"$7,777",76.3,2020
+278,Wilson Elementary School,K-5,Caldwell-West School District,252,3.6%,"$15,722",76.1,2020
+279,Catherine E. Doyle Elementary School,"PK, KG-3",Wood-Ridge School District,399,8.8%,"$11,211",76.1,2020
+280,Marion T. Bedwell Elementary School,"PK, KG-4",Somerset Hills Regional School District,471,14.2%,"$12,505",76.1,2020
+281,William H. Ross III School,"PK, KG-4",Margate City School District,198,6.6%,"$18,057",76,2020
+282,Sandshore Rd. Elementary School,K-5,Mount Olive Township School District,456,1.3%,"$10,512",75.9,2020
+283,Frelinghuysen Township Elementary School,"PK, KG-6",Frelinghuysen Township School District,130,2.3%,"$12,044",75.8,2020
+284,Tinc Rd. Elementary School,K-5,Mount Olive Township School District,413,10.7%,"$8,991",75.8,2020
+285,Washington School,K-6,Nutley Public School District,523,18.9%,"$11,365",75.8,2020
+286,Woodcrest Elementary School,K-5,Cherry Hill School District,330,8.8%,"$8,197",75.7,2020
+287,Mawbey Street Elementary School,K-5,Woodbridge Township School District,353,18.1%,"$5,002",75.7,2020
+288,Brookside Elementary School,3-5,Monroe Township School District,401,7.2%,"$12,551",75.5,2020
+289,Euclid Elementary School,"PK, KG-5",Hasbrouck Heights School District,338,10.1%,"$12,378",75.5,2020
+290,Betty McElmon Elementary School,"PK, KG-4",West Long Branch School District,319,14.4%,"$11,422",75.5,2020
+291,River Plaza Elementary School,K-5,Middletown Township Public School District,248,6.9%,"$8,973",75.4,2020
+292,Campbell Elementary School,1-4,Metuchen Public School District,654,5.7%,"$6,898",75.2,2020
+293,Nicholas Oresko Community School,"PK, KG-8",Bayonne School District,444,36.9%,"$11,130",75.1,2020
+294,Kresson School,K-5,Voorhees Township School District,364,9.1%,"$12,759",75.1,2020
+295,Marshall W. Errickson School,K-5,Freehold Township School District,437,12.4%,"$10,121",75,2020
+296,Lake Hiawatha Elementary School,"PK, KG-5",Parsippany-Troy Hills Township School District,423,12.8%,"$11,814",75,2020
+297,Packanack Elementary School,K-5,Wayne Township Public School District,358,2.5%,"$15,454",74.7,2020
+298,Sunnymead Elementary School,"PK, KG-4",Hillsborough Township Public School District,495,14.3%,"$5,627",74.7,2020
+299,The Gray Charter School,K-8,Gray Charter School,364,68.1%,"$9,242",74.7,2020
+300,Indiana Avenue Elementary School,K-5,Woodbridge Township School District,475,23.8%,"$4,151",74.6,2020
+301,Lincoln,"PK, KG-8",Garwood Boro,347,16.4%,"$11,448",74.4,2020
+302,Yantacaw School,K-6,Nutley Public School District,461,5.2%,"$11,239",74,2020
+303,Jersey City Golden Door Charter School,"PK, KG-8",Jersey City Golden Door Charter School,612,45.3%,"$7,171",73.8,2020
+304,Springfield Township School,"PK, KG-6",Springfield Township School District,226,12.4%,"$15,391",73.8,2020
+305,Mountain View Elementary School,"PK, KG-5",Mount Olive Township School District,510,7.5%,"$10,378",73.7,2020
+306,Julia A Traphagen School,"PK, KG-5",Waldwick School District,425,0.7%,"$9,325",73.6,2020
+307,Norwood Public School,"PK, KG-8",Norwood Public School District,608,2.1%,"$12,636",73.6,2020
+308,High Mountain Road School,"PK, KG-5",Franklin Lakes School District,247,3.2%,"$12,337",73.5,2020
+309,Robert Mascenik Elementary School,K-5,Woodbridge Township School District,313,16.6%,"$5,299",73.5,2020
+310,Edgemont Elementary School,K-5,Montclair Public School District,237,18.1%,"$13,652",73.3,2020
+311,Bradley Gardens Primary School,"PK, KG-4",Bridgewater-Raritan Regional School District,263,8.7%,"$12,003",73.3,2020
+312,Radcliffe School,"PK, KG-6",Nutley Public School District,341,9.7%,"$14,637",73.2,2020
+313,Ocean City Primary School,"PK, KG-3",Ocean City School District,299,25.1%,"$12,032",73,2020
+314,Mount Pleasant Elementary School,K-5,West Orange Public Schools,341,21.4%,"$12,477",73,2020
+315,North Boulevard School,"PK, KG-5",Pequannock Township School District,308,2.6%,"$13,107",73,2020
+316,Brunswick Acres Elementary School,K-5,South Brunswick School District,477,15.7%,"$12,141",72.8,2020
+317,Memorial Elementary School,"PK, KG-4",Paramus Public School District,279,6.8%,"$15,311",72.7,2020
+318,Pines Lake Elementary School,K-5,Wayne Township Public School District,359,5.3%,"$14,923",72.4,2020
+319,Irwin Elementary School,"PK, KG-5",East Brunswick Township School District,378,27.2%,"$12,122",72.4,2020
+320,Northeast Elementary School,K-5,Montclair Public School District,390,12.8%,"$11,807",72.4,2020
+321,Harding Township School,"PK, KG-8",Harding Township School District,267,1.5%,"$20,191",72.2,2020
+322,Brookside Elementary School,K-5,Westwood Regional School District,398,9.8%,"$4,864",72.1,2020
+323,Central Elementary School,3-5,East Hanover Township School District,314,1.0%,"$12,210",72,2020
+324,Brielle Elementary School,"PK, KG-8",Brielle Boro School District,509,3.5%,"$12,663",72,2020
+325,Evergreen Elementary School,"PK, KG-4",Scotch Plains-Fanwood School District,387,3.6%,"$9,438",71.9,2020
+326,Salem Drive School,K-5,Hanover Township School District,247,1.6%,"$9,615",71.8,2020
+327,Glenview Avenue,K-6,HADDON HEIGHTS School District,262,3.8%,"$12,403",71.5,2020
+328,Upper Pittsgrove School,"PK, KG-8",UPPER PITTSGROVE Township School District,305,1.0%,"$14,593",71.5,2020
+329,Randall Carter Elementary School,K-5,Wayne Township Public School District,322,7.5%,"$15,525",71.4,2020
+330,Memorial Elementary School,"PK, KG-4",Montvale Board of Education School District,483,2.3%,"$8,895",71.4,2020
+331,Selzer Elementary/Middle School,"PK, KG-8",Dumont Public School District,500,7.4%,"$7,760",71.4,2020
+332,Kennedy Elementary School,K-4,Roxbury Township School District,255,4.7%,"$13,088",71.3,2020
+333,Unity Charter School,K-8,Unity Charter School,245,11.4%,"$10,094",71.2,2020
+334,Woodland School,K-5,Warren Township School District,229,1.3%,"$14,752",71.1,2020
+335,Central School,K-5,Warren Township School District,293,1.0%,"$13,768",71,2020
+336,Berkeley Elementary,K-5,Westwood Regional School District,289,13.1%,"$4,648",71,2020
+337,George Washington School,K-3,Mahwah Township Public School District,189,4.2%,"$10,984",70.9,2020
+338,Strawbridge Elementary School,K-5,Haddon Township School District,181,3.3%,"$13,228",70.8,2020
+339,Millington Elementary School,2-5,Long Hill Township School District,363,6.1%,"$7,775",70.7,2020
+340,Lawrence Brook Elementary School,"PK, KG-5",East Brunswick Township School District,431,26.5%,"$12,904",70.7,2020
+341,Bee Meadow School,K-5,Hanover Township School District,293,4.1%,"$12,321",70.7,2020
+342,Manasquan Elementary School,"PK, KG-8",Manasquan School District,531,10.2%,"$16,394",70.5,2020
+343,Robert Hunter Elementary School,K-4,Flemington-Raritan Regional School District,390,18.7%,"$12,745",70.4,2020
+344,Hurffville Elementary School,K-5,Washington Township School District,489,14.9%,"$9,904",70.4,2020
+345,Joseph J Catena School,K-5,Freehold Township School District,451,8.0%,"$9,688",70.3,2020
+346,Theunis Dey Elementary School,K-5,Wayne Township Public School District,392,2.3%,"$15,454",70.2,2020
+347,Shongum School,K-5,Randolph Township School District,416,3.1%,"$10,002",70.2,2020
+348,Woodside Elementary School,K-5,River Vale Public School District,342,0.9%,"$14,921",70.2,2020
+349,Zane North Elementary School,"PK, KG-5",Collingswood Public School District,162,14.8%,"$13,644",69.9,2020
+350,Washington Elementary School,K-5,Caldwell-West School District,374,5.6%,"$11,389",69.9,2020
+351,Lake Parsippany Elementary School,K-5,Parsippany-Troy Hills Township School District,261,8.8%,"$13,041",69.8,2020
+352,Millstone Township Elementary School,3-5,Millstone Township School District,380,2.6%,"$15,600",69.7,2020
+353,Sicomac Elementary School,"PK, KG-5",Wyckoff Township Public School District,297,1.0%,"$13,833",69.6,2020
+354,Memorial Elementary School,"PK, KG-5",East Brunswick Township School District,527,22.4%,"$12,923",69.5,2020
+355,Knollwood Elementary School,K-5,Parsippany-Troy Hills Township School District,386,23.6%,"$9,117",69.5,2020
+356,Jotham W. Wakeman School,"PK, KG-5",Jersey City Public Schools,652,48.6%,"$12,283",69.5,2020
+357,Parkway Elementary School,"PK, KG-4",Mount Laurel Township School District,327,9.8%,"$8,101",69.5,2020
+358,Atlantic Highlands Elementary School,"PK, KG-6",Atlantic Highlands School District,255,6.7%,"$14,588",69.4,2020
+359,Jefferson Elementary School,K-5,Caldwell-West School District,266,10.5%,"$13,355",69.2,2020
+360,Riverton School District,"PK, KG-8",Riverton School District,290,15.2%,"$12,139",69.1,2020
+361,Brookdale Avenue School,K-4,Verona Public School District,131,2.3%,"$14,613",69.1,2020
+362,Harry S. Truman Elementary School,K-3,Sayreville School District,453,36.4%,"$7,343",69,2020
+363,Lincoln Elementary School,"PK, KG-3",Rockaway Borough School District,223,25.6%,"$8,637",69,2020
+364,Newell Elementary School,"PK, KG-4",Upper Freehold Regional School District,486,7.8%,"$11,192",69,2020
+365,BelovED Community Charter School,K-11,BelovED Community Charter School,"1,311",70.7%,"$7,699",68.9,2020
+366,Howard C. Johnson Elementary School,"PK, KG-5",Jackson Township School District,404,18.1%,"$9,917",68.9,2020
+367,Logan Township Elementary School,1-4,Logan Township School District,337,19.6%,"$9,393",68.7,2020
+368,Katharine D Malone Elementary School,K-5,Rockaway Township School District,236,7.6%,"$19,911",68.7,2020
+369,C. Richard Applegate School,K-5,Freehold Township School District,399,15.0%,"$13,333",68.7,2020
+370,Fernbrook School,K-5,Randolph Township School District,498,14.3%,"$11,152",68.6,2020
+371,Greenbrook Elementary School,K-5,South Brunswick School District,379,21.9%,"$13,104",68.5,2020
+372,Marlton Elementary,K-5,Evesham Township School District,422,5.5%,"$9,212",68.5,2020
+373,Horace Mann Elementary School,K-5,Cherry Hill School District,256,15.6%,"$10,186",68.4,2020
+374,School #2,K-5,Clifton Public School District,385,30.4%,"$11,988",68.4,2020
+375,Nellie F. Bennett Elementary School,"PK, KG-5",Point Pleasant Borough School District,689,9.3%,"$9,835",68.3,2020
+376,Virgil I. Grissom Elementary School,K-5,Old Bridge Township School District,183,19.1%,"$12,335",68.2,2020
+377,Dr. Michael Conti School,"PK, KG-8",Jersey City Public Schools,720,45.6%,"$10,825",68.1,2020
+378,Chittick Elementary School,"PK, KG-5",East Brunswick Township School District,469,27.3%,"$13,704",68.1,2020
+379,Stony Lane Elementary School,K-4,Paramus Public School District,174,2.9%,"$15,297",68,2020
+380,Bear Tavern Elementary School,"PK, KG-5",Hopewell Valley Regional School District,397,2.8%,"$11,447",67.9,2020
+381,Thomas A. Edison Elementary School,"PK, KG-5",Haddon Township School District,138,4.3%,"$9,097",67.9,2020
+382,Robert L. Craig School,"PK, KG-8",Moonachie School District,351,49.6%,"$16,011",67.8,2020
+383,Benedict A. Cucinella School,"PK, KG-5",Washington Township School District,451,5.1%,"$10,786",67.6,2020
+384,Greenwich School,"PK, KG-5",Greenwich Township School District,394,11.2%,"$6,883",67.5,2020
+385,Oak Ridge Heights Elementary School,K-5,Woodbridge Township School District,233,15.9%,"$4,848",67.4,2020
+386,Ocean Road Elementary School,"PK, KG-5",Point Pleasant Borough School District,460,15.9%,"$11,627",67.2,2020
+387,Bay Head Elementary,K-8,Bay Head Borough School District,127,2.4%,"$17,883",67.1,2020
+388,Honiss Elementary/Middle School,K-8,Dumont Public School District,632,10.1%,"$8,229",67.1,2020
+389,Mill Lake,"PK, KG-3",Monroe Township School District,450,8.0%,"$13,039",67.1,2020
+390,John F. Kennedy Elementary School,K-5,Wayne Township Public School District,348,6.0%,"$14,918",67.1,2020
+391,Ann Blanche Smith,K-4,Hillsdale School District,290,12.1%,"$10,680",67,2020
+392,School #9,"PK, KG-5",Clifton Public School District,285,30.9%,"$13,262",66.9,2020
+393,William A. Miller Elementary School,K-5,Old Bridge Township School District,273,15.4%,"$12,088",66.8,2020
+394,Laning Avenue School,"PK, KG-4",Verona Public School District,233,1.3%,"$8,559",66.8,2020
+395,Wayside Elementary School,"PK, KG-4",Township of Ocean School District,554,23.8%,"$9,175",66.6,2020
+396,Stillwater Township School,"PK, KG-6",Stillwater Township School District,271,15.1%,"$17,126",66.4,2020
+397,Laura Donovan School,K-5,Freehold Township School District,429,14.2%,"$10,648",66.4,2020
+398,Jefferson Elementary School,K-5,Bergenfield Borough School District,278,23.7%,"$10,815",66.1,2020
+399,Port Republic Elementary School,K-8,Port Republic School District,105,2.9%,"$16,428",66.1,2020
+400,Claremont Avenue Elementary School,K-5,Woodbridge Township School District,297,21.2%,"$4,849",65.9,2020
+501,Lawrenceville Elementary School,"PK, KG-3",Lawrence Township Public School District,286,25.9%,"$15,394",56.9,2020
+502,Washington Elementary School,K-5,Westwood Regional School District,316,4.7%,"$5,601",56.9,2020
+503,James A. Garfield Elementary School,K-5,Collingswood Public School District,122,23.8%,"$9,274",56.9,2020
+504,Frenchtown Elementary,"PK, KG-8",Frenchtown Borough School District,108,14.8%,"$17,886",56.8,2020
+505,Adlai E. Stevenson School,"PK, KG-3",Fairfield Public School District,396,2.0%,"$8,326",56.6,2020
+506,Harmony Elementary School,"PK, KG-5",Middletown Township Public School District,464,16.2%,"$9,359",56.4,2020
+507,Island Heights Elementary School,"PK, KG-6",Island Heights School District,128,2.3%,"$14,138",56.4,2020
+508,Adamsville Primary School,"PK, KG-4",Bridgewater-Raritan Regional School District,532,19.4%,"$11,024",56.3,2020
+509,Leonardo Elementary School,K-5,Middletown Township Public School District,267,18.7%,"$9,254",56.2,2020
+510,McKenzie School,"PK, KG-4",East Rutherford School District,469,25.4%,"$10,579",56.2,2020
+511,Oxford Central School,"PK, KG-8",Oxford Township School District,250,16.8%,"$14,106",56.2,2020
+512,Long Beach Island Grade School,3-6,Long Beach Island Consolidated School District,106,15.1%,"$22,591",56.2,2020
+513,Laurel Springs School,"PK, KG-6",Laurel Springs School District,167,30.5%,"$11,410",56.2,2020
+514,Morgan Elementary School,"PK, KG-5",Hamilton Township Public School District,288,23.6%,"$10,522",56.1,2020
+515,Robert Treat Academy Charter School,K-8,Robert Treat Academy Charter School,688,65.0%,"$11,271",55.8,2020
+516,Belleville PS9,K-6,Belleville Public School District,124,50.8%,,55.8,2020
+517,Belleville PS10,"PK, KG-6",Belleville Public School District,152,36.2%,,55.7,2020
+518,Lloyd Road Elementary School,3-5,Matawan-Aberdeen Regional School District,517,29.6%,"$11,563",55.7,2020
+519,Bertrand F. Gibbs Elementary School,K-5,New Milford Public School District,464,8.0%,"$9,803",55.6,2020
+520,Richard L Rice School,"PK, KG-5",Evesham Township School District,547,7.3%,"$8,190",55.6,2020
+521,Kingston Elementary School,K-5,Cherry Hill School District,365,23.0%,"$9,353",55.6,2020
+522,Byram Lakes Elementary School,"PK, KG-4",Byram Township School District,453,5.7%,"$13,821",55.6,2020
+523,School #4,K-5,Cliffside Park School District,552,49.1%,"$13,133",55.4,2020
+524,McKinley Avenue Elementary School,3-4,Stafford Township School District,570,23.2%,"$7,441",55.3,2020
+525,Berkley Street School,K-5,New Milford Public School District,453,6.0%,"$8,667",55.3,2020
+526,Stoy Elementary School,"PK, KG-5",Haddon Township School District,139,9.4%,"$9,973",55.3,2020
+527,Ocean Township Elementary School,"PK, KG-4",Township of Ocean School District,379,28.2%,"$9,638",55.2,2020
+528,James A. McDivitt Elementary School,K-5,Old Bridge Township School District,514,16.1%,"$12,970",55.2,2020
+529,Catherine A Dwyer Elementary School,K-5,Rockaway Township School District,295,16.3%,"$16,158",55,2020
+530,Abraham Lincoln Elementary School,K-5,Wyckoff Township Public School District,304,1.0%,"$12,867",55,2020
+531,Thomas Jefferson Elementary School,"PK, KG-5",Hawthorne Public School District,252,14.7%,"$17,713",55,2020
+532,Bergen Arts and Sciences Charter School,K-12,Bergen Arts and Science Charter School,"1,203",44.8%,"$8,403",54.6,2020
+533,Ironia School,K-5,Randolph Township School District,436,4.6%,"$11,341",54.6,2020
+534,Fredon Township School,"PK, KG-6",Fredon Township School District,175,6.3%,"$17,927",54.6,2020
+535,Crest Memorial School,"PK, KG-8",Wildwood Crest Borough School District,252,36.9%,"$22,617",54.5,2020
+536,Estell Manor Elementary School,K-8,Estell Manor School District,189,18.0%,"$13,620",54.5,2020
+537,Lincoln School,K-6,Nutley Public School District,447,18.8%,"$11,383",54.5,2020
+538,Atlantic Avenue,"PK, KG-2",HADDON HEIGHTS School District,127,2.4%,"$13,637",54.5,2020
+539,Dwight D. Eisenhower Elementary School,K-3,Sayreville School District,489,31.9%,"$6,725",54.4,2020
+540,Lafayette Township School,"PK, KG-8",Lafayette Township School District,194,11.9%,"$16,815",54.4,2020
+541,Mount Arlington Public School,3-8,Mount Arlington Public School District,218,18.3%,"$3,206",54.3,2020
+542,Bayview Elementary School,K-5,Middletown Township Public School District,355,15.5%,"$11,243",54.3,2020
+543,Memorial Elementary School,3-5,Howell Township Public School District,258,22.5%,"$13,399",54.2,2020
+544,Swimming River School,3-5,Tinton Falls School District,440,18.0%,"$12,736",54.2,2020
+545,Apshawa Elementary School,K-5,West Milford Township Public School District,195,17.4%,"$12,195",53.9,2020
+546,Gilbert Avenue School,"PK, KG-5",Elmwood Park School District,392,40.6%,"$5,323",53.9,2020
+547,Lanoka Harbor Elementary School,K-4,Lacey Township School District,474,23.0%,"$11,750",53.9,2020
+548,Clarendon School,K-5,Secaucus School District,470,23.0%,"$9,914",53.8,2020
+549,Langtree Elementary School,"PK, KG-5",Hamilton Township Public School District,393,29.8%,"$8,715",53.8,2020
+550,Indian Mills Elementary School,"PK, KG-4",Shamong Township School District,354,8.8%,"$15,158",53.8,2020
+551,Northfield Community Elementary School,"PK, KG-4",Northfield City School District,460,21.5%,"$10,405",53.7,2020
+552,Hooper Avenue Elementary School,K-5,Toms River Regional School District,677,14.2%,"$6,561",53.6,2020
+553,Ardena Elementary School,3-5,Howell Township Public School District,324,25.0%,"$9,486",53.6,2020
+554,Hardyston Township Elementary School,"PK, KG-4",Hardyston Township School District,318,7.9%,"$8,751",53.4,2020
+555,Whitman Elementary School,K-5,Washington Township School District,518,17.8%,"$10,724",53.2,2020
+556,Aura Elementary School,"PK, KG-6",Elk Township School District,311,17.7%,"$13,054",53.1,2020
+557,Bloomsbury Borough School,"PK, KG-8",Bloomsbury Borough School District,89,29.2%,"$16,669",53.1,2020
+558,Oldmans Township School,"PK, KG-8",Oldmans Township School District,282,21.3%,"$12,139",53.1,2020
+559,Washington Street Elementary School,K-5,Toms River Regional School District,308,26.9%,"$6,399",53,2020
+560,Ben Franklin Elementary,"PK, KG-3",Lawrence Township Public School District,0,,"$15,316",53,2020
+561,John Adams,"PK, KG-4",North Brunswick Township School District,453,16.1%,"$9,137",52.9,2020
+562,Englewood on the Palisades Charter School,K-8,Englewood on the Palisades Charter School,311,48.9%,"$11,407",52.9,2020
+563,Hainesport Township School,"PK, KG-8",Hainesport Township School District,512,10.2%,"$12,400",52.7,2020
+564,Sayen Elementary School,K-5,Hamilton Township Public School District,265,25.7%,"$9,728",52.6,2020
+565,Lillian Drive School,1-4,Hazlet Township Public School District,239,13.8%,"$8,335",52.6,2020
+566,Patricia M. Noonan School PS #26,"PK, KG-5",Jersey City Public Schools,479,48.2%,"$12,306",52.6,2020
+567,Fleetwood Elementary School,"PK, KG-4",Mount Laurel Township School District,358,14.0%,"$7,934",52.5,2020
+568,Raritan Valley School,1-4,Hazlet Township Public School District,241,16.2%,"$10,336",52.5,2020
+569,M. Scott Carpenter Elementary School,K-5,Old Bridge Township School District,250,10.0%,"$13,623",52.4,2020
+570,Paradise Knoll Elementary School,K-5,West Milford Township Public School District,180,12.2%,"$10,908",52.3,2020
+571,Slocum Skewes School,2-9,Ridgefield School District,734,24.9%,"$11,589",52.3,2020
+572,Thomas Paine Elementary School,K-5,Cherry Hill School District,336,28.0%,"$9,500",52.2,2020
+573,Frank W. Gavlak Elementary School,K-6,Wallington Boro School District,386,35.5%,"$7,394",52.2,2020
+574,Green Hills School,K-8,Green Township School District,371,4.9%,"$14,773",52.1,2020
+575,Bells Elementary School,K-5,Washington Township School District,510,17.8%,"$10,606",51.6,2020
+576,School #1,K-5,Clifton Public School District,245,62.4%,"$12,189",51.5,2020
+577,The Ethical Community Charter School,K-8,The Ethical Community Charter School,390,51.0%,"$8,303",51.5,2020
+578,Arthur Stanlick Elementary School,2-5,Jefferson Township Public School District,272,15.8%,"$10,708",51.5,2020
+579,School #16,K-5,Clifton Public School District,195,33.3%,"$13,684",51.4,2020
+580,Manchester Township Elementary School,K-5,Manchester Township School District,565,31.0%,"$12,964",51.4,2020
+581,Nixon Elementary School,K-4,Roxbury Township School District,261,26.1%,"$13,933",51.3,2020
+582,Sandyston Walpack Consolidated School,K-6,Sandyston-Walpack Consolidated School District,116,6.0%,"$17,437",51.2,2020
+583,Valley Road School,"PK, KG-8",Stanhope School District,302,14.9%,"$15,419",51.2,2020
+584,West Belmar Elementary School,K-5,Wall Township Public School District,169,32.0%,"$13,457",51.2,2020
+585,Elwood Kindle Elementary School,2-5,Pitman Boro School District,203,12.8%,"$10,965",51.1,2020
+586,Empowerment Academy Charter School,K-7,Empowerment Academy Charter School,839,64.1%,"$8,106",50.6,2020
+587,Arthur Rann Elementary School,K-6,Galloway Township Public School District,687,45.0%,"$10,851",50.5,2020
+588,Franklin Elementary School,K-4,Roxbury Township School District,303,16.2%,"$13,694",50.4,2020
+589,John Hill School,3-8,Boonton Town Public School District,537,37.1%,"$11,679",50.3,2020
+590,Mark Newbie Elementary School,K-5,Collingswood Public School District,131,22.1%,"$11,326",50.3,2020
+591,Brigantine Community School,"PK, KG-8",Brigantine Public School District,444,42.1%,,50.1,2020
+592,Endeavour Elementary School,"PK, KG-4",North Hanover Township School District,607,26.4%,,50,2020
+593,Pohatcong Township School,"PK, KG-8",Pohatcong Township School District,289,1.0%,"$14,021",49.9,2020
+594,Private Nicholas Minue Elementary School,"PK, KG-5",Carteret Public School District,619,62.5%,"$4,949",49.8,2020
+595,Marian E. McKeown Elementary School,"PK, KG-6",Hampton Township School District,309,13.3%,"$17,454",49.7,2020
+596,School #13,K-5,Clifton Public School District,447,50.3%,"$11,664",49.5,2020
+597,Woodside Avenue School,K-5,Franklin Lakes School District,258,1.2%,"$11,699",49.4,2020
+598,John F. Kennedy Primary School,K-4,Bridgewater-Raritan Regional School District,427,26.9%,"$9,400",49.4,2020
+599,Number 9,"PK, KG-5",Linden Public School District,327,31.5%,"$9,767",49.4,2020
+600,Roosevelt Elementary School,K-5,Hawthorne Public School District,511,28.8%,"$11,687",49.4,2020
+601,Holland Township Elementary School,"PK, KG-8",Holland Township School District,499,5.4%,"$16,743",49.3,2020
+602,Birches Elementary School,K-5,Washington Township School District,397,16.4%,"$12,502",49.3,2020
+603,Memorial School,"PK, KG-3",Emerson Public School District,313,5.8%,"$9,974",49.3,2020
+604,Switlik Elementary School,"PK, KG-5",Jackson Township School District,736,24.7%,"$8,304",49.3,2020
+605,Cedar Creek Elementary School,K-4,Lacey Township School District,445,20.9%,"$12,360",49.2,2020
+606,Warren E. Sooy Junior Elementary School,2-5,Hammonton School District,696,,"$10,636",49.2,2020
+607,Florence M. Burd,"PK, KG-4",Andover Regional School District,229,17.0%,"$14,461",49.1,2020
+608,Clara Barton Elementary School,K-5,Cherry Hill School District,462,28.8%,"$7,759",49.1,2020
+609,Jefferson (Annex) Elementary School,K-3,Wallington Boro School District,238,31.1%,"$6,495",49,2020
+610,South Harrison Elementary School,"PK, KG-6",South Harrison Township School District,315,13.3%,"$11,098",48.9,2020
+611,Westbrook Elementary School,K-5,West Milford Township Public School District,215,10.7%,"$11,326",48.9,2020
+612,White Rock Elementary School,2-5,Jefferson Township Public School District,267,10.5%,"$10,339",48.8,2020
+613,Cedar Grove Elementary School,"PK, KG-5",Toms River Regional School District,844,20.6%,"$4,999",48.7,2020
+614,University Heights Elementary School,"PK, KG-5",Hamilton Township Public School District,307,28.7%,"$12,468",48.6,2020
+615,Haskell Elementary School,"PK, KG-8",Wanaque School District,386,25.6%,"$15,716",48.6,2020
+616,MacAfee Road School,"PK, KG-5",Franklin Township Public School District,360,32.5%,"$11,373",48.5,2020
+617,E. Roy Bixby,"PK, KG-5",Bogota Public School District,307,40.4%,"$14,677",48.5,2020
+618,Number 10,"PK, KG-5",Linden Public School District,243,29.2%,"$10,420",48.3,2020
+619,Farmingdale Elementary,"PK, KG-8",Farmingdale Public School District,160,26.9%,"$15,141",48.3,2020
+620,Washington Irving School #4,"PK, KG-5",Garfield Public School District,382,58.6%,"$10,580",48.3,2020
+621,Eldridge Park School,K-3,Lawrence Township Public School District,203,28.6%,"$16,447",48.2,2020
+622,Harmony Township School,"PK, KG-8",Harmony Township School District,210,12.4%,"$16,374",48.1,2020
+623,Columbus School,K-5,Lodi School District,229,46.3%,"$8,336",48.1,2020
+624,School #5,K-5,Clifton Public School District,373,44.2%,"$12,695",47.9,2020
+625,Madison Elementary School,"PK, KG-6",Rahway Public School District,341,32.6%,"$13,840",47.8,2020
+626,Roosevelt Elementary School,"PK, KG-4",South Plainfield School District,448,25.2%,"$5,795",47.7,2020
+627,John A. Forrest Elementary School,K-4,Fair Lawn Public School District,260,18.1%,"$7,529",47.7,2020
+628,Ridgeway Elementary School,"PK, KG-5",Manchester Township School District,415,32.5%,"$15,367",47.3,2020
+629,School #14,"PK, KG-5",Clifton Public School District,356,50.8%,"$13,815",47.2,2020
+630,Wilson School,"PK, KG-5",Lodi School District,336,44.6%,"$6,821",47.2,2020
+631,Lenape Meadows,"PK, KG-3",Mahwah Township Public School District,328,14.0%,"$10,910",47.1,2020
+632,Green-Fields Elementary School,3-4,West Deptford Township School District,466,29.4%,"$10,486",47.1,2020
+633,Yardville Elementary School,"PK, KG-5",Hamilton Township Public School District,288,18.1%,"$10,057",47,2020
+634,Woodrow Wilson School #5,"PK, KG-5",Garfield Public School District,280,48.2%,"$10,577",46.9,2020
+635,Frankford Township School,"PK, KG-8",Frankford Township Consolidated School District,479,8.6%,"$16,040",46.9,2020
+636,Fort Dix Elementary School,"PK, KG-5",Pemberton Township School District,345,23.5%,"$14,204",46.8,2020
+637,Midland School #1,"PK, KG-8",Rochelle Park School District,484,12.4%,"$14,087",46.5,2020
+638,School #8,"PK, KG-5",Clifton Public School District,169,41.4%,"$18,003",46.5,2020
+639,Roosevelt School,"PK, KG-5",Lodi School District,169,45.6%,"$7,918",46.4,2020
+640,Summerfiled Elementary School,"PK, KG-5",Neptune Township School District,404,43.8%,"$11,148",46.4,2020
+641,Wanaque Elementary School,"PK, KG-8",Wanaque School District,478,15.9%,"$15,590",46.4,2020
+642,Cape May City Elementary School,"PK, KG-6",Cape May City School District,154,29.2%,"$20,849",46.3,2020
+643,Eagleswood Elementary School,"PK, KG-6",Eagleswood Township School District,135,29.6%,"$16,244",46.3,2020
+644,Reeds Road Elementary School,K-6,Galloway Township Public School District,510,47.3%,"$12,182",46.1,2020
+645,Central Elementary School,"PK, KG-3",Great Meadows Regional School District,286,8.7%,"$9,632",46.1,2020
+646,Swift-Slaybaugh Complex,"PK, KG-3",Egg Harbor Township School District,887,27.2%,"$12,373",46.1,2020
+647,Lincoln Elementary School,"PK, KG-5",Hasbrouck Heights School District,386,17.1%,"$10,532",46,2020
+648,Whiting Elementary School,"PK, KG-5",Manchester Township School District,248,26.6%,"$19,177",46,2020
+649,Warren G. Harding Elementary School,"PK, KG-6",Kenilworth School District,663,17.3%,"$9,535",46,2020
+650,Mansfield Township Elementary,"PK, KG-6",Mansfield Township Elementary School District,531,33.5%,"$12,529",46,2020
+651,Netcong Elementary School,"PK, KG-8",Netcong School District,283,36.4%,"$12,749",46,2020
+652,Lafayette Estates Elementary School,K-5,Woodbridge Township School District,430,46.0%,"$3,842",45.8,2020
+653,Parkview Elementary School,"PK, KG-3",Stratford School District,356,30.3%,"$10,763",45.7,2020
+654,Memorial Elementary School,"PK, KG-4",North Haledon School District,330,11.5%,"$11,307",45.7,2020
+655,Silver Bay Elementary School,"PK, KG-5",Toms River Regional School District,587,24.0%,"$7,524",45.7,2020
+656,Crawford-Rodriguez Elementary School,"PK, KG-5",Jackson Township School District,547,28.9%,"$8,982",45.6,2020
+657,Maple Road Elementary School,"PK, KG-5",West Milford Township Public School District,234,10.3%,"$12,608",45.6,2020
+658,E Raymond Appleby Elementary School,2-5,Spotswood Public School District,334,18.0%,"$11,070",45.5,2020
+659,Whitehall Elementary School,"PK, KG-4",Monroe Township Public School District,311,29.6%,"$6,021",45.5,2020
+660,Mary S. Shoemaker School,1-5,Woodstown-Pilesgrove Regional School District,470,27.9%,"$5,196",45.5,2020
+661,Dennis B O'Brien Elementary School,"PK, KG-5",Rockaway Township School District,310,13.9%,"$16,882",45.3,2020
+662,Drum Point Road Elementary School,K-5,Brick Township Public School District,479,27.3%,"$8,027",45.2,2020
+663,Seth Boyden Elementary Demonstration School,K-5,South Orange-Maplewood School District,456,36.2%,"$6,478",45.1,2020
+664,Middle Road School,1-4,Hazlet Township Public School District,252,17.1%,"$8,074",45,2020
+665,Thomas Jefferson School #9,"PK, KG-5",Garfield Public School District,295,49.5%,"$15,130",44.9,2020
+666,Alexander Hamilton,3-5,Morris School District,287,53.0%,"$13,131",44.8,2020
+667,South End Elementary School,"PK, KG-4",Cedar Grove Township School District,332,0.9%,"$8,403",44.8,2020
+668,Roland Rogers Elementary School,"PK, KG-6",Galloway Township Public School District,553,48.3%,"$12,794",44.8,2020
+669,Lillian M. Steen,"PK, KG-5",Bogota Public School District,323,40.6%,"$8,428",44.6,2020
+670,National Park School,"PK, KG-6",National Park Boro School District,293,44.4%,"$14,129",44.6,2020
+671,Menlo Park Terrace Elementary School,K-5,Woodbridge Township School District,348,32.2%,"$5,741",44.6,2020
+672,Roosevelt School,3-5,Lyndhurst Public School District,295,22.0%,"$6,715",44.6,2020
+673,Belmar Elementary,"PK, KG-8",Belmar Elementary School District,437,52.6%,"$15,538",44.5,2020
+674,Upper Greenwood Lake Elementary School,K-5,West Milford Township Public School District,197,18.3%,"$11,903",44.4,2020
+675,Beatrice Gilmore School,3-5,Woodland Park School District,0,,"$12,753",44.4,2020
+676,Merchantville Elementary School,"PK, KG-8",Merchantville School District,403,31.8%,"$10,608",44.4,2020
+677,Washington School,"PK, KG-5",Lodi School District,350,41.1%,"$6,490",44.3,2020
+678,Southwood Elementary School,K-5,Old Bridge Township School District,385,16.6%,"$16,304",44.3,2020
+679,George Washington Elementary School,"PK, KG-5",North Arlington School District,325,17.8%,"$7,120",44.2,2020
+680,Holly Hills Elementary School,"PK, KG-3",Westampton Township Public School District,414,19.8%,"$9,987",44.1,2020
+681,Carlstadt Public School,"PK, KG-8",Carlstadt Public School District,516,26.9%,"$13,954",44,2020
+682,Ventnor Elementary School,"PK, KG-4",Ventnor City School District,343,46.6%,"$6,322",44,2020
+683,Lucy N. Holman Elementary School,"PK, KG-5",Jackson Township School District,498,38.8%,"$8,913",43.8,2020
+684,Southampton Township School #2,3-5,Southampton Township School District,239,16.3%,"$12,084",43.8,2020
+685,Thomas Jefferson Elementary School,K-5,North Arlington School District,172,25.0%,"$5,542",43.7,2020
+686,Oak Knoll Elementary School,"PK, KG-4",Monroe Township Public School District,529,22.5%,"$5,139",43.6,2020
+687,Delran Intermediate School,3-5,Delran Township School District,663,23.7%,"$10,792",43.5,2020
+688,Dennis Township Elementary/Middle Schools,3-8,Dennis Township School District,336,26.8%,"$24,469",43.5,2020
+689,Bartle Elementary School,2-5,Highland Park Boro School District,437,36.2%,"$9,348",43.3,2020
+690,Washington Elementary School,"PK, KG-4",Little Ferry Public School District,442,19.2%,"$1,225",43.3,2020
+691,Joseph T. Donahue Elementary School,3-4,Barnegat Township School District,487,37.2%,"$8,441",43,2020
+692,West Amwell Township School,K-6,South Hunterdon Regional School District,212,13.7%,"$11,144",43,2020
+693,Canfield Avenue School,"PK, KG-6",Mine Hill Township School District,339,28.0%,"$14,201",42.9,2020
+694,Good Intent Elementary School,2-6,Deptford Township Public School District,334,26.3%,"$7,883",42.6,2020
+695,Robert Gordon Elementary School,"PK, KG-5",Roselle Park Public School District,302,32.8%,"$7,199",42.6,2020
+696,John M. Bailey Community School,"PK, KG-8",Bayonne School District,656,54.0%,"$10,468",42.5,2020
+697,Alfred Zampella School,"PK, KG-8",Jersey City Public Schools,783,64.4%,"$10,970",42.3,2020
+698,Grace N. Rogers Elementary School,3-5,East Windsor Regional School District,561,41.4%,"$11,916",42.3,2020
+699,Franklin Elementary School,"PK, KG-4",South Plainfield School District,264,17.0%,"$7,790",42.1,2020
+700,Franklin D Roosevelt Elementary School,"PK, KG-5",North Arlington School District,123,18.7%,"$7,991",42.1,2020
+701,Perry L. Drew Elementary School,3-5,East Windsor Regional School District,567,41.3%,"$11,627",42,2020
+702,Rafael Cordero y Molina,"PK, KG-8",Jersey City Public Schools,765,36.5%,"$10,087",41.9,2020
+703,Francis A. Desmares Elementary School,K-4,Flemington-Raritan Regional School District,470,36.0%,"$10,815",41.7,2020
+704,Livingston Park,"PK, KG-4",North Brunswick Township School District,486,21.8%,"$9,438",41.6,2020
+705,Birchwood Elementary School,"PK, KG-5",Rockaway Township School District,254,23.2%,"$15,674",41.6,2020
+706,Walter F. Robinson Community School,"PK, KG-8",Bayonne School District,772,51.9%,"$10,239",41.5,2020
+707,Victor Mravlag School No. 21,"PK, KG-8",Elizabeth Public Schools,602,36.7%,"$10,124",41.4,2020
+708,Claremont Elementary School,"PK, KG-5",Franklin Township Public School District,646,38.9%,"$9,539",41.3,2020
+709,Olivet Elementary School,2-4,Pittsgrove Township School District,359,28.1%,"$8,066",41.3,2020
+710,Wantage Elementary School,3-5,Sussex-Wantage Regional School District,326,29.8%,"$11,412",40.9,2020
+711,Fairview Elementary School,"PK, KG-6",Bloomfield Township School District,469,37.1%,"$6,620",40.9,2020
+712,Highlands Elementary School,"PK, KG-6",Highlands Borough School District,174,49.4%,"$19,302",40.8,2020
+713,Roosevelt School #7,"PK, KG-5",Garfield Public School District,273,51.6%,"$12,612",40.6,2020
+714,Conerly Road School,"PK, KG-5",Franklin Township Public School District,353,28.0%,"$10,545",40.6,2020
+715,Van Derveer Elementary School,"PK, KG-5",Somerville Public School District,749,36.7%,"$11,128",40.6,2020
+716,Ridge and Valley Charter School,K-8,Ridge and Valley Charter School,123,2.4%,"$13,265",40.6,2020
+717,Woodbine Avenue Elementary School,K-5,Woodbridge Township School District,509,34.4%,"$4,196",40.6,2020
+718,Robert Morris School,"PK, KG-8",South Bound Brook Public School District,428,48.6%,"$13,506",40.6,2020
+719,Pace Charter School of Hamilton,K-8,Pace Charter School of Hamilton,419,78.8%,"$10,730",40.5,2020
+720,Margaret Mace Elementary School,"PK, KG-8",North Wildwood School District,193,53.4%,"$26,141",40.5,2020
+721,Frederic A. Priff Elementary School,3-6,Ocean Township School District,257,42.0%,"$11,497",40.3,2020
+722,Weymouth Township Elementary School,"PK, KG-8",Weymouth Township School District,143,34.3%,"$14,972",40.2,2020
+723,John E Riley Elementary School,"PK, KG-4",South Plainfield School District,333,19.5%,"$6,256",40.1,2020
+724,School #3,"PK, KG-4",Cliffside Park School District,395,62.5%,"$17,165",40.1,2020
+725,High Bridge Elementary School,"PK, KG-4",High Bridge Borough School District,207,15.5%,"$17,715",40.1,2020
+726,Marshall Hill Elementary School,K-5,West Milford Township Public School District,235,23.0%,"$12,904",40,2020
+727,North Star Academy Charter School,K-12,North Star Academy Charter School,"6,298",86.1%,"$10,058",40,2020
+728,Lower Alloways Creek Elementary School,"PK, KG-8",The Lower Alloways Creek School District,163,23.9%,"$15,051",39.7,2020
+729,Hope Township School,"PK, KG-8",Hope Township School District,115,13.0%,"$19,117",39.7,2020
+730,Forked River Elementary School,K-4,Lacey Township School District,425,36.9%,"$13,075",39.6,2020
+731,Blairstown Elementary School,"PK, KG-6",Blairstown Elementary Township School District,403,14.6%,"$13,951",39.6,2020
+732,Samuel T. Busansky School,3-5,Pemberton Township School District,274,43.1%,"$18,370",39.5,2020
+733,Connecticut Farms Elementary,"PK, KG-5",Township of Union School District,373,35.7%,"$9,283",39.5,2020
+734,Smithville Elementary School,"PK, KG-6",Galloway Township Public School District,598,46.7%,"$10,933",39.4,2020
+735,Sixteenth Avenue School,"PK, KG-5",Elmwood Park School District,427,45.9%,"$7,714",39.3,2020
+736,School #5,"PK, KG-4",Cliffside Park School District,288,44.4%,"$16,248",39.3,2020
+737,Ryerson Elementary School,K-5,Wayne Township Public School District,256,23.4%,"$16,459",39.3,2020
+738,Demarest Elementary School,K-6,Bloomfield Township School District,480,25.6%,"$5,551",39.2,2020
+739,Clarence B. Lamb Elementary School,"PK, KG-4",North Hanover Township School District,291,40.2%,"$11,042",39.2,2020
+740,Hoover Elementary School,"PK, KG-5",Bergenfield Borough School District,261,50.6%,"$12,367",39.2,2020
+741,Carteret Elementary School,K-6,Bloomfield Township School District,387,53.5%,"$7,694",39.2,2020
+742,John P. Faber Elementary School,"PK, KG-5",Dunellen Public School District,589,44.5%,"$4,605",39.1,2020
+743,Franklin School,K-6,Saddle Brook School District,273,25.3%,"$12,257",39.1,2020
+744,Sherman Elementary School,"PK, KG-5",Roselle Park Public School District,338,27.8%,"$7,881",39.1,2020
+745,James W. Lilley Elementary School,K-5,Gloucester Township Public Schools,494,49.2%,"$13,945",39.1,2020
+746,Belleville PS3,K-6,Belleville Public School District,322,52.5%,,39.1,2020
+747,Avon Elementary School,"PK, KG-4",Barrington School District,312,22.1%,"$4,908",39.1,2020
+748,Lincoln Community School #5,"PK, KG-8",Bayonne School District,453,43.9%,"$15,194",39,2020
+749,Salome H. Long Memorial School,K-6,Saddle Brook School District,287,8.4%,"$13,912",38.7,2020
+750,Marie V. Duffy Elementary School,"PK, KG-5",Wharton Borough School District,421,53.0%,"$10,879",38.7,2020
+751,Hopewell Crest,"PK, KG-8",Hopewell Township School District,496,25.8%,"$10,794",38.6,2020
+752,Frank R Conwell School,"PK, KG-5",Jersey City Public Schools,601,50.1%,"$9,863",38.5,2020
+753,Deal Elementary School,K-8,Deal Boro School District,156,17.3%,"$16,125",38.3,2020
+754,Fountain Woods Elementary School,2-5,Burlington Township School District,786,28.8%,"$10,824",38.2,2020
+755,Pine Beach Elementary School,K-5,Toms River Regional School District,414,34.1%,"$6,491",38.1,2020
+756,Jefferson School,3-5,Lyndhurst Public School District,259,34.7%,"$8,025",38,2020
+757,James Russell Lowell Elementary School,K-4,Teaneck School District,333,45.3%,"$6,521",37.9,2020
+758,Mary Bray Elementary School,"PK, KG-5",Mt. Ephraim School District,289,32.2%,"$11,701",37.9,2020
+759,Lenox School,K-5,Pompton Lakes School District,352,23.0%,"$9,988",37.8,2020
+760,Madison Park Elementary School,K-5,Old Bridge Township School District,278,35.6%,"$16,024",37.6,2020
+761,Woodrow Wilson Community School,"PK, KG-8",Bayonne School District,747,55.2%,"$12,061",37.5,2020
+762,Roosevelt Elementary School,"PK, KG-6",Kearny,379,31.7%,"$8,172",37.5,2020
+763,Nathaniel Hawthorne Elementary School,K-4,Teaneck School District,302,36.4%,"$6,234",37.4,2020
+764,Franklin Elementary School,K-6,Bloomfield Township School District,350,34.9%,"$7,165",37.4,2020
+765,Joyce Kilmer Elementary School,K-5,Cherry Hill School District,420,30.2%,"$7,774",37.4,2020
+766,Thomas Jefferson Elementary School,K-5,Washington Township School District,438,32.4%,"$10,138",37.2,2020
+767,Slackwood Elementary School,K-3,Lawrence Township Public School District,219,47.9%,"$16,162",37.1,2020
+768,Roosevelt Elementary School,"PK, KG-6",Ridgefield Park Public School District,339,35.1%,"$10,844",36.9,2020
+769,Oak Valley Elementary School,2-6,Deptford Township Public School District,354,31.4%,"$6,912",36.9,2020
+770,Helen I. Smith School,K-6,Saddle Brook School District,295,20.0%,"$14,876",36.9,2020
+771,Bellmawr Park Elementary School,"PK, KG-4",Bellmawr Public School District,441,42.4%,"$12,420",36.8,2020
+772,Lanes Mill Elementary School,K-5,Brick Township Public School District,560,31.3%,"$7,474",36.8,2020
+773,East Dover Elementary School,K-5,Toms River Regional School District,699,32.9%,"$7,109",36.7,2020
+774,School #15,"PK, KG-5",Clifton Public School District,310,71.6%,"$12,735",36.7,2020
+775,Gantner Avenue School,K-5,Elmwood Park School District,327,34.6%,"$7,848",36.7,2020
+776,Quinton Township School,"PK, KG-8",Quinton Township School District,260,28.8%,"$11,907",36.6,2020
+777,Livingston Elementary,"PK, KG-4",Township of Union School District,383,22.2%,"$7,845",36.5,2020
+778,Parkview School,"PK, KG-3",Milltown School District,323,10.5%,"$10,823",36.5,2020
+779,Ocean Avenue Elementary School,"PK, KG-5",Middletown Township Public School District,296,31.4%,"$8,747",36.5,2020
+780,Aaron Decker School,"PK, KG-4",Butler Public School District,374,22.5%,"$12,052",36.4,2020
+781,Union Valley Elementary School,"PK, KG-5",Gloucester Township Public Schools,476,27.1%,"$13,813",36.4,2020
+782,Ethel M Burke Elementary School,K-4,Bellmawr Public School District,258,42.6%,"$12,426",36.3,2020
+783,Bobby's Run Elementary School,3-5,Lumberton Township Board of Education,331,29.0%,"$13,627",36.2,2020
+784,Susan B. Anthony Elementary School,"PK, KG-5",North Arlington School District,248,23.8%,,36,2020
+785,Cliffwood Elementary School,"PK, KG-3",Matawan-Aberdeen Regional School District,287,43.2%,"$17,457",36,2020
+786,Holly Glen Elementary School,"PK, KG-4",Monroe Township Public School District,437,36.6%,"$6,850",36,2020
+787,Broad Street Elementary School,"PK, KG-5",Greenwich Township School District,235,15.3%,$337,35.6,2020
+788,Ogdensburg Borough School,"PK, KG-8",Ogdensburg Borough School District,254,27.2%,"$14,824",35.6,2020
+789,Julia A. Barnes School,"PK, KG-8",Jersey City Public Schools,303,52.1%,"$13,400",35.6,2020
+790,Hudson Arts and Science Charter School,K-8,Hudson Arts and Science Charter School,773,46.3%,"$8,007",35.5,2020
+791,Alexander Elementary School,K-5,Hamilton Township Public School District,337,18.1%,"$9,054",35.5,2020
+792,Passaic Gifted and Talented Academy School No. 20,2-8,Passaic City School District,946,100.0%,"$7,620",35.3,2020
+793,Maud Abrams School,3-4,Lower Township Elementary School District,355,53.8%,"$12,149",35,2020
+794,Lincoln Elementary School,"PK, KG-6",Ridgefield Park Public School District,374,35.6%,"$15,052",35,2020
+795,Alloway Township School,"PK, KG-8",Alloway Township School District,297,13.8%,"$10,893",34.9,2020
+796,Francis Lore Elementary School,"PK, KG-5",Ewing Township School District,500,35.2%,"$11,727",34.8,2020
+797,Gloucester Township Elementary School,K-5,Gloucester Township Public Schools,252,33.7%,"$12,587",34.8,2020
+798,Belleville PS7,"PK, KG-6",Belleville Public School District,404,45.0%,,34.8,2020
+799,Beachwood Elementary School,K-5,Toms River Regional School District,456,23.9%,"$6,926",34.7,2020
+800,Mahatma K. Gandhi School,"PK, KG-8",Jersey City Public Schools,"1,176",57.7%,"$10,107",34.6,2020
+801,Mercerville Elementary School,K-5,Hamilton Township Public School District,316,25.3%,"$8,682",34.4,2020
+802,Lindeneau Elementary School,K-5,Edison Township School District,431,29.0%,"$6,230",34.4,2020
+803,Eastampton Township Community School,"PK, KG-8",Eastampton Township School District,548,21.5%,"$12,289",34.4,2020
+804,Tuckerton Elementary School,"PK, KG-6",Tuckerton Borough School District,309,38.2%,"$13,791",34.3,2020
+805,Lincoln School,"PK, KG-5",Pompton Lakes School District,331,23.3%,"$14,057",34.3,2020
+806,Sunnybrae Elementary School,K-5,Hamilton Township Public School District,312,36.5%,"$11,259",34.2,2020
+807,Sylvia Rosenauer Elementary School,"PK, KG-5",Jackson Township School District,237,48.1%,"$13,203",34.1,2020
+808,Veterans Memorial Elementary School,K-5,Brick Township Public School District,647,43.7%,"$7,392",34.1,2020
+809,Hazel Avenue Elementary School,K-5,West Orange Public Schools,320,50.3%,"$11,540",34,2020
+810,Schuyler Elementary School,"PK, KG-6",Kearny,430,58.4%,"$6,903",33.9,2020
+811,Grandview Elementary School,K-3,Piscataway Township School District,862,32.4%,"$5,683",33.9,2020
+812,Robinson Elementary School,K-5,Hamilton Township Public School District,380,30.5%,"$8,942",33.9,2020
+813,Maria Varisco Rogers Charter School,K-8,Maria L. Varisco-Rogers Charter School,574,84.5%,"$14,257",33.9,2020
+814,Ocean Gate Elementary School,"PK, KG-6",Ocean Gate School District,134,49.3%,"$18,531",33.7,2020
+815,Franklin Park School,"PK, KG-5",Franklin Township Public School District,638,32.4%,"$12,403",33.5,2020
+816,Thomas G. Connors Elementary School,K-5,Hoboken Public School District,292,51.7%,"$18,095",33.5,2020
+817,Hilltop School,"PK, KG-5",Lodi School District,306,35.6%,"$7,701",33.5,2020
+818,Woodbury Heights Elementary,"PK, KG-6",Woodbury Heights Public School District,229,23.6%,"$12,936",33.5,2020
+819,Chatsworth Elementary School,"PK, KG-8",Woodland Township School District,118,16.9%,"$15,535",33.3,2020
+820,West Dover Elementary School,K-5,Toms River Regional School District,329,26.1%,"$7,274",33.1,2020
+821,Christopher Columbus School #8,"PK, KG-5",Garfield Public School District,306,60.8%,"$11,164",33,2020
+822,Belleville PS5,K-6,Belleville Public School District,375,52.8%,,32.9,2020
+823,Main Road School,3-4,Township of Franklin School District,388,34.8%,"$6,702",32.7,2020
+824,Downe Township Elementary School,"PK, KG-8",Downe Township School District,163,40.5%,"$15,041",32.7,2020
+825,Robert Fulton Elementary School,1-8,North Bergen School District,961,47.9%,"$4,189",32.7,2020
+826,James F. Murray School,"PK, KG-8",Jersey City Public Schools,739,64.7%,"$10,598",32.6,2020
+827,Leroy Gordon Cooper Elementary School,K-5,Old Bridge Township School District,196,37.8%,"$12,805",32.6,2020
+828,McGalliard Elementary School,K-5,Hamilton Township Public School District,262,38.5%,"$8,432",32.5,2020
+829,School #3,K-5,Clifton Public School District,282,59.2%,"$11,857",32.5,2020
+830,Osbornville Elementary School,K-5,Brick Township Public School District,402,43.5%,"$8,198",32.5,2020
+831,Joseph A. Citta Elementary School,"PK, KG-5",Toms River Regional School District,440,49.1%,"$6,372",32.4,2020
+832,Atco Elementary School,1-2,Waterford Township School District,266,24.4%,"$10,830",32.4,2020
+833,Passaic Arts and Science Charter School,K-12,Passaic Arts and Science Charter School,"1,701",60.6%,"$9,416",32.3,2020
+834,Mullica Township Primary School,"PK, KG-4",Mullica Township School District,331,42.9%,"$9,923",32.2,2020
+835,Great Oaks Legacy Charter School,"PK, KG-12",Great Oaks Legacy Charter School,"1,880",83.6%,"$13,707",32.2,2020
+836,Wedgwood Elementary School,K-5,Washington Township School District,463,25.1%,"$11,304",32.2,2020
+837,Glendora Elementary School,K-5,Gloucester Township Public Schools,232,31.0%,"$12,656",32.1,2020
+838,Allamuchy Township School,3-8,Allamuchy Township School District,287,6.6%,"$12,269",32,2020
+839,Philip G. Vroom Community School,"PK, KG-8",Bayonne School District,485,58.6%,"$12,231",31.7,2020
+840,Hamburg School,"PK, KG-8",Hamburg School District,210,20.0%,"$18,654",31.7,2020
+841,Waterford Elementary School,3-6,Waterford Township School District,399,24.6%,"$9,190",31.7,2020
+842,Lambertville Public School,"PK, KG-6",South Hunterdon Regional School District,217,39.6%,"$13,680",31.6,2020
+843,Oaklyn Public School,"PK, KG-5",Oaklyn Public School District,277,30.3%,"$16,778",31.5,2020
+844,Arthur M. Judd,"PK, KG-4",North Brunswick Township School District,589,16.5%,"$10,316",31.5,2020
+845,Martin Luther King Junior School,"PK, KG-8",Jersey City Public Schools,835,69.5%,"$9,613",31.4,2020
+846,Roosevelt School,3-4,Manville School District,234,52.6%,"$10,324",31.3,2020
+847,Matthew Jago Elementary School,"PK, KG-5",Woodbridge Township School District,391,35.0%,"$6,230",31.2,2020
+848,Clayton J. Davenport Elementary School,K-3,Egg Harbor Township School District,721,54.4%,"$16,276",31.2,2020
+849,Heywood Avenue Elementary School,"PK, KG-7",ORANGE BOARD OF EDUCATION School District,355,63.1%,"$11,274",31.1,2020
+850,Deanna G. Taylor Academy,2-6,Hillside Public School District,226,62.4%,"$13,412",31,2020
+851,Chews Elementary School,"PK, KG-5",Gloucester Township Public Schools,662,27.6%,"$11,338",31,2020
+852,Walnut Street Elementary School,K-5,Toms River Regional School District,747,50.6%,"$6,860",31,2020
+853,Woodmere,2-4,Eatontown Public School District,222,41.9%,"$16,683",30.9,2020
+854,Folsom Elementary School,"PK, KG-8",Folsom Borough School District,385,23.4%,"$12,563",30.9,2020
+855,Somerdale Park School,"PK, KG-8",Somerdale School District,459,36.2%,"$12,807",30.8,2020
+856,Avenel Street Elementary School,K-5,Woodbridge Township School District,397,47.4%,"$4,286",30.8,2020
+857,Pauline J. Petway Elementary School,K-5,Vineland Public School District,504,,"$14,495",30.7,2020
+858,Knowlton Township Board of Education,"PK, KG-6",Knowlton Township School District,150,21.3%,"$17,942",30.7,2020
+859,Henry E. Harris Community School,"PK, KG-8",Bayonne School District,637,49.3%,"$10,495",30.6,2020
+860,Grant Elementary School,K-6,Ridgefield Park Public School District,244,40.2%,"$12,601",30.5,2020
+861,Lavallette Elementary School,K-8,Lavallette Borough School District,156,8.3%,"$18,143",30.3,2020
+862,H & M Potter School,"PK, KG-4",Berkeley Township School District,629,38.2%,"$12,702",30.2,2020
+863,Mary J Donohoe Community School,"PK, KG-8",Bayonne School District,459,49.5%,"$11,493",30.2,2020
+864,Emma Havens Young Elementary School,K-5,Brick Township Public School District,732,39.6%,"$6,611",30.2,2020
+865,Number 6,"PK, KG-5",Linden Public School District,324,42.0%,"$9,307",30.1,2020
+866,Shady Lane Elementary School,2-6,Deptford Township Public School District,361,45.2%,"$7,987",30.1,2020
+867,Washington Elementary School,1-4,Roselle Public School District,317,60.9%,"$14,333",29.9,2020
+868,Rieck Avenue Elementary School,K-5,Millville School District,443,66.4%,"$11,375",29.9,2020
+869,Clementon Elementary School,"PK, KG-8",Clementon Elementary School District,516,56.6%,"$13,193",29.7,2020
+870,Memorial School,"PK, KG-8",Union Beach Public School District,599,31.7%,"$13,079",29.6,2020
+871,Hampton Borough School,"PK, KG-5",Hampton Borough School District,76,17.1%,"$19,485",29.6,2020
+872,John F. Kennedy Elementary School,"PK, KG-5",Jamesburg Public School District,463,55.9%,"$12,212",29.5,2020
+873,Nellie K. Parker,"PK, KG-4",Hackensack School District,486,54.9%,"$15,918",29.5,2020
+874,Hannah Caldwell Elementary,"PK, KG-4",Township of Union School District,597,21.9%,"$9,488",29.5,2020
+875,Ford Avenue Elementary School,K-5,Woodbridge Township School District,256,39.1%,"$4,753",29.4,2020
+876,Number 5,"PK, KG-5",Linden Public School District,275,58.2%,"$9,457",29.3,2020
+877,Bradley Beach Elementary School,"PK, KG-8",Bradley Beach School District,261,62.5%,"$15,320",29.2,2020
+878,Lindbergh Elementary School,1-6,Palisades Park School District,819,54.7%,"$11,637",29.2,2020
+879,School #11,K-5,Clifton Public School District,415,64.3%,"$12,583",29.1,2020
+880,Myron L. Powell Elementary School,"PK, KG-8",Lawrence Township School District,484,43.0%,"$12,218",29,2020
+881,Alpha Borough School,"PK, KG-8",Alpha Borough School District,184,40.2%,"$12,813",29,2020
+882,Foundation Academy Charter School,K-12,Foundation Academy Charter School,"1,087",80.2%,"$11,069",28.9,2020
+883,Rolling Hills Primary School,2-3,Vernon Township School District,386,22.8%,"$11,628",28.9,2020
+884,Richmond Avenue School,"PK, KG-8",Atlantic City School District,615,83.4%,"$12,517",28.8,2020
+885,John Greenleaf Whittier Elementary School,K-4,Teaneck School District,331,38.4%,"$6,681",28.5,2020
+886,Jefferson Elementary School,"PK, KG-4",Union City School District,321,,"$11,594",28.4,2020
+887,Union County TEAMS Charter School,K-12,Union County TEAMS Charter School-High School/College LA,400,71.3%,"$9,143",28.3,2020
+888,Environment Community Opportunity (ECO) Charter School,K-8,Environment Community Opportunity (ECO) Charter School,209,83.3%,"$15,542",28.3,2020
+889,Walnut Street School,"PK, KG-5",Woodbury City Public School District,119,55.5%,"$13,368",28.1,2020
+890,Robert Erskine School,K-3,Ringwood School District,185,7.6%,"$11,230",28,2020
+891,Maurice River Township School,"PK, KG-8",Maurice River Township School District,394,39.1%,"$11,252",27.9,2020
+892,Parkview Elementary School,"PK, KG-6",Westville Boro Public School District,338,55.9%,"$10,935",27.8,2020
+893,School 27,"PK, KG-5",Paterson Public School District,633,58.9%,"$8,335",27.7,2020
+894,Greenwood Elementary School,"PK, KG-5",Hamilton Township Public School District,240,80.4%,"$10,973",27.7,2020
+895,Christa McAuliffe School,"PK, KG-8",Jersey City Public Schools,956,72.4%,"$10,643",27.6,2020
+896,Kelly Elementary School,K-5,West Orange Public Schools,458,38.2%,"$14,318",27.6,2020
+897,H Ashton Marsh,"PK, KG-4",Absecon Public Schools District,510,45.9%,"$9,221",27.4,2020
+898,Charles Street School,"PK, KG-5",Palmyra Public School District,352,35.8%,"$6,259",27.4,2020
+899,First Avenue School,"PK, KG-8",Newark Public School District,"1,139",83.6%,"$8,759",27.4,2020
+900,Erial Elementary School,"PK, KG-5",Gloucester Township Public Schools,650,48.5%,"$12,280",27.1,2020
+901,Washington Memorial Elementary School,2-6,Washington Borough School District,316,33.9%,"$11,382",27,2020
+902,Frog Pond Elementary School,3-6,Little Egg Harbor Township School District,785,49.7%,"$13,004",27,2020
+903,Forest Street Community Elementary School,"PK, KG-7",ORANGE BOARD OF EDUCATION School District,410,83.4%,"$9,797",26.9,2020
+904,School 19,K-4,Paterson Public School District,360,85.3%,"$9,566",26.8,2020
+905,Lake Tract Elementary School,2-6,Deptford Township Public School District,382,45.0%,"$6,306",26.7,2020
+906,Grade Downing Elementary School,K-3,Runnemede Public School District,140,37.1%,"$10,336",26.7,2020
+907,Central Park Elementary School,2-3,Pennsville School District,271,43.9%,"$14,263",26.7,2020
+908,Clifton Ave Grade School,2-5,Lakewood Township School District,451,90.7%,"$14,783",26.6,2020
+909,Number 8,"PK, KG-5",Linden Public School District,341,39.0%,"$9,886",26.6,2020
+910,Blackwood Elementary School,"PK, KG-5",Gloucester Township Public Schools,581,54.0%,"$11,827",26.5,2020
+911,'Franklin Elementary School,"PK, KG-6",Kearny,862,61.0%,"$8,366",26.4,2020
+912,Tulsa Trail Elementary School,2-3,Hopatcong Borough School District,227,26.9%,"$9,796",26.4,2020
+913,John F Kennedy Elementary School,"PK, KG-3",Berlin Township School District,279,39.8%,"$14,727",26.4,2020
+914,Washington Community School #9,"PK, KG-8",Bayonne School District,677,51.1%,"$11,445",26.2,2020
+915,Alice Costello Elementary School,"PK, KG-8",Brooklawn Public School District,285,58.9%,"$12,492",26.2,2020
+916,Ernest J. Finizio Junior - Aldene School,"PK, KG-5",Roselle Park Public School District,263,31.9%,"$7,029",26.1,2020
+917,Parsons,"PK, KG-4",North Brunswick Township School District,539,29.5%,"$8,618",26.1,2020
+918,Chelsea Heights School,"PK, KG-8",Atlantic City School District,332,90.7%,"$13,190",26.1,2020
+919,Franklin Borough School,"PK, KG-8",Franklin Borough School District,469,46.9%,"$15,890",26.1,2020
+920,College Achieve Greater Asbury Park Charter School,K-9,College Achieve Greater Asbury Park Charter School,362,99.4%,"$13,303",26,2020
+921,School 1,K-5,Paterson Public School District,234,55.1%,"$9,731",25.9,2020
+922,Loring Flemming Elementary School,K-5,Gloucester Township Public Schools,651,41.2%,"$11,389",25.9,2020
+923,John H. Glenn School,"PK, KG-5",Pine Hill School District,409,56.0%,"$7,947",25.8,2020
+924,Middlesex County STEM Charter School,K-5,Middlesex County STEM Charter School,268,54.1%,"$8,572",25.8,2020
+925,Klockner Elementary School,"PK, KG-5",Hamilton Township Public School District,232,50.0%,"$9,492",25.8,2020
+926,Elizabeth Avenue School,"PK, KG-5",Franklin Township Public School District,521,43.2%,"$11,092",25.7,2020
+927,Washington Elementary School,K-5,Hawthorne Public School District,261,51.7%,"$16,467",25.7,2020
+928,John H. Winslow Elementary School,K-5,Vineland Public School District,462,,"$15,551",25.6,2020
+929,Franklin Elementary,"PK, KG-4",Township of Union School District,465,49.2%,"$8,711",25.4,2020
+930,Belleville PS4,"PK, KG-6",Belleville Public School District,466,53.2%,,25.3,2020
+931,Vineland Public Charter School,"PK, KG-8",Vineland Public Charter School,384,48.7%,"$7,019",25.3,2020
+932,Horace Mann Community School,"PK, KG-8",Bayonne School District,641,40.9%,"$11,126",25.2,2020
+933,Herma S. Simmons Elementary School,"PK, KG-5",Clayton Public School District,668,42.7%,"$9,240",25.2,2020
+934,Battle Hill Elementary,"PK, KG-4",Township of Union School District,372,25.8%,"$12,502",25.2,2020
+935,Montague Township School,"PK, KG-8",Montague Township School District,247,40.9%,"$17,566",25.2,2020
+936,Franklin Elementary School,1-8,North Bergen School District,560,59.3%,"$5,450",25.1,2020
+937,Winslow Township Elementary School Two,"PK, KG-3",Winslow Township School District,305,52.1%,"$9,619",24.8,2020
+938,Ann Street School,K-8,Newark Public School District,"1,243",73.7%,"$8,426",24.6,2020
+939,Middle Township Elementary #2,3-5,Middle Township Public School District,528,55.9%,"$11,229",24.6,2020
+940,Dr Lena Edwards Academic Charter School,K-8,Dr Lena Edwards Academic Charter School,391,86.4%,"$10,336",24.6,2020
+941,Bayville Elementary School,"PK, KG-4",Berkeley Township School District,499,31.9%,"$12,564",24.5,2020
+942,Watsessing Elementary School,K-6,Bloomfield Township School District,276,50.4%,"$9,551",24.5,2020
+943,Lincoln Elementary School,2-3,Harrison Public Schools,0,,"$16,899",24.5,2020
+944,Evergreen Avenue Elementary School,"PK, KG-5",Woodbury City Public School District,309,63.8%,"$15,161",24.5,2020
+945,Merriam Avenue School,"PK, KG-4",Newton Public School District,468,46.2%,"$9,845",24.3,2020
+946,Oliver Street School,"PK, KG-8",Newark Public School District,"1,080",76.2%,"$8,360",24.3,2020
+947,Solve D'Ippolito Elementary School,K-5,Vineland Public School District,474,,"$13,621",24.3,2020
+948,Yardville Heights Elementary School,K-5,Hamilton Township Public School District,275,45.5%,"$9,462",24.2,2020
+949,South Amboy Elementary,"PK, KG-5",South Amboy School District,514,40.5%,"$9,301",24,2020
+950,Sovereign Avenue School,"PK, KG-8",Atlantic City School District,696,86.5%,"$13,431",24,2020
+951,Academy Street Elementary School,"PK, KG-6",Dover Public School District,498,74.7%,"$4,572",23.8,2020
+952,Deerfield Township Elementary School,"PK, KG-8",Deerfield Township School District,271,52.4%,"$13,921",23.7,2020
+953,George L. Hess Educational Complex,2-5,Hamilton Township School District,"1,261",49.4%,"$9,563",23.5,2020
+954,Ola Edwards Community School,2-6,Hillside Public School District,412,53.6%,"$5,766",23.5,2020
+955,International Charter School,K-4,International Charter School of Trenton,89,92.1%,"$12,829",23.5,2020
+956,Theodore Roosevelt Elementary School,"PK, KG-6",Union City School District,970,70.8%,"$9,355",23.4,2020
+957,Winfield Township,"PK, KG-8",Winfield Township,141,23.4%,"$15,980",23.3,2020
+958,Mount Pleasant Elementary School,K-5,Millville School District,203,64.0%,"$10,496",23.3,2020
+959,Samuel R. Donald Elementary School,2-4,Bloomingdale School District,166,25.3%,"$16,555",23.2,2020
+960,Fanny Meyer Hillers,"PK, KG-4",Hackensack School District,498,54.6%,"$15,996",23.2,2020
+961,Winslow Township Elementary School Four,"PK, KG-3",Winslow Township School District,454,46.5%,"$9,518",23.2,2020
+962,Magnolia,"PK, KG-8",Magnolia School District,375,38.7%,"$15,707",23.2,2020
+963,Haledon Public School,"PK, KG-8",Haledon Public School District,"1,005",49.7%,"$12,560",23.1,2020
+964,North Dover Elementary School,"PK, KG-6",Dover Public School District,637,76.8%,"$5,024",23,2020
+965,Gibbsboro Elementary School,"PK, KG-8",Gibbsboro Elementary School District,276,11.2%,"$13,548",22.9,2020
+966,Hurden Looker School,2-6,Hillside Public School District,419,55.6%,"$6,063",22.9,2020
+967,Elsinboro Township School,K-8,Elsinboro Township School District,112,53.6%,"$14,031",22.8,2020
+968,Roosevelt Elementary School,"PK, KG-6",Rahway Public School District,578,46.9%,"$14,584",22.8,2020
+969,Shark River Hills Elementary School,"PK, KG-5",Neptune Township School District,233,31.3%,"$12,635",22.7,2020
+970,Johnnie L. Cochran Junior Academy,K-5,East Orange School District,169,66.9%,"$13,977",22.7,2020
+971,Keyport Central School,"PK, KG-8",Keyport School District,601,,"$10,296",22.7,2020
+972,School #17,"PK, KG-5",Clifton Public School District,476,78.8%,"$12,646",22.7,2020
+973,Number 1,"PK, KG-5",Linden Public School District,420,52.6%,"$9,841",22.7,2020
+974,Marie Durand Elementary School,K-5,Vineland Public School District,496,,"$13,686",22.6,2020
+975,Colin Powell Elementary School,K-5,Union City School District,849,60.8%,"$10,464",22.6,2020
+976,Hillcrest School,"PK, KG-5",Franklin Township Public School District,444,49.8%,"$9,753",22.6,2020
+977,Cleveland Street Elementary School,"PK, KG-7",ORANGE BOARD OF EDUCATION School District,303,75.6%,"$11,904",22.6,2020
+978,Clara B. Worth Elementary School,"PK, KG-4",Berkeley Township School District,663,20.7%,"$12,146",22.6,2020
+979,Anthony Rossi Elementary School,K-5,Vineland Public School District,637,,"$13,533",22.5,2020
+980,Achieve Community Charter School,K-8,Achieve Community Charter School,183,35.5%,"$13,424",22.5,2020
+981,James Madison School #10,"PK, KG-5",Garfield Public School District,245,58.8%,"$12,134",22.5,2020
+982,Benjamin Banneker Preparatory Charter School,K-8,Benjamin Banneker Preparatory Charter School,358,26.8%,"$8,406",22.3,2020
+983,Ross Street Elementary School,K-5,Woodbridge Township School District,447,52.3%,"$4,527",22.3,2020
+984,School #12,"PK, KG-5",Clifton Public School District,616,81.8%,"$13,219",22,2020
+985,Denbo Crichton School,K-5,Pemberton Township School District,850,48.1%,,22,2020
+986,New Hanover Township School,"PK, KG-8",New Hanover Township,166,51.8%,"$20,216",22,2020
+987,Dane Barse Elementary School,K-5,Vineland Public School District,264,1.1%,"$17,767",21.9,2020
+988,Thomas Jefferson School No. 1,K-8,Passaic City School District,432,99.1%,"$11,482",21.9,2020
+989,Woodrow Wilson Elementary School,"PK, KG-8",New Brunswick School District,388,90.5%,"$11,278",21.8,2020
+990,Thomas Sharp Elementary School,"PK, KG-5",Collingswood Public School District,178,52.2%,"$12,962",21.8,2020
+991,East Dover Elementary School,K-6,Dover Public School District,404,83.7%,"$4,452",21.8,2020
+992,Public School Number One,K-6,West New York School District,815,86.6%,"$9,104",21.7,2020
+993,John F Kennedy Elementary School,1-8,North Bergen School District,454,56.8%,"$6,067",21.5,2020
+994,Horace Mann Elementary School,1-8,North Bergen School District,"1,093",53.3%,"$4,973",21.4,2020
+995,Number 4,"PK, KG-5",Linden Public School District,425,56.5%,"$7,691",21.4,2020
+996,Washington Elementary School,"PK, KG-6",Kearny,474,74.5%,"$9,579",21.4,2020
+997,Cresthaven Academy Charter School,K-5,Cresthaven Academy Charter School,389,52.2%,"$9,510",21.3,2020
+998,Charles E. Trefurt School,"PK, KG-5",Jersey City Public Schools,657,55.6%,"$12,189",21.3,2020
+999,Dr. Paul Rafalides School,"PK, KG-4",Jersey City Public Schools,410,66.3%,"$10,226",21.2,2020
+1000,Abraham Lincoln School #6,"PK, KG-5",Garfield Public School District,365,54.5%,"$12,925",21.1,2020
+1001,Jersey City Community Charter School,K-8,Jersey City Community Charter School,593,69.1%,"$5,983",21.1,2020
+1002,Garfield Elementary School,"PK, KG-6",Kearny,463,61.3%,"$7,609",21,2020
+1003,Nathan Hale Elementary School,"PK, KG-5",Carteret Public School District,454,67.2%,"$5,184",21,2020
+1004,Red Bank Charter School,"PK, KG-8",Red Bank Charter School,198,47.0%,"$12,107",21,2020
+1005,Alexander D. Sullivan School,"PK, KG-5",Jersey City Public Schools,573,54.8%,"$11,486",21,2020
+1006,Benjamin Franklin Elementary School,"PK, KG-3",Pennsauken Township Board of Education School District,365,,"$9,951",20.9,2020
+1007,Port Reading Avenue Elementary School,K-5,Woodbridge Township School District,371,41.2%,"$4,841",20.9,2020
+1008,The Village Charter School,K-8,The Village Charter School,363,70.0%,"$10,151",20.9,2020
+1009,Wilson Avenue School,K-8,Newark Public School District,"1,135",74.7%,"$8,387",20.9,2020
+1010,Columbus Elementary School,"PK, KG-5",Carteret Public School District,704,61.1%,"$3,895",20.9,2020
+1011,Burch Charter School of Excellence,K-5,Burch Charter School of Excellence,336,93.8%,"$8,329",20.7,2020
+1012,School 26,"PK, KG-8",Paterson Public School District,522,44.8%,"$8,427",20.7,2020
+1013,East Orange Community Charter School,K-4,East Orange Community Charter School,472,94.7%,"$7,509",20.7,2020
+1014,Belleville PS8,"PK, KG-6",Belleville Public School District,464,59.9%,,20.6,2020
+1015,Park Elementary School,"PK, KG-8",Newark Public School District,848,76.9%,"$8,704",20.5,2020
+1016,Lincoln Elementary School,"PK, KG-8",North Bergen School District,"1,422",52.9%,"$7,656",20.4,2020
+1017,Dr. Albert Einstein Academy School No. 29,"PK, KG-8",Elizabeth Public Schools,805,69.2%,"$8,512",20.3,2020
+1018,Compass Academy Charter School,"PK, KG-5",Compass Academy Charter School,188,44.1%,"$7,859",20.2,2020
+1019,Mt Vernon Place School,"PK, KG-8",Newark Public School District,816,76.0%,"$9,356",20.1,2020
+1020,Dr. Charles C. Polk School,1-4,Roselle Public School District,295,69.5%,"$15,407",20.1,2020
+1021,Dwight D. Eisenhower Elementary School,K-3,Piscataway Township School District,478,40.8%,"$6,340",20,2020
+1022,Dr. Orlando Edreira Academy School No. 26,"PK, KG-8",Elizabeth Public Schools,724,76.2%,"$9,454",20,2020
+1023,Anna L. Klein,"PK, KG-8",Guttenberg School District,911,74.9%,"$11,321",19.8,2020
+1024,William Shemin Midtown Community School #8,"PK, KG-8",Bayonne School District,"1,230",61.8%,"$8,530",19.8,2020
+1025,Lincoln Elementary School,"PK, KG-8",Newark Public School District,394,76.1%,"$10,024",19.7,2020
+1026,Lawnside School,"PK, KG-8",Lawnside School Distric,308,31.8%,"$13,798",19.7,2020
+1027,Berkeley Elementary School,K-6,Bloomfield Township School District,444,53.2%,"$7,007",19.6,2020
+1028,West End Memorial Elementary School,"PK, KG-5",Woodbury City Public School District,404,55.2%,"$11,934",19.6,2020
+1029,Parkway Elementary School,"PK, KG-5",Ewing Township School District,358,58.7%,"$16,070",19.5,2020
+1030,Oakwood Avenue Community School,"PK, KG-7",ORANGE BOARD OF EDUCATION School District,281,79.0%,"$10,552",19.5,2020
+1031,TEAM Academy Charter School,K-12,TEAM Academy Charter School,"5,263",85.7%,"$11,261",19.5,2020
+1032,Dionne Warwick Institute,"PK, KG-5",East Orange School District,411,76.6%,"$10,897",19.3,2020
+1033,Public School Number Two,K-6,West New York School District,711,78.2%,"$9,439",19.2,2020
+1034,John P. Holland Charter School,"PK, KG-8",John P Holland Charter School,548,92.0%,"$9,769",19,2020
+1035,Norman S. Weir,K-8,Paterson Public School District,292,63.4%,"$13,381",19,2020
+1036,School 5,K-5,Paterson Public School District,744,72.2%,"$10,638",19,2020
+1037,Dr. Albert M. Bean School,"PK, KG-5",Pine Hill School District,340,63.2%,"$9,096",18.9,2020
+1038,Greater Brunswick Charter School,K-8,Greater Brunswick Charter School,392,81.6%,"$10,212",18.9,2020
+1039,Dorthy L. Bullock School,1-3,Glassboro School District,373,54.2%,,18.9,2020
+1040,Franklin Elementary School,"PK, KG-6",Rahway Public School District,618,62.0%,"$11,340",18.9,2020
+1041,The Queen City Academy Charter School,K-12,The Queen City Academy Charter School District,342,40.9%,"$9,791",18.9,2020
+1042,Pine Grove Manor School,"PK, KG-5",Franklin Township Public School District,361,67.0%,"$12,062",18.8,2020
+1043,South River Elementary School,2-5,South River Public School District,655,56.3%,"$9,291",18.8,2020
+1044,Park Avenue Elementary School,3-5,Freehold Borough School District,504,81.9%,"$12,564",18.7,2020
+1045,Paul Robeson Charter School for the Humanities,3-8,Paul Robeson Charter School for the Humanities,424,97.2%,"$12,952",18.7,2020
+1046,Beverly City School District,"PK, KG-8",Beverly City School District,317,64.0%,"$14,330",18.6,2020
+1047,McKinley Elementary School,K-8,North Bergen School District,342,51.5%,"$7,659",18.6,2020
+1048,Hope Academy Charter School,K-8,Hope Academy Charter School,256,90.6%,"$7,849",18.5,2020
+1049,Gertrude C. Folwell Elementary School,2-4,Mount Holly Township Public School District,313,59.4%,"$12,482",18.4,2020
+1050,Harrison Elementary School,1-4,Roselle Public School District,268,68.7%,"$15,698",18.4,2020
+1051,Elmora School No. 12,"PK, KG-8",Elizabeth Public Schools,651,74.2%,"$9,954",18.4,2020
+1052,William L Antheil Elementary School,"PK, KG-5",Ewing Township School District,623,45.4%,"$16,183",18.3,2020
+1053,Washington Elementary School,"PK, KG-5",West Orange Public Schools,400,70.0%,"$11,461",18.3,2020
+1054,Hawthorne Park Elementary School,K-4,Willingboro Public School District,352,71.9%,"$11,283",18.2,2020
+1055,Joseph H. Brensinger School,"PK, KG-8",Jersey City Public Schools,"1,187",71.4%,"$9,638",18.2,2020
+1056,Brighton Avenue School,"PK, KG-5",Atlantic City School District,315,84.8%,"$14,549",17.9,2020
+1057,Belvidere Elementary School,"PK, KG-8",Belvidere School District,262,24.0%,"$16,862",17.9,2020
+1058,Phillipsburg Elementary School,3-5,Phillipsburg School District,609,70.4%,"$15,299",17.9,2020
+1059,Dr. J.P. Cleary Elementary School,3-5,Buena Regional School District,309,60.5%,"$10,856",17.9,2020
+1060,Roseville Community Charter School,K-4,Roseville Community Charter School,277,97.1%,,17.8,2020
+1061,Joseph C. Caruso School,K-5,Keansburg School District,706,51.0%,"$11,138",17.7,2020
+1062,Leeds Avenue Elementary School,"PK, KG-5",Pleasantville Public School District,601,79.0%,"$14,104",17.6,2020
+1063,Charles J. Riley School 9,"PK, KG-8",Paterson Public School District,736,87.6%,"$10,479",17.6,2020
+1064,School 29,K-4,Paterson Public School District,311,71.4%,"$8,131",17.6,2020
+1065,Veterans' Memorial Elementary School,"PK, KG-5",Union City School District,559,75.7%,"$10,358",17.6,2020
+1066,College Achieve Paterson Charter School,K-10,College Achieve Paterson Charter School,"1,012",91.2%,"$10,075",17.5,2020
+1067,Ocean Academy Charter School,K-6,Ocean Academy Charter School,335,96.7%,"$8,235",17.4,2020
+1068,Robert Waters Elementary School,"PK, KG-6",Union City School District,"1,002",60.7%,"$9,833",17.4,2020
+1069,Woodlynne Boro Public School,"PK, KG-8",Woodlynne School District,393,83.5%,"$13,716",17.4,2020
+1070,Shelia Y. Oliver Academy,"PK, KG-7",East Orange School District,325,60.9%,"$12,075",17.4,2020
+1071,Hudson Elementary School,"PK, KG-3",Union City School District,314,81.2%,"$11,375",17.4,2020
+1072,Alexander Hamilton Academy,K-8,Paterson Public School District,525,62.9%,"$8,344",17.3,2020
+1073,Fairmount,"PK, KG-4",Hackensack School District,592,55.9%,"$15,858",17.3,2020
+1074,Ella G Clarke Elementary School,2-5,Lakewood Township School District,425,95.8%,"$16,600",17.2,2020
+1075,University Heights Charter School,"PK, KG-8",University Heights Charter School,858,86.9%,"$9,462",17.2,2020
+1076,Woodbine Elementary School,"PK, KG-8",Woodbine School District,210,73.8%,"$15,342",17,2020
+1077,West End School,"PK, KG-4",North Plainfield School District,498,54.8%,"$10,488",17,2020
+1078,School 18,1-8,Paterson Public School District,740,66.2%,"$6,561",17,2020
+1079,J. Garfield Jackson Senior Academy,"PK, KG-5",East Orange School District,228,76.8%,"$11,552",17,2020
+1080,School 25,"PK, KG-8",Paterson Public School District,596,59.2%,"$8,314",16.9,2020
+1081,School #4,"PK, KG-5",Clifton Public School District,141,73.0%,"$12,498",16.8,2020
+1082,James J. Flynn Elementary School,K-4,Perth Amboy Public School District,550,82.2%,"$17,149",16.7,2020
+1083,Mildred Barry Garvin Elementary,3-5,East Orange School District,287,78.4%,"$12,399",16.7,2020
+1084,George Washington Elementary School,"PK, KG-6",Union City School District,767,73.1%,"$10,431",16.7,2020
+1085,Glenwood Avenue Elementary School,"PK, KG-5",Wildwood City School District,400,86.3%,"$16,834",16.6,2020
+1086,Grover Cleveland Elementary School,"PK, KG-6",Rahway Public School District,513,58.9%,"$12,500",16.6,2020
+1087,South Street Elementary School,"PK, KG-8",Newark Public School District,798,78.8%,"$10,591",16.5,2020
+1088,Chessie Dentley Roberts Academy School No. 30,"PK, KG-8",Elizabeth Public Schools,761,75.0%,"$8,093",16.5,2020
+1089,Woodrow Wilson,"PK, KG-8",Neptune City School District,213,59.6%,"$16,187",16.5,2020
+1090,Jackson Avenue,"PK, KG-4",Hackensack School District,435,68.0%,"$16,021",16.3,2020
+1091,Paterson Charter School for Science/Technology,K-12,Paterson Charter School for Science and Technology,"1,529",88.8%,"$9,624",16.2,2020
+1092,South Main Street Elementary School,"PK, KG-5",Pleasantville Public School District,458,83.8%,"$15,724",16.2,2020
+1093,Camden's Promise Charter School,"PK, KG-12",Camden's Promise Charter School,"2,202",91.8%,"$8,782",16,2020
+1094,Dr. Maya Angelou Elementary School,"PK, KG-5",Jersey City Public Schools,622,54.8%,"$9,010",16,2020
+1095,Oak Street Elementary School,2-5,Lakewood Township School District,652,93.3%,"$15,288",16,2020
+1096,Marion P. Thomas Charter School,"PK, KG-12",Marion P. Thomas Charter School,"1,481",82.6%,"$8,798",15.9,2020
+1097,Red Bank Primary School,"PK, KG-3",Red Bank Borough Public School District,619,81.6%,"$12,728",15.9,2020
+1098,Berkeley Terrace Elementary School,"PK, KG-5",Irvington Public School District,351,70.1%,"$9,122",15.8,2020
+1099,Kisthardt Elementary School,"PK, KG-5",Hamilton Township Public School District,222,59.9%,"$11,468",15.8,2020
+1100,Kuser Elementary School,"PK, KG-5",Hamilton Township Public School District,386,66.1%,"$9,545",15.8,2020
+1101,Benjamin Banneker Academy,"PK, KG-7",East Orange School District,490,74.3%,"$10,883",15.8,2020
+1102,East Newark Elementary School,"PK, KG-5",East Newark School District,224,73.2%,"$10,532",15.8,2020
+1103,Gregory Elementary School,K-5,LONG BRANCH PUBLIC SCHOOL District,587,87.4%,"$11,224",15.7,2020
+1104,Public School Number Five,K-6,West New York School District,601,92.8%,"$9,084",15.6,2020
+1105,Smalley Elementary School,3-6,Bound Brook School District,545,77.8%,"$8,764",15.5,2020
+1106,Midtown Community Elementary School,K-5,Neptune Township School District,384,81.3%,"$13,354",15.4,2020
+1107,Hugh J. Boyd Junior Elementary School,"PK, KG-6",Seaside Heights School District,223,68.2%,"$16,802",15.4,2020
+1108,Lord Stirling Elementary School,"PK, KG-5",New Brunswick School District,471,95.8%,"$11,427",15.4,2020
+1109,Philip's Academy Charter School of Paterson,K-5,Philip's Academy Charter School of Paterson,367,82.0%,"$9,781",15.4,2020
+1110,Joseph Battin School No 4,K-8,Elizabeth Public Schools,827,74.2%,"$10,619",15.3,2020
+1111,South Toms River Elementary School,K-5,Toms River Regional School District,295,64.7%,"$8,351",15.3,2020
+1112,Albio Sires Elementary School,K-6,West New York School District,620,86.1%,"$11,238",15.3,2020
+1113,Robert Morris School No. 18,"PK, KG-8",Elizabeth Public Schools,632,69.1%,"$9,936",15.2,2020
+1114,Ridge Street School,K-8,Newark Public School District,637,71.4%,"$10,099",15.1,2020
+1115,Thomas A Edison Elementary School,"PK, KG-6",Union City School District,888,,"$10,005",15,2020
+1116,Prospect Park School No. 1,"PK, KG-8",Prospect Park Public School District,816,58.5%,"$11,282",15,2020
+1117,Dr. Leroy McCloud Elementary School,3-5,Englewood Public School District,554,75.5%,"$11,706",15,2020
+1118,Park Avenue Elementary School,"PK, KG-8",ORANGE BOARD OF EDUCATION School District,425,77.6%,"$11,933",15,2020
+1119,Winslow Township Elementary School Three,"PK, KG-3",Winslow Township School District,464,44.6%,"$9,166",15,2020
+1120,Ecole Toussaint Louverture,"PK, KG-5",East Orange School District,273,74.0%,"$12,074",14.9,2020
+1121,Lincoln Avenue Elementary School,"PK, KG-7",ORANGE BOARD OF EDUCATION School District,708,80.9%,"$9,475",14.9,2020
+1122,Paterson Arts and Science Charter School,K-12,Paterson Arts and Science Charter School,943,79.7%,"$9,134",14.9,2020
+1123,Robert Menendez Elementary School,K-6,West New York School District,532,84.8%,"$10,735",14.9,2020
+1124,Elizabeth F. Moore School,3-5,Upper Deerfield Township School District,228,57.5%,"$14,865",14.8,2020
+1125,Wilbur Watts Intermediate School,3-6,Burlington City Public School District,444,53.8%,"$14,246",14.8,2020
+1126,Madison Avenue,"PK, KG-5",Irvington Public School District,402,55.5%,"$10,223",14.8,2020
+1127,Edward J. Patten Elementary School,K-4,Perth Amboy Public School District,660,87.4%,"$15,922",14.7,2020
+1128,Maude M. Wilkins Elementary School,2-4,Maple Shade School District,533,49.7%,"$8,864",14.6,2020
+1129,Number 2,"PK, KG-5",Linden Public School District,593,55.1%,"$9,950",14.5,2020
+1130,Roberto Clemente Elementary School,"PK, KG-7",Newark Public School District,678,82.6%,"$10,558",14.4,2020
+1131,Edward T. Bowser Senior School of Excellence,"PK, KG-5",East Orange School District,510,68.8%,"$13,332",14.4,2020
+1132,Loudenslager Elementary School,3-6,Paulsboro School District,351,47.3%,"$7,818",14.2,2020
+1133,A A Anastasia Elementary School,K-5,LONG BRANCH PUBLIC SCHOOL District,562,83.5%,"$13,372",14.2,2020
+1134,Lalor Elementary School,"PK, KG-5",Hamilton Township Public School District,243,77.8%,"$10,859",14.2,2020
+1135,Chaplain Charles Watters School,"PK, KG-8",Jersey City Public Schools,678,67.1%,"$11,181",14.1,2020
+1136,South Seventeenth Street School,K-8,Newark Public School District,354,92.9%,"$11,770",14.1,2020
+1137,University Elementary School,"PK, KG-5",Irvington Public School District,366,68.0%,"$9,913",14.1,2020
+1138,Holly Heights Elementary School,K-5,Millville School District,493,80.1%,"$10,465",14,2020
+1139,Harry L Bain,K-6,West New York School District,642,79.3%,"$9,700",14,2020
+1140,Gables Elementary School,"PK, KG-5",Neptune Township School District,281,59.1%,"$12,304",14,2020
+1141,Madison Monroe School No. 16,"PK, KG-8",Elizabeth Public Schools,615,61.3%,"$9,480",13.9,2020
+1142,Dawes Avenue Elementary School,"PK, KG-3",Somers Point School District,303,63.4%,"$14,096",13.8,2020
+1143,Texas Avenue School,K-8,Atlantic City School District,499,94.2%,"$12,119",13.5,2020
+1144,Delair Elementary School,K-3,Pennsauken Township Board of Education School District,324,14.8%,"$8,537",13.5,2020
+1145,Dr. Hani Awadallah School,"PK, KG-8",Paterson Public School District,598,56.0%,"$8,552",13.4,2020
+1146,M. Joan Pearson Elementary School,K-5,Delanco Township School District,250,42.0%,"$6,205",13.4,2020
+1147,West Avenue School,K-8,Bridgeton City School District,552,77.7%,"$12,057",13.3,2020
+1148,Rev. Dr. Ercel F. Webb School,"PK, KG-5",Jersey City Public Schools,659,59.6%,"$10,815",13.3,2020
+1149,Lakehurst Elementary School,"PK, KG-8",Lakehurst School District,376,56.1%,"$16,629",13.3,2020
+1150,Mario Drago School No. 3,"PK, KG-8",Passaic City School District,755,99.1%,"$10,486",13.2,2020
+1151,School 3,K-8,Paterson Public School District,329,86.3%,"$8,917",13.1,2020
+1152,Lafayette Street School,"PK, KG-8",Newark Public School District,"1,202",79.0%,"$7,737",13,2020
+1153,W. R. James Senior Elementary School,K-4,Willingboro Public School District,353,77.1%,"$12,232",12.9,2020
+1154,John Marshal School No. 20,K-8,Elizabeth Public Schools,380,86.1%,"$12,585",12.9,2020
+1155,Dr. William Mennies Elementary School,K-5,Vineland Public School District,596,0.5%,"$13,748",12.8,2020
+1156,Rose M. Lopez Elementary School,K-3,Perth Amboy Public School District,812,86.1%,,12.8,2020
+1157,School 24,"PK, KG-8",Paterson Public School District,712,73.5%,"$7,719",12.7,2020
+1158,School 2,K-8,Paterson Public School District,491,81.3%,"$11,646",12.7,2020
+1159,Abington Avenue School,"PK, KG-8",Newark Public School District,879,81.3%,"$8,498",12.7,2020
+1160,Commercial Township School,"PK, KG-8",Commercial Township School District,459,69.9%,"$9,500",12.6,2020
+1161,Stony Brook School,"PK, KG-4",North Plainfield School District,247,67.6%,"$13,043",12.6,2020
+1162,Lindenwold School Five,K-4,Lindenwold Public School District,582,83.5%,"$7,851",12.4,2020
+1163,Whitney E. Houston Academy,"PK, KG-8",East Orange School District,358,71.5%,"$15,694",12.3,2020
+1164,Winfield Scott School No. 2,"PK, KG-8",Elizabeth Public Schools,635,66.0%,"$9,616",12.3,2020
+1165,Ivy Hill Elementary School,"PK, KG-8",Newark Public School District,517,76.0%,"$11,199",12.2,2020
+1166,Cicely L. Tyson Community Elementary School,"PK, KG-5",East Orange School District,468,70.5%,"$10,050",12.1,2020
+1167,Abraham Lincoln School No. 14,K-8,Elizabeth Public Schools,860,76.2%,"$10,502",12.1,2020
+1168,Paul Robeson Community School for the Arts,"PK, KG-8",New Brunswick School District,765,98.0%,"$9,460",12.1,2020
+1169,Dr. Antonia Pantoja School No. 27,"PK, KG-8",Elizabeth Public Schools,906,68.7%,"$8,896",11.9,2020
+1170,College Achieve Central Charter School,K-12,College Achieve Central Charter School,"1,353",76.1%,"$8,250",11.9,2020
+1171,Herbert N. Richardson 21st Century School,K-4,Perth Amboy Public School District,491,89.0%,"$20,241",11.8,2020
+1172,Dr. Charles P. DeFuccio School,"PK, KG-8",Jersey City Public Schools,312,62.2%,"$16,245",11.8,2020
+1173,Christopher Columbus School No. 15,K-8,Elizabeth Public Schools,666,80.3%,"$9,543",11.7,2020
+1174,Langston Hughes Elementary School,"PK, KG-5",East Orange School District,505,72.1%,"$10,669",11.7,2020
+1175,Woodrow Wilson School No. 19,"PK, KG-8",Elizabeth Public Schools,633,75.7%,"$9,319",11.6,2020
+1176,Green Grove Elementary School,"PK, KG-5",Neptune Township School District,294,49.0%,"$11,042",11.5,2020
+1177,George E. Wilson Elementary School,"PK, KG-5",Hamilton Township Public School District,431,70.1%,"$8,375",11.5,2020
+1178,Leap Academy University Charter School,K-12,LEAP Academy University Charter School,"1,557",85.1%,"$10,261",11.5,2020
+1179,G.H. Carson Elementary School,"PK, KG-3",Pennsauken Township Board of Education School District,355,,"$9,874",11.5,2020
+1180,Robert N. Wilentz Elementary School,K-4,Perth Amboy Public School District,637,87.3%,"$16,775",11.4,2020
+1181,Martin Luther King Junior School No. 6,"PK, KG-8",Passaic City School District,875,99.2%,"$10,342",11.3,2020
+1182,Young Men's Academy,3-8,Paterson Public School District,73,71.2%,"$21,107",11.3,2020
+1183,McKinley Elementary School,"PK, KG-8",Newark Public School District,785,84.2%,"$9,994",11.3,2020
+1184,George L Catrambone,K-5,LONG BRANCH PUBLIC SCHOOL District,813,90.5%,"$9,600",11.2,2020
+1185,Cold Springs School,"PK, KG-3",Gloucester City Public School District,821,66.5%,"$11,740",11.2,2020
+1186,Avon Avenue School,"PK, KG-8",Newark Public School District,551,87.3%,"$12,937",11.2,2020
+1187,iPrep Academy School No 8,K-8,Elizabeth Public Schools,413,82.1%,"$9,452",11.1,2020
+1188,William B. Cruise Memorial School No. 11,K-8,Passaic City School District,980,99.2%,"$9,572",11,2020
+1189,Rosa Parks Community School,3-7,ORANGE BOARD OF EDUCATION School District,569,90.5%,"$8,884",11,2020
+1190,Winslow Township Elementary School One,"PK, KG-3",Winslow Township School District,325,56.3%,"$10,063",10.9,2020
+1191,Field Street School,1-3,Penns Grove-Carneys Point Regional School District,514,75.5%,"$10,390",10.9,2020
+1192,Veterans Memorial Family School,"PK, KG-8",Camden City School District,337,72.4%,"$16,878",10.9,2020
+1193,Aline Bingham Elementary School,K-3,Runnemede Public School District,176,31.3%,"$15,372",10.8,2020
+1194,Indian Ave School,K-8,Bridgeton City School District,668,87.0%,"$12,054",10.7,2020
+1195,Millville Public Charter School,K-8,Millville Public Charter School,232,73.7%,"$8,381",10.6,2020
+1196,Twin Hills Elementary School,K-4,Willingboro Public School District,321,68.8%,"$11,881",10.5,2020
+1197,Sussex Avenue School,"PK, KG-8",Newark Public School District,426,89.9%,"$9,703",10.5,2020
+1198,Sonia Sotomayor School No 25,K-8,Elizabeth Public Schools,579,85.5%,"$11,125",10.4,2020
+1199,Chancellor Avenue Elementary School,K-5,Irvington Public School District,489,60.1%,"$8,796",10.4,2020
+1200,Fairfield Township School,"PK, KG-8",Fairfield Township School District,480,29.2%,"$13,433",10.3,2020
+1201,Mastery Schools of Camden Inc.,K-12,Mastery Schools of Camden Inc.,"2,737",96.1%,"$14,663",10.3,2020
+1202,Silver Run Elementary School,K-5,Millville School District,440,88.9%,"$11,875",10.3,2020
+1203,Nicholas S. Lacorte-Peterstown School No. 3,K-8,Elizabeth Public Schools,787,82.5%,"$10,474",10.2,2020
+1204,George B. Fine Elementary School,"PK, KG-3",Pennsauken Township Board of Education School District,236,16.5%,"$12,099",10.2,2020
+1205,Columbus Elementary School,K-5,Trenton Public School District,385,42.3%,"$11,353",10.1,2020
+1206,Juan Pablo Duarte - Jose Julian Marti School No 28,"PK, KG-8",Elizabeth Public Schools,935,83.5%,"$9,410",10.1,2020
+1207,Freedom Prep Charter School,K-12,Freedom Prep Charter School,822,72.4%,"$11,641",10.1,2020
+1208,Hope Community Charter School,K-7,Hope Community Charter School,132,97.0%,"$9,684",10,2020
+1209,Washington Avenue Elementary School,K-5,Pleasantville Public School District,399,91.7%,"$17,263",10,2020
+1210,Dr. Martin Luther King Junior Educational Complex,"PK, KG-8",Paterson Public School District,603,54.1%,"$12,303",9.9,2020
+1211,Toussaint Louverture-Marquis de Lafayette School No. 6,"PK, KG-8",Elizabeth Public Schools,"1,066",77.6%,"$9,262",9.8,2020
+1212,Hawkins Street School,K-8,Newark Public School District,675,80.4%,"$9,204",9.8,2020
+1213,KIPP: Cooper Norcross A New Jersey Nonprofit Corporation,K-10,KIPP: Cooper Norcross A New Jersey Nonprofit Corporation,"1,775",97.2%,"$12,672",9.8,2020
+1214,School 8,K-8,Paterson Public School District,461,80.7%,"$9,233",9.7,2020
+1215,President Barack Obama Elementary School,"PK, KG-8",Jersey City Public Schools,436,63.8%,"$15,299",9.7,2020
+1216,Camden Street Elementary School,"PK, KG-8",Newark Public School District,596,84.7%,"$13,034",9.7,2020
+1217,R. M. Bacon Elementary School,K-5,Millville School District,267,82.8%,"$10,502",9.7,2020
+1218,Number Three School,"PK, KG-4",Fairview Public School District,709,42.7%,"$8,298",9.6,2020
+1219,School No. 5,K-8,Passaic City School District,410,99.5%,"$12,553",9.5,2020
+1220,Benjamin Franklin Elementary School,"PK, KG-7",Newark Public School District,616,81.2%,"$12,556",9.4,2020
+1221,Martin Center for the Arts,"PK, KG-8",Jersey City Public Schools,430,69.3%,"$12,741",9.4,2020
+1222,Grove Street Elementary School,"PK, KG-5",Irvington Public School District,342,74.0%,"$9,455",9.4,2020
+1223,East End School,"PK, KG-4",North Plainfield School District,465,63.2%,"$10,925",9.3,2020
+1224,School 20,K-8,Paterson Public School District,431,54.3%,"$10,935",9.3,2020
+1225,Florence Avenue Elementary School,K-5,Irvington Public School District,633,61.8%,"$7,690",9.2,2020
+1226,Harriet Tubman Elementary School,"PK, KG-8",Newark Public School District,373,79.6%,"$9,921",9.2,2020
+1227,Octavio V. Catto Community Family School,"PK, KG-8",Camden City School District,606,76.2%,"$16,913",9.1,2020
+1228,Roosevelt Elementary School,K-5,New Brunswick School District,690,97.5%,"$10,736",8.9,2020
+1229,Camden Prep Inc.,K-10,Camden Prep Inc.,949,96.5%,"$11,619",8.9,2020
+1230,Riverside Elementary School,"PK, KG-5",Riverside Township School District,641,55.1%,"$11,560",8.9,2020
+1231,Mckinley Community School,"PK, KG-8",New Brunswick School District,685,91.4%,"$12,963",8.9,2020
+1232,Quarter Mile Lane School,"PK, KG-8",Bridgeton City School District,744,75.9%,"$10,618",8.9,2020
+1233,Jerome Dunn Academy No 9,K-8,Elizabeth Public Schools,888,89.2%,"$9,150",8.8,2020
+1234,Salome Ure?a Elementary School,"PK, KG-7",Newark Public School District,368,84.2%,"$12,232",8.8,2020
+1235,Peshine Avenue School,"PK, KG-8",Newark Public School District,642,72.9%,"$11,004",8.8,2020
+1236,Mt. Vernon Avenue Elementary School,"PK, KG-5",Irvington Public School District,507,74.4%,"$7,174",8.8,2020
+1237,School 16,"PK, KG-8",Paterson Public School District,850,53.8%,"$6,870",8.7,2020
+1238,Lindenwold School Four,K-4,Lindenwold Public School District,612,90.0%,"$8,316",8.7,2020
+1239,Benjamin Franklin School No. 13,K-8,Elizabeth Public Schools,443,86.0%,"$11,847",8.6,2020
+1240,Roberto Clemente,K-5,Paterson Public School District,301,89.7%,"$7,990",8.5,2020
+1241,Principle Academy Charter School,K-6,Principle Academy Charter School,531,84.9%,,8.5,2020
+1242,Mabel G. Homes School No. 5,"PK, KG-8",Elizabeth Public Schools,779,75.1%,"$8,660",8.3,2020
+1243,Clara Parker Elementary School,K-5,Trenton Public School District,540,53.0%,"$9,719",8.2,2020
+1244,Newark Educators Community Charter School,"PK, KG-4",Newark Educators Community Charter School,260,72.3%,,8.1,2020
+1245,Dr Martin Luther King Junior School Complex,"PK, KG-8",Atlantic City School District,543,85.6%,"$13,546",8.1,2020
+1246,Cherry Street School,K-8,Bridgeton City School District,558,88.9%,"$11,205",8.1,2020
+1247,School 15,"PK, KG-5",Paterson Public School District,519,93.8%,"$12,108",8,2020
+1248,Thurgood Marshall Elementary School,"PK, KG-5",Irvington Public School District,339,67.6%,"$9,596",8,2020
+1249,Pennsylvania Ave School,"PK, KG-8",Atlantic City School District,549,84.5%,"$14,638",7.8,2020
+1250,Belmont Runyon Elementary School,"PK, KG-8",Newark Public School District,451,82.0%,"$13,240",7.8,2020
+1251,Grant Elementary School,"PK, KG-5",Trenton Public School District,602,60.1%,"$12,611",7.7,2020
+1252,Atlantic Community Charter School,K-8,Atlantic Community Charter School,354,95.8%,"$10,242",7.7,2020
+1253,Henry B. Wilson Family School,K-8,Camden City School District,537,76.0%,"$17,638",7.6,2020
+1254,Ollie Culbreth Junior School,"PK, KG-8",Jersey City Public Schools,418,69.9%,"$15,626",7.5,2020
+1255,Elliott Street Elementary School,"PK, KG-8",Newark Public School District,945,83.3%,"$8,669",7.5,2020
+1256,George Washington Academy School No. 1,"PK, KG-8",Elizabeth Public Schools,564,60.6%,"$7,312",7.5,2020
+1257,Livingston Elementary School,K-5,New Brunswick School District,381,97.4%,"$11,684",7.5,2020
+1258,Uptown School Complex,"PK, KG-8",Atlantic City School District,536,87.9%,"$14,625",7.4,2020
+1259,Thirteenth Avenue School,"PK, KG-8",Newark Public School District,619,80.9%,"$10,835",7.4,2020
+1260,Sonia Sotomayor School #21,K-8,Passaic City School District,684,99.4%,,7.4,2020
+1261,Mott Elementary School,K-5,Trenton Public School District,499,51.1%,"$10,180",7.4,2020
+1262,Louise A. Spencer Elementary School,"PK, KG-8",Newark Public School District,738,81.7%,"$12,119",7.4,2020
+1263,Bridgeton Public Charter School,K-4,Bridgeton Public Charter School,99,70.7%,"$7,729",7.3,2020
+1264,Gladys Nunery School,"PK, KG-5",Jersey City Public Schools,248,68.1%,"$11,509",7.3,2020
+1265,Daniel F. Ryan Elementary School No. 19,1-8,Passaic City School District,772,100.0%,"$9,378",7.3,2020
+1266,Yorkship Elementary School,"PK, KG-5",Camden City School District,434,64.7%,"$16,425",7.2,2020
+1267,A Chester Redshaw School,"PK, KG-5",New Brunswick School District,824,92.7%,"$8,353",7.2,2020
+1268,Gloria M Sabater Elementary School,K-5,Vineland Public School District,784,,"$12,874",7.1,2020
+1269,Thomas H. Dudley Family School,"PK, KG-8",Camden City School District,404,78.0%,"$19,328",7.1,2020
+1270,Hawthorne Avenue School,"PK, KG-8",Newark Public School District,466,88.4%,"$10,415",7,2020
+1271,Wilson Elementary School,K-5,Trenton Public School District,529,49.5%,"$9,392",7,2020
+1272,Etta Gero School No. 9,K-8,Passaic City School District,737,99.7%,"$10,703",6.9,2020
+1273,Franklin Elementary School,K-5,Trenton Public School District,379,58.6%,"$8,740",6.8,2020
+1274,Charles L. Spragg School,"PK, KG-3",Egg Harbor City School District,251,62.5%,"$10,681",6.8,2020
+1275,Quitman Street School,"PK, KG-8",Newark Public School District,546,82.4%,"$12,167",6.8,2020
+1276,Broad Street School,K-8,Bridgeton City School District,936,87.0%,"$13,961",6.8,2020
+1277,Salem Middle School,3-8,Salem City School District,429,58.7%,"$9,419",6.8,2020
+1278,Theodore Roosevelt School No. 10,"PK, KG-8",Passaic City School District,724,98.8%,"$10,200",6.7,2020
+1279,Gregory Elementary School,K-5,Trenton Public School District,500,59.8%,"$9,710",6.6,2020
+1280,Rev. Dr. Frank Napier Junior School,1-8,Paterson Public School District,548,73.0%,"$10,865",6.4,2020
+1281,Speedway Avenue School,K-8,Newark Public School District,579,91.2%,"$8,301",6.4,2020
+1282,Dr. Henry H. Davis Elementary School,"PK, KG-8",Camden City School District,321,67.6%,"$20,427",6.4,2020
+1283,Lincoln Elementary School,K-4,New Brunswick School District,631,97.0%,"$10,278",6.2,2020
+1284,Chancellor Avenue School,K-8,Newark Public School District,500,90.6%,"$10,224",6.1,2020
+1285,Senator Frank Lautenberg School,K-8,Paterson Public School District,626,75.1%,"$8,560",6.1,2020
+1286,Buckshutem Road School,K-8,Bridgeton City School District,686,81.3%,"$10,609",6.1,2020
+1287,North Main Street Elementary School,"PK, KG-5",Pleasantville Public School District,293,78.5%,"$19,102",6.1,2020
+1288,Nicholas Murray Butler Academy School No. 23,K-8,Elizabeth Public Schools,750,81.6%,"$10,486",6.1,2020
+1289,Anthony V. Ceres Elementary School,K-4,Perth Amboy Public School District,581,92.8%,"$18,904",5.7,2020
+1290,Luis Mu?oz Marin Elementary School,"PK, KG-8",Newark Public School District,802,81.5%,"$9,330",5.6,2020
+1291,Cleveland Avenue School,"PK, KG-8",Newark Public School District,418,81.1%,"$11,554",5.5,2020
+1292,School 21,"PK, KG-8",Paterson Public School District,694,54.3%,"$8,480",5.3,2020
+1293,Cooper's Poynt Family School,"PK, KG-8",Camden City School District,407,69.0%,"$18,278",5.3,2020
+1294,East Ward Elementary School,"PK, KG-8",Newark Public School District,383,73.4%,"$10,905",5.3,2020
+1295,New York Avenue School,"PK, KG-8",Atlantic City School District,558,89.8%,"$13,378",5.3,2020
+1296,Forest Hill School,K-5,Camden City School District,305,68.5%,"$19,601",5.3,2020
+1297,George Washington Carver Elementary School,"PK, KG-8",Newark Public School District,508,84.6%,"$10,378",5.2,2020
+1298,Rafael Hernandez School,"PK, KG-8",Newark Public School District,704,83.9%,"$8,503",5.2,2020
+1299,School 10,K-8,Paterson Public School District,537,70.6%,"$8,827",5.1,2020
+1300,Dr. E. Alma Flagg School,K-8,Newark Public School District,433,89.8%,"$9,797",4.9,2020
+1301,School 12,K-8,Paterson Public School District,546,70.7%,"$9,638",4.8,2020
+1302,Whitney M. Young Junior School,"PK, KG-8",Jersey City Public Schools,609,74.7%,"$15,967",4.7,2020
+1303,Joyce Kilmer School,K-8,Trenton Public School District,740,52.8%,"$14,475",4.6,2020
+1304,Robbins Elementary School,K-5,Trenton Public School District,544,44.7%,"$8,534",4.5,2020
+1305,P.J. Hill Elementary,K-5,Trenton Public School District,792,49.1%,"$10,318",4.3,2020
+1306,Washington Elementary School,K-5,Trenton Public School District,398,66.1%,"$8,112",4.2,2020
+1307,Casimir Pulaski School No. 8,"PK, KG-8",Passaic City School District,591,99.3%,"$11,142",4,2020
+1308,Dr. William H. Horton Elementary School,K-8,Newark Public School District,742,93.3%,"$9,470",4,2020
+1309,Harrison Elementary School,K-5,Trenton Public School District,238,53.4%,"$9,599",3.9,2020
+1310,Dr. Martin Luther King Junior Elementary School,K-5,Trenton Public School District,784,47.7%,"$9,252",3.6,2020
+1311,School 13,K-8,Paterson Public School District,536,62.1%,"$8,300",3.4,2020

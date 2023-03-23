@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- D3 and D3tips JS -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/d3Style.css') }}">
+    <title>NJ new mover's guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand bg-info text-white p-2" href="/">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <a class="navbar-brand bg-info text-white p-2" href="/prediction">Prediction</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand bg-info text-white p-2" href="/tableau">Tableau</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand bg-info text-white p-2" href="/filter">Source Data</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="nav navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Plots
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/d3">d3</a></li>
+                  <li><a class="dropdown-item" href="/plotly">Plotly</a></li>
+                  <li><a class="dropdown-item" href="/leaflet">Leaflet</a></li>
+                  <li><a class="dropdown-item" href="/bonus">Bonus</a></li>
+              </ul>
+              </li>
+            
+          </ul>
+           </div>
+        </div>
+    </nav><br><br><br>
+    <!-- main content -->
+    <div class="row">
+        <div class="col-xs-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+          <div id="scatter" class="mt-2">
+            <!-- We append our chart here. -->
+          </div>
+        </div>
+    </div>
+    <div class="row mx-5 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="card-deck mx-auto">
+            <div class="card bg-light animate__animated animate__fadeIn" id="poverty_rate-total_offense">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">Poverty rate vs. Total offense</h5>
+                    <p class="card-text p-2">There is a very weak negative correlation between these two factors. We can see that the greater the poverty, the more crime is occurring. Some anomalies are there due to
+                        population size.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-light animate__animated animate__fadeIn" id="poverty_rate-rate_per_100k">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">Poverty rate vs. Crime rate per 100k</h5>
+                    <p class="card-text p-2">There is a weak negative correlation between these two factors. We can see that the greater the poverty, the higher the crime rate.
+                        Some anomalies are there due to population size.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-light animate__animated animate__fadeIn" id="poverty_rate-total_arrest">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">Poverty rate vs. Total arrest</h5>
+                    <p class="card-text p-2">There is a extremely weak negative correlation between these two factors. We can see that the greater the poverty, somewhat the more crime is occurring.
+                        But the number of arrests are pretty low compared to offenses.
+                    </p>
+                </div>
+            </div>
+  
+            <div class="card bg-light animate__animated animate__fadeIn" id="school_score-total_offense">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">School Score vs. Total offense</h5>
+                    <p class="card-text p-2">There is a very weak negative correlation between these two factors. We can see that the greater the School rank, the less crime is occurring.</p>
+                </div>
+            </div>
+            <div class="card bg-light animate__animated animate__fadeIn" id="school_score-rate_per_100k">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">School Score vs. Crime rate per 100k</h5>
+                    <p class="card-text p-2">There is a weak positive correlation between these two factors. We can see that the greater the School rank, somewhat the higher the crime rate. 
+                        One anomaly here is bergen county. Probably because of the population size.</p>
+                </div>
+            </div>
+            <div class="card bg-light animate__animated animate__fadeIn" id="school_score-total_arrest">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">School Score vs. Total arrest</h5>
+                    <p class="card-text p-2">There is a very weak negative correlation between these two factors. We can see that the greater the School rank, the less arrests are occurring.</p>
+                </div>
+            </div>
+  
+  
+  
+            <div class="card bg-light animate__animated animate__fadeIn" id="median_hh_income-total_offense">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">Household Income vs. Total offense</h5>
+                    <p class="card-text p-2">There is a somewhat moderate weak negative correlation between these two factors. We can see that the greater the Household Income, the less crime is occurring.</p>
+                </div>
+            </div>
+            <div class="card bg-light animate__animated animate__fadeIn" id="median_hh_income-rate_per_100k">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">Household Income vs. Crime rate per 100k</h5>
+                    <p class="card-text p-2">There is a weak positive correlation between these two factors. We can see that the greater the Household Income, somewhat the higher the crime rate. 
+                        One anomaly here is bergen county. Probably because of the population size.</p>
+                </div>
+            </div>
+            <div class="card bg-light animate__animated animate__fadeIn" id="median_hh_income-total_arrest">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">Household Income vs. Total arrest</h5>
+                    <p class="card-text p-2">There is a moderate weak negative correlation between these two factors. We can see that the greater the Household Income, the less arrests are occurring.</p>
+                </div>
+            </div>
+
+
+
+            <div class="card bg-light animate__animated animate__fadeIn" id="tax_rate-total_offense">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">Tax rate vs. Total offense</h5>
+                    <p class="card-text p-2">There is a very weak positive correlation between these two factors. We can see that the greater the Tax rate, the more crime is occurring, probably because of population size.</p>
+                </div>
+            </div>
+            <div class="card bg-light animate__animated animate__fadeIn" id="tax_rate-rate_per_100k">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">Tax rate vs. Crime rate per 100k</h5>
+                    <p class="card-text p-2">There is a weak negative correlation between these two factors. We can see that the greater the Tax rate, the lower the crime rate. 
+                        One anomaly here is bergen county, probably because of the population size.</p>
+                </div>
+            </div>
+            <div class="card bg-light animate__animated animate__fadeIn" id="tax_rate-total_arrest">
+                <div class="card-body p-0">
+                    <h5 class="card-header text-white">Tax rate vs. Total arrest</h5>
+                    <p class="card-text p-2">There is a very weak positive correlation between these two factors. We can see that the greater the Tax rate, the more arrests are occurring, probably because of population size.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/d3.js') }}" charset="utf-8"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/d3.min.js') }}" charset="utf-8"></script> -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- D3 and d3-tip JavaScript -->
+    <!-- <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js" charset="utf-8"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js" charset="utf-8"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/nj-d3.js') }}"></script>
+  </body>
+</html>

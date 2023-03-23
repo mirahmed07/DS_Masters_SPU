@@ -1,0 +1,2952 @@
+{
+ "name": "tax",
+ "description": "tax",
+ "children": [
+  {
+   "name": "ATLANTIC",
+   "description": 3.0129130434782607,
+   "children": [
+    {
+     "name": "ABSECON CITY",
+     "description": 3.306,
+     "size": 3.306
+    },
+    {
+     "name": "ATLANTIC CITY CITY",
+     "description": 3.7769999999999997,
+     "size": 3.7769999999999997
+    },
+    {
+     "name": "BRIGANTINE CITY",
+     "description": 1.7369999999999999,
+     "size": 1.7369999999999999
+    },
+    {
+     "name": "BUENA BORO",
+     "description": 3.242,
+     "size": 3.242
+    },
+    {
+     "name": "BUENA VISTA TWP",
+     "description": 2.762,
+     "size": 2.762
+    },
+    {
+     "name": "CORBIN CITY CITY",
+     "description": 2.017,
+     "size": 2.017
+    },
+    {
+     "name": "EGG HARBOR CITY",
+     "description": 5.453,
+     "size": 5.453
+    },
+    {
+     "name": "EGG HARBOR TWP",
+     "description": 3.335,
+     "size": 3.335
+    },
+    {
+     "name": "ESTELL MANOR CITY",
+     "description": 2.7439999999999998,
+     "size": 2.7439999999999998
+    },
+    {
+     "name": "FOLSOM BORO",
+     "description": 2.163,
+     "size": 2.163
+    },
+    {
+     "name": "GALLOWAY TWP",
+     "description": 3.211,
+     "size": 3.211
+    },
+    {
+     "name": "HAMILTON TWP",
+     "description": 3.226,
+     "size": 3.226
+    },
+    {
+     "name": "HAMMONTON TOWN",
+     "description": 2.723,
+     "size": 2.723
+    },
+    {
+     "name": "LINWOOD CITY",
+     "description": 3.638,
+     "size": 3.638
+    },
+    {
+     "name": "LONGPORT BORO",
+     "description": 1.013,
+     "size": 1.013
+    },
+    {
+     "name": "MARGATE CITY CITY",
+     "description": 1.5779999999999998,
+     "size": 1.5779999999999998
+    },
+    {
+     "name": "MULLICA TWP",
+     "description": 3.411,
+     "size": 3.411
+    },
+    {
+     "name": "NORTHFIELD CITY",
+     "description": 3.492,
+     "size": 3.492
+    },
+    {
+     "name": "PLEASANTVILLE CITY",
+     "description": 4.937,
+     "size": 4.937
+    },
+    {
+     "name": "PORT REPUBLIC CITY",
+     "description": 2.984,
+     "size": 2.984
+    },
+    {
+     "name": "SOMERS POINT CITY",
+     "description": 3.3409999999999997,
+     "size": 3.3409999999999997
+    },
+    {
+     "name": "VENTNOR CITY",
+     "description": 2.572,
+     "size": 2.572
+    },
+    {
+     "name": "WEYMOUTH TWP",
+     "description": 2.635,
+     "size": 2.635
+    }
+   ]
+  },
+  {
+   "name": "BERGEN",
+   "description": 2.5501714285714283,
+   "children": [
+    {
+     "name": "ALLENDALE BORO",
+     "description": 2.2769999999999997,
+     "size": 2.2769999999999997
+    },
+    {
+     "name": "ALPINE BORO",
+     "description": 0.767,
+     "size": 0.767
+    },
+    {
+     "name": "BERGENFIELD BORO",
+     "description": 3.3569999999999998,
+     "size": 3.3569999999999998
+    },
+    {
+     "name": "BOGOTA BORO",
+     "description": 4.2250000000000005,
+     "size": 4.2250000000000005
+    },
+    {
+     "name": "CARLSTADT BORO",
+     "description": 1.688,
+     "size": 1.688
+    },
+    {
+     "name": "CLIFFSIDE PARK BORO",
+     "description": 2.565,
+     "size": 2.565
+    },
+    {
+     "name": "CLOSTER BORO",
+     "description": 2.2119999999999997,
+     "size": 2.2119999999999997
+    },
+    {
+     "name": "CRESSKILL BORO",
+     "description": 2.407,
+     "size": 2.407
+    },
+    {
+     "name": "DEMAREST BORO",
+     "description": 2.839,
+     "size": 2.839
+    },
+    {
+     "name": "DUMONT BORO",
+     "description": 3.883,
+     "size": 3.883
+    },
+    {
+     "name": "ELMWOOD PARK BORO",
+     "description": 3.012,
+     "size": 3.012
+    },
+    {
+     "name": "E RUTHERFORD BORO",
+     "description": 1.751,
+     "size": 1.751
+    },
+    {
+     "name": "EDGEWATER BORO",
+     "description": 1.6119999999999999,
+     "size": 1.6119999999999999
+    },
+    {
+     "name": "EMERSON BORO",
+     "description": 3.028,
+     "size": 3.028
+    },
+    {
+     "name": "ENGLEWOOD CITY",
+     "description": 2.949,
+     "size": 2.949
+    },
+    {
+     "name": "ENGLEWOOD CLIFFS BORO",
+     "description": 1.123,
+     "size": 1.123
+    },
+    {
+     "name": "FAIRLAWN BORO",
+     "description": 3.453,
+     "size": 3.453
+    },
+    {
+     "name": "FAIRVIEW BORO",
+     "description": 2.3249999999999997,
+     "size": 2.3249999999999997
+    },
+    {
+     "name": "FORT LEE BORO",
+     "description": 2.483,
+     "size": 2.483
+    },
+    {
+     "name": "FRANKLIN LAKES BORO",
+     "description": 1.686,
+     "size": 1.686
+    },
+    {
+     "name": "GARFIELD CITY",
+     "description": 3.1189999999999998,
+     "size": 3.1189999999999998
+    },
+    {
+     "name": "GLEN ROCK BORO",
+     "description": 3.081,
+     "size": 3.081
+    },
+    {
+     "name": "HACKENSACK CITY",
+     "description": 2.802,
+     "size": 2.802
+    },
+    {
+     "name": "HARRINGTON PARK BORO",
+     "description": 2.981,
+     "size": 2.981
+    },
+    {
+     "name": "HASBROUCK HGHTS BORO",
+     "description": 2.6919999999999997,
+     "size": 2.6919999999999997
+    },
+    {
+     "name": "HAWORTH BORO",
+     "description": 2.979,
+     "size": 2.979
+    },
+    {
+     "name": "HILLSDALE BORO",
+     "description": 2.999,
+     "size": 2.999
+    },
+    {
+     "name": "HOHOKUS BORO",
+     "description": 2.2769999999999997,
+     "size": 2.2769999999999997
+    },
+    {
+     "name": "LEONIA BORO",
+     "description": 3.1839999999999997,
+     "size": 3.1839999999999997
+    },
+    {
+     "name": "LITTLE FERRY BORO",
+     "description": 2.943,
+     "size": 2.943
+    },
+    {
+     "name": "LODI BORO",
+     "description": 3.264,
+     "size": 3.264
+    },
+    {
+     "name": "LYNDHURST TWP",
+     "description": 3.1719999999999997,
+     "size": 3.1719999999999997
+    },
+    {
+     "name": "MAHWAH TWP",
+     "description": 1.972,
+     "size": 1.972
+    },
+    {
+     "name": "MAYWOOD BORO",
+     "description": 2.282,
+     "size": 2.282
+    },
+    {
+     "name": "MIDLAND PARK BORO",
+     "description": 3.252,
+     "size": 3.252
+    },
+    {
+     "name": "MONTVALE BORO",
+     "description": 2.471,
+     "size": 2.471
+    },
+    {
+     "name": "MOONACHIE BORO",
+     "description": 2.159,
+     "size": 2.159
+    },
+    {
+     "name": "NEW MILFORD BORO",
+     "description": 3.723,
+     "size": 3.723
+    },
+    {
+     "name": "NORTH ARLINGTON BORO",
+     "description": 2.5709999999999997,
+     "size": 2.5709999999999997
+    },
+    {
+     "name": "NORTHVALE BORO",
+     "description": 3.02,
+     "size": 3.02
+    },
+    {
+     "name": "NORWOOD BORO",
+     "description": 2.584,
+     "size": 2.584
+    },
+    {
+     "name": "OAKLAND BORO",
+     "description": 2.352,
+     "size": 2.352
+    },
+    {
+     "name": "OLD TAPPAN BORO",
+     "description": 2.1279999999999997,
+     "size": 2.1279999999999997
+    },
+    {
+     "name": "ORADELL BORO",
+     "description": 2.674,
+     "size": 2.674
+    },
+    {
+     "name": "PALISADES PARK BORO",
+     "description": 1.539,
+     "size": 1.539
+    },
+    {
+     "name": "PARAMUS BORO",
+     "description": 1.5519999999999998,
+     "size": 1.5519999999999998
+    },
+    {
+     "name": "PARK RIDGE BORO",
+     "description": 3.089,
+     "size": 3.089
+    },
+    {
+     "name": "RAMSEY BORO",
+     "description": 2.6229999999999998,
+     "size": 2.6229999999999998
+    },
+    {
+     "name": "RIDGEFIELD BORO",
+     "description": 1.6949999999999998,
+     "size": 1.6949999999999998
+    },
+    {
+     "name": "RIDGEFIELD PARK VILLAGE",
+     "description": 3.131,
+     "size": 3.131
+    },
+    {
+     "name": "RIDGEWOOD VILLAGE",
+     "description": 2.733,
+     "size": 2.733
+    },
+    {
+     "name": "RIVEREDGE BORO",
+     "description": 3.6999999999999997,
+     "size": 3.6999999999999997
+    },
+    {
+     "name": "RIVERVALE TWP",
+     "description": 2.645,
+     "size": 2.645
+    },
+    {
+     "name": "ROCHELLE PARK TWP",
+     "description": 2.745,
+     "size": 2.745
+    },
+    {
+     "name": "ROCKLEIGH BORO",
+     "description": 0.74,
+     "size": 0.74
+    },
+    {
+     "name": "RUTHERFORD BORO",
+     "description": 2.969,
+     "size": 2.969
+    },
+    {
+     "name": "SADDLE BROOK TWP",
+     "description": 2.4019999999999997,
+     "size": 2.4019999999999997
+    },
+    {
+     "name": "SADDLE RIVER BORO",
+     "description": 0.994,
+     "size": 0.994
+    },
+    {
+     "name": "SO HACKENSACK TWP",
+     "description": 2.205,
+     "size": 2.205
+    },
+    {
+     "name": "TEANECK TWP",
+     "description": 3.237,
+     "size": 3.237
+    },
+    {
+     "name": "TENAFLY BORO",
+     "description": 2.705,
+     "size": 2.705
+    },
+    {
+     "name": "TETERBORO BORO",
+     "description": 1.146,
+     "size": 1.146
+    },
+    {
+     "name": "UPPER SADDLE RIV BORO",
+     "description": 2.473,
+     "size": 2.473
+    },
+    {
+     "name": "WALDWICK BORO",
+     "description": 2.848,
+     "size": 2.848
+    },
+    {
+     "name": "WALLINGTON BORO",
+     "description": 3.2039999999999997,
+     "size": 3.2039999999999997
+    },
+    {
+     "name": "WASHINGTON TWP",
+     "description": 2.581,
+     "size": 2.581
+    },
+    {
+     "name": "WESTWOOD BORO",
+     "description": 2.408,
+     "size": 2.408
+    },
+    {
+     "name": "WOODCLIFF LAKE BORO",
+     "description": 2.1879999999999997,
+     "size": 2.1879999999999997
+    },
+    {
+     "name": "WOOD RIDGE BORO",
+     "description": 2.795,
+     "size": 2.795
+    },
+    {
+     "name": "WYCKOFF TWP",
+     "description": 1.8419999999999999,
+     "size": 1.8419999999999999
+    }
+   ]
+  },
+  {
+   "name": "BURLINGTON",
+   "description": 3.0822749999999997,
+   "children": [
+    {
+     "name": "BASS RIVER TWP",
+     "description": 2.299,
+     "size": 2.299
+    },
+    {
+     "name": "BEVERLY CITY",
+     "description": 4.87,
+     "size": 4.87
+    },
+    {
+     "name": "BORDENTOWN CITY",
+     "description": 3.409,
+     "size": 3.409
+    },
+    {
+     "name": "BORDENTOWN TWP",
+     "description": 3.1279999999999997,
+     "size": 3.1279999999999997
+    },
+    {
+     "name": "BURLINGTON CITY",
+     "description": 4.207000000000001,
+     "size": 4.207000000000001
+    },
+    {
+     "name": "BURLINGTON TWP",
+     "description": 2.881,
+     "size": 2.881
+    },
+    {
+     "name": "CHESTERFIELD TWP",
+     "description": 3.0029999999999997,
+     "size": 3.0029999999999997
+    },
+    {
+     "name": "CINNAMINSON TWP",
+     "description": 3.417,
+     "size": 3.417
+    },
+    {
+     "name": "DELANCO TWP",
+     "description": 3.332,
+     "size": 3.332
+    },
+    {
+     "name": "DELRAN TWP",
+     "description": 3.73,
+     "size": 3.73
+    },
+    {
+     "name": "EASTAMPTON TWP",
+     "description": 3.114,
+     "size": 3.114
+    },
+    {
+     "name": "EDGEWATER PARK TWP",
+     "description": 3.346,
+     "size": 3.346
+    },
+    {
+     "name": "EVESHAM TWP",
+     "description": 2.8729999999999998,
+     "size": 2.8729999999999998
+    },
+    {
+     "name": "FIELDSBORO BORO",
+     "description": 2.947,
+     "size": 2.947
+    },
+    {
+     "name": "FLORENCE TWP",
+     "description": 2.415,
+     "size": 2.415
+    },
+    {
+     "name": "HAINESPORT TWP",
+     "description": 2.505,
+     "size": 2.505
+    },
+    {
+     "name": "LUMBERTON TWP",
+     "description": 2.445,
+     "size": 2.445
+    },
+    {
+     "name": "MANSFIELD TWP",
+     "description": 3.3009999999999997,
+     "size": 3.3009999999999997
+    },
+    {
+     "name": "MAPLE SHADE TWP",
+     "description": 3.629,
+     "size": 3.629
+    },
+    {
+     "name": "MEDFORD TWP",
+     "description": 3.25,
+     "size": 3.25
+    },
+    {
+     "name": "MEDFORD LAKES BORO",
+     "description": 3.517,
+     "size": 3.517
+    },
+    {
+     "name": "MOORESTOWN TWP",
+     "description": 2.662,
+     "size": 2.662
+    },
+    {
+     "name": "MT HOLLY TWP",
+     "description": 3.0509999999999997,
+     "size": 3.0509999999999997
+    },
+    {
+     "name": "MT LAUREL TWP",
+     "description": 2.812,
+     "size": 2.812
+    },
+    {
+     "name": "NEW HANOVER TWP",
+     "description": 2.719,
+     "size": 2.719
+    },
+    {
+     "name": "NO HANOVER TWP",
+     "description": 2.219,
+     "size": 2.219
+    },
+    {
+     "name": "PALMYRA BORO",
+     "description": 4.134,
+     "size": 4.134
+    },
+    {
+     "name": "PEMBERTON BORO",
+     "description": 2.541,
+     "size": 2.541
+    },
+    {
+     "name": "PEMBERTON TWP",
+     "description": 2.662,
+     "size": 2.662
+    },
+    {
+     "name": "RIVERSIDE TWP",
+     "description": 3.762,
+     "size": 3.762
+    },
+    {
+     "name": "RIVERTON BORO",
+     "description": 3.646,
+     "size": 3.646
+    },
+    {
+     "name": "SHAMONG TWP",
+     "description": 2.892,
+     "size": 2.892
+    },
+    {
+     "name": "SOUTHAMPTON TWP",
+     "description": 3.065,
+     "size": 3.065
+    },
+    {
+     "name": "SPRINGFIELD TWP",
+     "description": 2.973,
+     "size": 2.973
+    },
+    {
+     "name": "TABERNACLE TWP",
+     "description": 2.9419999999999997,
+     "size": 2.9419999999999997
+    },
+    {
+     "name": "WASHINGTON TWP",
+     "description": 1.279,
+     "size": 1.279
+    },
+    {
+     "name": "WESTAMPTON TWP",
+     "description": 2.568,
+     "size": 2.568
+    },
+    {
+     "name": "WILLINGBORO TWP",
+     "description": 3.989,
+     "size": 3.989
+    },
+    {
+     "name": "WOODLAND TWP",
+     "description": 2.759,
+     "size": 2.759
+    },
+    {
+     "name": "WRIGHTSTOWN BORO",
+     "description": 2.9979999999999998,
+     "size": 2.9979999999999998
+    }
+   ]
+  },
+  {
+   "name": "CAMDEN",
+   "description": 4.288166666666665,
+   "children": [
+    {
+     "name": "AUDUBON BORO",
+     "description": 3.799,
+     "size": 3.799
+    },
+    {
+     "name": "AUDUBON PARK BORO",
+     "description": 6.418,
+     "size": 6.418
+    },
+    {
+     "name": "BARRINGTON BORO",
+     "description": 4.524,
+     "size": 4.524
+    },
+    {
+     "name": "BELLMAWR BORO",
+     "description": 3.824,
+     "size": 3.824
+    },
+    {
+     "name": "BERLIN BORO",
+     "description": 3.381,
+     "size": 3.381
+    },
+    {
+     "name": "BERLIN TWP",
+     "description": 3.723,
+     "size": 3.723
+    },
+    {
+     "name": "BROOKLAWN BORO",
+     "description": 4.073,
+     "size": 4.073
+    },
+    {
+     "name": "CAMDEN CITY",
+     "description": 3.3609999999999998,
+     "size": 3.3609999999999998
+    },
+    {
+     "name": "CHERRY HILL TWNSHP",
+     "description": 3.788,
+     "size": 3.788
+    },
+    {
+     "name": "CHESILHURST BORO",
+     "description": 3.6999999999999997,
+     "size": 3.6999999999999997
+    },
+    {
+     "name": "CLEMENTON BORO",
+     "description": 4.3580000000000005,
+     "size": 4.3580000000000005
+    },
+    {
+     "name": "COLLINGSWOOD BORO",
+     "description": 3.727,
+     "size": 3.727
+    },
+    {
+     "name": "GIBBSBORO BORO",
+     "description": 4.152,
+     "size": 4.152
+    },
+    {
+     "name": "GLOUCESTER CITY",
+     "description": 4.705,
+     "size": 4.705
+    },
+    {
+     "name": "GLOUCESTER TWP",
+     "description": 3.969,
+     "size": 3.969
+    },
+    {
+     "name": "HADDON TWP",
+     "description": 3.78,
+     "size": 3.78
+    },
+    {
+     "name": "HADDONFIELD BORO",
+     "description": 3.163,
+     "size": 3.163
+    },
+    {
+     "name": "HADDON HEIGHTS BORO",
+     "description": 3.395,
+     "size": 3.395
+    },
+    {
+     "name": "HI NELLA BORO",
+     "description": 5.477,
+     "size": 5.477
+    },
+    {
+     "name": "LAUREL SPRINGS BORO",
+     "description": 5.306,
+     "size": 5.306
+    },
+    {
+     "name": "LAWNSIDE BORO",
+     "description": 4.390000000000001,
+     "size": 4.390000000000001
+    },
+    {
+     "name": "LINDENWOLD BORO",
+     "description": 4.774,
+     "size": 4.774
+    },
+    {
+     "name": "MAGNOLIA BORO",
+     "description": 4.562,
+     "size": 4.562
+    },
+    {
+     "name": "MERCHANTVILLE BORO",
+     "description": 4.8580000000000005,
+     "size": 4.8580000000000005
+    },
+    {
+     "name": "MOUNT EPHRAIM BORO",
+     "description": 5.017,
+     "size": 5.017
+    },
+    {
+     "name": "OAKLYN BORO",
+     "description": 4.841,
+     "size": 4.841
+    },
+    {
+     "name": "PENNSAUKEN TWP",
+     "description": 3.859,
+     "size": 3.859
+    },
+    {
+     "name": "PINE HILL BORO",
+     "description": 4.988,
+     "size": 4.988
+    },
+    {
+     "name": "RUNNEMEDE BORO",
+     "description": 4.23,
+     "size": 4.23
+    },
+    {
+     "name": "SOMERDALE BORO",
+     "description": 4.271,
+     "size": 4.271
+    },
+    {
+     "name": "STRATFORD BORO",
+     "description": 4.659000000000001,
+     "size": 4.659000000000001
+    },
+    {
+     "name": "TAVISTOCK BORO",
+     "description": 1.744,
+     "size": 1.744
+    },
+    {
+     "name": "VOORHEES TWP",
+     "description": 4.138,
+     "size": 4.138
+    },
+    {
+     "name": "WATERFORD TWP",
+     "description": 4.106000000000001,
+     "size": 4.106000000000001
+    },
+    {
+     "name": "WINSLOW TWP",
+     "description": 3.487,
+     "size": 3.487
+    },
+    {
+     "name": "WOODLYNNE BORO",
+     "description": 7.827,
+     "size": 7.827
+    }
+   ]
+  },
+  {
+   "name": "CAPE MAY",
+   "description": 1.4321249999999999,
+   "children": [
+    {
+     "name": "AVALON BORO",
+     "description": 0.568,
+     "size": 0.568
+    },
+    {
+     "name": "CAPE MAY CITY",
+     "description": 1.0319999999999998,
+     "size": 1.0319999999999998
+    },
+    {
+     "name": "CAPE MAY POINT BORO",
+     "description": 0.705,
+     "size": 0.705
+    },
+    {
+     "name": "DENNIS TWP",
+     "description": 1.765,
+     "size": 1.765
+    },
+    {
+     "name": "LOWER TWP",
+     "description": 1.8709999999999998,
+     "size": 1.8709999999999998
+    },
+    {
+     "name": "MIDDLE TWP",
+     "description": 1.9129999999999998,
+     "size": 1.9129999999999998
+    },
+    {
+     "name": "NORTH WILDWOOD CITY",
+     "description": 1.458,
+     "size": 1.458
+    },
+    {
+     "name": "OCEAN CITY CITY",
+     "description": 1.029,
+     "size": 1.029
+    },
+    {
+     "name": "SEA ISLE CITY CITY",
+     "description": 0.801,
+     "size": 0.801
+    },
+    {
+     "name": "STONE HARBOR BORO",
+     "description": 0.692,
+     "size": 0.692
+    },
+    {
+     "name": "UPPER TWP",
+     "description": 2.0049999999999994,
+     "size": 2.0049999999999994
+    },
+    {
+     "name": "WEST CAPE MAY BORO",
+     "description": 1.355,
+     "size": 1.355
+    },
+    {
+     "name": "WEST WILDWOOD BORO",
+     "description": 1.8129999999999997,
+     "size": 1.8129999999999997
+    },
+    {
+     "name": "WILDWOOD CITY",
+     "description": 2.832,
+     "size": 2.832
+    },
+    {
+     "name": "WILDWOOD CREST BORO",
+     "description": 1.3659999999999999,
+     "size": 1.3659999999999999
+    },
+    {
+     "name": "WOODBINE BORO",
+     "description": 1.7089999999999999,
+     "size": 1.7089999999999999
+    }
+   ]
+  },
+  {
+   "name": "CUMBERLAND",
+   "description": 3.2979999999999996,
+   "children": [
+    {
+     "name": "BRIDGETON CITY",
+     "description": 5.0280000000000005,
+     "size": 5.0280000000000005
+    },
+    {
+     "name": "COMMERCIAL TWP",
+     "description": 2.558,
+     "size": 2.558
+    },
+    {
+     "name": "DEERFIELD TWP",
+     "description": 3.8539999999999996,
+     "size": 3.8539999999999996
+    },
+    {
+     "name": "DOWNE TWP",
+     "description": 2.3739999999999997,
+     "size": 2.3739999999999997
+    },
+    {
+     "name": "FAIRFIELD TWP",
+     "description": 2.7499999999999996,
+     "size": 2.7499999999999996
+    },
+    {
+     "name": "GREENWICH TWP",
+     "description": 3.659,
+     "size": 3.659
+    },
+    {
+     "name": "HOPEWELL TWP",
+     "description": 3.304,
+     "size": 3.304
+    },
+    {
+     "name": "LAWRENCE TWP",
+     "description": 2.939,
+     "size": 2.939
+    },
+    {
+     "name": "MAURICE RIVER TWP",
+     "description": 2.7479999999999998,
+     "size": 2.7479999999999998
+    },
+    {
+     "name": "MILLVILLE CITY",
+     "description": 3.7909999999999995,
+     "size": 3.7909999999999995
+    },
+    {
+     "name": "SHILOH BORO",
+     "description": 3.3829999999999996,
+     "size": 3.3829999999999996
+    },
+    {
+     "name": "STOW CREEK TWP",
+     "description": 3.388,
+     "size": 3.388
+    },
+    {
+     "name": "UPPER DEERFIELD TWP",
+     "description": 3.3269999999999995,
+     "size": 3.3269999999999995
+    },
+    {
+     "name": "VINELAND CITY",
+     "description": 3.0689999999999995,
+     "size": 3.0689999999999995
+    }
+   ]
+  },
+  {
+   "name": "ESSEX",
+   "description": 3.1446818181818177,
+   "children": [
+    {
+     "name": "BELLEVILLE TWP",
+     "description": 3.851,
+     "size": 3.851
+    },
+    {
+     "name": "BLOOMFIELD TWP",
+     "description": 3.202,
+     "size": 3.202
+    },
+    {
+     "name": "CALDWELL BORO TWP",
+     "description": 3.0229999999999997,
+     "size": 3.0229999999999997
+    },
+    {
+     "name": "CEDAR GROVE TWP",
+     "description": 2.491,
+     "size": 2.491
+    },
+    {
+     "name": "EAST ORANGE CITY",
+     "description": 2.9059999999999997,
+     "size": 2.9059999999999997
+    },
+    {
+     "name": "ESSEX FELLS TWP",
+     "description": 2.1879999999999997,
+     "size": 2.1879999999999997
+    },
+    {
+     "name": "FAIRFIELD TWP",
+     "description": 2.0029999999999997,
+     "size": 2.0029999999999997
+    },
+    {
+     "name": "GLEN RIDGE TWP",
+     "description": 3.2929999999999997,
+     "size": 3.2929999999999997
+    },
+    {
+     "name": "IRVINGTON TWP",
+     "description": 5.961,
+     "size": 5.961
+    },
+    {
+     "name": "LIVINGSTON TWP",
+     "description": 2.3329999999999997,
+     "size": 2.3329999999999997
+    },
+    {
+     "name": "MAPLEWOOD TWP",
+     "description": 3.526,
+     "size": 3.526
+    },
+    {
+     "name": "MILLBURN TWP",
+     "description": 1.9429999999999998,
+     "size": 1.9429999999999998
+    },
+    {
+     "name": "MONTCLAIR TWP",
+     "description": 3.288,
+     "size": 3.288
+    },
+    {
+     "name": "NEWARK CITY",
+     "description": 3.7359999999999998,
+     "size": 3.7359999999999998
+    },
+    {
+     "name": "NORTH CALDWELL TWP",
+     "description": 2.179,
+     "size": 2.179
+    },
+    {
+     "name": "NUTLEY TWP",
+     "description": 3.864,
+     "size": 3.864
+    },
+    {
+     "name": "ORANGE CITY TWP",
+     "description": 3.4659999999999997,
+     "size": 3.4659999999999997
+    },
+    {
+     "name": "ROSELAND BORO",
+     "description": 2.335,
+     "size": 2.335
+    },
+    {
+     "name": "SOUTH ORANGE VILLAGE TW",
+     "description": 3.5069999999999997,
+     "size": 3.5069999999999997
+    },
+    {
+     "name": "VERONA TWP",
+     "description": 2.993,
+     "size": 2.993
+    },
+    {
+     "name": "WEST CALDWELL TWP",
+     "description": 2.658,
+     "size": 2.658
+    },
+    {
+     "name": "WEST ORANGE TWP",
+     "description": 4.437,
+     "size": 4.437
+    }
+   ]
+  },
+  {
+   "name": "GLOUCESTER",
+   "description": 3.6628750000000014,
+   "children": [
+    {
+     "name": "CLAYTON BORO",
+     "description": 3.997,
+     "size": 3.997
+    },
+    {
+     "name": "DEPTFORD TWP",
+     "description": 3.264,
+     "size": 3.264
+    },
+    {
+     "name": "EAST GREENWICH TWP",
+     "description": 2.991,
+     "size": 2.991
+    },
+    {
+     "name": "ELK TWP",
+     "description": 3.673,
+     "size": 3.673
+    },
+    {
+     "name": "FRANKLIN TWP",
+     "description": 3.468,
+     "size": 3.468
+    },
+    {
+     "name": "GLASSBORO BORO",
+     "description": 3.464,
+     "size": 3.464
+    },
+    {
+     "name": "GREENWICH TWP",
+     "description": 3.264,
+     "size": 3.264
+    },
+    {
+     "name": "HARRISON TWP",
+     "description": 3.11,
+     "size": 3.11
+    },
+    {
+     "name": "LOGAN TWP",
+     "description": 2.089,
+     "size": 2.089
+    },
+    {
+     "name": "MANTUA TWP",
+     "description": 3.397,
+     "size": 3.397
+    },
+    {
+     "name": "MONROE TWP",
+     "description": 3.618,
+     "size": 3.618
+    },
+    {
+     "name": "NATIONAL PARK BORO",
+     "description": 4.63,
+     "size": 4.63
+    },
+    {
+     "name": "NEWFIELD BORO",
+     "description": 3.758,
+     "size": 3.758
+    },
+    {
+     "name": "PAULSBORO BORO",
+     "description": 4.316000000000001,
+     "size": 4.316000000000001
+    },
+    {
+     "name": "PITMAN BORO",
+     "description": 3.267,
+     "size": 3.267
+    },
+    {
+     "name": "SO HARRISON TWP",
+     "description": 2.948,
+     "size": 2.948
+    },
+    {
+     "name": "SWEDESBORO BORO",
+     "description": 4.206,
+     "size": 4.206
+    },
+    {
+     "name": "WASHINGTON TWP",
+     "description": 3.318,
+     "size": 3.318
+    },
+    {
+     "name": "WENONAH BORO",
+     "description": 4.189,
+     "size": 4.189
+    },
+    {
+     "name": "WEST DEPTFORD TWP",
+     "description": 3.431,
+     "size": 3.431
+    },
+    {
+     "name": "WESTVILLE BORO",
+     "description": 4.885000000000001,
+     "size": 4.885000000000001
+    },
+    {
+     "name": "WOODBURY CITY",
+     "description": 4.558000000000001,
+     "size": 4.558000000000001
+    },
+    {
+     "name": "WOODBURY HEIGHTS BORO",
+     "description": 4.7010000000000005,
+     "size": 4.7010000000000005
+    },
+    {
+     "name": "WOOLWICH TWP",
+     "description": 3.367,
+     "size": 3.367
+    }
+   ]
+  },
+  {
+   "name": "HUDSON",
+   "description": 4.007583333333334,
+   "children": [
+    {
+     "name": "BAYONNE CITY",
+     "description": 2.633,
+     "size": 2.633
+    },
+    {
+     "name": "EAST NEWARK BORO",
+     "description": 2.731,
+     "size": 2.731
+    },
+    {
+     "name": "GUTTENBERG TOWN",
+     "description": 3.877,
+     "size": 3.877
+    },
+    {
+     "name": "HARRISON TOWN",
+     "description": 2.2809999999999997,
+     "size": 2.2809999999999997
+    },
+    {
+     "name": "HOBOKEN CITY",
+     "description": 1.601,
+     "size": 1.601
+    },
+    {
+     "name": "JERSEY CITY CITY",
+     "description": 2.118,
+     "size": 2.118
+    },
+    {
+     "name": "KEARNY TOWN",
+     "description": 10.542,
+     "size": 10.542
+    },
+    {
+     "name": "NORTH BERGEN TWP",
+     "description": 1.579,
+     "size": 1.579
+    },
+    {
+     "name": "SECAUCUS TOWN",
+     "description": 3.763,
+     "size": 3.763
+    },
+    {
+     "name": "UNION CITY CITY",
+     "description": 7.4110000000000005,
+     "size": 7.4110000000000005
+    },
+    {
+     "name": "WEEHAWKEN TWP",
+     "description": 1.793,
+     "size": 1.793
+    },
+    {
+     "name": "WEST NEW YORK TOWN",
+     "description": 7.7620000000000005,
+     "size": 7.7620000000000005
+    }
+   ]
+  },
+  {
+   "name": "HUNTERDON",
+   "description": 2.940461538461538,
+   "children": [
+    {
+     "name": "ALEXANDRIA TWP",
+     "description": 2.772,
+     "size": 2.772
+    },
+    {
+     "name": "BETHLEHEM TWP",
+     "description": 3.033,
+     "size": 3.033
+    },
+    {
+     "name": "BLOOMSBURY BORO",
+     "description": 3.279,
+     "size": 3.279
+    },
+    {
+     "name": "CALIFON BORO",
+     "description": 3.639,
+     "size": 3.639
+    },
+    {
+     "name": "CLINTON TOWN",
+     "description": 3.227,
+     "size": 3.227
+    },
+    {
+     "name": "CLINTON TWP",
+     "description": 2.808,
+     "size": 2.808
+    },
+    {
+     "name": "DELAWARE TWP",
+     "description": 2.584,
+     "size": 2.584
+    },
+    {
+     "name": "EAST AMWELL TWP",
+     "description": 2.553,
+     "size": 2.553
+    },
+    {
+     "name": "FLEMINGTON BORO",
+     "description": 3.013,
+     "size": 3.013
+    },
+    {
+     "name": "FRANKLIN TWP",
+     "description": 2.746,
+     "size": 2.746
+    },
+    {
+     "name": "FRENCHTOWN BORO",
+     "description": 3.626,
+     "size": 3.626
+    },
+    {
+     "name": "GLEN GARDNER BORO",
+     "description": 3.663,
+     "size": 3.663
+    },
+    {
+     "name": "HAMPTON BORO",
+     "description": 3.935,
+     "size": 3.935
+    },
+    {
+     "name": "HIGH BRIDGE BORO",
+     "description": 4.255,
+     "size": 4.255
+    },
+    {
+     "name": "HOLLAND TWP",
+     "description": 3.057,
+     "size": 3.057
+    },
+    {
+     "name": "KINGWOOD TWP",
+     "description": 2.492,
+     "size": 2.492
+    },
+    {
+     "name": "LAMBERTVILLE CITY",
+     "description": 2.161,
+     "size": 2.161
+    },
+    {
+     "name": "LEBANON BORO",
+     "description": 2.5109999999999997,
+     "size": 2.5109999999999997
+    },
+    {
+     "name": "LEBANON TWP",
+     "description": 2.557,
+     "size": 2.557
+    },
+    {
+     "name": "MILFORD BORO",
+     "description": 3.665,
+     "size": 3.665
+    },
+    {
+     "name": "RARITAN TWP",
+     "description": 2.655,
+     "size": 2.655
+    },
+    {
+     "name": "READINGTON TWP",
+     "description": 2.532,
+     "size": 2.532
+    },
+    {
+     "name": "STOCKTON BORO",
+     "description": 2.2609999999999997,
+     "size": 2.2609999999999997
+    },
+    {
+     "name": "TEWKSBURY TWP",
+     "description": 2.2729999999999997,
+     "size": 2.2729999999999997
+    },
+    {
+     "name": "UNION TWP",
+     "description": 3.0669999999999997,
+     "size": 3.0669999999999997
+    },
+    {
+     "name": "WEST AMWELL TWP",
+     "description": 2.088,
+     "size": 2.088
+    }
+   ]
+  },
+  {
+   "name": "MERCER",
+   "description": 3.364666666666667,
+   "children": [
+    {
+     "name": "EAST WINDSOR TWP",
+     "description": 3.307,
+     "size": 3.307
+    },
+    {
+     "name": "EWING TWP",
+     "description": 3.597,
+     "size": 3.597
+    },
+    {
+     "name": "HAMILTON TWP",
+     "description": 3.251,
+     "size": 3.251
+    },
+    {
+     "name": "HIGHTSTOWN BORO",
+     "description": 4.6850000000000005,
+     "size": 4.6850000000000005
+    },
+    {
+     "name": "HOPEWELL BORO",
+     "description": 3.129,
+     "size": 3.129
+    },
+    {
+     "name": "HOPEWELL TWP",
+     "description": 2.884,
+     "size": 2.884
+    },
+    {
+     "name": "LAWRENCE TWP",
+     "description": 2.981,
+     "size": 2.981
+    },
+    {
+     "name": "PENNINGTON BORO",
+     "description": 2.774,
+     "size": 2.774
+    },
+    {
+     "name": "TRENTON CITY",
+     "description": 5.458,
+     "size": 5.458
+    },
+    {
+     "name": "ROBBINSVILLE TWP",
+     "description": 2.9979999999999998,
+     "size": 2.9979999999999998
+    },
+    {
+     "name": "WEST WINDSOR TWP",
+     "description": 2.88,
+     "size": 2.88
+    },
+    {
+     "name": "PRINCETON",
+     "description": 2.432,
+     "size": 2.432
+    }
+   ]
+  },
+  {
+   "name": "MIDDLESEX",
+   "description": 5.066879999999999,
+   "children": [
+    {
+     "name": "CARTERET BORO",
+     "description": 3.02,
+     "size": 3.02
+    },
+    {
+     "name": "CRANBURY TWP",
+     "description": 1.7819999999999998,
+     "size": 1.7819999999999998
+    },
+    {
+     "name": "DUNELLEN BORO",
+     "description": 2.7609999999999997,
+     "size": 2.7609999999999997
+    },
+    {
+     "name": "EAST BRUNSWICK TWP",
+     "description": 11.463,
+     "size": 11.463
+    },
+    {
+     "name": "EDISON TWP",
+     "description": 5.705,
+     "size": 5.705
+    },
+    {
+     "name": "HELMETTA BORO",
+     "description": 3.233,
+     "size": 3.233
+    },
+    {
+     "name": "HIGHLAND PARK BORO",
+     "description": 8.523,
+     "size": 8.523
+    },
+    {
+     "name": "JAMESBURG BORO",
+     "description": 6.382000000000001,
+     "size": 6.382000000000001
+    },
+    {
+     "name": "METUCHEN BORO",
+     "description": 6.371,
+     "size": 6.371
+    },
+    {
+     "name": "MIDDLESEX BORO",
+     "description": 9.891,
+     "size": 9.891
+    },
+    {
+     "name": "MILLTOWN BORO",
+     "description": 6.601,
+     "size": 6.601
+    },
+    {
+     "name": "MONROE TWP",
+     "description": 2.517,
+     "size": 2.517
+    },
+    {
+     "name": "NEW BRUNSWICK CITY",
+     "description": 2.489,
+     "size": 2.489
+    },
+    {
+     "name": "NORTH BRUNSWICK TWP",
+     "description": 6.010000000000001,
+     "size": 6.010000000000001
+    },
+    {
+     "name": "OLD BRIDGE TWP",
+     "description": 5.181,
+     "size": 5.181
+    },
+    {
+     "name": "PERTH AMBOY CITY",
+     "description": 2.975,
+     "size": 2.975
+    },
+    {
+     "name": "PISCATAWAY TWP",
+     "description": 2.1879999999999997,
+     "size": 2.1879999999999997
+    },
+    {
+     "name": "PLAINSBORO TWP",
+     "description": 2.463,
+     "size": 2.463
+    },
+    {
+     "name": "SAYREVILLE BORO",
+     "description": 5.545,
+     "size": 5.545
+    },
+    {
+     "name": "SOUTH AMBOY CITY",
+     "description": 2.9339999999999997,
+     "size": 2.9339999999999997
+    },
+    {
+     "name": "SOUTH BRUNSWICK TWP",
+     "description": 5.011,
+     "size": 5.011
+    },
+    {
+     "name": "SOUTH PLAINFIELD BORO",
+     "description": 6.595000000000001,
+     "size": 6.595000000000001
+    },
+    {
+     "name": "SOUTH RIVER BORO",
+     "description": 2.428,
+     "size": 2.428
+    },
+    {
+     "name": "SPOTSWOOD BORO",
+     "description": 3.508,
+     "size": 3.508
+    },
+    {
+     "name": "WOODBRIDGE TWP",
+     "description": 11.096,
+     "size": 11.096
+    }
+   ]
+  },
+  {
+   "name": "MONMOUTH",
+   "description": 1.7396981132075473,
+   "children": [
+    {
+     "name": "ABERDEEN TWP",
+     "description": 2.286,
+     "size": 2.286
+    },
+    {
+     "name": "ALLENHURST BORO",
+     "description": 0.678,
+     "size": 0.678
+    },
+    {
+     "name": "ALLENTOWN BORO",
+     "description": 3.029,
+     "size": 3.029
+    },
+    {
+     "name": "ASBURY PARK CITY",
+     "description": 1.557,
+     "size": 1.557
+    },
+    {
+     "name": "ATLANTIC HIGHLANDS BORO",
+     "description": 1.75,
+     "size": 1.75
+    },
+    {
+     "name": "AVON BY THE SEA BORO",
+     "description": 0.845,
+     "size": 0.845
+    },
+    {
+     "name": "BELMAR BORO",
+     "description": 1.357,
+     "size": 1.357
+    },
+    {
+     "name": "BRADLEY BEACH BORO",
+     "description": 1.0459999999999998,
+     "size": 1.0459999999999998
+    },
+    {
+     "name": "BRIELLE BORO",
+     "description": 1.3659999999999999,
+     "size": 1.3659999999999999
+    },
+    {
+     "name": "COLTS NECK TOWNSHIP",
+     "description": 1.6609999999999998,
+     "size": 1.6609999999999998
+    },
+    {
+     "name": "DEAL BORO",
+     "description": 0.576,
+     "size": 0.576
+    },
+    {
+     "name": "EATONTOWN BORO",
+     "description": 2.171,
+     "size": 2.171
+    },
+    {
+     "name": "ENGLISHTOWN BORO",
+     "description": 1.859,
+     "size": 1.859
+    },
+    {
+     "name": "FAIR HAVEN BORO",
+     "description": 1.708,
+     "size": 1.708
+    },
+    {
+     "name": "FARMINGDALE BORO",
+     "description": 2.1519999999999997,
+     "size": 2.1519999999999997
+    },
+    {
+     "name": "FREEHOLD BORO",
+     "description": 2.3569999999999998,
+     "size": 2.3569999999999998
+    },
+    {
+     "name": "FREEHOLD TWP",
+     "description": 1.9809999999999999,
+     "size": 1.9809999999999999
+    },
+    {
+     "name": "HAZLET TWP",
+     "description": 2.352,
+     "size": 2.352
+    },
+    {
+     "name": "HIGHLANDS BORO",
+     "description": 2.153,
+     "size": 2.153
+    },
+    {
+     "name": "HOLMDEL TWP",
+     "description": 1.813,
+     "size": 1.813
+    },
+    {
+     "name": "HOWELL TWP",
+     "description": 2.02,
+     "size": 2.02
+    },
+    {
+     "name": "INTERLAKEN BORO",
+     "description": 0.961,
+     "size": 0.961
+    },
+    {
+     "name": "KEANSBURG BORO",
+     "description": 2.5269999999999997,
+     "size": 2.5269999999999997
+    },
+    {
+     "name": "KEYPORT BORO",
+     "description": 2.3939999999999997,
+     "size": 2.3939999999999997
+    },
+    {
+     "name": "LITTLE SILVER BORO",
+     "description": 1.8199999999999998,
+     "size": 1.8199999999999998
+    },
+    {
+     "name": "LOCH ARBOUR VILLAGE",
+     "description": 0.523,
+     "size": 0.523
+    },
+    {
+     "name": "LONG BRANCH CITY",
+     "description": 1.793,
+     "size": 1.793
+    },
+    {
+     "name": "MANALAPAN TWP",
+     "description": 1.75,
+     "size": 1.75
+    },
+    {
+     "name": "MANASQUAN BORO",
+     "description": 1.628,
+     "size": 1.628
+    },
+    {
+     "name": "MARLBORO TWP",
+     "description": 2.3129999999999997,
+     "size": 2.3129999999999997
+    },
+    {
+     "name": "MATAWAN BORO",
+     "description": 2.496,
+     "size": 2.496
+    },
+    {
+     "name": "MIDDLETOWN TWP",
+     "description": 1.8829999999999998,
+     "size": 1.8829999999999998
+    },
+    {
+     "name": "MILLSTONE TWP",
+     "description": 2.2969999999999997,
+     "size": 2.2969999999999997
+    },
+    {
+     "name": "MONMOUTH BEACH BORO",
+     "description": 1.176,
+     "size": 1.176
+    },
+    {
+     "name": "NEPTUNE TWP",
+     "description": 1.8279999999999998,
+     "size": 1.8279999999999998
+    },
+    {
+     "name": "NEPTUNE CITY BORO",
+     "description": 2.0389999999999997,
+     "size": 2.0389999999999997
+    },
+    {
+     "name": "OCEAN TWP",
+     "description": 1.688,
+     "size": 1.688
+    },
+    {
+     "name": "OCEANPORT BORO",
+     "description": 1.8219999999999998,
+     "size": 1.8219999999999998
+    },
+    {
+     "name": "RED BANK BORO",
+     "description": 2.0069999999999997,
+     "size": 2.0069999999999997
+    },
+    {
+     "name": "ROOSEVELT BORO",
+     "description": 2.767,
+     "size": 2.767
+    },
+    {
+     "name": "RUMSON BORO",
+     "description": 1.287,
+     "size": 1.287
+    },
+    {
+     "name": "SEA BRIGHT BORO",
+     "description": 1.13,
+     "size": 1.13
+    },
+    {
+     "name": "SEA GIRT BORO",
+     "description": 0.625,
+     "size": 0.625
+    },
+    {
+     "name": "SHREWSBURY BORO",
+     "description": 1.9509999999999998,
+     "size": 1.9509999999999998
+    },
+    {
+     "name": "SHREWSBURY TWP",
+     "description": 2.1399999999999997,
+     "size": 2.1399999999999997
+    },
+    {
+     "name": "SOUTH BELMAR BORO",
+     "description": 1.204,
+     "size": 1.204
+    },
+    {
+     "name": "SPRING LAKE BORO",
+     "description": 0.517,
+     "size": 0.517
+    },
+    {
+     "name": "SPRING LAKE HEIGHTS BOR",
+     "description": 1.2539999999999998,
+     "size": 1.2539999999999998
+    },
+    {
+     "name": "TINTON FALLS BORO",
+     "description": 1.6019999999999999,
+     "size": 1.6019999999999999
+    },
+    {
+     "name": "UNION BEACH BORO",
+     "description": 2.2809999999999997,
+     "size": 2.2809999999999997
+    },
+    {
+     "name": "UPPER FREEHOLD TWP",
+     "description": 2.271,
+     "size": 2.271
+    },
+    {
+     "name": "WALL TWP",
+     "description": 1.952,
+     "size": 1.952
+    },
+    {
+     "name": "WEST LONG BRANCH BORO",
+     "description": 1.561,
+     "size": 1.561
+    }
+   ]
+  },
+  {
+   "name": "MORRIS",
+   "description": 2.556282051282051,
+   "children": [
+    {
+     "name": "BOONTON TOWN",
+     "description": 3.1839999999999997,
+     "size": 3.1839999999999997
+    },
+    {
+     "name": "BOONTON TWP",
+     "description": 2.427,
+     "size": 2.427
+    },
+    {
+     "name": "BUTLER BORO",
+     "description": 2.767,
+     "size": 2.767
+    },
+    {
+     "name": "CHATHAM BORO",
+     "description": 2.183,
+     "size": 2.183
+    },
+    {
+     "name": "CHATHAM TWP",
+     "description": 1.946,
+     "size": 1.946
+    },
+    {
+     "name": "CHESTER BORO",
+     "description": 2.6069999999999998,
+     "size": 2.6069999999999998
+    },
+    {
+     "name": "CHESTER TWP",
+     "description": 2.469,
+     "size": 2.469
+    },
+    {
+     "name": "DENVILLE TWP",
+     "description": 2.572,
+     "size": 2.572
+    },
+    {
+     "name": "DOVER TOWN",
+     "description": 2.956,
+     "size": 2.956
+    },
+    {
+     "name": "EAST HANOVER TWP",
+     "description": 2.4459999999999997,
+     "size": 2.4459999999999997
+    },
+    {
+     "name": "FLORHAM PARK BORO",
+     "description": 1.6119999999999999,
+     "size": 1.6119999999999999
+    },
+    {
+     "name": "HANOVER TWP",
+     "description": 1.9329999999999998,
+     "size": 1.9329999999999998
+    },
+    {
+     "name": "HARDING TWP",
+     "description": 1.13,
+     "size": 1.13
+    },
+    {
+     "name": "JEFFERSON TWP",
+     "description": 2.754,
+     "size": 2.754
+    },
+    {
+     "name": "KINNELON BORO",
+     "description": 2.747,
+     "size": 2.747
+    },
+    {
+     "name": "LINCOLN PARK BORO",
+     "description": 2.939,
+     "size": 2.939
+    },
+    {
+     "name": "MADISON BORO",
+     "description": 2.054,
+     "size": 2.054
+    },
+    {
+     "name": "MENDHAM BORO",
+     "description": 2.384,
+     "size": 2.384
+    },
+    {
+     "name": "MENDHAM TWP",
+     "description": 2.114,
+     "size": 2.114
+    },
+    {
+     "name": "MINE HILL TWP",
+     "description": 2.767,
+     "size": 2.767
+    },
+    {
+     "name": "MONTVILLE TWP",
+     "description": 2.5149999999999997,
+     "size": 2.5149999999999997
+    },
+    {
+     "name": "MORRIS TWP",
+     "description": 1.9529999999999998,
+     "size": 1.9529999999999998
+    },
+    {
+     "name": "MORRIS PLAINS BORO",
+     "description": 2.479,
+     "size": 2.479
+    },
+    {
+     "name": "MORRISTOWN TOWN",
+     "description": 2.888,
+     "size": 2.888
+    },
+    {
+     "name": "MOUNTAIN LAKES BORO",
+     "description": 2.711,
+     "size": 2.711
+    },
+    {
+     "name": "MOUNT ARLINGTON BORO",
+     "description": 2.778,
+     "size": 2.778
+    },
+    {
+     "name": "MOUNT OLIVE TWP",
+     "description": 3.2689999999999997,
+     "size": 3.2689999999999997
+    },
+    {
+     "name": "NETCONG BORO",
+     "description": 3.2439999999999998,
+     "size": 3.2439999999999998
+    },
+    {
+     "name": "PARSIPPANY TR HLS TWP",
+     "description": 3.231,
+     "size": 3.231
+    },
+    {
+     "name": "LONG HILL TWP",
+     "description": 2.267,
+     "size": 2.267
+    },
+    {
+     "name": "PEQUANNOCK TWP",
+     "description": 2.545,
+     "size": 2.545
+    },
+    {
+     "name": "RANDOLPH TWP",
+     "description": 2.673,
+     "size": 2.673
+    },
+    {
+     "name": "RIVERDALE BORO",
+     "description": 1.8699999999999999,
+     "size": 1.8699999999999999
+    },
+    {
+     "name": "ROCKAWAY BORO",
+     "description": 3.229,
+     "size": 3.229
+    },
+    {
+     "name": "ROCKAWAY TWP",
+     "description": 2.722,
+     "size": 2.722
+    },
+    {
+     "name": "ROXBURY TWP",
+     "description": 2.6799999999999997,
+     "size": 2.6799999999999997
+    },
+    {
+     "name": "VICTORY GARDENS BORO",
+     "description": 3.066,
+     "size": 3.066
+    },
+    {
+     "name": "WASHINGTON TWP",
+     "description": 2.7569999999999997,
+     "size": 2.7569999999999997
+    },
+    {
+     "name": "WHARTON BORO",
+     "description": 2.827,
+     "size": 2.827
+    }
+   ]
+  },
+  {
+   "name": "OCEAN",
+   "description": 1.9905454545454542,
+   "children": [
+    {
+     "name": "BARNEGAT TWP",
+     "description": 2.8169999999999997,
+     "size": 2.8169999999999997
+    },
+    {
+     "name": "BARNEGAT LIGHT BORO",
+     "description": 0.827,
+     "size": 0.827
+    },
+    {
+     "name": "BAY HEAD BORO",
+     "description": 0.9,
+     "size": 0.9
+    },
+    {
+     "name": "BEACH HAVEN BORO",
+     "description": 1.125,
+     "size": 1.125
+    },
+    {
+     "name": "BEACHWOOD BORO",
+     "description": 2.646,
+     "size": 2.646
+    },
+    {
+     "name": "BERKELEY TWP",
+     "description": 2.2769999999999997,
+     "size": 2.2769999999999997
+    },
+    {
+     "name": "BRICK TWP",
+     "description": 2.376,
+     "size": 2.376
+    },
+    {
+     "name": "DOVER TWP",
+     "description": 1.6219999999999999,
+     "size": 1.6219999999999999
+    },
+    {
+     "name": "EAGLESWOOD TWP",
+     "description": 2.673,
+     "size": 2.673
+    },
+    {
+     "name": "HARVEY CEDARS BORO",
+     "description": 0.967,
+     "size": 0.967
+    },
+    {
+     "name": "ISLAND HEIGHTS BORO",
+     "description": 2.026,
+     "size": 2.026
+    },
+    {
+     "name": "JACKSON TWP",
+     "description": 2.424,
+     "size": 2.424
+    },
+    {
+     "name": "LACEY TWP",
+     "description": 2.263,
+     "size": 2.263
+    },
+    {
+     "name": "LAKEHURST BORO",
+     "description": 3.2529999999999997,
+     "size": 3.2529999999999997
+    },
+    {
+     "name": "LAKEWOOD TWP",
+     "description": 2.199,
+     "size": 2.199
+    },
+    {
+     "name": "LAVALLETTE BORO",
+     "description": 0.854,
+     "size": 0.854
+    },
+    {
+     "name": "LITTLE EGG HARBOR TWP",
+     "description": 2.683,
+     "size": 2.683
+    },
+    {
+     "name": "LONG BEACH TWP",
+     "description": 0.832,
+     "size": 0.832
+    },
+    {
+     "name": "MANCHESTER TWP",
+     "description": 2.215,
+     "size": 2.215
+    },
+    {
+     "name": "MANTOLOKING BORO",
+     "description": 0.7,
+     "size": 0.7
+    },
+    {
+     "name": "OCEAN TWP",
+     "description": 2.173,
+     "size": 2.173
+    },
+    {
+     "name": "OCEAN GATE BORO",
+     "description": 2.7809999999999997,
+     "size": 2.7809999999999997
+    },
+    {
+     "name": "PINE BEACH BORO",
+     "description": 2.613,
+     "size": 2.613
+    },
+    {
+     "name": "PLUMSTED TWP",
+     "description": 2.505,
+     "size": 2.505
+    },
+    {
+     "name": "POINT PLEASANT BORO",
+     "description": 2.141,
+     "size": 2.141
+    },
+    {
+     "name": "PT PLEASANT BEACH BORO",
+     "description": 1.619,
+     "size": 1.619
+    },
+    {
+     "name": "SEASIDE HEIGHTS BORO",
+     "description": 2.501,
+     "size": 2.501
+    },
+    {
+     "name": "SEASIDE PARK BORO",
+     "description": 1.5519999999999998,
+     "size": 1.5519999999999998
+    },
+    {
+     "name": "SHIP BOTTOM BORO",
+     "description": 1.059,
+     "size": 1.059
+    },
+    {
+     "name": "SOUTH TOMS RIVER BORO",
+     "description": 3.089,
+     "size": 3.089
+    },
+    {
+     "name": "STAFFORD TWP",
+     "description": 2.354,
+     "size": 2.354
+    },
+    {
+     "name": "SURF CITY BORO",
+     "description": 0.98,
+     "size": 0.98
+    },
+    {
+     "name": "TUCKERTON BORO",
+     "description": 2.642,
+     "size": 2.642
+    }
+   ]
+  },
+  {
+   "name": "PASSAIC",
+   "description": 4.097625000000001,
+   "children": [
+    {
+     "name": "BLOOMINGDALE BORO",
+     "description": 4.495,
+     "size": 4.495
+    },
+    {
+     "name": "CLIFTON CITY",
+     "description": 5.71,
+     "size": 5.71
+    },
+    {
+     "name": "HALEDON BORO",
+     "description": 5.04,
+     "size": 5.04
+    },
+    {
+     "name": "HAWTHORNE BORO",
+     "description": 2.9499999999999997,
+     "size": 2.9499999999999997
+    },
+    {
+     "name": "LITTLE FALLS TWP",
+     "description": 3.286,
+     "size": 3.286
+    },
+    {
+     "name": "NORTH HALEDON BORO",
+     "description": 2.935,
+     "size": 2.935
+    },
+    {
+     "name": "PASSAIC CITY",
+     "description": 3.884,
+     "size": 3.884
+    },
+    {
+     "name": "PATERSON CITY",
+     "description": 4.642,
+     "size": 4.642
+    },
+    {
+     "name": "POMPTON LAKES BORO",
+     "description": 3.806,
+     "size": 3.806
+    },
+    {
+     "name": "PROSPECT PARK BORO",
+     "description": 5.463,
+     "size": 5.463
+    },
+    {
+     "name": "RINGWOOD BORO",
+     "description": 3.965,
+     "size": 3.965
+    },
+    {
+     "name": "TOTOWA BORO",
+     "description": 2.4379999999999997,
+     "size": 2.4379999999999997
+    },
+    {
+     "name": "WANAQUE BORO",
+     "description": 4.138,
+     "size": 4.138
+    },
+    {
+     "name": "WAYNE TWP",
+     "description": 5.654,
+     "size": 5.654
+    },
+    {
+     "name": "WEST MILFORD TWP",
+     "description": 3.868,
+     "size": 3.868
+    },
+    {
+     "name": "WEST PATERSON BORO",
+     "description": 3.288,
+     "size": 3.288
+    }
+   ]
+  },
+  {
+   "name": "SALEM",
+   "description": 3.7322666666666673,
+   "children": [
+    {
+     "name": "ALLOWAY TOWNSHIP",
+     "description": 3.1839999999999997,
+     "size": 3.1839999999999997
+    },
+    {
+     "name": "CARNEYS POINT TOWNSHIP",
+     "description": 3.35,
+     "size": 3.35
+    },
+    {
+     "name": "ELMER BORO",
+     "description": 3.8529999999999998,
+     "size": 3.8529999999999998
+    },
+    {
+     "name": "ELSINBORO TWP",
+     "description": 2.883,
+     "size": 2.883
+    },
+    {
+     "name": "LOWER ALLOWAY CREEK TWP",
+     "description": 1.6219999999999999,
+     "size": 1.6219999999999999
+    },
+    {
+     "name": "MANNINGTON TWP",
+     "description": 3.467,
+     "size": 3.467
+    },
+    {
+     "name": "OLDMANS TWP",
+     "description": 2.733,
+     "size": 2.733
+    },
+    {
+     "name": "PENNS GROVE BORO",
+     "description": 5.167000000000001,
+     "size": 5.167000000000001
+    },
+    {
+     "name": "PENNSVILLE TWP",
+     "description": 4.7540000000000004,
+     "size": 4.7540000000000004
+    },
+    {
+     "name": "PILESGROVE TWP",
+     "description": 3.4939999999999998,
+     "size": 3.4939999999999998
+    },
+    {
+     "name": "PITTSGROVE TWP",
+     "description": 3.846,
+     "size": 3.846
+    },
+    {
+     "name": "QUINTON TWP",
+     "description": 3.292,
+     "size": 3.292
+    },
+    {
+     "name": "SALEM CITY",
+     "description": 7.517,
+     "size": 7.517
+    },
+    {
+     "name": "UPPER PITTSGROVE TWP",
+     "description": 2.915,
+     "size": 2.915
+    },
+    {
+     "name": "WOODSTOWN BORO",
+     "description": 3.907,
+     "size": 3.907
+    }
+   ]
+  },
+  {
+   "name": "SOMERSET",
+   "description": 2.3740476190476185,
+   "children": [
+    {
+     "name": "BEDMINSTER TWP",
+     "description": 1.373,
+     "size": 1.373
+    },
+    {
+     "name": "BERNARDS TWP",
+     "description": 2.0109999999999997,
+     "size": 2.0109999999999997
+    },
+    {
+     "name": "BERNARDSVILLE BORO",
+     "description": 2.056,
+     "size": 2.056
+    },
+    {
+     "name": "BOUND BROOK BORO",
+     "description": 2.488,
+     "size": 2.488
+    },
+    {
+     "name": "BRANCHBURG TWP",
+     "description": 1.9689999999999999,
+     "size": 1.9689999999999999
+    },
+    {
+     "name": "BRIDGEWATER TWP",
+     "description": 2.034,
+     "size": 2.034
+    },
+    {
+     "name": "FAR HILLS BORO",
+     "description": 1.327,
+     "size": 1.327
+    },
+    {
+     "name": "FRANKLIN TWP",
+     "description": 1.97,
+     "size": 1.97
+    },
+    {
+     "name": "GREEN BROOK TWP",
+     "description": 2.3529999999999998,
+     "size": 2.3529999999999998
+    },
+    {
+     "name": "HILLSBOROUGH TWP",
+     "description": 2.171,
+     "size": 2.171
+    },
+    {
+     "name": "MANVILLE BORO",
+     "description": 2.616,
+     "size": 2.616
+    },
+    {
+     "name": "MILLSTONE BORO",
+     "description": 2.038,
+     "size": 2.038
+    },
+    {
+     "name": "MONTGOMERY TWP",
+     "description": 3.1719999999999997,
+     "size": 3.1719999999999997
+    },
+    {
+     "name": "NORTH PLAINFIELD BORO",
+     "description": 4.081,
+     "size": 4.081
+    },
+    {
+     "name": "PEAPACK GLADSTONE BORO",
+     "description": 1.8379999999999999,
+     "size": 1.8379999999999999
+    },
+    {
+     "name": "RARITAN BORO",
+     "description": 2.766,
+     "size": 2.766
+    },
+    {
+     "name": "ROCKY HILL BORO",
+     "description": 2.205,
+     "size": 2.205
+    },
+    {
+     "name": "SOMERVILLE BORO",
+     "description": 3.7609999999999997,
+     "size": 3.7609999999999997
+    },
+    {
+     "name": "SO BOUND BROOK BORO",
+     "description": 3.538,
+     "size": 3.538
+    },
+    {
+     "name": "WARREN TWP",
+     "description": 1.9869999999999999,
+     "size": 1.9869999999999999
+    },
+    {
+     "name": "WATCHUNG BORO",
+     "description": 2.101,
+     "size": 2.101
+    }
+   ]
+  },
+  {
+   "name": "SUSSEX",
+   "description": 3.273125,
+   "children": [
+    {
+     "name": "ANDOVER BORO",
+     "description": 3.0389999999999997,
+     "size": 3.0389999999999997
+    },
+    {
+     "name": "ANDOVER TWP",
+     "description": 3.892,
+     "size": 3.892
+    },
+    {
+     "name": "BRANCHVILLE BORO",
+     "description": 2.36,
+     "size": 2.36
+    },
+    {
+     "name": "BYRAM TWP",
+     "description": 3.6599999999999997,
+     "size": 3.6599999999999997
+    },
+    {
+     "name": "FRANKFORD TWP",
+     "description": 2.815,
+     "size": 2.815
+    },
+    {
+     "name": "FRANKLIN BORO",
+     "description": 4.226,
+     "size": 4.226
+    },
+    {
+     "name": "FREDON TWP",
+     "description": 2.925,
+     "size": 2.925
+    },
+    {
+     "name": "GREEN TWP",
+     "description": 3.6759999999999997,
+     "size": 3.6759999999999997
+    },
+    {
+     "name": "HAMBURG BORO",
+     "description": 4.562,
+     "size": 4.562
+    },
+    {
+     "name": "HAMPTON TWP",
+     "description": 3.084,
+     "size": 3.084
+    },
+    {
+     "name": "HARDYSTON TWP",
+     "description": 2.989,
+     "size": 2.989
+    },
+    {
+     "name": "HOPATCONG BORO",
+     "description": 3.4299999999999997,
+     "size": 3.4299999999999997
+    },
+    {
+     "name": "LAFAYETTE TWP",
+     "description": 2.836,
+     "size": 2.836
+    },
+    {
+     "name": "MONTAGUE TWP",
+     "description": 2.891,
+     "size": 2.891
+    },
+    {
+     "name": "NEWTON TOWN",
+     "description": 4.5120000000000005,
+     "size": 4.5120000000000005
+    },
+    {
+     "name": "OGDENSBURG BORO",
+     "description": 3.767,
+     "size": 3.767
+    },
+    {
+     "name": "SANDYSTON TWP",
+     "description": 2.928,
+     "size": 2.928
+    },
+    {
+     "name": "SPARTA TWP",
+     "description": 3.4019999999999997,
+     "size": 3.4019999999999997
+    },
+    {
+     "name": "STANHOPE BORO",
+     "description": 4.324000000000001,
+     "size": 4.324000000000001
+    },
+    {
+     "name": "STILLWATER TWP",
+     "description": 3.404,
+     "size": 3.404
+    },
+    {
+     "name": "SUSSEX BORO",
+     "description": 3.415,
+     "size": 3.415
+    },
+    {
+     "name": "VERNON TWP",
+     "description": 2.819,
+     "size": 2.819
+    },
+    {
+     "name": "WALPACK TWP",
+     "description": 0.722,
+     "size": 0.722
+    },
+    {
+     "name": "WANTAGE TWP",
+     "description": 2.877,
+     "size": 2.877
+    }
+   ]
+  },
+  {
+   "name": "UNION",
+   "description": 7.937095238095238,
+   "children": [
+    {
+     "name": "BERKELEY HEIGHTS TWP",
+     "description": 4.199000000000001,
+     "size": 4.199000000000001
+    },
+    {
+     "name": "CLARK TWP",
+     "description": 2.118,
+     "size": 2.118
+    },
+    {
+     "name": "CRANFORD TWP",
+     "description": 6.612,
+     "size": 6.612
+    },
+    {
+     "name": "ELIZABETH CITY",
+     "description": 30.579,
+     "size": 30.579
+    },
+    {
+     "name": "FANWOOD BORO",
+     "description": 2.807,
+     "size": 2.807
+    },
+    {
+     "name": "GARWOOD BORO",
+     "description": 2.6319999999999997,
+     "size": 2.6319999999999997
+    },
+    {
+     "name": "HILLSIDE TWP",
+     "description": 7.939,
+     "size": 7.939
+    },
+    {
+     "name": "KENILWORTH BORO",
+     "description": 5.348000000000001,
+     "size": 5.348000000000001
+    },
+    {
+     "name": "LINDEN CITY",
+     "description": 6.914000000000001,
+     "size": 6.914000000000001
+    },
+    {
+     "name": "MOUNTAINSIDE BORO",
+     "description": 1.9969999999999999,
+     "size": 1.9969999999999999
+    },
+    {
+     "name": "NEW PROVIDENCE BORO",
+     "description": 4.938000000000001,
+     "size": 4.938000000000001
+    },
+    {
+     "name": "PLAINFIELD CITY",
+     "description": 8.459,
+     "size": 8.459
+    },
+    {
+     "name": "RAHWAY CITY",
+     "description": 7.022,
+     "size": 7.022
+    },
+    {
+     "name": "ROSELLE BORO",
+     "description": 8.536,
+     "size": 8.536
+    },
+    {
+     "name": "ROSELLE PARK BORO",
+     "description": 4.143000000000001,
+     "size": 4.143000000000001
+    },
+    {
+     "name": "SCOTCH PLAINS TWP",
+     "description": 11.285,
+     "size": 11.285
+    },
+    {
+     "name": "SPRINGFIELD TWP",
+     "description": 2.169,
+     "size": 2.169
+    },
+    {
+     "name": "SUMMIT CITY",
+     "description": 4.283,
+     "size": 4.283
+    },
+    {
+     "name": "UNION TWP",
+     "description": 20.916,
+     "size": 20.916
+    },
+    {
+     "name": "WESTFIELD TOWN",
+     "description": 2.1599999999999997,
+     "size": 2.1599999999999997
+    },
+    {
+     "name": "WINFIELD TWP",
+     "description": 21.623,
+     "size": 21.623
+    }
+   ]
+  },
+  {
+   "name": "WARREN",
+   "description": 3.5213636363636365,
+   "children": [
+    {
+     "name": "ALLAMUCHY TWP",
+     "description": 3.034,
+     "size": 3.034
+    },
+    {
+     "name": "ALPHA BORO",
+     "description": 3.3819999999999997,
+     "size": 3.3819999999999997
+    },
+    {
+     "name": "BELVIDERE TOWN",
+     "description": 5.873,
+     "size": 5.873
+    },
+    {
+     "name": "BLAIRSTOWN TWP",
+     "description": 2.823,
+     "size": 2.823
+    },
+    {
+     "name": "FRANKLIN TWP",
+     "description": 3.169,
+     "size": 3.169
+    },
+    {
+     "name": "FRELINGHUYSEN TWP",
+     "description": 2.449,
+     "size": 2.449
+    },
+    {
+     "name": "GREENWICH TWP",
+     "description": 3.4739999999999998,
+     "size": 3.4739999999999998
+    },
+    {
+     "name": "HACKETTSTOWN TOWN",
+     "description": 3.264,
+     "size": 3.264
+    },
+    {
+     "name": "HARDWICK TWP",
+     "description": 3.566,
+     "size": 3.566
+    },
+    {
+     "name": "HARMONY TWP",
+     "description": 2.516,
+     "size": 2.516
+    },
+    {
+     "name": "HOPE TWP",
+     "description": 3.065,
+     "size": 3.065
+    },
+    {
+     "name": "INDEPENDENCE TWP",
+     "description": 3.505,
+     "size": 3.505
+    },
+    {
+     "name": "KNOWLTON TWP",
+     "description": 3.7809999999999997,
+     "size": 3.7809999999999997
+    },
+    {
+     "name": "LIBERTY TWP",
+     "description": 3.238,
+     "size": 3.238
+    },
+    {
+     "name": "LOPATCONG TWP",
+     "description": 2.851,
+     "size": 2.851
+    },
+    {
+     "name": "MANSFIELD TWP",
+     "description": 3.489,
+     "size": 3.489
+    },
+    {
+     "name": "OXFORD TWP",
+     "description": 4.3870000000000005,
+     "size": 4.3870000000000005
+    },
+    {
+     "name": "PHILLIPSBURG TOWN",
+     "description": 4.148000000000001,
+     "size": 4.148000000000001
+    },
+    {
+     "name": "POHATCONG TWP",
+     "description": 4.146,
+     "size": 4.146
+    },
+    {
+     "name": "WASHINGTON BORO",
+     "description": 5.235,
+     "size": 5.235
+    },
+    {
+     "name": "WASHINGTON TWP",
+     "description": 3.768,
+     "size": 3.768
+    },
+    {
+     "name": "WHITE TWP",
+     "description": 2.307,
+     "size": 2.307
+    }
+   ]
+  }
+ ]
+}

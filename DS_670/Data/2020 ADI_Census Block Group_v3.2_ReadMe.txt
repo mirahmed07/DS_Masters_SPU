@@ -1,0 +1,66 @@
+2020 Block Group ADI Files v 3.2
+These files contain a linkage between the Census block group and the ADI score. The file contains four relevant fields:
+
+GISJOIN: Key linkage field to the block group shapefile served by NHGIS
+FIPS: The block group Census ID
+ADI_NATRANK: National percentile of block group ADI score
+ADI_STATERNK: State-specific decile of block group ADI score
+
+DO NOT USE EXCEL TO OPEN THE FILES! - Excel has a record limit of roughly 1.4 million and does not warn you if you exceed the limit. Truncation of the data may occur!
+
+Upon download of the block group ADI files, please verify the record number count in your data against the chksum record number below:
+State_abr		State_full		#_Records			
+AK		Alaska			504		
+AL		Alabama			3925		
+AR		Arkansas			2294		
+AZ		Arizona			4773		
+CA		California		25607		
+CO		Colorado			4058		
+CT		Connecticut		2716		
+DC		Washington D.C.		571		
+DE		Delaware			706		
+FL		Florida			13388		
+GA		Georgia			7446		
+HI		Hawaii			1083		
+IA		Iowa			2703		
+ID		Idaho			1284		
+IL		Illinois			9898
+IN		Indiana			5290		
+KS		Kansas			2461
+KY		Kentucky			3581
+LA		Louisiana		4294
+MA		Massachusetts		5116
+MD		Maryland			4079
+ME		Maine			1184
+MI		Michigan			8386		
+MN		Minnesota		4706
+MO		Missouri			5031		
+MS		Mississippi		2445		
+MT		Montana			900		
+NC		North Carolina		7111		
+ND		North Dakota		632		
+NE		Nebraska			1648
+NH		New Hampshire		997		
+NJ		New Jersey		6599		
+NM		New Mexico		1614
+NV		Nevada			1963		
+NY		New York			16070
+OH		Ohio			9472
+OK		Oklahoma			3374		
+OR		Oregon			2970		
+PA		Pennsylvania		10173		
+PR		Puerto Rico		2555	
+RI		Rhode Island		792		
+SC		South Carolina		3408		
+SD		South Dakota		694		
+TN		Tennessee		4562
+TX		Texas			18638		
+UT		Utah			2020		
+VA		Virginia			5963
+VT		Vermont			552	
+WA		Washington		5311		
+WI		Wisconsin		4692		
+WV		West Virginia		1639		
+WY		Wyoming			457
+		United States		242335		
+

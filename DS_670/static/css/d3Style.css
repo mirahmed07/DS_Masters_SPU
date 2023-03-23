@@ -1,0 +1,109 @@
+.aText {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-anchor: middle;
+    color: white;
+  }
+  
+  .active {
+    font-weight: bold;
+    font-size: 18px;
+    fill: whitesmoke;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: yellow;
+  }
+  
+  .inactive {
+    font-weight: lighter;
+    fill:white;
+    transition: fill 0.3s ease-out;
+    text-anchor: middle;
+  }
+  
+  .inactive:hover {
+    fill: yellow;
+    cursor: pointer;
+  }
+  
+  /* font size dependent on radius, see app.js */
+  .axis{
+    color: white; stroke: white; fill:white;
+  }
+  .stateText {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    fill: #fff;
+    text-anchor: middle;
+  }
+  
+  .stateText:hover {
+    stroke: yellow;
+    stroke-width: 1px;
+  }
+  
+  .stateCircle {
+    fill: blue;
+    stroke: #e3e3e3;
+  }
+  
+  .stateCircle:hover {
+    stroke: blue;
+    stroke-width: 3px;
+    ;
+  }
+  
+  .d3-tip {
+    position: absolute;
+    padding: 6px;
+    font-size: 12px;
+    line-height: 1;
+    line-height: 1.5em;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    background: blue;
+    border-radius: 4px;
+  }
+  
+  /* Creates a small triangle extender for the tooltip */
+  .d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: yellow;
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+  }
+  
+  /* Style northward tooltips specifically */
+  .d3-tip.n:after {
+    margin: -2px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
+  
+  /* Mobile Rules */
+  @media screen and (max-width: 530px) {
+    .stateText {
+      display: none;
+    }
+  
+    .aText {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .aText {
+      font-size: 12px;
+    }
+  }
+  

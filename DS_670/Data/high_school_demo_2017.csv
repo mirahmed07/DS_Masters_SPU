@@ -1,0 +1,397 @@
+rank,school,type,grades,address,city,zip,county,district,year
+1,Academy for Mathematics Science and Engineering,Public,12-Sep,520 West Main Street,Rockaway,7866,Morris County,Morris County Vocational School District,2017
+2,Marine Academy of Technology and Environmental Science,Public,12-Sep,195 Cedar Bridge Road,Manahawkin,8050,Ocean County,Ocean County Vocational Technical School District,2017
+3,Middlesex County Vocational Academy Math Science &Engineering Techn,Public,12-Sep,100 Technology Drive,Edison,8837,Middlesex County,Middlesex County Vocational and Technical School District,2017
+4,Academy For Allied Health Sciences,Public,12-Sep,1776 Raritan Road,Scotch Plains,7076,Union County,Union County Vocational-Technical School District,2017
+5,Union County Magnet High School,Public,12-Sep,1776 Raritan Road,Scotch Plains,7076,Union County,Union County Vocational-Technical School District,2017
+6,Academy For Information Technology,Public,12-Sep,1776 Raritan Road,Scotch Plains,7076,Union County,Union County Vocational-Technical School District,2017
+7,Middlesex County Vocational Academy Allied Health & Biomedical Science,Public,12-Aug,1 Convery Boulevard,Woodbridge,7095,Middlesex County,Middlesex County Vocational and Technical School District,2017
+8,Dr Ronald McNair High School,Public,12-Sep,123 Coles  Street,Jersey City,7302,Hudson County,Jersey City Public Schools,2017
+9,Communications High School,Public,12-Sep,1740 New Bedford Road,Wall,7719,Monmouth County,Monmouth County Vocational School District,2017
+10,Monmouth County Academy of Allied Health and Science,Public,12-Sep,2325 Heck Avenue,Neptune,7753,Monmouth County,Monmouth County Vocational School District,2017
+11,Marine Academy of Science and Technology,Public,12-Sep,305 Mast Way,Highlands,7732,Monmouth County,Monmouth County Vocational School District,2017
+12,Biotechnology High School,Public,12-Sep,5000 Kozloski Road,Freehold,7728,Monmouth County,Monmouth County Vocational School District,2017
+13,High Technology High School,Public,12-Sep,765 Newman Springs Road,Lincroft,7738,Monmouth County,Monmouth County Vocational School District,2017
+14,Bergen County Academies,Public,12-Sep,200 Hackensack Avenue,Hackensack,7601,Bergen County,Bergen County Vocational Technical School District,2017
+15,Academy For Performing Arts,Public,12-Sep,1776 Raritan Road,Scotch Plains,7076,Union County,Union County Vocational-Technical School District,2017
+16,Bergen County Technical High School - Teterboro,Public,12-Sep,504 Route 46 West,Teterboro,7608,Bergen County,Bergen County Vocational Technical School District,2017
+17,Infinity Institute,Public,12-Jun,193 Old Bergen Road,Jersey City,7305,Hudson County,Jersey City Public Schools,2017
+18,Union County Technical,Public,12-Sep,1776 Raritan Rd,Scotch Plains,7076,Union County,Union County Vocational-Technical School District,2017
+19,Morris County School of Technology,Public,12-Sep,400 East Main Street,Denville,7834,Morris County,Morris County Vocational School District,2017
+20,West Windsor-Plainsboro High School North,Public,12-Sep,90 Grovers Mill Road,Plainsboro,8536,Middlesex County,West Windsor-Plainsboro Regional School District,2017
+21,Kinnelon High School,Public,12-Sep,121 Kinnelon Road,Kinnelon,7405,Morris County,Kinnelon School District,2017
+22,Ridge High School,Public,12-Sep,268 South Finley Avenue,Basking Ridge,7920,Somerset County,Bernards Township School District,2017
+23,Science Park High School,Public,12-Jul,260 Norfolk Street,Newark,7102,Essex County,Newark Public School District,2017
+24,Technology High School,Public,12-Sep,223 Broadway,Newark,7102,Essex County,Newark Public School District,2017
+25,Mountain Lakes High School,Public,12-Sep,96 Powerville Rd.,Mountain Lakes,7046,Morris County,Mountain Lakes Public School District,2017
+26,West Windsor-Plainsboro High School South,Public,12-Sep,346 Clarksville Road,West Windsor,8550,Mercer County,West Windsor-Plainsboro Regional School District,2017
+27,Montgomery High School,Public,12-Sep,1016 Route 601,Skillman,8558,Somerset County,Montgomery Township School District,2017
+28,Summit High School,Public,12-Sep,125 Kent Place Blvd,Summit,7901,Union County,Summit Public School District,2017
+29,Millburn High School,Public,12-Sep,462 Millburn Ave,Millburn,7041,Essex County,Millburn Township School District,2017
+30,Northern Valley Regional High School at Old Tappan,Public,12-Sep,140 Central Avenue,Old Tappan,7675,Bergen County,Northern Valley Regional High School District,2017
+31,Ridgewood High School,Public,12-Sep,627 East Ridgewood Ave,Ridgewood,7451,Bergen County,Ridgewood Public School District,2017
+32,John P. Stevens High School,Public,12-Sep,855 Grove Avenue,Edison,8820,Middlesex County,Edison Township School District,2017
+33,Glen Ridge High School,Public,12-Jul,200 Ridgewood Ave,Glen Ridge,7028,Essex County,Glen Ridge Public School District,2017
+34,New Providence High School,Public,12-Sep,35 Pioneer Dr,New Providence,7974,Union County,New Providence School District,2017
+35,Mahwah High School,Public,12-Sep,50 Ridge Road,Mahwah,7430,Bergen County,Mahwah Township Public School District,2017
+36,West Morris Central High School,Public,12-Sep,259 Bartley Road,Chester,7930,Morris County,West Morris Regional High School District,2017
+37,Madison High School,Public,12-Sep,170 Ridgedale Avenue,Madison,7940,Morris County,Madison Public School District,2017
+38,Chatham High School,Public,12-Sep,255 Lafayette Avenue,Chatham,7928,Morris County,School District of the Chathams,2017
+39,North Hunterdon High School,Public,12-Sep,1445 State Route 31,Annandale,8801,Hunterdon County,North Hunterdon-Voorhees Regional High School District,2017
+40,Mount Olive High School,Public,12-Sep,18 Corey Road,Flanders,7836,Morris County,Mount Olive Township School District,2017
+41,Tenafly High School,Public,12-Sep,19 Columbus Drive,Tenafly,7670,Bergen County,Tenafly Public School District,2017
+42,Northern Valley Regional High School at Demarest,Public,12-Sep,150 Knickerbocker Road,Demarest,7627,Bergen County,Northern Valley Regional High School District,2017
+43,Haddonfield Memorial High School,Public,12-Sep,401 Kings Highway East,Haddonfield,8033,Camden County,Haddonfield School District,2017
+44,North Star Academy Charter School,"Public, Charter, Alternative",K-12,10 Washington Place,Newark,7102,Essex County,North Star Academy Charter School,2017
+45,Dumont High School,Public,12-Sep,101 New Milford Ave,Dumont,7628,Bergen County,Dumont Public School District,2017
+46,Northern Highlands Regional High School,Public,12-Sep,298 Hillside Ave,Allendale,7401,Bergen County,Northern Highlands Regional High School District,2017
+47,Fair Lawn High School,Public,12-Sep,14  00 Berdan Avenue,Fair Lawn,7410,Bergen County,Fair Lawn Public School District,2017
+48,Scotch Plains-Fanwood High School,Public,12-Sep,667 Westfield Road,Scotch Plains,7076,Union County,Scotch Plains-Fanwood School District,2017
+49,Princeton High School,Public,12-Sep,151 Moore Street,Princeton,8540,Mercer County,Princeton Public School District,2017
+50,Hunterdon Central Regional High School District,Public,12-Sep,84 Route 31,Flemington,8822,Hunterdon County,Hunterdon Central Regional High School District,2017
+51,Park Ridge High School,Public,12-Jul,2 Park Ave,Park Ridge,7656,Bergen County,Park Ridge School District,2017
+52,Metuchen High School,Public,12-Sep,400 Grove Ave,Metuchen,8840,Middlesex County,Metuchen Public School District,2017
+53,Bridgewater-Raritan High School,Public,12-Sep,600 Garretson Road,Bridgewater,8807,Somerset County,Bridgewater-Raritan Regional School District,2017
+54,Central Jersey College Prep Charter School,"Public, Charter, Alternative",K-12,101 Mettlers Road,Somerset,8873,Somerset County,Central Jersey College Prep Charter School,2017
+55,Livingston High School,Public,12-Sep,30 Robert Harp Drive,Livingston,7039,Essex County,Livingston Board of Education School District,2017
+56,Pompton Lakes High School,Public,12-Sep,44 Lakeside Avenue,Pompton Lakes,7442,Passaic County,Pompton Lakes School District,2017
+57,Cumberland County Technical Education Center,Public,12-Sep,3400 College Drive,Millville,8332,Cumberland County,Cumberland County Board of Vocational Education,2017
+58,Gloucester County Institute of Technology,Public,12-Sep,1360 Tanyard Road,Sewell,8080,Gloucester County,Gloucester County Vocational-Technical School District,2017
+59,Monroe Township High School,Public,12-Sep,200 Schoolhouse Road,Monroe Township,8831,Middlesex County,Monroe Township School District,2017
+60,Leonia High School,Public,12-Sep,100 Christie Heights Street,Leonia,7605,Bergen County,Leonia Public School District,2017
+61,West Morris Mendham High School,Public,12-Sep,65 East Main Street,Mendham,7945,Morris County,West Morris Regional High School District,2017
+62,Glen Rock High School,Public,12-Sep,400 Hamilton Avenue,Glen Rock,7452,Bergen County,Glen Rock Public School District,2017
+63,Parsippany High School,Public,12-Sep,309 Baldwin Rd,Parsippany,7054,Morris County,Parsippany-Troy Hills Township School District,2017
+64,Point Pleasant Beach High School,Public,12-Sep,700 Trenton Avenue,Point Pleasant Beach,8742,Ocean County,Point Pleasant Beach School District,2017
+65,River Dell Regional High School,Public,12-Sep,55 Pyle Street,Oradell,7649,Bergen County,River Dell Regional School District,2017
+66,Randolph High School,Public,12-Sep,511 Millbrook Avenue,Randolph,7869,Morris County,Randolph Township School District,2017
+67,Hillsborough High School,Public,12-Sep,466 Raider Boulevard,Hillsborough,8844,Somerset County,Hillsborough Township Public School District,2017
+68,Voorhees High School,Public,12-Sep,256 County Route 513,Glen Gardner,8826,Hunterdon County,North Hunterdon-Voorhees Regional High School District,2017
+69,High Technical High School,Public,12-Sep,One High Tech Way,Secaucus,7094,Hudson County,Hudson County Schools of Technology School District,2017
+70,Pascack Hills High School,Public,12-Sep,225 West Grand Avenue,Montvale,7645,Bergen County,Pascack Valley Regional High School District,2017
+71,South Plainfield High School,Public,12-Sep,200 Lake Street,South Plainfield,7080,Middlesex County,South Plainfield School District,2017
+72,Montville Township High School,Public,12-Sep,100 Horseneck Road,Montville,7045,Morris County,Montville Township School District,2017
+73,OCVTS Grunin Performing Arts Academy,Public,12-Sep,1 College Drive Bldg. #12,Toms River,8754,Ocean County,Ocean County Vocational Technical School District,2017
+74,Emerson Junior Senior High,Public,12-Jul,131 Main Street,Emerson,7630,Bergen County,Emerson Public School District,2017
+75,Liberty High School,Public,12-Sep,299 Sip Avenue,Jersey City,7306,Hudson County,Jersey City Public Schools,2017
+76,Wayne Hills High School,Public,12-Sep,272 Berdan Avenue,Wayne,7470,Passaic County,Wayne Township Public School District,2017
+77,Paramus High School,Public,12-Sep,99 East Century Road,Paramus,7652,Bergen County,Paramus Public School District,2017
+78,New Milford High School,Public,12-Sep,330 River Road,New Milford,7646,Bergen County,New Milford Public School District,2017
+79,Cranford High School,Public,12-Sep,201 West End Place,Cranford,7016,Union County,Cranford Public School District,2017
+80,Ramsey High School,Public,12-Sep,256 E  Main Street,Ramsey,7446,Bergen County,Ramsey School District,2017
+81,Westwood Regional High School,Public,12-Sep,701 Ridgewood Road,Township Of Washington,7676,Bergen County,Westwood Regional School District,2017
+82,Ramapo High School,Public,12-Sep,331 George Street,Franklin Lakes,7417,Bergen County,Ramapo Indian Hills Regional High School District,2017
+83,Westfield Senior High School,Public,12-Sep,550 Dorian Road,Westfield,7090,Union County,Westfield Public School District,2017
+84,Matawan Regional High School,Public,12-Sep,450 Atlantic Avenue,Aberdeen,7747,Monmouth County,Matawan-Aberdeen Regional School District,2017
+85,Fort Lee High School,Public,12-Sep,3000 Lemoine Ave,Fort Lee,7024,Bergen County,Fort Lee School District,2017
+86,Cherry Hill High School East,Public,12-Sep,1750 Kresson Rd.,Cherry Hill,8003,Camden County,Cherry Hill School District,2017
+87,Morris Hills High School,Public,12-Sep,520 West Main Street,Rockaway,7866,Morris County,Morris Hills Regional School District,2017
+88,Passaic County Technical Institute,Public,12-Sep,45 Reinhardt Road,Wayne,7470,Passaic County,Passaic County Technical-Vocational School District,2017
+89,Wayne Valley High School,Public,12-Sep,551 Valley Road,Wayne,7470,Passaic County,Wayne Township Public School District,2017
+90,James Caldwell High School,Public,12-Sep,265 Westville Ave,West Caldwell,7006,Essex County,Caldwell-West School District,2017
+91,Robbinsville High School,Public,12-Sep,155 Robbinsville Edinburg Rd,Robbinsville,8691,Mercer County,Robbinsville Public Schools,2017
+92,Rancocas Valley Regional High School,Public,12-Sep,520 Jacksonville Road,Mount Holly,8060,Burlington County,Rancocas Valley Regional High School District,2017
+93,Hackettstown High School,Public,12-Sep,599 Warren Street,Hackettstown,7840,Warren County,Hackettstown Public School District,2017
+94,Indian Hills High School,Public,12-Sep,97 Yawpo Ave,Oakland,7436,Bergen County,Ramapo Indian Hills Regional High School District,2017
+95,Elizabeth High School - Frank J Cicarell Academy,Public,12-Sep,40 Morrell Street,Elizabeth,7202,Union County,Elizabeth Public Schools,2017
+96,Moorestown High School,Public,12-Sep,350 Bridgeboro Road,Moorestown,8057,Burlington County,Moorestown Township Public School District,2017
+97,County Prep High School,Public,12-Sep,525 Montgomery Street,Jersey City,7306,Hudson County,Hudson County Schools of Technology School District,2017
+98,Point Pleasant Borough High School,Public,12-Sep,Laura Herbert Dr,Point Pleasant Beach,8742,Ocean County,Point Pleasant Borough School District,2017
+99,Marlboro High School,Public,12-Sep,95 North Main Street,Marlboro,7746,Monmouth County,Freehold Regional High School District,2017
+100,South Brunswick High School,Public,12-Sep,750 Ridge Road,Monmouth Junction,8852,Middlesex County,South Brunswick School District,2017
+101,Hopewell Valley Central High School,Public,12-Sep,259 Pennington Titusville Rd,Pennington,8534,Mercer County,Hopewell Valley Regional School District,2017
+102,Ridgefield Memorial High School,Public,12-Sep,555 Walnut St,Ridgefield,7657,Bergen County,Ridgefield School District,2017
+103,Red Bank Regional High School,Public,12-Sep,101 Ridge Road,Little Silver,7739,Monmouth County,Red Bank Regional School District,2017
+104,Clearview Regional High School,Public,12-Sep,625 Breakneck Rd,Mullica Hill,8062,Gloucester County,Clearview Regional High School District,2017
+105,Allentown High School,Public,12-Sep,27 High Street,Allentown,8501,Monmouth County,Upper Freehold Regional School District,2017
+106,Morris Knolls High School,Public,12-Sep,50 Knoll Drive,Denville,7834,Morris County,Morris Hills Regional School District,2017
+107,Sparta High School,Public,12-Sep,70 West Mountain Road,Sparta,7871,Sussex County,Sparta Township Public School District,2017
+108,Bernards High School,Public,12-Sep,25 Olcott Avenue,Bernardsville,7924,Somerset County,Somerset Hills Regional School District,2017
+109,Waldwick High School,Public,12-Sep,155 Wyckoff Avenue,Waldwick,7463,Bergen County,Waldwick School District,2017
+110,Middlesex High School,Public,12-Sep,300 John F. Kennedy Drive,Middlesex,8846,Middlesex County,Middlesex Borough School District,2017
+111,Cedar Grove High School,Public,12-Sep,90 Rugby Road,Cedar Grove,7009,Essex County,Cedar Grove Township School District,2017
+112,Montclair High School,Public,12-Sep,100 Chestnut St,Montclair,7042,Essex County,Montclair Public School District,2017
+113,Somerset County Vocational Technical High School,Public,12-Sep,14 Vogt Drive,Bridgewater,8807,Somerset County,Somerset County Vocational and Technical School District,2017
+114,Manasquan High School,Public,12-Sep,167 Broad Street,Manasquan,8736,Monmouth County,Manasquan School District,2017
+115,Pascack Valley High School,Public,12-Sep,200 Piermont Avenue,Hillsdale,7642,Bergen County,Pascack Valley Regional High School District,2017
+116,Hammonton High School,Public,12-Sep,566 Old Forks Road,Hammonton,8037,Atlantic County,Hammonton School District,2017
+117,Parsippany Hills High School,Public,12-Sep,20 Rita Drive,Morris Plains,7950,Morris County,Parsippany-Troy Hills Township School District,2017
+118,Jefferson Township High School,Public,12-Sep,1010 Weldon Rd   Rd2,Oak Ridge,7438,Morris County,Jefferson Township Public School District,2017
+119,Middletown High School South,Public,12-Sep,900 Nut Swamp Road,Middletown,7748,Monmouth County,Middletown Township Public School District,2017
+120,Lodi High School,Public,12-Sep,99 Putnam Street,Lodi,7644,Bergen County,Lodi School District,2017
+121,Columbia High School,Public,12-Sep,17 Parker Ave,Maplewood,7040,Essex County,South Orange-Maplewood School District,2017
+122,Verona High School,Public,12-Sep,151 Fairview Ave,Verona,7044,Essex County,Verona Public School District,2017
+123,Phillipsburg High School,Public,12-Sep,1 Stateliner Blvd.,Phillipsburg,8865,Warren County,Phillipsburg School District,2017
+124,Pequannock Township High School,Public,12-Sep,85 Sunset Road,Pompton Plains,7444,Morris County,Pequannock Township School District,2017
+125,Lakeland Regional High School,Public,12-Sep,205 Conklintown Road,Wanaque,7465,Passaic County,Lakeland Regional High School District,2017
+126,East Orange STEM Academy High School,Public,12-Jun,129 Renshaw Avenue,East Orange,7017,Essex County,East Orange School District,2017
+127,Cresskill High School,Public,12-Sep,220 Jefferson Ave,Cresskill,7626,Bergen County,Cresskill Public School District,2017
+128,Spotswood High School,Public,12-Sep,105 Summerhill Road,Spotswood,8884,Middlesex County,Spotswood Public School District,2017
+129,Midland Park Junior/Senior High School,Public,12-Jul,250 Prospect St,Midland Park,7432,Bergen County,Midland Park School District,2017
+130,Bergen Arts and Sciences Charter School,"Public, Charter, Alternative",K-12,200 MacArthur Avenue,Garfield,7026,Bergen County,Bergen Arts and Science Charter School,2017
+131,Somerville High School,Public,12-Sep,222 Davenport St.,Somerville,8876,Somerset County,Somerville Public School District,2017
+132,Secaucus High School,Public,12-Sep,11 Mill Ridge Road,Secaucus,7094,Hudson County,Secaucus School District,2017
+133,Bogota Junior/Senior High School,Public,12-Aug,2 Henry C  Luthin Place,Bogota,7603,Bergen County,Bogota Public School District,2017
+134,Butler High School,Public,12-Sep,38 Bartholdi Avenue,Butler,7405,Morris County,Butler Public School District,2017
+135,Haddon Township High School,Public,12-Sep,406 Memorial Avenue,Westmont,8108,Camden County,Haddon Township School District,2017
+136,Wallington Junior Senior High School,Public,12-Jul,234 Main Ave,Wallington,7057,Bergen County,Wallington Boro School District,2017
+137,Bergenfield High School,Public,12-Sep,80 S Prospect Ave,Bergenfield,7621,Bergen County,Bergenfield Borough School District,2017
+138,Cicely L. Tyson Community Middle/High School,Public,12-Jun,35 Winans Street,East Orange,7017,Essex County,East Orange School District,2017
+139,Mainland Regional High School,Public,12-Sep,1301 Oak Avenue,Linwood,8221,Atlantic County,Mainland Regional High School,2017
+140,Henry Hudson Regional School,Public,12-Jul,1 Grand Tour,Highlands,7732,Monmouth County,Henry Hudson Regional School District,2017
+141,Bard Early College High School,Public,12-Sep,321 Bergen Street,Newark,7103,Essex County,Newark Public School District,2017
+142,Holmdel High School,Public,12-Sep,36 Crawfords Corner Road,Holmdel,7733,Monmouth County,Holmdel Township School District,2017
+143,Vernon Township High School,Public,12-Sep,1832 Route 565,Vernon,7462,Sussex County,Vernon Township School District,2017
+144,Wall High School,Public,12-Sep,1630 18th Ave,Wall,7719,Monmouth County,Wall Township Public School District,2017
+145,Teaneck High School,Public,12-Sep,100 Elizabeth Ave,Teaneck,7666,Bergen County,Teaneck School District,2017
+146,Hasbrouck Heights High School,Public,12-Sep,365 Boulevard,Hasbrouck Heights,7604,Bergen County,Hasbrouck Heights School District,2017
+147,Cinnaminson High School,Public,12-Sep,1197 Riverton Road,Cinnaminson,8077,Burlington County,Cinnaminson Township School District,2017
+148,West Essex High School,Public,12-Sep,65 West Greenbrook Rd,North Caldwell,7006,Essex County,West Essex Regional School District,2017
+149,Highland Park High School,Public,12-Sep,102 North Fifth Avenue,Highland Park,8904,Middlesex County,Highland Park Boro School District,2017
+150,Rutherford High School,Public,12-Sep,56 Elliott Pl,Rutherford,7070,Bergen County,Rutherford School District,2017
+151,Shawnee High School,Public,12-Sep,600 Tabernacle Road,Medford,8055,Burlington County,Lenape Regional High School District,2017
+152,Foundation Academy Charter School,"Public, Charter, Alternative",K-12,363 West State Street,Trenton,8608,Mercer County,Foundation Academy Charter School,2017
+153,Alexander Hamilton Preparatory Academy,Public,12-Sep,310 Cherry St,Elizabeth,7208,Union County,Elizabeth Public Schools,2017
+154,Whippany Park High School,Public,12-Sep,165 Whippany Road,Whippany,7981,Morris County,Hanover Park Regional High School District,2017
+155,Governor Livingston High School,Public,12-Sep,175 Watchung Boulevard,Berkeley Heights,7922,Union County,Berkeley Heights School District,2017
+156,Monmouth Regional High School,Public,12-Sep,One Norman J  Field Way,Tinton Falls,7724,Monmouth County,Monmouth Regional High School,2017
+157,Jonathan Dayton High School,Public,12-Sep,139 Mountain Ave.,Springfield,7081,Union County,Springfield Public School District,2017
+158,Watchung Hills Regional High School,Public,12-Sep,108 Stirling Rd.,Warren,7059,Somerset County,Watchung Hills Regional High School District,2017
+159,Eastern Regional High School,Public,12-Sep,1401 Laurel Oak Road,Voorhees,8043,Camden County,Eastern Camden County Regional School District,2017
+160,Lyndhurst High School,Public,12-Sep,400 Weart Avenue,Lyndhurst,7071,Bergen County,Lyndhurst Public School District,2017
+161,Toms River High School East,Public,12-Sep,1225 Raider Way,Toms River,8753,Ocean County,Toms River Regional School District,2017
+162,Lenape High School,Public,12-Sep,235 Hartford Road,Medford,8055,Burlington County,Lenape Regional High School District,2017
+163,Cherokee High School,Public,12-Sep,120 Tomlinson Mill Road,Marlton,8053,Burlington County,Lenape Regional High School District,2017
+164,Manalapan High School,Public,12-Sep,20 Church Lane,Englishtown,7726,Monmouth County,Freehold Regional High School District,2017
+165,Toms River High School North,Public,12-Sep,1245 Old Freehold Road,Toms River,8753,Ocean County,Toms River Regional School District,2017
+166,Lawrence High School,Public,12-Sep,2525 Princeton Pike,Lawrenceville,8648,Mercer County,Lawrence Township Public School District,2017
+167,Shore Regional High School,Public,12-Sep,132 Monmouth Park Highway 36,West Long Branch,7764,Monmouth County,Shore Regional High School District,2017
+168,North Warren Regional School,Public,12-Jul,10 Noe Rd,Blairstown,7825,Warren County,North Warren Regional School District,2017
+169,Nutley High School,Public,12-Sep,300 Franklin Ave,Nutley,7110,Essex County,Nutley Public School District,2017
+170,Colts Neck High School,Public,12-Sep,59 Five Points Road,Colts Neck,7722,Monmouth County,Freehold Regional High School District,2017
+171,Hackensack High School,Public,12-Sep,First & Beech Streets,Hackensack,7601,Bergen County,Hackensack School District,2017
+172,Freehold Borough High School,Public,12-Sep,2 Robertsville Road,Freehold,7728,Monmouth County,Freehold Regional High School District,2017
+173,Old Bridge High School,Public,12-Sep,4209 Route 516,Matawan,7747,Middlesex County,Old Bridge Township School District,2017
+174,Pinelands Regional High School,Public,12-Sep,565 Nugentown Road,Little Egg Harbor,8087,Ocean County,Pinelands Regional School District,2017
+175,East Brunswick High School,Public,12-Oct,380 Cranbury Road,E Brunswick,8816,Middlesex County,East Brunswick Township School District,2017
+176,Essex County Newark Technical,Public,12-Sep,209 Franklin St,Bloomfield,7003,Essex County,Essex County Schools of Technology,2017
+177,Freehold Township High School,Public,12-Sep,281 Elton Adelphia Road,Freehold,7728,Monmouth County,Freehold Regional High School District,2017
+178,Collingswood High School,Public,12-Sep,424 Collings Ave,Collingswood,8108,Camden County,Collingswood Public School District,2017
+179,New Egypt High School,Public,12-Sep,117 Evergreen Road,New Egypt,8533,Ocean County,Plumsted Township School District,2017
+180,Union City High School,Public,12-Sep,2500 Kennedy Blvd,Union City,7087,Hudson County,Union City School District,2017
+181,Bayonne High School,Public,12-Sep,669 Avenue A,Bayonne,7002,Hudson County,Bayonne School District,2017
+182,Ocean City High School,Public,12-Sep,501 Atlantic Avenue,Ocean City,8226,Cape May County,Ocean City School District,2017
+183,Piscataway Township High School,Public,12-Sep,100 Behmer Road,Piscataway,8854,Middlesex County,Piscataway Township School District,2017
+184,Florence Township Memorial High School,Public,12-Sep,1050 Cedar Lane,Burlington,8016,Burlington County,Florence Township School District,2017
+185,Southern Regional High School,Public,12-Sep,90 Cedar Bridge Road,Manahawkin,8050,Ocean County,Southern Regional School District,2017
+186,Manville High School,Public,12-Sep,1100 Brooks Boulevard,Manville,8835,Somerset County,Manville School District,2017
+187,Lenape Valley Regional High School,Public,12-Sep,28 Sparta Road,Stanhope,7874,Sussex County,Lenape Valley Regional High School District,2017
+188,Atlantic County Institute of Technology,Public,12-Sep,5080 Atlantic Avenue,Mays Landing,8330,Atlantic County,Atlantic County Vocational School District,2017
+189,Hightstown High School,Public,12-Sep,25 Leshin Lane,Hightstown,8520,Mercer County,East Windsor Regional School District,2017
+190,Woodstown High School,Public,12-Sep,140 East Avenue,Woodstown,8098,Salem County,Woodstown-Pilesgrove Regional School District,2017
+191,Roselle Park High School,Public,12-Sep,185 W Webster Ave,Roselle Park,7204,Union County,Roselle Park Public School District,2017
+192,Egg Harbor Township High School,Public,12-Sep,24 High School Drive,Egg Harbor Township,8234,Atlantic County,Egg Harbor Township School District,2017
+193,Absegami High School,Public,12-Sep,201 S  Wrangleboro Road,Galloway,8205,Atlantic County,Greater Egg Harbor Regional High School District,2017
+194,Franklin High School,Public,12-Sep,500 Elizabeth Avenue,Somerset,8873,Somerset County,Franklin Township Public School District,2017
+195,Dover High School,Public,12-Sep,100 Grace Street,Dover,7801,Morris County,Dover Public School District,2017
+196,Kingsway Regional High School,Public,12-Sep,201 Kings Highway,Woolwich Twp,8085,Gloucester County,Kingsway Regional School District,2017
+197,Dwight Morrow High School/Academies@Englewood,Public,12-Sep,274 Knickerbocker Rd,Englewood,7631,Bergen County,Englewood Public School District,2017
+198,Edison High School,Public,12-Sep,50 Boulevard Of The Eagles,Edison,8817,Middlesex County,Edison Township School District,2017
+199,Rumson-Fair Haven Regional High School,Public,12-Sep,74 Ridge Road,Rumson,7760,Monmouth County,Rumson-Fair Haven Regional High School District,2017
+200,John F. Kennedy Memorial High School,Public,12-Sep,200 Washington Avenue,Iselin,8830,Middlesex County,Woodbridge Township School District,2017
+201,Pitman High School,Public,12-Sep,225 Linden Avenue,Pitman,8071,Gloucester County,Pitman Boro School District,2017
+202,Burlington County Institute of Technology - Westampton,Public,12-Sep,695 Woodlane Road,Westampton,8060,Burlington County,Burlington County Institute of Technology School District,2017
+203,Wood-Ridge Junior/Senior High School,Public,12-Jul,258 Hackensack St,Wood Ridge,7075,Bergen County,Wood-Ridge School District,2017
+204,High Point Regional High School District,Public,12-Sep,299 Pidgeon Hill Road,Sussex,7461,Sussex County,High Point Regional High School District,2017
+205,Boonton High School,Public,12-Sep,306 Lathrop Avenue,Boonton,7005,Morris County,Boonton Town Public School District,2017
+206,Great Oaks Legacy Charter School,"Public, Charter, Alternative","PK, KG-12",909 Broad Street,Newark,7102,Essex County,Great Oaks Legacy Charter School,2017
+207,Ridgefield Park Junior Senior High School,Public,12-Jul,1 Ozzie Nelson Drive,Ridgefield Park,7660,Bergen County,Ridgefield Park Public School District,2017
+208,Brick Township Memorial High School,Public,12-Sep,2001 Lanes Mill Rd,Brick,8724,Ocean County,Brick Township Public School District,2017
+209,Roxbury High School,Public,12-Sep,One Bryant Drive,Succasunna,7876,Morris County,Roxbury Township School District,2017
+210,Union County TEAMS Charter School,"Public, Charter, Alternative",K-12,515  517 West Fourth Street,Plainfield,7060,Union County,Union County TEAMS Charter School-High School/College LA,2017
+211,Hanover Park High School,Public,12-Sep,63 Mt  Pleasant Avenue,East Hanover,7936,Morris County,Hanover Park Regional High School District,2017
+212,Belvidere High School,Public,12-Sep,809 Oxford Street,Belvidere,7823,Warren County,Belvidere School District,2017
+213,Lower Cape May Regional High School,Public,12-Sep,687 Rt 9,Cape May,8204,Cape May County,Lower Cape May Regional School District,2017
+214,Newton High School,Public,12-Sep,44 Ryerson Avenue,Newton,7860,Sussex County,Newton Public School District,2017
+215,West Orange High School,Public,12-Sep,51 Conforti Ave,West Orange,7052,Essex County,West Orange Public Schools,2017
+216,Seneca High School,Public,12-Sep,110 Carranza Road,Tabernacle,8088,Burlington County,Lenape Regional High School District,2017
+217,North Arlington High School,Public,12-Sep,222 Ridge Road,North Arlington,7031,Bergen County,North Arlington School District,2017
+218,Warren Hills Regional High School,Public,12-Sep,41 Jackson Valley Road,Washington,7882,Warren County,Warren Hills Regional School District,2017
+219,Wallkill Valley Regional High School,Public,12-Sep,10 Grumm Road,Hamburg,7419,Sussex County,Wallkill Valley Regional High School,2017
+220,Howell High School,Public,12-Sep,405 Squankum  Yellowbrook Road,Farmingdale,7727,Monmouth County,Freehold Regional High School District,2017
+221,South River High School,Public,12-Sep,11 Montgomery Street,South River,8882,Middlesex County,South River Public School District,2017
+222,Northern Burlington County Regional High School,Public,12-Sep,160 Mansfield Road East,Columbus,8022,Burlington County,Northern Burlington County Regional School District,2017
+223,Carteret High School,Public,12-Sep,199 Washington Avenue,Carteret,7008,Middlesex County,Carteret Public School District,2017
+224,Arts High School,Public,12-Sep,550 M  L  King Blvd,Newark,7102,Essex County,Newark Public School District,2017
+225,School of Health Science,Public,12-Sep,764 11th Avenue,Paterson,7514,Passaic County,Paterson Public School District,2017
+226,Essex County Donald M. Payne Senior School of Technology,Public,12-Sep,498-544 West Market St,Newark,7107,Essex County,Essex County Schools of Technology,2017
+227,Central Regional High School,Public,12-Sep,509 Forest Hills Parkway,Bayville,8721,Ocean County,Central Regional School District,2017
+228,Plainfield Academy For The Arts & Advanced Studies,Public,12-Jul,1700 West Front St,Plainfield,7063,Union County,Plainfield Public School District,2017
+229,Middletown High School North,Public,12-Sep,63 Tindall Road,Middletown,7748,Monmouth County,Middletown Township Public School District,2017
+230,Salem County Career and Technical High School,Public,12-Sep,880 Route 45,Woodstown,8098,Salem County,Salem County Vocational Technical School District,2017
+231,Dunellen High School,Public,12-Sep,411 First Street,Dunellen,8812,Middlesex County,Dunellen Public School District,2017
+232,Kittatinny Regional High School,Public,12-Jul,77 Halsey Road,Newton,7860,Sussex County,Kittatinny Regional School District,2017
+233,Camden County Technical School-GTC,Public,12-Sep,343 Berlin Cross Keys Road,Sicklerville,8081,Camden County,Camden County Technical School District,2017
+234,Delaware Valley Regional High School,Public,12-Sep,19 Senator Stout Rd,Frenchtown,8825,Hunterdon County,Delaware Valley Regional High School District,2017
+235,West Milford High School,Public,12-Sep,67 Highlander Drive,West Milford,7480,Passaic County,West Milford Township Public School District,2017
+236,North Brunswick Township High School,Public,12-Sep,98 Raider Road,North Brunswick,8902,Middlesex County,North Brunswick Township School District,2017
+237,Saddle Brook Middle/High School,Public,12-Jul,355 Mayhill Street,Saddle Brook,7663,Bergen County,Saddle Brook School District,2017
+238,Barnegat High School,Public,12-Sep,180 Bengal Blvd,Barnegat,8005,Ocean County,Barnegat Township School District,2017
+239,Henry P. Becton Regional High School,Public,12-Sep,120 Paterson Avenue,East Rutherford,7073,Bergen County,Carlstadt-East Rutherford Regional High School District,2017
+240,West Deptford High School,Public,12-Sep,1600 Old Crown Point Rd,West Deptford,8093,Gloucester County,West Deptford Township School District,2017
+241,Lacey Township High School,Public,12-Sep,73 Haines Street,Lanoka Harbor,8734,Ocean County,Lacey Township School District,2017
+242,Brick Township High School,Public,12-Sep,346 Chambers Bridge Rd,Brick,8723,Ocean County,Brick Township Public School District,2017
+243,Cedar Creek High School,Public,12-Sep,1701 New York Ave.,Egg Harbor City,8215,Atlantic County,Greater Egg Harbor Regional High School District,2017
+244,Clifton High School,Public,12-Sep,333 Colfax Avenue,Clifton,7013,Passaic County,Clifton Public School District,2017
+245,Delsea Regional High School,Public,12-Sep,242 Fries Mill Rd,Franklinville,8322,Gloucester County,Delsea Regional High School District,2017
+246,Toms River High School South,Public,12-Sep,55 Hyers Street,Toms River,8753,Ocean County,Toms River Regional School District,2017
+247,Raritan High School,Public,12-Sep,419 Middle Road,Hazlet,7730,Monmouth County,Hazlet Township Public School District,2017
+248,Passaic Valley Regional High School,Public,12-Sep,170 East Main Street,Little Falls,7424,Passaic County,Passaic Valley Regional High School District #1,2017
+249,Maple Shade High School,Public,12-Jul,180 Frederick Ave,Maple Shade,8052,Burlington County,Maple Shade School District,2017
+250,Washington Township High School,Public,12-Sep,519 Hurffville  Crosskeys Rd,Sewell,8080,Gloucester County,Washington Township School District,2017
+251,Bloomfield High School,Public,12-Sep,160 Broad Street,Bloomfield,7003,Essex County,Bloomfield Township School District,2017
+252,Sayreville War Memorial High School,Public,12-Sep,820 Washington Road,Parlin,8859,Middlesex County,Sayreville School District,2017
+253,Hamilton East - Steinert,Public,12-Sep,2900 Klockner Road,Hamilton,8690,Mercer County,Hamilton Township Public School District,2017
+254,Bordentown Regional High School,Public,12-Sep,318 Ward Ave,Bordentown,8505,Burlington County,Bordentown Regional School District,2017
+255,Hawthorne High School,Public,12-Sep,160 Parmelee Avenue,Hawthorne,7506,Passaic County,Hawthorne Public School District,2017
+256,Memorial Senior High School,Public,12-Sep,375 River Dr,Elmwood Park,7407,Bergen County,Elmwood Park School District,2017
+257,Jackson Memorial High School,Public,12-Sep,101 Don Connor Boulevard,Jackson,8527,Ocean County,Jackson Township School District,2017
+258,Sussex County Technical School,Public,12-Sep,105 North Church Road,Sparta,7871,Sussex County,Sussex County Technical School District,2017
+259,Weehawken High School,Public,12-Jul,53 Liberty Place,Weehawken,7086,Hudson County,Weehawken Public School District,2017
+260,Ocean Township High School,Public,12-Sep,550 West Park Avenue,Oakhurst,7755,Monmouth County,Township of Ocean School District,2017
+261,TEAM Academy Charter School,"Public, Charter, Alternative",K-12,60 Park Place,Newark,7102,Essex County,TEAM Academy Charter School,2017
+262,Haddon Heights Junior/Senior High School,Public,12-Jul,301 Second Avenue,Haddon Heights,8035,Camden County,HADDON HEIGHTS School District,2017
+263,Cliffside Park High School,Public,12-Sep,64 Riverview Avenue,Cliffside Park,7010,Bergen County,Cliffside Park School District,2017
+264,Audubon Junior/Senior High School,Public,12-Jul,350 Edgewood Avenue,Audubon,8106,Camden County,Audubon Public School District,2017
+265,Gloucester City High School,Public,12-Sep,1300 Market Street,Gloucester City,8030,Camden County,Gloucester City Public School District,2017
+266,Cape May County Technical High School,Public,12-Sep,188 Crest Haven Rd,Cape May Court House,8210,Cape May County,Cape May County Technical High School District,2017
+267,Essex County West Caldwell Technical,Public,12-Sep,620 Passaic Ave,West Caldwell,7006,Essex County,Essex County Schools of Technology,2017
+268,Burlington Township High School,Public,12-Sep,610 Fountain Avenue,Burlington,8016,Burlington County,Burlington Township School District,2017
+269,Burlington County Institute of Technology - Medford,Public,12-Sep,10 Hawkin Road,Medford,8055,Burlington County,Burlington County Institute of Technology School District,2017
+270,Arthur L. Johnson High School,Public,12-Sep,365 Westfield Avenue,Clark,7066,Union County,Clark Township Public School District,2017
+271,Jackson Liberty High School,Public,12-Sep,125 North Hope Chapel Road,Jackson,8527,Ocean County,Jackson Township School District,2017
+272,Delran High School,Public,12-Sep,50 Hartford Road,Delran,8075,Burlington County,Delran Township School District,2017
+273,The Barack Obama Green Charter High School,"Public, Charter",12-Sep,35 Watchung ave,Plainfield,7060,Union County,The Barack Obama Green Charter High School District,2017
+274,Timber Creek Regional High School,Public,12-Sep,501 Jarvis Road,Erial,8081,Camden County,Black Horse Pike Regional School District,2017
+275,Clayton High School,Public,12-Sep,55 Pop Kramer Blvd,Clayton,8312,Gloucester County,Clayton Public School District,2017
+276,Burlington City High School,Public,12-Jul,100 Blue Devil Way,Burlington,8016,Burlington County,Burlington City Public School District,2017
+277,Palisades Park Junior-Senior High School,Public,12-Jul,Veterans Plaza,Palisades Park,7650,Bergen County,Palisades Park School District,2017
+278,Memorial High School,Public,12-Sep,5501 Park Ave,West New York,7093,Hudson County,West New York School District,2017
+279,Morristown High School,Public,12-Sep,50 Early Street,Morristown,7960,Morris County,Morris School District,2017
+280,Sterling High School,Public,12-Sep,501 South Warwick Road,Somerdale,8083,Camden County,Sterling Regional School District,2017
+281,Willliamstown High School,Public,12-Sep,700 N Tuckahoe Rd,Williamstown,8094,Gloucester County,Monroe Township Public School District,2017
+282,William L Dickinson High School,Public,12-Sep,2 Palisade Ave,Jersey City,7306,Hudson County,Jersey City Public Schools,2017
+283,Rosa L. Parks School of Fine and Performing Arts,Public,12-Sep,413 12th Avenue,Paterson,7514,Passaic County,Paterson Public School District,2017
+284,Buena Regional High School,Public,12-Sep,125 Weymouth Road,Buena,8310,Atlantic County,Buena Regional School District,2017
+285,Union High School,Public,12-Sep,2350 North Third Street,Union,7083,Union County,Township of Union School District,2017
+286,Middlesex County Vocational School East Brunswick,Public,12-Sep,112 Rues Lane,East Brunswick,8816,Middlesex County,Middlesex County Vocational and Technical School District,2017
+287,Linden High School,Public,12-Sep,121 West St. Georges Ave.,Linden,7036,Union County,Linden Public School District,2017
+288,Triton Regional High School,Public,12-Sep,250 Schubert Ave,Runnemede,8078,Camden County,Black Horse Pike Regional School District,2017
+289,South Amboy Middle/High School,Public,12-Jun,200 Governor Harold G  Hoffman,South Amboy,8879,Middlesex County,South Amboy School District,2017
+290,Colonia High School,Public,12-Sep,East Street,Colonia,7067,Middlesex County,Woodbridge Township School District,2017
+291,Hopatcong High School,Public,12-Aug,2A Windsor Ave,Hopatcong,7843,Sussex County,Hopatcong Borough School District,2017
+292,University High School,Public,12-Jul,55 Clinton Pl,Newark,7108,Essex County,Newark Public School District,2017
+293,American History High School,Public,12-Sep,74 Montgomery St,Newark,7103,Essex County,Newark Public School District,2017
+294,Camden County Technical School-Pennsauken,Public,12-Sep,6008 Browning Road,Pennsauken,8109,Camden County,Camden County Technical School District,2017
+295,Arthur P. Schalick High School,Public,12-Sep,718 Centerton Road,Pittsgrove,8318,Salem County,Pittsgrove Township School District,2017
+296,Passaic County-Manchester Regional High School,Public,12-Sep,70 Church Street,Haledon,7508,Passaic County,Passaic County Manchester Regional High School District,2017
+297,Middlesex County Vocational School Perth Amboy,Public,12-Sep,457 High Street,Perth Amboy,8861,Middlesex County,Middlesex County Vocational and Technical School District,2017
+298,Hamilton North - Nottingham,Public,12-Sep,1055 Klockner Road,Hamilton,8619,Mercer County,Hamilton Township Public School District,2017
+299,Chartertech High School for the Performing Arts,"Public, Charter",12-Sep,413 New Road,Somers Point,8244,Atlantic County,Chartertech High School for the Performing Arts,2017
+300,Hoboken Charter School,"Public, Charter, Alternative",K-12,713 Washington St,Hoboken,7030,Hudson County,Hoboken Charter School,2017
+301,Ewing High School,Public,12-Sep,900 Parkway Ave,Ewing,8618,Mercer County,Ewing Township School District,2017
+302,Middlesex County Vocational School Piscataway,Public,12-Sep,21 Suttons Lane,Piscataway,8854,Middlesex County,Middlesex County Vocational and Technical School District,2017
+303,Hoboken High School,Public,12-Sep,Ninth & Clinton Sts,Hoboken,7030,Hudson County,Hoboken Public School District,2017
+304,Keyport High School,Public,12-Sep,351 Broad Street,Keyport,7735,Monmouth County,Keyport School District,2017
+305,North Plainfield High School,Public,12-Sep,34 Wilson Avenue,North Plainfield,7060,Somerset County,North Plainfield School District,2017
+306,Cumberland Regional High School,Public,12-Sep,90 Silver Lake Road,Bridgeton,8302,Cumberland County,Cumberland Regional School District,2017
+307,Bound Brook High School,Public,12-Sep,111 West Union Avenue,Bound Brook,8805,Somerset County,Bound Brook School District,2017
+308,Lincoln High School,Public,12-Sep,60 Crescent Ave,Jersey City,7304,Hudson County,Jersey City Public Schools,2017
+309,Long Branch High School,Public,12-Sep,404 Indiana Avenue,Long Branch,7740,Monmouth County,LONG BRANCH PUBLIC SCHOOL District,2017
+310,Leap Academy University Charter School,"Public, Charter, Alternative",K-12,130 North Broadway,Camden,8102,Camden County,LEAP Academy University Charter School,2017
+311,Kearny High School,Public,12-Sep,336 Devon St,Kearny,7032,Hudson County,Kearny,2017
+312,Millville Senior High School,Public,12-Sep,200 Wade Blvd,Millville,8332,Cumberland County,Millville School District,2017
+313,Orange High School,Public,12-Sep,400 Lincoln Ave,Orange,7050,Essex County,ORANGE BOARD OF EDUCATION School District,2017
+314,Belleville High School,Public,12-Sep,100 Passaic Ave,Belleville,7109,Essex County,Belleville Public School District,2017
+315,James J Ferris High School,Public,12-Sep,35 Colgate St,Jersey City,7302,Hudson County,Jersey City Public Schools,2017
+316,North Bergen High School,Public,12-Sep,7417 Kennedy Blvd,North Bergen,7047,Hudson County,North Bergen School District,2017
+317,Palmyra High School,Public,12-Sep,311 W 5th Street,Palmyra,8065,Burlington County,Palmyra Public School District,2017
+318,Academy for Urban Leadership Charter School,"Public, Charter",12-Jul,612 Amboy Ave,Perth Amboy,8861,Middlesex County,Academy for Urban Leadership Charter School,2017
+319,Hillside High School,Public,12-Sep,1085 Liberty Ave,Hillside,7205,Union County,Hillside Public School District,2017
+320,Oakcrest High School,Public,12-Sep,1824 Dr  Dennis Foreman Drive,Mays Landing,8330,Atlantic County,Greater Egg Harbor Regional High School District,2017
+321,Dr. Charles E. Brimm Medical Arts High School,Public,12-Sep,1875 Park Blvd,Camden,8103,Camden County,Camden City School District,2017
+322,Perth Amboy High School,Public,12-Sep,300 Eagle Ave,Perth Amboy,8861,Middlesex County,Perth Amboy Public School District,2017
+323,Highland Regional High School,Public,12-Sep,450 Erial Road,Blackwood,8012,Camden County,Black Horse Pike Regional School District,2017
+324,International High School,Public,12-Sep,200 Grand Street,Paterson,7501,Passaic County,Paterson Public School District,2017
+325,Woodbury Junior-Senior High School,Public,12-Jun,25 N. Broad Street,Woodbury,8096,Gloucester County,Woodbury City Public School District,2017
+326,Gateway Regional High School,Public,12-Jul,775 Tanyard Rd,Woodbury Hts,8096,Gloucester County,Gateway Regional High School District,2017
+327,Glassboro High School,Public,12-Sep,560 Joseph L Bowe Blvd,Glassboro,8028,Gloucester County,Glassboro School District,2017
+328,New Brunswick High School,Public,12-Sep,1000 Somerset St,New Brunswick,8901,Middlesex County,New Brunswick School District,2017
+329,Harrison High School,Public,12-Sep,401 Kingsland Avenue,Harrison,7029,Hudson County,Harrison Public Schools,2017
+330,Atlantic City High School,Public,12-Sep,1400 N Albany Avenue,Atlantic City,8401,Atlantic County,Atlantic City School District,2017
+331,Vineland Senior High School,Public,12-Sep,2880 E Chestnut Ave,Vineland,8360,Cumberland County,Vineland Public School District,2017
+332,Winslow Township High School,Public,12-Sep,10 Cooper Folly Road,Atco,8004,Camden County,Winslow Township School District,2017
+333,Woodbridge High School,Public,12-Sep,25 Samuel Lupo Place,Woodbridge,7095,Middlesex County,Woodbridge Township School District,2017
+334,Neptune High School,Public,12-Sep,55 Neptune Boulevard,Neptune,7753,Monmouth County,Neptune Township School District,2017
+335,Wildwood High School,Public,12-Sep,4300 Pacific Ave,Wildwood,8260,Cape May County,Wildwood City School District,2017
+336,Deptford Township High School,Public,12-Sep,575 S Fox Run Rd,Deptford,8096,Gloucester County,Deptford Township Public School District,2017
+337,Middle Township High School,Public,12-Sep,300 East Atlantic Avenue,Cape May Court House,8210,Cape May County,Middle Township Public School District,2017
+338,Lakewood High School,Public,12-Sep,855 Somerset Avenue,Lakewood,8701,Ocean County,Lakewood Township School District,2017
+339,Abraham Clark High School,Public,12-Sep,122 East 6th Ave,Roselle,7203,Union County,Roselle Public School District,2017
+340,Ocean County Vocational Technical School Waretown Center,Public,12-Sep,423 Wells Mills Road,Waretown,8758,Ocean County,Ocean County Vocational Technical School District,2017
+341,Hamilton West-Watson,Public,12-Sep,2720 South Clinton Avenue,Hamilton,8610,Mercer County,Hamilton Township Public School District,2017
+342,Warren County Vocational Technical School,Public,12-Sep,1500 Route 57,Washington,7882,Warren County,Warren County Vocational Technical School,2017
+343,Pennsville Memorial High School,Public,12-Sep,110 S  Broadway,Pennsville,8070,Salem County,Pennsville School District,2017
+344,Marion P. Thomas Charter School,"Public, Charter, Alternative","PK, KG-12",125 Sussex Ave,Newark,7103,Essex County,Marion P. Thomas Charter School,2017
+345,Henry Snyder High School,Public,12-Sep,239 Bergen Ave,Jersey City,7305,Hudson County,Jersey City Public Schools,2017
+346,Peoples Preparatory Charter School,"Public, Charter",12-Sep,321 Bergen Street,Newark,7103,Essex County,Peoples Preparatory Charter School District,2017
+347,Pennsauken High School,Public,12-Sep,800 Hylton Road,Pennsauken,8110,Camden County,Pennsauken Township Board of Education School District,2017
+348,David Brearley Middle/High School,Public,12-Jul,401 Monroe Avenue,Kenilworth,7033,Union County,Kenilworth School District,2017
+349,Rahway High School,Public,12-Sep,1012 Madison Ave,Rahway,7065,Union County,Rahway Public School District,2017
+350,Garfield High School,Public,12-Sep,500 Palisade Ave,Garfield,7026,Bergen County,Garfield Public School District,2017
+351,University Academy Charter High School,"Public, Charter",12-Sep,275 West Side Avenue,Jersey City,7305,Hudson County,University Academy Charter High School,2017
+352,Salem High School,Public,12-Sep,219 Walnut St,Salem,8079,Salem County,Salem City School District,2017
+353,Overbrook Senior High School,Public,12-Sep,1200 Turnersville Road,Pine Hill,8021,Camden County,Pine Hill School District,2017
+354,Paterson Charter School for Science/Technology,"Public, Charter, Alternative",K-12,196 West Railway Avenue,Paterson,7503,Passaic County,Paterson Charter School for Science and Technology,2017
+355,Lindenwold High School,Public,12-Sep,801 Egg Harbor Road,Lindenwold,8021,Camden County,Lindenwold Public School District,2017
+356,Creative Arts High School,Public,12-Sep,1875 Park Blvd,Camden,8103,Camden County,Camden City School District,2017
+357,Passaic High School No. 12,Public,12-Sep,170 Paulison Ave.,Passaic,7055,Passaic County,Passaic City School District,2017
+358,Irvington High School,Public,12-Sep,1253      Clinton Ave,Irvington,7111,Essex County,Irvington Public School District,2017
+359,Cherry Hill High School West,Public,12-Sep,2101 Chapel Ave.,Cherry Hill,8034,Camden County,Cherry Hill School District,2017
+360,Paulo Freire Charter School,"Public, Charter",12-Sep,28 Burnet Street,Newark,7102,Essex County,Paulo Freire Charter School,2017
+361,Manchester Township High School,Public,12-Sep,101 Hawks Way,Manchester,8759,Ocean County,Manchester Township School District,2017
+362,Memorial High School,Public,12-Sep,504 East Broad Street,Millville,8332,Cumberland County,Millville School District,2017
+363,Pemberton Township High School,Public,12-Sep,148 Arneys Mount Road,Pemberton,8068,Burlington County,Pemberton Township School District,2017
+364,Thomas Jefferson Arts Academy,Public,12-Sep,27 Martin Luther King Jr Plaza,Elizabeth,7201,Union County,Elizabeth Public Schools,2017
+365,Newark Early College High School,Public,12-Jul,403 South Orange Avenue,Newark,7103,Essex County,Newark Public School District,2017
+366,East Side High School,Public,12-Sep,238 Van Buren St,Newark,7105,Essex County,Newark Public School District,2017
+367,Trenton Central High School - Main Campus,Public,12-Oct,400 Chambers Street,Trenton,8611,Mercer County,Trenton Public School District,2017
+368,Bridgeton High School,Public,12-Sep,111 N West Avenue,Bridgeton,8302,Cumberland County,Bridgeton City School District,2017
+369,Eagle Academy for Young Men of Newark,Public,12-Jun,279 Chancellor Avenue,Newark,7112,Essex County,Newark Public School District,2017
+370,Asbury Park High School,Public,12-Jul,1001 Sunset Avenue,Asbury Park,7712,Monmouth County,Asbury Park School District,2017
+371,Bergen County Technical High School - Paramus,Public,12-Sep,E.285 Pascack Road,Paramus,7652,Bergen County,Bergen County Vocational Technical School District,2017
+372,John E. Dwyer Technology Academy,Public,12-Sep,123 Pearl St,Elizabeth,7202,Union County,Elizabeth Public Schools,2017
+373,School of Earth and Space Science,Public,12-Sep,201 Memorial Drive,Paterson,7505,Passaic County,Paterson Public School District,2017
+374,Central High School,Public,12-Sep,250 18th Avenue,Newark,7103,Essex County,Newark Public School District,2017
+375,Admiral William F. Halsey Junior Health & Public Safety Academy,Public,12-Sep,641 South Street,Elizabeth,7202,Union County,Elizabeth Public Schools,2017
+376,Keansburg High School,Public,12-Sep,140 Port Monmouth Road,Keansburg,7734,Monmouth County,Keansburg School District,2017
+377,Pleasantville High School,Public,12-Sep,701 Mill Road,Pleasantville,8232,Atlantic County,Pleasantville Public School District,2017
+378,Academy Charter High School,"Public, Charter",12-Sep,1725 Main Street,Lake Como,7719,Monmouth County,Academy Charter High School,2017
+379,Riverside High School,Public,12-Sep,112 E Washington Street,Riverside,8075,Burlington County,Riverside Township School District,2017
+380,Weequahic High School,Public,12-Sep,279 Chancellor Ave,Newark,7112,Essex County,Newark Public School District,2017
+381,East Orange Campus High School,Public,12-Sep,344 Prospect Street,East Orange,7017,Essex County,East Orange School District,2017
+382,Barringer High School,Public,12-Sep,90 Parker St,Newark,7104,Essex County,Newark Public School District,2017
+383,Thomas A. Edison Career and Technical Academy,Public,12-Sep,625 Summer St,Elizabeth,7202,Union County,Elizabeth Public Schools,2017
+384,Camden High School,Public,12-Sep,1700 Park Boulevard,Camden,8103,Camden County,Camden City School District,2017
+385,Plainfield High School,Public,12-Sep,950 Park Avenue,Plainfield,7060,Union County,Plainfield Public School District,2017
+386,Newark Prep Charter School,"Public, Charter",12-Sep,570 Broad St.,Newark,7102,Essex County,Newark Prep Charter School,2017
+387,Penns Grove High School,Public,12-Sep,334 Harding Highway,Carneys Point,8069,Salem County,Penns Grove-Carneys Point Regional School District,2017
+388,Paulsboro High School,Public,12-Sep,670 N Delaware St,Paulsboro,8066,Gloucester County,Paulsboro School District,2017
+389,Daylight/Twilight High School,Public,12-Jun,1001 West State Street,Trenton,8618,Mercer County,Trenton Public School District,2017
+390,Malcolm X Shabazz High School,Public,12-Sep,80 Johnson Ave,Newark,7108,Essex County,Newark Public School District,2017
+391,Willingboro High School,Public,12-Sep,20 Jfk Way,Willingboro,8046,Burlington County,Willingboro Public School District,2017
+392,John F. Kennedy High School,Public,12-Sep,61-127 Preakness Avenue,Paterson,7502,Passaic County,Paterson Public School District,2017
+393,Woodrow Wilson High School,Public,12-Sep,3100 Federal Street,Camden,8105,Camden County,Camden City School District,2017
+394,Camden Big Picture Learning Academy,Public,12-Sep,1875 Park Boulevard,Camden,8103,Camden County,Camden City School District,2017
+395,Middlesex County Vocational School East Bruns. School of Career Develop,Public,12-Sep,112 Rues Lane,East Brunswick,8816,Middlesex County,Middlesex County Vocational and Technical School District,2017
+396,Alternative High School,Public,12-Jun,350 Market Street,Paterson,7501,Passaic County,Paterson Public School District,2017

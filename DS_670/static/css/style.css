@@ -1,0 +1,341 @@
+* {
+  font-family: 'Quicksand';
+}
+
+li {
+  list-style-type: none;
+  }
+
+/* body {
+    background-color: white;
+    background-image: url("https://images.hdqwalls.com/wallpapers/street-light-4k.jpg");
+    background-repeat: no-repeat; background-size: cover; background-position: stretch;
+    background-attachment: fixed;
+} */
+
+.bg {
+    width: 90%;
+}
+
+.nav-link:hover {
+    background-color: blue !important;
+    color: white !important;
+}
+
+.navbar-brand{
+  background-color: rgb(81, 139, 176) !important;
+}
+.navbar-brand:hover {
+  background-color: blue !important;
+  color: white !important;
+}
+
+.viz-box:hover {
+    border-color: blue;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.image-center {
+  text-align:center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 750px;
+  object-fit: contain;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: blue; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#myBtn2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: blue; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn2:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#myBtn3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 90px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: blue; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn2:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.hero__scroll {
+  position: absolute;
+  /* margin: auto; */
+  display: block;
+  cursor: pointer;
+  /* padding-bottom: 40px; */
+  left: 0;
+  right: 0;
+  text-transform: uppercase; }
+
+.hero__scroll .chevron {
+  /* margin-top: 20px; */
+  display: block;
+  color: black; }
+
+
+.card-body .active {
+    border-color: blue;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.navbar-brand {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    color: white !important;
+    background-color: blue !important;
+}
+
+.viz-box:hover {
+    border-color: blue;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-wrap {
+    float: left;
+}
+
+.td {
+    font-size: 14px;
+}
+
+.dropdown-menu { right: 0; left: auto; }
+
+.tableFixHead          { overflow-y: auto; height: 200px; }
+.tableFixHead thead th { position: sticky; top: 0; color: white; background-color: blue;}
+
+/* Just common table stuff. Really. */
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px; }
+th     { background:#eee; }
+
+@media (max-width: 768px) {
+    .navbar-light.bg-white {
+        background-color: white !important;
+    }
+    .nav-link {
+        color: Black !important;
+    }
+    #img-wrap {
+        float: none;
+    }
+}
+
+.iframeContainer {
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+  }
+  
+  /* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
+  
+  .article {
+    background-color: rgb(207, 97, 207);
+  }
+  .title{
+    color: white;
+  }
+  
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    /* Padding bottom by footer height */
+    padding-bottom: 80px;
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Set the fixed height of the footer here */
+    height: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
+  #footer p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  #footer a {
+    color: blue;
+  }
+  
+  #poverty_rate-total_offense,
+  #poverty_rate-rate_per_100k,
+  #poverty_rate-total_arrest,
+  #school_rank-total_offense,
+  #school_rank-rate_per_100k,
+  #school_rank-total_arrest,
+  #median_hh_income-total_offense,
+  #median_hh_income-rate_per_100k,
+  #median_hh_income-total_arrest {
+    display: none;
+  }
+  
+  .card-header {
+    background-color: blue !important;
+  }
+  
+  .card-inactive {
+    font-weight: lighter;
+    fill: #c9c9c9;
+    transition: fill 0.3s ease-out;
+  }
+
+
+  .chevron::before {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    vertical-align: top;
+    width: 20px; }
+  
+  .chevron.right:before {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  
+  .chevron.bottom:before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg); }
+  
+  .chevron.left:before {
+    left: 0.25em;
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg); }
+
+
+/* Created by Alison Quaglia but I enhanced it a little*/
+
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-position: stretch;
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.legend {
+  padding: 4px 10px;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style-type: none;
+}
+
+.legend li {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-right: 30px;
+  color:blue;
+}
+
+.legend span {
+  float: left;
+  margin-left: 25px;
+  width: 160px;
+  height: 22px;
+  padding-top: 1px;
+}

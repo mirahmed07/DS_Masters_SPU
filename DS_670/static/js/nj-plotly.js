@@ -95,9 +95,7 @@ function plotCharts(initCounty) {
             // add the key value pair from the metadata to the demographics list
             if (key == 'county_name'){
                 listItem.text(`${key}:${value}`);
-            } else if (key == 'effective_tax_rate'){
-                listItem.text(`${key}: ${decimal_format(value)}%`);
-            } else if (key == 'general_tax_rate'){
+            } else if (key == 'tax_rate'){
                 listItem.text(`${key}: ${decimal_format(value)}%`);
             } else if (key == 'median_hh_income'){
                 listItem.text(`${key}: $${decimal_format(value)}`);

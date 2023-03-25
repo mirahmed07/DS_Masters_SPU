@@ -201,12 +201,12 @@ def sunburst_tax_data():
     sqlite_connection = engine.connect()
       
     query1 = '''SELECT DISTINCT "NJ-"||county_name AS id , county_name AS label,  '' AS parent, AVG(tax_rate) AS value
-                FROM nj_property_tax 
+                FROM nj_property_tax WHERE year=2022
                 GROUP BY 1,2,3'''
     df1 = pd.read_sql(query1, sqlite_connection)
 
     query2 = '''SELECT DISTINCT county_name||"-"||district_name AS id ,district_name AS label,  "NJ-"||county_name AS parent, tax_rate AS value
-                FROM nj_property_tax'''
+                FROM nj_property_tax WHERE year=2022''' 
     df2 = pd.read_sql(query2, sqlite_connection)
     
     df = pd.concat([df1, df2])
@@ -228,7 +228,7 @@ def sunburst_school_data():
               ( SELECT county_name,district,grades,school, score,
                        ROW_NUMBER() OVER (PARTITION BY county_name
                                           ORDER BY score DESC) AS rn
-                FROM nj_school_performance) AS tmp 
+                FROM nj_school_performance WHERE year=2020) AS tmp 
             WHERE rn <= 3
             ORDER BY county_name) GROUP BY 1,2,3'''
     df1 = pd.read_sql(query1, sqlite_connection)
@@ -239,7 +239,7 @@ def sunburst_school_data():
               ( SELECT county_name,district,grades,school, score,
                        ROW_NUMBER() OVER (PARTITION BY county_name
                                           ORDER BY score DESC) AS rn
-                FROM nj_school_performance) AS tmp 
+                FROM nj_school_performance WHERE year=2020) AS tmp 
             WHERE rn <= 3
             ORDER BY county_name) GROUP BY 1,2,3'''
     df2 = pd.read_sql(query2, sqlite_connection)
@@ -250,7 +250,7 @@ def sunburst_school_data():
               ( SELECT county_name,district,grades,school, score,
                        ROW_NUMBER() OVER (PARTITION BY county_name
                                           ORDER BY score DESC) AS rn
-                FROM nj_school_performance) AS tmp 
+                FROM nj_school_performance WHERE year=2020) AS tmp 
             WHERE rn <= 3
             ORDER BY county_name) GROUP BY 1,2,3'''
     df3 = pd.read_sql(query3, sqlite_connection)
@@ -261,7 +261,7 @@ def sunburst_school_data():
             ( SELECT county_name,district,grades,school, score,
                     ROW_NUMBER() OVER (PARTITION BY county_name
                                         ORDER BY score DESC) AS rn
-            FROM nj_school_performance) AS tmp 
+            FROM nj_school_performance WHERE year=2020) AS tmp 
         WHERE rn <= 3
         ORDER BY county_name) GROUP BY 1,2,3'''
     df4 = pd.read_sql(query4, sqlite_connection)
@@ -281,12 +281,12 @@ def sunburst_pop_data():
     sqlite_connection = engine.connect()
       
     query1 = '''SELECT DISTINCT "NJ-"||county_name AS id , county_name AS label,  '' AS parent, SUM(population) AS value 
-                FROM nj_crime_detail                                                                                                  
+                FROM nj_crime_detail WHERE year=2020                                                                                              
                 GROUP BY 1,2,3'''
     df1 = pd.read_sql(query1, sqlite_connection)
 
     query2 = '''SELECT DISTINCT county_name||"-"||agency AS id ,agency AS label,  "NJ-"||county_name AS parent, SUM(population) AS value
-                FROM nj_crime_detail  GROUP BY 1,2,3'''
+                FROM nj_crime_detail  WHERE year=2020 GROUP BY 1,2,3'''
     df2 = pd.read_sql(query2, sqlite_connection)
     
     df = pd.concat([df1, df2])
@@ -303,7 +303,7 @@ def sunburst_hi_data():
     sqlite_connection = engine.connect()
       
     query1 = '''SELECT DISTINCT "NJ-"||county_name AS id , county_name AS label,  '' AS parent, median_hh_income AS value 
-                FROM nj_poverty_median_income'''
+                FROM nj_poverty_median_income WHERE year=2021;'''
     df = pd.read_sql(query1, sqlite_connection)
 
     data_csv = df.to_csv(encoding='utf-8')
@@ -319,7 +319,7 @@ def sunburst_poverty_data():
     sqlite_connection = engine.connect()
       
     query1 = '''SELECT DISTINCT "NJ-"||county_name AS id , county_name AS label,  '' AS parent, poverty_rate AS value 
-                FROM nj_poverty_median_income'''
+                FROM nj_poverty_median_income WHERE year=2021;'''
     df = pd.read_sql(query1, sqlite_connection)
 
     data_csv = df.to_csv(encoding='utf-8')
@@ -703,120 +703,133 @@ def data_food_filter():
     print("Data retrieval successfull")
     return data_csv
 
-# # linear regression endpoint
-# @app.route("/prediction", methods=['GET','POST'])
-# def prediction():
-#     rfreg__model = joblib.load('Models/NJ_rfm_house_price.sav')
-#     df = pd.read_csv('resources/final_data.csv')
-#     le = LabelEncoder()
-#     df['county_label'] = le.fit_transform(df['county'])
-#     if request.method == "POST":
-#        # getting input for county from HTML form
-#        county = request.form.get("county")
-#        df_filtered = df[df['county']==county]
-#        county_label = df['county_label'][df['county']==county].unique()[0]
-#        county_model_name = county.replace(" ","_")
-#        model_path = f'Models/NJ_lin_reg_{county_model_name}.sav'
-#        lr_model = joblib.load(model_path)
-#        # getting input for year from HTML form 
-#        year = request.form.get("year") 
+# linear regression endpoint
+@app.route("/prediction", methods=['GET','POST'])
+def prediction():
+    rfreg__model = joblib.load('Models/NJ_rfm_house_price2.sav')
+    lr_model = joblib.load('Models/NJ_lin_reg.sav')
+    df = pd.read_csv('Resources/final_data.csv')
+    df2 = pd.read_csv('Resources/final_data2.csv')
+    le = LabelEncoder()
+    df2['county_label'] = le.fit_transform(df2['county_name'])
+    ref_df = df2[['county_name','county_label']].drop_duplicates().reset_index(drop=True)
+    if request.method == "POST":
+        
+        # getting input for county from HTML form
+        county = request.form.get("county").upper()
+        
+        # county_label=ref_df[ref_df['county_name']==county]['county_label'].values[0]
+        # getting input for year from HTML form 
+        year = int(request.form.get("year"))
+        beds = int(request.form.get("beds"))
+        
+        connection = engine.connect()
+        query = f'''SELECT * from nj_zillow_house_value_index WHERE county_name='{county}' AND year=2023 AND num_of_bedrooms={beds};'''
+        price_df = pd.read_sql(text(query), connection)
+        connection.close()
+        price_now = round(price_df['house_value_index'].values[0],2)
+        df_filtered=df[(df['county_name']==county)]
+        corr = df_filtered.corr()
+        corr.fillna(0, inplace=True)
+        #    linear regression prediction
+        lr_best_array = df[(df[f'county_name']==county)&\
+                (df['num_of_bedrooms']==beds)].tail(1)
+        lr_best_array['year']=year
+        lr_best_array['avg_tax_rate']=df[df['county_name']==county]['avg_tax_rate'].min()
+        lr_best_array.reset_index(drop=True,inplace=True)
+            
+        lr_best_predictions = lr_model.predict(lr_best_array.drop('house_value_index',axis=1))
+        
+        worst_array = df[(df[f'county_name']==county)&\
+              (df['num_of_bedrooms']==beds)].head(1)
+        worst_array['year']=year
+        worst_array['avg_tax_rate']=df[df['county_name']==county]['avg_tax_rate'].max()
+        worst_array.reset_index(drop=True,inplace=True)
+        
+        lr_worst_predictions = lr_model.predict(worst_array.drop('house_value_index',axis=1))
+
+        #    random forest regression prediction
+        df_filtered=df2[(df2['county_name']==county)][['county_name','year', 'num_of_bedrooms', 'est_pop', 'median_hh_income',
+       'poverty_count', 'poverty_rate', 'tax_rate', 'county_label']]
+        county_label=ref_df[ref_df['county_name']==county]['county_label'].values[0]
+        rf_best_array = df_filtered[(df_filtered['county_name']==county)&\
+                    (df_filtered['num_of_bedrooms']==beds)].tail(1)
+        rf_best_array['year']=year
+        rf_best_array['county_label']=county_label
+        rf_best_array.reset_index(drop=True,inplace=True)
+        rf_b_predictions = rfreg__model.predict(rf_best_array.drop(['county_name'],axis=1))
+        
+        rf_worst_array = df_filtered[(df_filtered['county_name']==county)&\
+              (df_filtered['num_of_bedrooms']==beds)].head(1)
+        rf_worst_array['year']=year
+        rf_worst_array['county_label']=county_label
+        rf_worst_array.reset_index(drop=True,inplace=True)
+        rf_w_predictions = rfreg__model.predict(rf_worst_array.drop(['county_name'],axis=1))
+        
+        result_df= pd.DataFrame({'Prediction Model':['Linear Regresion', 'Random Forest Regression'],'County': [county, county],\
+                                    "Year":[year, year], "No. of Beds":[str(beds)+'+' if beds==5 else str(beds) for i in range(2)],\
+                                        "2023 Price":[price_now,price_now],\
+                                        "Best Case ZHVI ($)": [round(lr_best_predictions[0],2), round(rf_b_predictions[0],2)],\
+                                    "Worst Case ZHVI ($)": [round(lr_worst_predictions[0],2), round(rf_w_predictions[0],2)]})
+        html_table = result_df.to_html(index=False, header=True, border=1, justify = 'left',classes="bg-light table table-striped table-bordered")
+        results = html_table
+        return render_template('prediction.html', info = results)
+    return render_template('prediction.html')
+
+# Radnom forest and deep learning endpoint
+@app.route("/prediction2", methods=['GET','POST'])
+def prediction2():
+    rfm_model = joblib.load("Models/NJ_rfm.sav")
+    deep_model = load_model("Models/NJ_deep_learning.h5")
+    df = pd.read_csv('Resources/final_data2.csv')
+    X = df.drop(['county_name','st_abb','state_code', 'county_code', 'est_pop'], axis=1)
+    y = df["county_name"]
+    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+    X_scaler = MinMaxScaler().fit(X_train)
+    label_encoder = LabelEncoder()
+    label_encoder.fit(y_train)
+    if request.method == "POST":
+       # getting input for income from HTML form
+       income = int(request.form.get("income"))
+
+       # getting input for budget from HTML form
+       budget = int(request.form.get("budget"))
+       # getting input for beds from HTML form
+       beds = int(request.form.get("beds"))
+       # getting input for poverty type from HTML form
+       pov_typ = request.form.get("poverty")
+       df_latest=df[df['year']==df['year'].max()]
        
-#     #    linear regression prediction
-#        best_array = pd.DataFrame({'year':int(year),'violent_crime':df_filtered['violent_crime'].min(), 'murder':df_filtered['murder'].min(), 'rape':df_filtered['rape'].min(),
-#             'robbery':df_filtered['robbery'].min(), 'aggravated_assault':df_filtered['aggravated_assault'].min(), 'property_crime': df_filtered['property_crime'].min(),
-#             'burglary':df_filtered['burglary'].min(), 'larceny_theft':df_filtered['larceny_theft'].min(), 'motor_vehicle_theft':df_filtered['motor_vehicle_theft'].min(),
-#             'arson':df_filtered['arson'].min(), 'frm_30':df_filtered['frm_30'].min(), 'points_30': df_filtered['points_30'].min(),
-#            'frm_15':df_filtered['frm_15'].min(), 'points_15':df_filtered['points_15'].min(), 'median_hh_income': df_filtered['median_hh_income'].max(),
-#             'median_hh_inc_moe': df_filtered['median_hh_inc_moe'].min(),               
-#            'poverty_count': df_filtered['poverty_count'].min(),'poverty_count_moe': df_filtered['poverty_count_moe'].min(), 'poverty_rate':df_filtered['poverty_rate'].min(),
-#             'poverty_rate_moe':df_filtered['poverty_rate_moe'].min()},[0])
-#        predictions = lr_model.predict(best_array)
-#        worst_array = pd.DataFrame({'year':int(year),'violent_crime':df_filtered['violent_crime'].max(), 'murder':df_filtered['murder'].max(), 'rape':df_filtered['rape'].max(),
-#         'robbery':df_filtered['robbery'].max(), 'aggravated_assault':df_filtered['aggravated_assault'].max(), 'property_crime': df_filtered['property_crime'].max(),
-#         'burglary':df_filtered['burglary'].max(), 'larceny_theft':df_filtered['larceny_theft'].min(), 'motor_vehicle_theft':df_filtered['motor_vehicle_theft'].max(),
-#         'arson':df_filtered['arson'].max(), 'frm_30':df_filtered['frm_30'].max(), 'points_30': df_filtered['points_30'].max(),
-#         'frm_15':df_filtered['frm_15'].max(), 'points_15':df_filtered['points_15'].max(), 'median_hh_income': df_filtered['median_hh_income'].min(),
-#         'median_hh_inc_moe': df_filtered['median_hh_inc_moe'].max(),               
-#         'poverty_count': df_filtered['poverty_count'].max(),'poverty_count_moe': df_filtered['poverty_count_moe'].max(), 'poverty_rate':df_filtered['poverty_rate'].max(),
-#         'poverty_rate_moe':df_filtered['poverty_rate_moe'].max()},[0])
-#        w_predictions = lr_model.predict(worst_array)
-#        if w_predictions > predictions:
-#            w_predictions = predictions - (w_predictions-predictions)
-#     #    random forest regression prediction
-#        rf_best_array = pd.DataFrame({'county':county_label,'year':int(year)-6,'violent_crime':df_filtered['violent_crime'].min(), 'murder':df_filtered['murder'].min(), 'rape':df_filtered['rape'].min(),
-#             'robbery':df_filtered['robbery'].min(), 'aggravated_assault':df_filtered['aggravated_assault'].min(), 'property_crime': df_filtered['property_crime'].min(),
-#             'burglary':df_filtered['burglary'].min(), 'larceny_theft':df_filtered['larceny_theft'].min(), 'motor_vehicle_theft':df_filtered['motor_vehicle_theft'].min(),
-#             'arson':df_filtered['arson'].min(), 'frm_30':df_filtered['frm_30'].min(), 'points_30': df_filtered['points_30'].min(),
-#            'frm_15':df_filtered['frm_15'].min(), 'points_15':df_filtered['points_15'].min(), 'median_hh_income': df_filtered['median_hh_income'].max(),
-#             'median_hh_inc_moe': df_filtered['median_hh_inc_moe'].min(),               
-#            'poverty_count': df_filtered['poverty_count'].min(),'poverty_count_moe': df_filtered['poverty_count_moe'].min(), 'poverty_rate':df_filtered['poverty_rate'].min(),
-#             'poverty_rate_moe':df_filtered['poverty_rate_moe'].min()},[0])
-#        rf_b_predictions = rfreg__model.predict(rf_best_array)
-#        rf_worst_array = pd.DataFrame({'county':county_label,'year':int(year)-6,'violent_crime':df_filtered['violent_crime'].max(), 'murder':df_filtered['murder'].max(), 'rape':df_filtered['rape'].max(),
-#         'robbery':df_filtered['robbery'].max(), 'aggravated_assault':df_filtered['aggravated_assault'].max(), 'property_crime': df_filtered['property_crime'].max(),
-#         'burglary':df_filtered['burglary'].max(), 'larceny_theft':df_filtered['larceny_theft'].min(), 'motor_vehicle_theft':df_filtered['motor_vehicle_theft'].max(),
-#         'arson':df_filtered['arson'].max(), 'frm_30':df_filtered['frm_30'].max(), 'points_30': df_filtered['points_30'].max(),
-#         'frm_15':df_filtered['frm_15'].max(), 'points_15':df_filtered['points_15'].max(), 'median_hh_income': df_filtered['median_hh_income'].min(),
-#         'median_hh_inc_moe': df_filtered['median_hh_inc_moe'].max(),               
-#         'poverty_count': df_filtered['poverty_count'].max(),'poverty_count_moe': df_filtered['poverty_count_moe'].max(), 'poverty_rate':df_filtered['poverty_rate'].max(),
-#         'poverty_rate_moe':df_filtered['poverty_rate_moe'].max()},[0])
-#        rf_w_predictions = rfreg__model.predict(rf_worst_array)
-    
-#        result_df= pd.DataFrame({'Prediction Model':['Linear Regresion', 'Random Forest Regression'],'County': [county, county],\
-#                                 "Year":[year, year],"Best Case ZHVI": [round(predictions[0],2), round(rf_b_predictions[0],2)],\
-#                                 "Worst Case ZHVI": [round(w_predictions[0],2), round(rf_w_predictions[0],2)]})
-#        html_table = result_df.to_html(index=False, header=True, border=1, justify = 'left',classes="bg-light table table-striped table-bordered")
-#        results = html_table
-#        return render_template('prediction.html', info = results)
-#     return render_template('prediction.html')
+       poverty_count=df_latest['poverty_count'].max() if pov_typ=='max' else df_latest['poverty_count'].mean() if pov_typ=='mean' else df_latest['poverty_count'].min()
+       poverty_rate=df_latest['poverty_rate'].max() if pov_typ=='max' else df_latest['poverty_rate'].mean() if pov_typ=='mean' else df_latest['poverty_rate'].min()
 
-# # Radnom forest and deep learning endpoint
-# @app.route("/prediction2", methods=['GET','POST'])
-# def prediction2():
-#     rfm_model = joblib.load("Models/NJ_rfm.sav")
-#     nj_deep_model = load_model("Models/NJ_deep_learning.h5")
-#     df = pd.read_csv('resources/final_data.csv')
-#     X = df.drop(['county', 'county_fips'], axis=1)
-#     y = df["county"]
-#     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
-#     X_scaler = MinMaxScaler().fit(X_train)
-#     label_encoder = LabelEncoder()
-#     label_encoder.fit(y_train)
-#     if request.method == "POST":
-#        # getting input for income from HTML form
-#        income = int(request.form.get("income"))
-
-#        # getting input for budget from HTML form
-#        budget = int(request.form.get("budget"))
-#        rfm_array = pd.DataFrame({'year':df['year'].max(),'violent_crime':df['violent_crime'].min(), 'murder':df['murder'].min(),
-#             'rape':df['rape'].min(),'robbery':df['robbery'].min(), 'aggravated_assault':df['aggravated_assault'].min(),
-#             'property_crime': df['property_crime'].min(),'burglary':df['burglary'].min(), 
-#             'larceny_theft':df['larceny_theft'].mean(),'motor_vehicle_theft':df['motor_vehicle_theft'].min(),
-#             'arson':df['arson'].min(), 
-#             'frm_30':df['frm_30'].min(), 'points_30': df['points_30'].min(),
-#             'frm_15':df['frm_15'].min(), 'points_15':df['points_15'].min(), 
-#             'median_hh_income': income, 'median_hh_inc_moe': df['median_hh_inc_moe'].mean(), 
-#             'poverty_count': df['poverty_count'].min(), 'poverty_count_moe': df['poverty_count_moe'].mean(), 
-#             'poverty_rate':df['poverty_rate'].mean(), 'poverty_rate_moe':df['poverty_rate_moe'].mean(),'price':budget},[0])
-#        rfm_predictions = rfm_model.predict(rfm_array)
-#        deep_learning_array = pd.DataFrame({'year':df['year'].max(),'violent_crime':df['violent_crime'].min(), 'murder':df['murder'].min(),
-#             'rape':df['rape'].min(),'robbery':df['robbery'].min(), 'aggravated_assault':df['aggravated_assault'].min(),
-#             'property_crime': df['property_crime'].min(),'burglary':df['burglary'].min(), 
-#             'larceny_theft':df['larceny_theft'].mean(),'motor_vehicle_theft':df['motor_vehicle_theft'].min(),
-#             'arson':df['arson'].min(), 
-#             'frm_30':df['frm_30'].min(), 'points_30': df['points_30'].min(),
-#             'frm_15':df['frm_15'].min(), 'points_15':df['points_15'].min(), 
-#             'median_hh_income': income, 'median_hh_inc_moe': df['median_hh_inc_moe'].mean(), 
-#             'poverty_count': df['poverty_count'].min(), 'poverty_count_moe': df['poverty_count_moe'].mean(), 
-#             'poverty_rate':df['poverty_rate'].min(), 'poverty_rate_moe':df['poverty_rate_moe'].mean(),'price':budget},[0])
-#        deep_learning_array_scaled = X_scaler.transform(deep_learning_array)
-#        deep_learning_prediction = np.argmax(nj_deep_model.predict(deep_learning_array_scaled), axis = -1)
-#        deep_learning_predicted_labels = label_encoder.inverse_transform(deep_learning_prediction)
-#        result_df= pd.DataFrame({'Income': income,'Budget': budget,'Random Forest Classifier Prediction': rfm_predictions, "Deep Learning Prediction": deep_learning_predicted_labels})
-#        html_table = result_df.to_html(index=False, header=True, border=1, justify = 'left',classes="bg-light table table-striped table-bordered")
-#        results = html_table 
-#        return render_template('prediction.html', info2 = results)
-#     return render_template('prediction.html')
+       rfm_array=pd.DataFrame({'year':df_latest['year'].max(),
+                        'num_of_bedrooms':beds,
+                        'house_value_index':budget,
+                        'median_hh_income':income,
+                        'poverty_rate':poverty_rate},[0])
+       rfm_predictions = rfm_model.predict(rfm_array)
+        
+       deep_learning_array = pd.DataFrame({'year':df['year'].max(),
+                                            'num_of_bedrooms':beds,
+                                            'house_value_index':budget,
+                                            'median_hh_income':income,
+                                            'poverty_count': round(poverty_count) ,
+                                            'poverty_rate': round(poverty_rate,2),
+                                            'tax_rate': df_latest['tax_rate'].mean(),
+                                            'apr_30': df_latest['apr_30'].mean(),
+                                            'points_30': df_latest['points_30'].mean(),
+                                            'apr_15': df_latest['apr_15'].mean(),
+                                            'points_15': df_latest['points_15'].mean()},[0])
+       deep_learning_array_scaled = X_scaler.transform(deep_learning_array)
+       deep_learning_prediction = np.argmax(deep_model.predict(deep_learning_array_scaled), axis = -1)
+       deep_learning_predicted_labels = label_encoder.inverse_transform(deep_learning_prediction)
+       
+       result_df= pd.DataFrame({'Income': income,'Budget': budget,'Random Forest Classifier Prediction': rfm_predictions, "Deep Learning Prediction": deep_learning_predicted_labels})
+       html_table = result_df.to_html(index=False, header=True, border=1, justify = 'left',classes="bg-light table table-striped table-bordered")
+       results = html_table 
+       return render_template('prediction.html', info2 = results)
+    return render_template('prediction.html')
 
 # # render tableau.html
 # @app.route('/tableau')

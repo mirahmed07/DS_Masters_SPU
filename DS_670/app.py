@@ -98,8 +98,7 @@ def plotly():
 def plotly_data():
     sqlite_connection = engine.connect()
     
-    query = '''
-    SELECT T1.*, T2.population, T3.tax_rate
+    query = '''SELECT T1.*, T2.population, T3.tax_rate
     FROM 
     (SELECT county_name,median_hh_income,poverty_rate 
     FROM nj_poverty_median_income WHERE year=2021) AS T1
@@ -825,7 +824,7 @@ def prediction2():
        deep_learning_prediction = np.argmax(deep_model.predict(deep_learning_array_scaled), axis = -1)
        deep_learning_predicted_labels = label_encoder.inverse_transform(deep_learning_prediction)
        
-       result_df= pd.DataFrame({'Income': income,'Budget': budget,'Random Forest Classifier Prediction': rfm_predictions, "Deep Learning Prediction": deep_learning_predicted_labels})
+       result_df= pd.DataFrame({'Income': income,'Budget': budget, '# of Bedrooms':beds, "Accepted Poverty Type": pov_typ, 'Random Forest Classifier Prediction': rfm_predictions, "Deep Learning Prediction": deep_learning_predicted_labels})
        html_table = result_df.to_html(index=False, header=True, border=1, justify = 'left',classes="bg-light table table-striped table-bordered")
        results = html_table 
        return render_template('prediction.html', info2 = results)
